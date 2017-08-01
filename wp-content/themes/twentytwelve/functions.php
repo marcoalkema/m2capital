@@ -578,18 +578,18 @@ add_shortcode("posts", "posts_callback");
 
 function mkGoogleMap () {
   $contactMap = get_field('contact_map', 19);
-  echo '<iframe width="800" height="450" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>';
+  echo '<iframe width="800" height="250" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:1px solid black" allowfullscreen ></iframe>';
 }
 add_shortcode('my_google_map', 'mkGoogleMap');
 
 function mkContactField () {
   $contactArray = get_field('contact_address', get_option('page_for_posts'));
-  $contactHTML = '<div class="panel-heading"></div><div class="panel-body"><table>';
+  $contactHTML = '<table>';
 
   for ($x = 0; $x <= 6; $x++) {
     $contactHTML = $contactHTML . '<tr><td>' . ($contactArray['body'][0][$x]['c']) . '</td></tr>';
   }
-  echo $contactHTML . '</table></div>';
+  echo $contactHTML . '</table>';
 }
 add_shortcode('my_contact_field', 'mkContactField');
 
@@ -729,3 +729,19 @@ add_action('admin_head','hide_buttons');
 //    }
 //    return $actions;
 //}
+
+      function cf_post_id() {
+        global $post;
+
+        // Get the data
+        $id = $post->ID;
+
+        // Echo out the field
+        echo '<input type="text" name="_id" value="' . $id . '" class="widefat" disabled />';
+      }
+
+      function ve_custom_meta_boxes() {
+        add_meta_box('projects_refid', 'Post ID', 'cf_post_id', 'post', 'side', 'high');
+        add_meta_box('projects_refid', 'Page ID', 'cf_post_id', 'page', 'side', 'high');
+      }
+      add_action('add_meta_boxes', 've_custom_meta_boxes');

@@ -1,6 +1,6 @@
 <?php
 /*
-   Template Name: page-template
+   Template Name: netwerk-template
  */
 
 
@@ -11,10 +11,10 @@ get_header(); ?>
     <div class="page-header-image">
       <img src="<?php the_field("main-header"); ?>" class="headerImg"/>
       <div class="page-title-container">
-        <h1 id="page-title-<?php the_ID(); ?>" class="template-page-title"><?php printf(get_field('main-subtitle', get_the_ID())); ?></h1>
+        <h1 id="page-title-<?php the_ID(); ?>" class="template-page-title font-red"><?php printf(get_field('main-subtitle', get_the_ID())); ?></h1>
       </div>
     </div>
-    <div class="template-page-content">
+    <div class="template-page-content grey-body">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">
         <h2>
           <?php printf(get_field('main-title', get_the_ID())); ?>
@@ -25,18 +25,9 @@ get_header(); ?>
           <?php printf(get_field('main-text', get_the_ID())); ?>
         </p>
       </div>
-      <?php if( get_the_ID() == 132): get_template_part("wat-doen-wij", "part"); endif; ?>
-      <?php
-      $args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
-      $the_query = new WP_Query($args);
-      ?>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <?php the_content(); ?>
-      <?php endwhile; endif; ?>
-      <?php if( get_the_ID() == 242): get_template_part("over-ons", "part"); endif; ?>
-      <?php if( get_the_ID() == 30): get_template_part("kwaliteit", "part"); endif; ?>
-      <?php if( get_the_ID() == 32): get_template_part("tarieven", "part"); endif; ?>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/rand1.png"/>
     </div>
+    <?php get_template_part("ons-netwerk", "part"); ?>
     <div id="contact" class="contact-form-small contact_form-<?php the_ID(); ?>">
       <div class="contact-title-container">
         <div id="contact-title-<?php the_ID(); ?>" class="contact-title">

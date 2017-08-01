@@ -14,4 +14,5 @@
     the_content();
     ?>
   </div>
+
 </article>

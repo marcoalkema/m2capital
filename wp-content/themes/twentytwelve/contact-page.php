@@ -1,32 +1,38 @@
-<?php /* Template Name: wat_doen_wij-template */ ?>
-
-<?php get_header(); ?>
-
-<div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-    <div id="wat-doen-wij-uitgebreid">
-      <div class="row">
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-	  <img src="<?php echo get_field('wat_doen_wij_uitgebreid-image')?>" height="200" width="200"/>
-        </div>
-        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-          <p>
-            <?php
-            echo the_field("wat_doen_wij_uitgebreid-text", 110);
-            ?>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-          <button type="button" class="btn btn-secondary">Over ons</button>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-          <button type="button" class="btn btn-secondary">Tarieven</button>
-        </div>
+<div id="contact" class="entry-content contact-page" id="page-<?php the_ID(); ?>">
+  <div class="contact-form-template">
+    <div class="contact-text">
+      <p>
+        <?php the_field('contact_text', 19); ?>
+      </p>
+    </div>
+    <div class="contact-title-container-large">
+      <div id="contact-title-<?php the_ID(); ?>" class="contact-title">
+        <h3>CONTACT OPNEMEN</h3>
       </div>
     </div>
-  </main>
-</div>
+    <div class="contact-large">
+      <?php
+      $id=19;
+      $post = get_post($id);
+      $content = apply_filters('the_content', $post->post_content);
+      echo $content;
+      ?>
+    </div>
+    <div class="row">
+      <div class="col-lg-4">
+      </div>
+      <div class="col-lg-8 location-title">
+        <h3>ONZE LOCATIE</h3>
+      </div>
+    </div>
+    <div class="row contact-details">
+      <div class="col-lg-4 contact-fields">
+        <?php do_shortcode('[my_contact_field]'); ?>
+      </div>
+      <div class="col-lg-8">
+        <?php do_shortcode('[my_google_map]'); ?>
+      </div>
+    </div>
 
-<?php get_footer(); ?>
+  </div>
+</div>

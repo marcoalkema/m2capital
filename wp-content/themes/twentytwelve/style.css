@@ -56,6 +56,10 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
     font-family: sisterSpray;
     src: url(fonts/SisterSpray.ttf);
 }
+@font-face {
+    font-family: GillSans;
+    src: url(fonts/GillSans.ttf);
+}
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
@@ -489,7 +493,7 @@ html {
 body {
 	font-size: 14px;
 	font-size: 1rem;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: GillSans;
 	text-rendering: optimizeLegibility;
 	color: #444;
 }
@@ -634,7 +638,7 @@ a:hover {
   float: right;
   margin-top: 24px;
   margin-top: 1.714285714rem;
-  font-size: 12px;
+  font-size: 16px;
   font-size: 0.857142857rem;
   line-height: 1.42857143;
 }
@@ -724,10 +728,10 @@ footer[role="contentinfo"] {
 	line-height: 2;
 	/* margin-top: 24px; */
 	/* margin-top: 1.714285714rem; */
-	margin-left: 100px;
-	margin-right: 100px;
-	/* padding: 24px 0; */
-	/* padding: 1.714285714rem 0; */
+	/* margin-left: 100px; */
+	/* margin-right: 100px; */
+	padding: 24px 0;
+	padding: 1.714285714rem 0;
 }
 footer[role="contentinfo"] a {
 	color: #686868;
@@ -839,8 +843,8 @@ article.sticky .featured-post {
 }
 .entry-content h3,
 .comment-content h3 {
-	font-size: 16px;
-	font-size: 1.142857143rem;
+	font-size: 24px;
+	font-size: 1.7rem;
 	line-height: 1.846153846;
 }
 .entry-content h4,
@@ -1003,8 +1007,7 @@ img.aligncenter,
 }
 .entry-content table,
 .comment-content table {
-	border-bottom: 1px solid #ededed;
-	color: #757575;
+	color: #fff;
 	font-size: 12px;
 	font-size: 0.857142857rem;
 	line-height: 2;
@@ -1580,21 +1583,23 @@ img#wpstats {
 	.main-navigation li {
 		display: inline-block;
 		text-decoration: none;
+
 	}
 	.main-navigation li a {
 		border-bottom: 0;
-		color: #6a6a6a;
+		color: #444;
 		line-height: 1.692307692;
 		text-transform: uppercase;
 		white-space: nowrap;
+                font-size: 21px;
 	}
 	.main-navigation li a:hover,
 	.main-navigation li a:focus {
 		color: #000;
 	}
 	.main-navigation li {
-		margin: 0 40px 0 0;
-		margin: 0 2.857142857rem 0 0;
+		margin: 0 18px 0 18px;
+		margin: 0 0.4rem 0 0.4rem;
 		position: relative;
 	}
 	.main-navigation li ul {
@@ -2196,9 +2201,10 @@ i.icon3 {
   margin-top: 3%;
 }
 .menu-primary-container {
-  height: 10px;
-  display: table-cell;
+  padding-left: 32px;
   vertical-align: middle;
+  display: flex;
+  margin-top: 40px;
 }
 .overlay {
   position: relative;
@@ -2254,10 +2260,11 @@ i.icon3 {
   right: 0;
 }
 
-.contact-fields {
+.contact-fields td {
+  color: white;
   text-transform: uppercase;
+  font-size: 16px;
 }
-
 .contact-fields tr:nth-child(1) > td {
   padding-bottom: 15px;
   font-weight: bold;
@@ -2268,8 +2275,9 @@ i.icon3 {
 .page-header-image {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 400px;
   background: #ddd;
+  overflow: hidden;
 }
 .wat-doen-wij-button {
   height: 100px;
@@ -2280,6 +2288,11 @@ i.icon3 {
 .contact-form-small {
   height: 300px;
   background: #666666;
+}
+.contact-form-small input {
+  font-weight: normal;
+  border: 1px solid black;
+  text-decoration: underline;
 }
 .network-img-container {
   width: 150px;
@@ -2294,6 +2307,7 @@ i.icon3 {
   width: 100%;
 }
 .contact-title {
+  font-size: 40px;
   color: #ffffff;
   display: inline-block;
 }
@@ -2308,6 +2322,8 @@ i.icon3 {
 .main-title {
   display: inline-block;
   padding-top: 5%;
+  text-transform: uppercase;
+  font-family: sisterSpray;
 }
 
 .main-text {
@@ -2353,17 +2369,17 @@ i.icon3 {
 #main-title-242 {
   color: #ff0000;
 }
-#page-title-242 {
+#page-title1-242 {
   color: #ffff00;
 }
 #menu-item-244.current_page_item > a {
-  border-bottom: 3px solid #ffff00;
+  border-bottom: 4px solid #ffff00;
 }
 
 /* PORTFOLIO */
 
 #menu-item-36.current_page_item > a {
-  border-bottom: 3px solid #ff00ff;
+  border-bottom: 4px solid #ff00ff;
 }
 #page-title-17 {
   color: #ff00ff;
@@ -2388,7 +2404,7 @@ i.icon3 {
 /* KWALITEIT */
 
 #menu-item-123.current_page_item > a {
-  border-bottom: 3px solid #0049ff;
+  border-bottom: 4px solid #0049ff;
 }
 #page-title-30 {
   color: #0049ff;
@@ -2404,7 +2420,7 @@ i.icon3 {
 
 /* WAT DOEN WIJ */
 #menu-item-139.current_page_item > a {
-  border-bottom: 3px solid #00f2da;
+  border-bottom: 4px solid #00f2da;
 }
 #page-title-132 {
   color: #00ff00;
@@ -2423,6 +2439,14 @@ i.icon3 {
   border-bottom: 2px solid #0049ff;
 }
 
+/* NETWERK */
+#contact-compact-submit-271 > input[type=submit] {
+  background: #ff0000;
+}
+#contact-title-271 {
+  border-bottom: 2px solid #ff0000;
+}
+
 /* TARIEVEN */
 #contact-compact-submit-32 > input[type=submit] {
   background: #00ff00;
@@ -2431,7 +2455,7 @@ i.icon3 {
   border-bottom: 2px solid #00ff00;
 }
 #menu-item-124.current_page_item > a {
-  border-bottom: 3px solid #ff00ff;
+  border-bottom: 4px solid #ff00ff;
 }
 #page-title-32 {
   color: #ffff00;
@@ -2441,10 +2465,35 @@ i.icon3 {
   color: #00ff00;
 }
 
-
+/* VOORWAARDEN */
+#contact-compact-submit-269 > input[type=submit] {
+  background: #ff00ff;
+}
+#contact-title-269 {
+  border-bottom: 2px solid #ff00ff;
+}
+#page-title-269 {
+  color: #00ff00;
+}
+#main-title-269 {
+  width: 70%;
+  color: #00f2da;
+}
 
 .font-pink {
   color: #ff00ff;
+}
+
+.font-blue {
+  color: #0049ff;
+}
+
+.font-red {
+  color: #ff0000;
+}
+
+.font-green {
+  color: #00ff00;
 }
 
 .text-container {
@@ -2505,6 +2554,121 @@ h2.tarieven {
   padding: 0 5px 0 5px;
   text-decoration: underline;
 }
+.space-btn {
+  margin-bottom: 70px;
+}
+.btn-red {
+  background: #ff0000;
+  color: #fff;
+  padding: 0 5px 0 5px;
+  text-decoration: underline;
+}
 #colophon {
   background: #eee;
+  font-size: 12px;
+  padding: 5px 100px 5px 100px;
+}
+#colophon p {
+  margin: 0;
+}
+#landing-overlay-title {
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-family: sisterSpray;
+  line-height: 2;
+}
+#bandContainer {
+  height: 140px;
+}
+.bandImgContainer {
+  padding: 0!important;
+}
+.bandImg {
+  width: 100%;
+}
+.contact-page {
+  background: #666666;
+}
+.contact-text {
+  padding-top: 5%;
+  color: white;
+}
+.contact-title-container-large {
+  text-align: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+.contact-form-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.contact-form-template {
+  width: 70%;
+  margin: 0 auto;
+}
+#contact-title-4 {
+  line-height: 20px;
+  border-bottom: 3px solid #ff00ff;
+}
+.contact-large {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.contact-large input {
+  width: 100%;
+  height: 30px;
+}
+#contact-compact-submit-19 > input {
+  background: #ff00ff;
+  color: #fff;
+  width: auto;
+  /* padding: 0 5px 0 5px; */
+  text-decoration: underline;
+}
+.location-title > h3 {
+  color: white;
+  text-align: center;
+  padding: 2% 0 0 0;
+}
+.contact-details {
+  padding-bottom: 5%;
+}
+.contact-inputs {
+  padding: 0 7px 14px 7px!important;
+}
+
+.contact-inputs > label {
+  margin: 0!important;
+  text-decoration: none!important;
+  color: #999!important;
+  border: 1px solid black!important;
+}
+
+.contact-inputs > label > span > input{
+  text-decoration: none!important;
+  font-weight: normal;
+}
+.contact-message {
+  padding: 0 7px 0 7px!important;
+}
+.contact-message > label {
+  display: block;
+  padding: 0!important;
+  border: 1px solid black!important;
+}
+.contact-message > label > span > textarea{
+  text-decoration: none!important;
+  font-weight: normal;
+  width: 100%;
+  height: 120px;
+}
+.headerImg {
+  width: 100%;
+  overflow: hidden;
+}
+.site-logo {
+  margin-top: 4%;
+  margin-bottom: 4%;
+  padding-left: 4%;
 }

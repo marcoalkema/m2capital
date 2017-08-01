@@ -40,7 +40,7 @@
    <div id="header-info">
      <div id="header-logo">
        <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-         <img src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt="Logo" width="60px" height="60px" />
+         <img src="<?php echo the_field("main-logo", 5)?>" height="95" class="site-logo"/>
        </a>
      </div>
    </div>
@@ -49,7 +49,7 @@
    <button class="menu-toggle" type="submit" style="border: 0; background: transparent">
    <img src="/../wp-content/uploads/2017/07/menu-icon.png" width="50" height="28" alt="submit" />
    </button>
-     </h3>
+   </h3>
 
    <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
 

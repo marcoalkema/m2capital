@@ -1,29 +1,44 @@
-<?php
-/*
-Template Name: kwaliteit-template
-*/
-
-
-get_header(); ?>
-
-<div class="band-container">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/band.png" class="overlay"/>
-</div>
-<div class="onze-visie-title">
-  <h2>
-    [acf field="onze_visie-title"]
-  </h2>
-</div>
-<div class="text-container">
-  <p>
-    [acf field="onze_visie-text"]
-  </p>
-</div>
-<div>
-  [metaslider id=176]
-</div>
-<div class="text-container">
-    [acf field="onze_visie-text2"]
+<div class="row">
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "NAAM"]</label>
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "ACHTERNAAM"]</label>
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "NAAM KIND"]</label>
+  </div>
 </div>
 
-<?php get_footer(); ?>
+<div class="row">
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "ADRES"]</label>
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "POSTCODE"]</label>
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "STAD"]</label>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4 contact-inputs">
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "TELEFOON NR."]</label>
+  </div>
+  <div class="col-lg-4 contact-inputs">
+    <label>[text your-name placeholder "EMAIL ADRES"]</label>
+  </div>
+</div>
+
+<div class="row" style="width:100%">
+  <div class="col-lg-12">
+    <label>[text your-name placeholder "BERICHT"]</label>
+  </div>
+</div>
+
+<div id="contact-compact-submit-[CF7_ADD_POST_ID]" class="contact-compact-submit btn-pink">
+  [submit "VERZENDEN"]
+</div>

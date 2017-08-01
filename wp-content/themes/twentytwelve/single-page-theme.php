@@ -12,35 +12,21 @@ get_header(); ?>
       <img src="<?php echo get_template_directory_uri(); ?>/images/overlay.jpg" class="overlay"/>
       <div class="overlay-title">
         <div class="overlay-title-container">
-          <h1>ART IS FUN</h1>
+          <h1 id="landing-overlay-title">ART IS FUN</h1>
         </div>
       </div>
     </div>
   </div>
-  <?php
-  $args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
-  $the_query = new WP_Query($args);
-  ?>
-  <?php if(have_posts()):while($the_query->have_posts()):$the_query->the_post(); ?>
 
-    <?php
-    if( get_the_ID() == 7
-    ): get_template_part("content", "page-button");
-    endif; ?>
-    <?php
-    if( get_the_ID() == 9  ||
-        get_the_ID() == 13 ||
-        get_the_ID() == 15
-    ): get_template_part("content", "page");
-    endif; ?>
-
-
-    <?php
-    if( get_the_ID() == 19
-    ): get_template_part("content", "page-contact");
-    endif; ?>
-
-  <?php endwhile; endif; ?>
+  <?php get_template_part("intro", "short"); ?>
+  <?php get_template_part("wat-doen-wij", "short"); ?>
+  <?php get_template_part("band", "short"); ?>
+  <?php get_template_part("quotes", "short"); ?>
+  <div class="band-container">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/band.png" class="overlay"/>
+  </div>
+  <?php get_template_part("onze-visie", "short"); ?>
+  <?php get_template_part("contact", "page"); ?>
 
 </div><!-- #content -->
 </div><!-- #primary -->
