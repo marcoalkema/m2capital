@@ -603,7 +603,23 @@ function mkRates () {
   }
   echo $ratesHTML . '</table>';
 }
-add_shortcode('my_rates', 'mkRates');
+      add_shortcode('my_rates', 'mkRates');
+
+      add_filter( 'wpcf7_form_elements', 'mycustom_wpcf7_form_elements' );
+
+      function mycustom_wpcf7_form_elements( $form ) {
+        $form = do_shortcode( $form );
+
+        return $form;
+      }
+
+      function cf7_add_post_id(){
+
+        global $post;
+        return $post->ID;
+      }
+
+      add_shortcode('CF7_ADD_POST_ID', 'cf7_add_post_id');
 
 function post_content()
 {

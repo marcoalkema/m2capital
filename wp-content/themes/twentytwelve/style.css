@@ -52,6 +52,11 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 /* =Reset
 -------------------------------------------------------------- */
 
+@font-face {
+    font-family: sisterSpray;
+    src: url(fonts/SisterSpray.ttf);
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -318,7 +323,7 @@ input[type="reset"]:active {
 .entry-content img,
 .comment-content img,
 .widget img {
-	max-width: 100%; /* Fluid images for posts, comments, and widgets */
+
 }
 img[class*="align"],
 img[class*="wp-image-"],
@@ -363,8 +368,6 @@ img.header-image,
 .author-avatar img,
 img.wp-post-image {
 	/* Add fancy borders to all WordPress-added images but not things like badges and icons and the like */
-	border-radius: 3px;
-	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
 }
 .wp-caption {
 	max-width: 100%; /* Keep wide captions from overflowing their container. */
@@ -617,7 +620,7 @@ a:hover {
 /* Navigation Menu */
 .main-navigation {
   position: fixed;
-  background: yellow;
+  background: #eee;
   top: 0;
   right: 0;
   left: 0;
@@ -792,7 +795,7 @@ article.sticky .featured-post {
 	line-height: 3.692307692;
 	margin-bottom: 24px;
 	margin-bottom: 1.714285714rem;
-	text-align: center;
+	text-align: left;
 }
 .entry-content,
 .entry-summary,
@@ -811,24 +814,28 @@ article.sticky .featured-post {
 .comment-content h5,
 .entry-content h6,
 .comment-content h6 {
-	margin: 24px 0;
-	margin: 1.714285714rem 0;
+	/* padding: 24px 0; */
+	/* padding: 1.714285714rem 0; */
 	line-height: 1.714285714;
+        margin: 0;
 }
 .entry-content h1,
 .comment-content h1 {
-  padding-left: 3.6%;
-  font-size: 24px;
-  font-size: 2rem;
-  line-height: 1.5;
-  font-weight: 500;
+  /* padding-left: 3.6%; */
+  text-transform: uppercase;
+  font-size: 4.2rem;
+  font-family: sisterSpray;
+  padding-top: 2.5%;
 }
 .entry-content h2,
 .comment-content h2,
 .mu_register h2 {
-	font-size: 18px;
-	font-size: 1.285714286rem;
-	line-height: 1.6;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 2.3;
+  font-family: sisterSpray;
+  padding-top: 5%;
+  padding-bottom: 1.5%;
 }
 .entry-content h3,
 .comment-content h3 {
@@ -861,6 +868,8 @@ article.sticky .featured-post {
 	margin: 0 0 24px;
 	margin: 0 0 1.714285714rem;
 	line-height: 1.714285714;
+        text-align: left;
+        padding-bottom: 2rem;
 }
 .entry-content a:visited,
 .comment-content a:visited {
@@ -1183,6 +1192,7 @@ article.format-quote .entry-content p {
 	margin: 0;
 	padding-bottom: 24px;
 	padding-bottom: 1.714285714rem;
+        text-align: center;
 }
 article.format-quote .entry-content blockquote {
 	display: block;
@@ -1574,7 +1584,7 @@ img#wpstats {
 	.main-navigation li a {
 		border-bottom: 0;
 		color: #6a6a6a;
-		line-height: 3.692307692;
+		line-height: 1.692307692;
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
@@ -1633,8 +1643,8 @@ img#wpstats {
 	.main-navigation .current-menu-ancestor > a,
 	.main-navigation .current_page_item > a,
 	.main-navigation .current_page_ancestor > a {
-		color: #636363;
-		font-weight: bold;
+		/* color: #636363; */
+		/* font-weight: bold; */
 	}
 	.menu-toggle {
 		display: none;
@@ -2209,6 +2219,17 @@ i.icon3 {
   width: 40%;
   margin: 0 30% 0 30%; }
 
+.template-overlay-title {
+  position: absolute;
+  text-align: center;
+  vertical-align: middle;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: 20%;
+}
+
 .text-slideshow {
   position: relative;
 }
@@ -2245,6 +2266,7 @@ i.icon3 {
   padding-bottom: 15px;
 }
 .page-header-image {
+  position: relative;
   width: 100%;
   height: 300px;
   background: #ddd;
@@ -2257,7 +2279,7 @@ i.icon3 {
 }
 .contact-form-small {
   height: 300px;
-  background: #444;
+  background: #666666;
 }
 .network-img-container {
   width: 150px;
@@ -2267,16 +2289,222 @@ i.icon3 {
   height: 100%;
 }
 .contact-title-container {
+  padding-top: 4%;
   text-align: center;
   width: 100%;
 }
 .contact-title {
-  /* margin-left: 40%; */
+  color: #ffffff;
   display: inline-block;
-  color: green;
-  border-bottom: 2px solid green;
 }
-contact-form-small-container {
-  position: absolute;
+.contact-form-small-container {
+  width: 60%;
+  margin: 0 auto;
+}
+.template-page-content {
+  text-align: center;
+  width: 100%;
+}
+.main-title {
+  display: inline-block;
+  padding-top: 5%;
+}
 
+.main-text {
+  width: 70%;
+  margin: 0 auto;
+}
+.wat-doen-wij-container, .wat-doen-wij-container-extra {
+  width: 70%;
+  margin: 0 auto;
+  padding: 5% 0 5% 0;
+}
+.contact-compact-label > span > input {
+  width: 250px;
+  height: 30px;
+}
+
+.contact-compact-submit {
+  margin-top: 5%;
+}
+
+.contact-compact-submit > input {
+  display: block;
+  margin: 0 auto;
+  padding:5px 15px;
+  border:0 none;
+  color: white;
+}
+
+
+/* OVER ONS */
+#contact-compact-submit-132 > input[type=submit] {
+  background: #00ff00;
+}
+#contact-title-132 {
+  border-bottom: 2px solid #00ff00;
+}
+#contact-compact-submit-242 > input[type=submit] {
+  background: #0049ff;
+}
+#contact-title-242 {
+  border-bottom: 2px solid #0049ff;
+}
+#main-title-242 {
+  color: #ff0000;
+}
+#page-title-242 {
+  color: #ffff00;
+}
+#menu-item-244.current_page_item > a {
+  border-bottom: 3px solid #ffff00;
+}
+
+/* PORTFOLIO */
+
+#menu-item-36.current_page_item > a {
+  border-bottom: 3px solid #ff00ff;
+}
+#page-title-17 {
+  color: #ff00ff;
+}
+#main-title-17 {
+  width: 50%;
+  color: #00f2da;
+}
+#contact-compact-submit-17 > input[type=submit] {
+  background: #ff0000;
+}
+#contact-title-17 {
+  border-bottom: 2px solid #ff0000;
+}
+#contact-compact-submit-17 > input[type=submit] {
+  background: #ff0000;
+}
+#contact-title-17 {
+  border-bottom: 2px solid #ff0000;
+}
+
+/* KWALITEIT */
+
+#menu-item-123.current_page_item > a {
+  border-bottom: 3px solid #0049ff;
+}
+#page-title-30 {
+  color: #0049ff;
+}
+#main-title-30 {
+  width: 70%;
+  color: #ff00ff;
+}
+.onze-visie-title > h2 {
+  color: #0049ff;
+}
+
+
+/* WAT DOEN WIJ */
+#menu-item-139.current_page_item > a {
+  border-bottom: 3px solid #00f2da;
+}
+#page-title-132 {
+  color: #00ff00;
+}
+#main-title-132 {
+  width: 70%;
+  color: #ff00ff;
+}
+
+
+
+#contact-compact-submit-30 > input[type=submit] {
+  background: #0049ff;
+}
+#contact-title-30 {
+  border-bottom: 2px solid #0049ff;
+}
+
+/* TARIEVEN */
+#contact-compact-submit-32 > input[type=submit] {
+  background: #00ff00;
+}
+#contact-title-32 {
+  border-bottom: 2px solid #00ff00;
+}
+#menu-item-124.current_page_item > a {
+  border-bottom: 3px solid #ff00ff;
+}
+#page-title-32 {
+  color: #ffff00;
+}
+#main-title-32 {
+  width: 70%;
+  color: #00ff00;
+}
+
+
+
+.font-pink {
+  color: #ff00ff;
+}
+
+.text-container {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.grey-body {
+  background: #b3b3b3;
+  color: white
+}
+
+.template-container {
+}
+.page-title-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.template-page-title {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+#menu-item-244.current_page_item > a {
+  border-bottom: 4px solid #ffff00;
+}
+.band-container {
+  width: 100%;
+  padding: 60px 0 20px 0;
+}
+
+.band-container > img {
+  height: 270px;
+}
+.slider-container {
+  margin: 0 0 120px 0;
+}
+h2.tarieven {
+  padding-top: 0;
+}
+.grey-body.tarieven > button {
+  margin-bottom: 70px;
+}
+.breakImg {
+  width: 100%;
+}
+.more-info-btn {
+  background: white;
+  color: #000;
+  padding: 0 5px 0 5px;
+  text-decoration: underline;
+}
+#colophon {
+  background: #eee;
 }

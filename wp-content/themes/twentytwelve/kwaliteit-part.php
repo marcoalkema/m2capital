@@ -1,7 +1,7 @@
 <?php
 /*
-Template Name: kwaliteit-template
-*/
+   Template Name: kwaliteit-template
+ */
 
 
 get_header(); ?>
@@ -11,19 +11,21 @@ get_header(); ?>
 </div>
 <div class="onze-visie-title">
   <h2>
-    [acf field="onze_visie-title"]
+    <?php the_field("onze_visie-title") ?>
   </h2>
 </div>
 <div class="text-container">
   <p>
-    [acf field="onze_visie-text"]
+    <?php the_field("onze_visie-text") ?>
   </p>
 </div>
-<div>
-  [metaslider id=176]
+<div class="slider-container">
+  <?php
+  echo do_shortcode("[metaslider id=176]");
+  ?>
 </div>
 <div class="text-container">
-    [acf field="onze_visie-text2"]
+  <p>
+    <?php the_field("onze_visie-text2") ?>
+  </p>
 </div>
-
-<?php get_footer(); ?>
