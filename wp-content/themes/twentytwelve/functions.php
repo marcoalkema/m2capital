@@ -160,6 +160,9 @@ function twentytwelve_scripts_styles() {
 
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );
 
+  wp_enqueue_script( 'utils_js', get_template_directory_uri() . '/js/utils.js' );
+
+
   // Loads the Internet Explorer specific stylesheet.
   wp_enqueue_style( 'twentytwelve-ie', get_template_directory_uri() . '/css/ie.css', array( 'twentytwelve-style' ), '20121010' );
   $wp_styles->add_data( 'twentytwelve-ie', 'conditional', 'lt IE 9' );

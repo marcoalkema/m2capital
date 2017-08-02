@@ -1,4 +1,4 @@
-<div class="template-page-content">
+<div id="intro-content" class="template-page-content">
   <h2 class="main-title font-blue">
     <?php the_field("intro_title", 7); ?>
   </h2>

@@ -52,7 +52,9 @@
    </h3>
 
    <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
-
+   <div class="facebook-icon">
+     <img src="<?php echo get_template_directory_uri(); ?>/images/fb.png" height="30" width="30"/>
+   </div>
    </nav><!-- #site-navigation -->
 
    </header><!-- #masthead -->

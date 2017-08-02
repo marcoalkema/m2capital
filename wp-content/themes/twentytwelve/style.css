@@ -544,8 +544,8 @@ a:hover {
 
 /* Header */
 .site-header {
-	padding: 24px 0;
-	padding: 1.714285714rem 0;
+	/* padding: 24px 0; */
+	/* padding: 1.714285714rem 0; */
 }
 .site-header h1,
 .site-header h2 {
@@ -632,6 +632,7 @@ a:hover {
   height: auto;
   display: table;
   width: 100%;
+  height: 113px;
   text-align: center; }
 
 .main-navigation li {
@@ -1599,7 +1600,7 @@ img#wpstats {
 	}
 	.main-navigation li {
 		margin: 0 18px 0 18px;
-		margin: 0 0.4rem 0 0.4rem;
+		margin: 0 0.3rem 0 0.3rem;
 		position: relative;
 	}
 	.main-navigation li ul {
@@ -2208,8 +2209,14 @@ i.icon3 {
 }
 .overlay {
   position: relative;
-  width: 100%; }
-
+  width: 100%;
+  height: 700px;
+  overflow: hidden;
+  margin-top: 113px;
+}
+.overlay-image {
+  width: 100%;
+}
 .overlay-title {
   position: absolute;
   text-align: center;
@@ -2218,12 +2225,25 @@ i.icon3 {
   right: 0;
   top: 0;
   bottom: 0;
-  margin-top: 20%;
+  margin-top: 260px;
   color: #fff; }
 
 .overlay-title-container {
-  width: 40%;
-  margin: 0 30% 0 30%; }
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+.overlay-arrow-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: 490px;
+}
+.overlay-arrow-container a > img {
+  width: 14%;
+  margin: 0 43% 0 43%;;
+}
 
 .template-overlay-title {
   position: absolute;
@@ -2331,7 +2351,7 @@ i.icon3 {
   margin: 0 auto;
 }
 .wat-doen-wij-container, .wat-doen-wij-container-extra {
-  width: 70%;
+  width: 67%;
   margin: 0 auto;
   padding: 5% 0 5% 0;
 }
@@ -2573,7 +2593,7 @@ h2.tarieven {
 }
 #landing-overlay-title {
   text-transform: uppercase;
-  font-size: 4.2rem;
+  font-size: 6.4rem;
   font-family: sisterSpray;
   line-height: 2;
 }
@@ -2671,4 +2691,239 @@ h2.tarieven {
   margin-top: 4%;
   margin-bottom: 4%;
   padding-left: 4%;
+}
+.facebook-icon {
+  padding-right: 2.5%;
+  display: table-cell;
+  vertical-align: middle;
+}
+.tmm_member {
+  height: 300px;
+  position: relative;
+  background-image: url("images/Kids-Graffiti.jpg");
+  background-position: 3% 3%;
+}
+.tmm-text-box-container {
+  padding: 30px 17px;
+  display: none;
+  background: white;
+  opacity: 0.8;
+  width: 100%;
+  height: 100%;
+  color: #666;
+  overflow: hidden;
+}
+.tmm-text-box-container > tmm_names:empty{
+  background: red;
+}
+.tmm-text-box {
+  background: transparent;
+  height: 75%;
+  width: 90%;
+  margin: 15% 5% 15% 5%;
+}
+
+.tmm-card:hover .tmm-text-box-container {
+  display: inline-block;
+}
+.tmm_names {
+  text-transform: uppercase;
+  font-family: sisterSpray;
+}
+.tmm_job {
+  font-size: 16px;
+}
+.tmm_desc {
+  text-align: left;
+}
+.team-leden-container {
+  margin: 0 7.5% 0 7.5%;
+}
+.tt-row {
+  height: 100%;
+  overflow: hidden;
+}
+.tt-row > img {
+  width: 100%;
+}
+.tt-row-col {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.tt-row-col > img {
+  height: 100%;
+}
+.tt-col {
+  height: 385px;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+.ot-row {
+  overflow: hidden;
+}
+.half-cell {
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
+.half-cell-container {
+  height: 100%;
+  overflow: hidden;
+}
+.half-cell > img {
+  width: 100%;
+}
+.half-fst {
+  margin-top: 12px;
+  padding-bottom: 12px;
+}
+.sixth-cell {
+  position:relative;
+  height: 16.7%;
+  overflow: hidden;
+  padding-bottom: 6px;
+}
+.sixth-cell > img {
+  width: 100%
+}
+.third-cell {
+  position:relative;
+  height: 33.3%;
+  overflow: hidden;
+  margin: 12px 0 0 0;
+}
+.third-cell-snd  {
+  margin: 12px 0 12px; 0;
+}
+.third-cell  > img {
+  height: 100%
+}
+.fst-row {
+  height: 1220px;
+  padding-bottom: 6px;
+}
+.fst {
+  height: 100%;
+  overflow: hidden;
+  padding-bottom: 12px;
+}
+.fst-snd-row {
+  height: 485px;
+}
+.snd-row {
+  height: 400px;
+  padding-right: 12px;
+}
+.trd-col {
+  height: 400px;
+}
+.portfolio-container {
+  margin: 0% 10% 7% 10%;
+}
+.wh {
+  overflow: hidden;
+}
+.portfolio-container .col-lg-4,
+.portfolio-container .col-lg-8,
+.portfolio-container .col-lg-12
+{
+  margin: 0;
+  padding: 0;
+}
+.portfolio-container .row {
+}
+.portfolio-container .tt-row {
+  padding: 6px 12px 6px 12px;
+}
+.portfolio-container .tt-row-full {
+  padding: 0px 12px 12px 12px;
+  margin-bottom: 12px;
+}
+.portfolio-container .tt-row-col {
+  padding: 0px 12px 0px 12px;
+}
+.portfolio-container .fst-right {
+  height: 100%;
+  padding: 0px 12px 0px 12px;
+}
+.portfolio-container .tt-row-12 {
+  margin: 6px 12px 12px 0;
+  padding: 0;
+}
+.portfolio-container .trd-col {
+  padding: 12px 12px 0px 0px;
+}
+.portfolio-container .trd-col > .tt-row {
+  padding: 0;
+}
+.portfolio-container .trd-col > .tt-row-col {
+  padding: 0;
+  border-right: 12px solid white;
+  /* padding: 6px 12px 0px 0px; */
+}
+.row-col-border > img {
+  height: 100%;
+}
+.portfolio-container .row-col-border {
+  height: 100%;
+  padding: 0;
+  border-left: 12px solid white;
+  overflow: hidden;
+  /* margin-bottom: 12px; */
+}
+.portfolio-text-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.portfolio-text-container:hover .portfolio-item-mask,
+.portfolio-text-container:hover .portfolio-item-text {
+  display: block;
+}
+.text-container-div {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.portfolio-item-mask {
+  display: none;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: green;
+  opacity: 0.7;
+}
+.text-container-div > .portfolio-item-text {
+  height: 30%;
+  display: none;
+  position: absolute;
+  opacity: 1;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-family: sisterSpray;
+  line-height: 1.8;
+  max-width: 90%;
+  /* width: 70%; */
+  /* margin: 0 auto; */
+  /* vertical-align: middle; */
+  /* text-align: center!important; */
+  /* transform: translateY(50%); */
+  /* -webkit-transform: translateY(50%); */
+  /* -ms-transform: translateY(50%); */
+}
+.card-img-top {
+  width: 50%;
+}
+.card-text {
+  margin: 0!important;
+  padding: 0!important;
 }

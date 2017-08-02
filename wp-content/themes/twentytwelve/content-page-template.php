@@ -36,6 +36,7 @@ get_header(); ?>
       <?php if( get_the_ID() == 242): get_template_part("over-ons", "part"); endif; ?>
       <?php if( get_the_ID() == 30): get_template_part("kwaliteit", "part"); endif; ?>
       <?php if( get_the_ID() == 32): get_template_part("tarieven", "part"); endif; ?>
+      <?php if( get_the_ID() == 17): get_template_part("portfolio", "part"); endif; ?>
     </div>
     <div id="contact" class="contact-form-small contact_form-<?php the_ID(); ?>">
       <div class="contact-title-container">
