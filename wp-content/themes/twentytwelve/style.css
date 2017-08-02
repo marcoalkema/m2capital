@@ -289,20 +289,20 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 article.post-password-required input[type=submit]:hover {
-	color: #5e5e5e;
-	background-color: #ebebeb;
-	background-repeat: repeat-x;
-	background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb);
-	background-image: linear-gradient(top, #f9f9f9, #ebebeb);
+	color: #ccc;
+	/* background-color: #ebebeb; */
+	/* background-repeat: repeat-x; */
+	/* background-image: -moz-linear-gradient(top, #f9f9f9, #ebebeb); */
+	/* background-image: -ms-linear-gradient(top, #f9f9f9, #ebebeb); */
+	/* background-image: -webkit-linear-gradient(top, #f9f9f9, #ebebeb); */
+	/* background-image: -o-linear-gradient(top, #f9f9f9, #ebebeb); */
+	/* background-image: linear-gradient(top, #f9f9f9, #ebebeb); */
 }
 button:active,
 input[type="submit"]:active,
 input[type="button"]:active,
 input[type="reset"]:active {
-	color: #757575;
+	color: #ccc;
 	background-color: #e1e1e1;
 	background-repeat: repeat-x;
 	background-image: -moz-linear-gradient(top, #ebebeb, #e1e1e1);
@@ -639,8 +639,8 @@ a:hover {
   float: right;
   margin-top: 24px;
   margin-top: 1.714285714rem;
-  font-size: 16px;
-  font-size: 0.857142857rem;
+  font-size: 18px;
+  font-size: 0.957142857rem;
   line-height: 1.42857143;
 }
 .main-navigation a {
@@ -878,7 +878,7 @@ article.sticky .featured-post {
 }
 .entry-content a:visited,
 .comment-content a:visited {
-	color: #9f9f9f;
+	/* color: #9f9f9f; */
 }
 .entry-content ol,
 .comment-content ol,
@@ -1190,7 +1190,6 @@ article.format-link .entry-content a {
 	line-height: 1.090909091;
 	text-decoration: none;
 }
-
 /* Quote posts */
 article.format-quote .entry-content p {
 	margin: 0;
@@ -1592,7 +1591,8 @@ img#wpstats {
 		line-height: 1.692307692;
 		text-transform: uppercase;
 		white-space: nowrap;
-                font-size: 21px;
+                font-size: 22px;
+                font-size: 1.65em;
 	}
 	.main-navigation li a:hover,
 	.main-navigation li a:focus {
@@ -2225,7 +2225,7 @@ i.icon3 {
   right: 0;
   top: 0;
   bottom: 0;
-  margin-top: 260px;
+  margin-top: 240px;
   color: #fff; }
 
 .overlay-title-container {
@@ -2238,7 +2238,7 @@ i.icon3 {
   right: 0;
   top: 0;
   bottom: 0;
-  margin-top: 490px;
+  margin-top: 450px;
 }
 .overlay-arrow-container a > img {
   width: 14%;
@@ -2263,23 +2263,40 @@ i.icon3 {
 .text-slider-post {
   padding: 0 20% 0 20%;
 }
-
-.text-slider-post > span {
+#text-slider {
+  margin-top: 2%;
+}
+#text-slider .text-slideshow article span {
+  text-transform: uppercase;
   text-align: right;
+  font-size: 14px!important;
+  font-family: sisterSpray;
+  color: #888!important;
+  line-height: 5;
+}
+
+#text-slider .text-slideshow article {
+  color: grey!important;
+  line-height: 1.5;
 }
 
 .prev {
   position: absolute;
   top: 20px;
-  left: 0;
+  left: 7%;
 }
-
+.prev > i {
+  color: grey;
+}
 .next {
   position: absolute;
   top: 20px;
-  right: 0;
+  right: 7%;
+  color: grey;
 }
-
+.next > i {
+  color: grey;
+}
 .contact-fields td {
   color: white;
   text-transform: uppercase;
@@ -2295,15 +2312,82 @@ i.icon3 {
 .page-header-image {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 450px;
   background: #ddd;
   overflow: hidden;
 }
-.wat-doen-wij-button {
-  height: 100px;
-  width: 100px;
+.wat-doen-wij-buttons-container {
+  width: 90%;
+  margin: 0 auto!important;
+}
+.wat-doen-wij-button-container {
+  padding: 40px;
+  overflow: hidden;
+}
+.wat-doen-wij-button-field-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.wat-doen-wij-button-field {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 86%;
+  width: 90%;
   margin: 0 auto;
-  background: #bbb;
+  transform: translateY(7%);
+  -webkit-transform: translateY(7%);
+  -ms-transform: translateY(7%);
+  background: white;
+  opacity: 0.8;
+  z-index: 4;
+}
+.wat-doen-wij-button {
+  position: relative;
+  margin: 5%;
+  height: 310px;
+  width: 490px;
+  margin: 0 auto;
+  background-image: url("./images/Kids-Graffiti.jpg");
+  background-position: 28% 3%;
+}
+.wat-doen-wij-button-field-container > h2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(15%);
+  -webkit-transform: translateY(15%);
+  -ms-transform: translateY(15%);
+  z-index: 5;
+}
+.wat-doen-wij-button-field-container > p {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(77%);
+  -webkit-transform: translateY(77%);
+  -ms-transform: translateY(77%);
+  z-index: 5;
+  text-align: center;
+}
+
+.wat-doen-wij-button-field-container > .wat-doen-wij-link-text {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: 0 10% 0 10%;
+  width: 80%;
+  transform: translateY(45%);
+  -webkit-transform: translateY(45%);
+  -ms-transform: translateY(45%);
+  z-index: 5;
 }
 .contact-form-small {
   height: 300px;
@@ -2365,9 +2449,9 @@ i.icon3 {
 }
 
 .contact-compact-submit > input {
+  height: 25px;
   display: block;
   margin: 0 auto;
-  padding:5px 15px;
   border:0 none;
   color: white;
 }
@@ -2483,6 +2567,11 @@ i.icon3 {
 #main-title-32 {
   width: 70%;
   color: #00ff00;
+  padding-top: 5%;
+
+}
+#main-title-32 > h2 {
+  line-height: 2;
 }
 
 /* VOORWAARDEN */
@@ -2506,6 +2595,9 @@ i.icon3 {
 
 .font-blue {
   color: #0049ff;
+}
+.font-turquoise {
+  color: #00f2da;
 }
 
 .font-red {
@@ -2540,7 +2632,7 @@ i.icon3 {
 }
 .template-page-title {
   position: relative;
-  top: 50%;
+  top: 60%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -2550,11 +2642,12 @@ i.icon3 {
 }
 .band-container {
   width: 100%;
-  padding: 60px 0 20px 0;
+  padding: 40px 0 20px 0;
 }
 
 .band-container > img {
   height: 270px;
+  width: 100%;
 }
 .slider-container {
   margin: 0 0 120px 0;
@@ -2571,8 +2664,25 @@ h2.tarieven {
 .more-info-btn {
   background: white;
   color: #000;
-  padding: 0 5px 0 5px;
   text-decoration: underline;
+  border-radius: 5px;
+  /* padding: 0 25px 0 25px; */
+  padding: 0;
+  min-width: 120px;
+  text-decoration: underline;
+  font-size: 16px;
+}
+#contact-compact-submit-19 > input {
+  text-decoration: underline;
+  border-radius: 5px;
+  padding: 0;
+  min-width: 120px;
+  text-decoration: underline;
+  font-size: 16px!important;
+  color: #ddd;
+}
+.more-info-btn > a{
+  color: #fff;
 }
 .space-btn {
   margin-bottom: 70px;
@@ -2580,12 +2690,19 @@ h2.tarieven {
 .btn-red {
   background: #ff0000;
   color: #fff;
-  padding: 0 5px 0 5px;
-  text-decoration: underline;
+}
+.btn-blue {
+  background: #0049ff;
+  color: #fff;
+}
+.btn-turquoise {
+  background: #00f2da;
+  color: #fff;
 }
 #colophon {
   background: #eee;
-  font-size: 12px;
+  color: #555;
+  font-size: 20px;
   padding: 5px 100px 5px 100px;
 }
 #colophon p {
@@ -2598,13 +2715,16 @@ h2.tarieven {
   line-height: 2;
 }
 #bandContainer {
-  height: 140px;
+  margin-top: -2%;
+  height: 400px;
+  overflow: hidden;
 }
 .bandImgContainer {
   padding: 0!important;
 }
 .bandImg {
   width: 100%;
+  padding: 0 2px 0 2px;
 }
 .contact-page {
   background: #666666;
@@ -2634,14 +2754,9 @@ h2.tarieven {
   width: 80%;
   margin: 0 auto;
 }
-
-.contact-large input {
-  width: 100%;
-  height: 30px;
-}
 #contact-compact-submit-19 > input {
   background: #ff00ff;
-  color: #fff;
+  color: #eee;
   width: auto;
   /* padding: 0 5px 0 5px; */
   text-decoration: underline;
@@ -2693,7 +2808,7 @@ h2.tarieven {
   padding-left: 4%;
 }
 .facebook-icon {
-  padding-right: 2.5%;
+  padding-right: 2%;
   display: table-cell;
   vertical-align: middle;
 }
@@ -2926,4 +3041,19 @@ h2.tarieven {
 .card-text {
   margin: 0!important;
   padding: 0!important;
+}
+a {
+  cursor: pointer;
+  text-decoration: none!important;
+}
+.rates-table {
+  width: 25%;
+  margin: 0 auto;
+  margin-bottom: 4%;
+}
+.rates-table td {
+  color: #000!important;
+}
+.rates-table tr:first-child td {
+  font-weight: 900!important;
 }
