@@ -8,9 +8,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[0]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[0]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>
@@ -23,9 +21,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[1]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[1]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>
@@ -38,9 +34,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[2]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[2]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>
@@ -55,9 +49,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[3]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[3]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>
@@ -70,9 +62,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[4]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[4]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>
@@ -85,9 +75,7 @@
             <h4 class="card-title">
               <?php echo get_field('activiteiten', 132)[5]['activiteit']?>
             </h4>
-            <p class="card-text">
               <?php echo get_field('activiteiten', 132)[5]['omschrijving']?>
-            </p>
           </div>
         </div>
       </div>

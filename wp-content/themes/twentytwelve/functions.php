@@ -581,7 +581,7 @@ add_shortcode("posts", "posts_callback");
 
 function mkGoogleMap () {
   $contactMap = get_field('contact_map', 19);
-  echo '<iframe width="800" height="250" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:1px solid black" allowfullscreen ></iframe>';
+  echo '<iframe width="550" height="300" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:2px solid black" allowfullscreen ></iframe>';
 }
 add_shortcode('my_google_map', 'mkGoogleMap');
 

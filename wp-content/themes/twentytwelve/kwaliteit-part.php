@@ -5,9 +5,16 @@
 
 
 get_header(); ?>
-
+<div class="beleidsplan">
+  <p class="download-button-text">
+    Download hier het pedagogisch bedrijfsplan:
+  </p>
+  <a target="_blank" href="<?php the_field('beleidsplan-pdf') ?>">
+    <button class="more-info-btn btn-red">DOWNLOAD</button>
+  </a>
+</div>
 <div class="band-container">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/band.png" class="overlay"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/images/band.png"/>
 </div>
 <div class="onze-visie-title">
   <h2>
@@ -21,7 +28,7 @@ get_header(); ?>
 </div>
 <div class="slider-container">
   <?php
-  echo do_shortcode("[metaslider id=176]");
+  echo do_shortcode("[metaslider id=491]");
   ?>
 </div>
 <div class="text-container">

@@ -53,7 +53,9 @@
 
    <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
    <div class="facebook-icon">
-     <img src="<?php echo get_template_directory_uri(); ?>/images/fb.png" height="30" width="30"/>
+     <a href="http://<?php the_field('facebook-link', 5) ?>" target="_blank">
+       <img src="<?php echo get_template_directory_uri(); ?>/images/fb.png" height="30" width="30" class="img-responsive"/>
+     </a>
    </div>
    </nav><!-- #site-navigation -->
 

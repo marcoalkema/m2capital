@@ -11,10 +11,9 @@ window.onload = function () {
       }
     }
     if (x[i].innerHTML === '') {
-      x[i].parentNode.style.background = 'transparent'
+      console.log(x[i].parentNode.parentNode.childNodes[0].style.background = 'transparent')
     }
     x[i].parentNode.parentNode.parentNode.style.backgroundImage = 'url("./images/Kids-Graffiti.jpg");'
     x[i].parentNode.parentNode.parentNode.style.backgroundPosition = (3 + (index * 25)) + '% ' + upper()
-    console.log(x[i].parentNode.parentNode.parentNode.style)
   }
 }

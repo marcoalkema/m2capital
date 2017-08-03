@@ -12,17 +12,17 @@
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
           <div class="row">
-            <div class="col-lg-6">
-              <p>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+              <p class="site-information">
                 © COPYRIGHT 2017, BSO KIDSART
               </p>
             </div>
-            <div class="col-lg-6">
-              <a class="footer-link">HOME</a>
+            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
+              <a href="/" class="footer-link">HOME</a>
               |
-              <a class="footer-link">ALGEMENE VOORWAARDEN</a>
+              <a href="/voorwaarden" class="footer-link">ALGEMENE VOORWAARDEN</a>
               |
-              <a>NETWERK</a>
+              <a href="/ons-netwerk" >NETWERK</a>
             </div>
           </div>
 	</footer>
