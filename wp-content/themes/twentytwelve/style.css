@@ -673,7 +673,11 @@ a:hover {
 }
 .main-navigation ul.nav-menu.toggled-on,
 .menu-toggle {
-  float: right;
+  position: absolute;
+  right:0;
+  top: 0;
+  bottom: 0;
+  /* float: right; */
   margin-top: 1%;
   margin-right: 3%;
 }
@@ -845,7 +849,7 @@ article.sticky .featured-post {
 .comment-content h1 {
   /* padding-left: 3.6%; */
   text-transform: uppercase;
-  font-size: 4.2rem;
+  font-size: 4.5vw;
   font-family: sisterSpray;
   padding-top: 2.5%;
 }
@@ -1971,14 +1975,15 @@ i.icon3 {
 .text-slider-post {
   padding: 0 20% 0 20%;
 }
+
 #text-slider {
   margin-top: 2%;
 }
 #text-slider .text-slideshow article span {
   text-transform: uppercase;
   text-align: right;
-  font-size: 14px!important;
   font-family: sisterSpray;
+  font-size: 2vw!important;
   color: #888!important;
   line-height: 5;
 }
@@ -2139,7 +2144,7 @@ i.icon3 {
 }
 .main-title {
   display: inline-block;
-  padding-top: 5%;
+  padding-top: 2%;
   text-transform: uppercase;
   font-family: sisterSpray;
   width: 66%;
@@ -2156,7 +2161,7 @@ i.icon3 {
 .wat-doen-wij-container, .wat-doen-wij-container-extra {
   width: 67%;
   margin: 0 auto;
-  padding: 5% 0 0 0;
+  padding: 0 0 0 0;
 }
 .contact-compact-label > span > input {
   border: 2px solid black;
@@ -2184,7 +2189,6 @@ i.icon3 {
   margin: 0 auto;
   border:0 none;
 }
-
 
 /* OVER ONS */
 #contact-compact-submit-132 > input[type=submit] {
@@ -2693,6 +2697,9 @@ h2.tarieven {
 .half-cell > img {
   width: 100%;
 }
+.half-fst > img {
+  height: 100%;
+}
 .half-fst {
   margin-top: 12px;
   padding-bottom: 12px;
@@ -2830,7 +2837,7 @@ h2.tarieven {
   font-size: 18px;
   font-family: sisterSpray;
   line-height: 1.8;
-  max-width: 90%;
+  max-width: 80%;
   /* width: 70%; */
   /* margin: 0 auto; */
   /* vertical-align: middle; */
@@ -2892,7 +2899,19 @@ a {
 .metaslider-176 {
   margin-bottom: 90px!important;
 }
-
+#intro-content {
+  margin-top: 5vw!important;
+}
+#intro-content h2 {
+  margin-bottom: 10px;
+}
+#quotes-short {
+  margin-top: 40px;
+}
+#oudercommisie-h2 {
+  margin-top: -1%;
+  background: #b3b3b3;
+}
 
 /* =Media queries
 -------------------------------------------------------------- */
@@ -3157,6 +3176,12 @@ a {
   .contact-form-small-container span {
     width: 45%!important;
   }
+  .portfolio-item-text {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 14px!important;
+    line-height: 3!important;
+  }
 }
 
 @media screen and (max-width : 770px) {
@@ -3170,8 +3195,14 @@ a {
   .page-title-container h1 {
     font-size: 3.5rem;
   }
+  .entry-content h1 {
+    font-size: 3.5vw!important;
+  }
+  .portfolio-item-text {
+    font-size: 14px!important;
+    line-height: 3!important;
+  }
 }
-
 
     /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
@@ -3189,6 +3220,42 @@ a {
       font-size: 2.6rem;
       line-height: 2;
     }
+    .portfolio-item-text {
+      font-size: 14px!important;
+      line-height: 3!important;
+    }
+    #main-text-32 {
+      padding-bottom: 0;
+    }
+    #main-text-32 p {
+      padding-bottom: 0;
+    }
+    .text-slider-post {
+      font-size: 4vw!important;
+    }
+    #text-slider .text-slideshow article span {
+      font-size: 1vw!important;
+    }
+}
+
+@media screen and (max-width : 767px) {
+  .portfolio-item-text {
+    font-size: 21px!important;
+    line-height: 3!important;
+    }
+  .col-0 {
+    display: none;
+  }
+  .half-cell {
+    height: 100%;
+  }
+  .half-fst {
+    display: none;
+    height: 0%;
+  }
+  .fst-row img {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width : 700px) {
@@ -3223,13 +3290,22 @@ a {
   .facebook-icon {
     display: none;
   }
+  .portfolio-item-text {
+    font-size: 14px!important;
+  }
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+  p {
+    font-size: 0.7em!important;
+  }
   #colophon {
     font-size: 4vw!important;
     padding: 5px 20px 5px 20px;
+  }
+  #colophon a {
+    font-size: 0.7em!important;
   }
   .wat-doen-wij-button-container {
     padding: 2% 5% 2% 5%;
@@ -3245,8 +3321,70 @@ a {
     background: #ddd;
     overflow: hidden;
   }
+  .page-title-container {
+    width: 90%;
+  }
+  .entry-content h1 {
+    font-size: 5vw!important;;
+  }
+  .half-cell {
+    height: 100%;
+  }
+  .half-cell img {
+    height: 100%;
+    width: auto;
+  }
+  .half-fst {
+    display: none;
+    height: 0%;
+  }
+  .fst-row  img {
+    margin-left: -20%;
+    width: auto;
+  }
+  .portfolio-container .trd-col {
+    padding-right: 0!important;
+  }
+  .portfolio-container .snd-row {
+    padding-right: 0!important;
+  }
+  .portfolio-container .trd-col .tt-row-col {
+    border: 0;
+  }
+  .portfolio-container .snd-row .tt-row-12 {
+    margin-right: 0;
+  }
+  .contact-title h3 {
+    font-size: 18px;
+  }
+  .main-title h2 {
+    font-size: 1em!important;
+  }
+  #header-logo {
+    padding-left: 0!important;;
+  }
+  #header-info {
+    width: 100%;
+  }
+  .prev {
+    top: -20px;
+  }
+  .next {
+    top: -20px;
+  }
+  .contact-text p {
+    padding: 0;
+  }
+  .more-info-btn {
+    font-size: 12px;
+    min-width: 105px;
+    margin-bottom: 5px;
+  }
+  #oudercommisie-h2 {
+    line-height: 0;
+    background: #b3b3b3;
+  }
 }
-
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {

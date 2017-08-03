@@ -24,7 +24,7 @@ get_header(); ?>
   <img src="<?php echo get_template_directory_uri(); ?>/images/rand2.png" class="breakImg"/>
 </div>
 <div class="template-container grey-body">
-  <h2>
+  <h2 id="oudercommisie-h2">
     <?php the_field("oudercommisie-title"); ?>
   </h2>
   <div class="text-container">

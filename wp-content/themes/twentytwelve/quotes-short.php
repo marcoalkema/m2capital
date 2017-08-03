@@ -1,4 +1,4 @@
-<div class="template-page-content">
+<div id="quotes-short" class="template-page-content">
   <h2 class="main-title font-green">
     <?php the_field("quotes_title", 13); ?>
   </h2>
