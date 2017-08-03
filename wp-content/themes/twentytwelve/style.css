@@ -59,6 +59,7 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 @font-face {
     font-family: GillSans;
     src: url(fonts/GillSans.ttf);
+    src: local(GillSans), url("GillSans.ttf");
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -69,6 +70,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 	vertical-align: baseline;
         color: #666666;
         font-family: GillSans;
+        -webkit-box-sizing:border-box; /* Safari */
 }
 body {
 	line-height: 1;
@@ -583,13 +585,15 @@ a:hover {
   height: 100%;
   width: 20%;
   display: inline-block;
+  margin-left: -5px;
   margin: 0 auto;
   /* width: 100%; */
 }
 #header-logo {
   height: 100%;
   width: 100%;
-  padding-left: 38px;
+  padding-left: 0px;
+  margin-left: -25px;
   /* float: left; */
   display: inline-block;
 }
@@ -646,9 +650,9 @@ a:hover {
   left: 0;
   z-index: 99;
   height: auto;
-  display: table;
+  /* display: table; */
   width: 100%;
-  height: 5vw;
+  /* height: 5vw; */
   text-align: center; }
 
 .main-navigation li {
@@ -1902,7 +1906,7 @@ i.icon3 {
 }
 .menu-primary-container {
   height: 100%;
-  padding-left: 85px;
+  padding-left: 0px;
   display: inline-block;
   transform: translateY(50%);
   -webkit-transform: translateY(50%);
@@ -1983,7 +1987,7 @@ i.icon3 {
   text-transform: uppercase;
   text-align: right;
   font-family: sisterSpray;
-  font-size: 2vw!important;
+  font-size: 1.3vw!important;
   color: #888!important;
   line-height: 5;
 }
@@ -2331,7 +2335,7 @@ i.icon3 {
   color: #00f2da;
 }
 #main-title-269 > h2 {
-  line-height: 2.1;
+  line-height: 1.6;
 }
 .font-pink {
   color: #ff00ff;
@@ -2357,6 +2361,7 @@ i.icon3 {
 .text-container {
   width: 66%;
   margin: 0 auto;
+  padding-top: 15px;
   padding-bottom: 20px;
   text-align: left;
   font-size: 18px;
@@ -2371,9 +2376,6 @@ i.icon3 {
 }
 .grey-body > div > p {
   color: white;
-}
-
-.template-container {
 }
 .page-title-container {
   position: absolute;
@@ -2397,7 +2399,7 @@ i.icon3 {
 }
 .band-container {
   width: 100%;
-  padding: 40px 0 20px 0;
+  padding: 40px 0 40px 0;
 }
 
 .band-container > img {
@@ -2594,6 +2596,9 @@ h2.tarieven {
   padding-left: 4%;
 }
 .facebook-icon {
+  position: absolute;
+  top: 40%;
+  right: 0;
   padding-right: 3vw;
   display: table-cell;
   vertical-align: middle;
@@ -2900,7 +2905,7 @@ a {
   margin-bottom: 90px!important;
 }
 #intro-content {
-  margin-top: 5vw!important;
+  padding-top: 5vw!important;
 }
 #intro-content h2 {
   margin-bottom: 10px;
@@ -2992,7 +2997,7 @@ a {
 		text-transform: uppercase;
 		white-space: nowrap;
                 font-size: 21px;
-                font-size: 1.5em;
+                font-size: 1.52em;
 	}
 	.main-navigation li a:hover,
 	.main-navigation li a:focus {
@@ -3104,14 +3109,6 @@ a {
 		margin-left: 48px;
 		margin-left: 3.428571429rem;
 	}
-}
-
-@media screen and (min-width: 110px) {
-  .facebook-icon {
-    padding-right: 2vw;
-  }
-
-
 }
 
 /* Minimum width of 960 pixels. */
@@ -3274,6 +3271,9 @@ a {
   }
   .template-page-title {
     line-height: 2.3!important;
+  }
+  #header-logo {
+    padding: 0;
   }
   #header-logo  a  img {
     height: 60px!important;
