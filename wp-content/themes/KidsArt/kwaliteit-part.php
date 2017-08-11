@@ -21,7 +21,7 @@ get_header(); ?>
     <?php the_field("onze_visie-title") ?>
   </h2>
 </div>
-<div class="text-container">
+<div class="text-container space-text">
   <p>
     <?php the_field("onze_visie-text") ?>
   </p>
@@ -31,7 +31,7 @@ get_header(); ?>
   echo do_shortcode("[metaslider id=491]");
   ?>
 </div>
-<div class="text-container">
+<div class="text-container space-text">
   <p>
     <?php the_field("onze_visie-text2") ?>
   </p>

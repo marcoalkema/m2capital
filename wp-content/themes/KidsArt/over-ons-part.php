@@ -10,7 +10,7 @@ get_header(); ?>
   <h2>
     <?php the_field("het_team-title"); ?>
   </h2>
-  <div class="text-container">
+  <div class="text-container space-text">
     <p>
       <?php the_field("het_team-text"); ?>
     </p>
@@ -27,7 +27,7 @@ get_header(); ?>
   <h2 id="oudercommisie-h2">
     <?php the_field("oudercommisie-title"); ?>
   </h2>
-  <div class="text-container">
+  <div class="text-container space-text">
     <p>
       <?php the_field("oudercommisie-text"); ?>
     </p>
@@ -37,10 +37,9 @@ get_header(); ?>
   <h2 class="font-pink">
     <?php the_field("stagiaires-title"); ?>
   </h2>
-  <div class="text-container">
+  <div class="text-container space-text">
     <p>
       <?php the_field("stagiaires-text"); ?>
     </p>
   </div>
-  <img src="<?php echo get_template_directory_uri(); ?>/images/rand2.png" class="breakImg"/>
 </div>

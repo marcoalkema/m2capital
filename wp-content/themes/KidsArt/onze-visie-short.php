@@ -7,5 +7,7 @@
       <?php the_field("onze_visie-text", 15); ?>
     </p>
   </div>
-  <button class="more-info-btn space-btn btn-red">MEER WETEN</button>
+  <a href="/kwaliteit">
+    <button class="more-info-btn space-btn btn-red">MEER WETEN</button>
+  </a>
 </div>

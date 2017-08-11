@@ -29,8 +29,10 @@
       <div class="col-lg-4 contact-fields">
         <?php do_shortcode('[my_contact_field]'); ?>
       </div>
-      <div class="col-lg-8">
-        <?php do_shortcode('[my_google_map]'); ?>
+      <div class="col-lg-8 gmap-container">
+        <div id="map-overlay" onClick="style.pointerEvents='auto'">
+          <?php do_shortcode('[my_google_map]'); ?>
+        </div>
       </div>
     </div>
 

@@ -66,11 +66,11 @@ function twentytwelve_setup() {
   // This theme uses wp_nav_menu() in one location.
   function register_my_menus() {
     register_nav_menus(
-                       array(
-                             'primary' => __( 'Primary' ),
-                             'secondary' => __( 'Secondary' )
-                             )
-                       );
+      array(
+        'primary' => __( 'Primary' ),
+        'secondary' => __( 'Secondary' )
+      )
+    );
   }
   add_action( 'init', 'register_my_menus' );
 
@@ -79,8 +79,8 @@ function twentytwelve_setup() {
    * and here we also set up the default background color.
    */
   add_theme_support( 'custom-background', array(
-                                                'default-color' => 'e6e6e6',
-                                                ) );
+    'default-color' => 'e6e6e6',
+  ) );
 
   // This theme uses a custom image size for featured images, displayed on "standard" posts.
   add_theme_support( 'post-thumbnails' );
@@ -227,59 +227,59 @@ add_filter( 'wp_page_menu_args', 'twentytwelve_page_menu_args' );
  */
 function twentytwelve_widgets_init() {
   register_sidebar( array(
-                          'name' => __( 'Main Sidebar', 'twentytwelve' ),
-                          'id' => 'sidebar-1',
-                          'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
-                          'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-                          'after_widget' => '</aside>',
-                          'before_title' => '<h3 class="widget-title">',
-                          'after_title' => '</h3>',
-                          ) );
+    'name' => __( 'Main Sidebar', 'twentytwelve' ),
+    'id' => 'sidebar-1',
+    'description' => __( 'Appears on posts and pages except the optional Front Page template, which has its own widgets', 'twentytwelve' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
   register_sidebar( array(
-                          'name' => __( 'First Front Page Widget Area', 'twentytwelve' ),
-                          'id' => 'sidebar-2',
-                          'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
-                          'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-                          'after_widget' => '</aside>',
-                          'before_title' => '<h3 class="widget-title">',
-                          'after_title' => '</h3>',
-                          ) );
+    'name' => __( 'First Front Page Widget Area', 'twentytwelve' ),
+    'id' => 'sidebar-2',
+    'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 
   register_sidebar( array(
-                          'name' => __( 'Second Front Page Widget Area', 'twentytwelve' ),
-                          'id' => 'sidebar-3',
-                          'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
-                          'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-                          'after_widget' => '</aside>',
-                          'before_title' => '<h3 class="widget-title">',
-                          'after_title' => '</h3>',
-                          ) );
+    'name' => __( 'Second Front Page Widget Area', 'twentytwelve' ),
+    'id' => 'sidebar-3',
+    'description' => __( 'Appears when using the optional Front Page template with a page set as Static Front Page', 'twentytwelve' ),
+    'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    'after_widget' => '</aside>',
+    'before_title' => '<h3 class="widget-title">',
+    'after_title' => '</h3>',
+  ) );
 }
 add_action( 'widgets_init', 'twentytwelve_widgets_init' );
 
 if ( ! function_exists( 'twentytwelve_content_nav' ) ) :
-  /**
-   * Displays navigation to next/previous pages when applicable.
-   *
-   * @since Twenty Twelve 1.0
-   */
-  function twentytwelve_content_nav( $html_id ) {
-    global $wp_query;
+                   /**
+                    * Displays navigation to next/previous pages when applicable.
+                    *
+                    * @since Twenty Twelve 1.0
+                    */
+                   function twentytwelve_content_nav( $html_id ) {
+                     global $wp_query;
 
-    $html_id = esc_attr( $html_id );
+                     $html_id = esc_attr( $html_id );
 
-    if ( $wp_query->max_num_pages > 1 ) : ?>
-      <nav id="<?php echo $html_id; ?>" class="navigation" role="navigation">
-         <h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
-                                                                                         <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentytwelve' ) ); ?></div>
-                                                                                                                                                                                                                            <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?></div>
-                                                                                                                                                                                                                                                                                                                                                               </nav><!-- #<?php echo $html_id; ?> .navigation -->
+                     if ( $wp_query->max_num_pages > 1 ) : ?>
+  <nav id="<?php echo $html_id; ?>" class="navigation" role="navigation">
+    <h3 class="assistive-text"><?php _e( 'Post navigation', 'twentytwelve' ); ?></h3>
+    <div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'twentytwelve' ) ); ?></div>
+    <div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'twentytwelve' ) ); ?></div>
+  </nav><!-- #<?php echo $html_id; ?> .navigation -->
                                                                                                                                                                                                                                                                                                                                                                                                       <?php endif;
                                                                                                                                                                                                                                                                                                                                                                                                       }
-endif;
+                                                                                                                                                                                                                                                                                                                                                                                                      endif;
 
-if ( ! function_exists( 'twentytwelve_comment' ) ) :
+                                                                                                                                                                                                                                                                                                                                                                                                      if ( ! function_exists( 'twentytwelve_comment' ) ) :
   /**
    * Template for comments and pingbacks.
    *
@@ -555,7 +555,7 @@ add_shortcode("posts", "posts_callback");
 
 function mkGoogleMap () {
   $contactMap = get_field('contact_map', 19);
-  echo '<iframe width="550" height="300" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:2px solid black" allowfullscreen ></iframe>';
+      echo '<iframe id="google-map" width="550" height="300" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:2px solid black" allowfullscreen scrollwheel=false></iframe>';
 }
 add_shortcode('my_google_map', 'mkGoogleMap');
 
@@ -645,67 +645,64 @@ function my_reverse_nav_menu($menu, $args) {
   return $menu;
 }
 
-add_action( 'pre_get_posts' ,'exclude_this_page' );
-function exclude_this_page( $query ) {
-  if( !is_admin() )
-    return $query;
+
+      function remove_core_updates(){
+        global $wp_version;return(object) array('last_checked'=> time(),'version_checked'=> $wp_version,);
+      }
+      add_filter('pre_site_transient_update_core','remove_core_updates');
+      add_filter('pre_site_transient_update_plugins','remove_core_updates');
+      add_filter('pre_site_transient_update_themes','remove_core_updates');
+
+
+      add_action( 'pre_get_posts' ,'exclude_this_page' );
+      function exclude_this_page( $query ) {
+      if( !is_admin() )
+      return $query;
   global $pagenow;
-  if( 'edit.php' == $pagenow && ( get_query_var('post_type') && 'page' == get_query_var('post_type') ) )
-    $query->set( 'post__not_in', array(4) ); // array page ids
-  return $query;
-}
+      if( 'edit.php' == $pagenow && ( get_query_var('post_type') && 'page' == get_query_var('post_type') ) )
+      $query->set( 'post__not_in', array(4) ); // array page ids
+      return $query;
+      }
 
-add_action( 'admin_menu', 'remove_menus' );
+      add_action( 'admin_menu', 'remove_menus' );
 
-add_action('admin_head', 'agentwp_dashboard_logo');
-function agentwp_dashboard_logo() {
-  echo '
+      add_action('admin_head', 'agentwp_dashboard_logo');
+      function agentwp_dashboard_logo() {
+      echo '
       <style type="text/css">
          #header-logo { background-image: url(images/logo.png) !important; }
       </style>
    ';
-}
+      }
 
-function remove_page_attribute_support() {
-  remove_post_type_support('page','page-attributes');
-}
-add_action( 'init', 'remove_page_attribute_support' );
+      function remove_page_attribute_support() {
+      remove_post_type_support('page','page-attributes');
+      }
+      add_action( 'init', 'remove_page_attribute_support' );
 
-function remove_page_attribute_meta_box()
-{
-  if( is_admin() ) {
-    if( current_user_can('editor') ) {
+      function remove_page_attribute_meta_box()
+      {
+      if( is_admin() ) {
+      if( current_user_can('editor') ) {
       remove_meta_box('pageparentdiv', 'page', 'normal');
-    }
-  }
-}
-add_action( 'admin_menu', 'remove_page_attribute_meta_box' );
+      }
+      }
+      }
+      add_action( 'admin_menu', 'remove_page_attribute_meta_box' );
 
-//hide Page
-function hide_buttons()
-{
+      //hide Page
+      function hide_buttons()
+      {
   global $current_screen;
 
-  if($current_screen->id == 'page');
-  {
-    echo '<style>.add-new-h2{display: none;}</style>';
-  }
+      if($current_screen->id == 'page');
+      {
+      echo '<style>.add-new-h2{display: none;}</style>';
+      }
 
-  // for posts the if statement would be:
-  // if($current_screen->id == 'edit-post' && !current_user_can('publish_posts'))
 }
-add_action('admin_head','hide_buttons');
+      add_action('admin_head','hide_buttons');
 
-// hide "add new" on wp-admin menu
-
-//add_filter( 'page_row_actions', 'wpse16327_page_row_actions', 10, 2 );
-//function wpse16327_page_row_actions( $actions, $post )
-//{
-//    if ( 'page' == $post->post_type ) {
-//        return array();
-//    }
-//    return $actions;
-//}
 
       function cf_post_id() {
         global $post;

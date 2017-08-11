@@ -3,7 +3,7 @@
     <?php the_field("intro_title", 7); ?>
   </h2>
 </div>
-<div class="text-container">
+<div class="text-container space-text">
   <p>
     <?php the_field("intro_text", 7); ?>
   </p>

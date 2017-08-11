@@ -20,7 +20,7 @@ get_header(); ?>
           <?php printf(get_field('main-title', get_the_ID())); ?>
         </h2>
       </div>
-      <div id="main-text-<?php the_ID(); ?>" class="main-text">
+      <div id="main-text-<?php the_ID(); ?>" class="main-text space-text">
         <p>
           <?php printf(get_field('main-text', get_the_ID())); ?>
         </p>
