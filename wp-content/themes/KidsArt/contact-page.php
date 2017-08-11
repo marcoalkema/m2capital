@@ -11,12 +11,7 @@
       </div>
     </div>
     <div class="contact-large">
-      <?php
-      $id=19;
-      $post = get_post($id);
-      $content = apply_filters('the_content', $post->post_content);
-      echo $content;
-      ?>
+      <?php echo do_shortcode( '[contact-form-7 id="277" title="Contact - Uitgebreid" html_id=the_ID()]' ); ?>
     </div>
     <div class="row">
       <div class="col-lg-4">

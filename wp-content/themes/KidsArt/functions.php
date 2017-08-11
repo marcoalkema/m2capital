@@ -560,10 +560,10 @@ function mkGoogleMap () {
 add_shortcode('my_google_map', 'mkGoogleMap');
 
 function mkContactField () {
-  $contactArray = get_field('contact_address', get_option('page_for_posts'));
+  $contactArray = get_field('contact_address', 19);
   $contactHTML = '<table>';
 
-  for ($x = 0; $x <= 6; $x++) {
+      for ($x = 0; $x <= 6; $x++) {
     $contactHTML = $contactHTML . '<tr><td>' . ($contactArray['body'][0][$x]['c']) . '</td></tr>';
   }
   echo $contactHTML . '</table>';

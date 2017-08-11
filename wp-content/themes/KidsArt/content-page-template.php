@@ -38,16 +38,7 @@ get_header(); ?>
       <?php if( get_the_ID() == 32): get_template_part("tarieven", "part"); endif; ?>
       <?php if( get_the_ID() == 17): get_template_part("portfolio", "part"); endif; ?>
     </div>
-    <div id="contact" class="contact-form-small contact_form-<?php the_ID(); ?>">
-      <div class="contact-title-container">
-        <div id="contact-title-<?php the_ID(); ?>" class="contact-title">
-          <h3>CONTACT OPNEMEN</h3>
-        </div>
-      </div>
-      <div class="contact-form-small-container">
-        <?php echo do_shortcode( '[contact-form-7 id="285" title="Contact - Compact" html_id=the_ID()]' ); ?>
-      </div>
-    </div>
+    <?php get_template_part("contact", "page"); ?>
   </div>
 </article>
 

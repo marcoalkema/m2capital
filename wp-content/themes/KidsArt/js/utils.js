@@ -1,21 +1,22 @@
 window.onload = function () {
-  var x = document.getElementsByClassName("tmm_names");
-  var i;
-  for (i = 0; i < x.length; i++) {
-    var index = i % 4
-    function upper () {
-      if (i > 3) {
-        return '3%'
-      } else {
-        return '53%'
-      }
-    }
-    if (x[i].innerHTML === '') {
-      console.log(x[i].parentNode.parentNode.childNodes[0].style.background = 'transparent')
-    }
-    x[i].parentNode.parentNode.parentNode.style.backgroundImage = 'url("./images/Kids-Graffiti.jpg");'
-    x[i].parentNode.parentNode.parentNode.style.backgroundPosition = (3 + (index * 25)) + '% ' + upper()
-  }
+  // var x = document.getElementsByClassName("tmm_names");
+  // var i;
+  // for (i = 0; i < x.length; i++) {
+  //   var index = i % 4
+  //   function upper () {
+  //     if (i > 3) {
+  //       return '3%'
+  //     } else {
+  //       return '53%'
+  //     }
+  //   }
+  //   if (x[i].innerHTML === '') {
+  //     console.log(x[i].parentNode.parentNode.childNodes[0].style.background = 'transparent')
+  //   }
+  //   // x[i].parentNode.parentNode.parentNode.style.backgroundImage = 'url("./images/Kids-Graffiti.jpg");'
+  //   // x[i].parentNode.parentNode.parentNode.style.backgroundPosition = (3 + (index * 25)) + '% ' + upper()
+  //   x[i].parentNode.parentNode.parentNode.style.backgroundColor = 'white;'
+  // }
 
   // you want to enable the pointer events only on click;
   var overlay = document.getElementById('map-overlay')
@@ -33,4 +34,25 @@ window.onload = function () {
     map.classList.add("scrolloff") // set the pointer events to none on doc ready
   })
 
+  var slideIndex = 3;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementById("headerSlider").childNodes;
+    for (i = 0; i < x.length; i++) {
+      if (i % 2 !== 0 && i < 6 && i !== 0) {
+        x[i].style.visibility = "hidden";
+        x[i].style.opacity = "0";
+        x[i].style.transition = "visibility 0s, opacity 1s linear";
+      }
+    }
+
+    slideIndex = slideIndex + 2;
+    if (slideIndex > 5) {slideIndex = 1}
+    x[(slideIndex)].style.visibility = "visible";
+    x[(slideIndex)].style.opacity = "1";
+    x[slideIndex].style.transition = "visibility 0s, opacity 1s linear";
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+  }
 }

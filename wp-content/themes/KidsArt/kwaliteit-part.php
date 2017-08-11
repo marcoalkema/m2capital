@@ -14,7 +14,7 @@ get_header(); ?>
   </a>
 </div>
 <div class="band-container">
-  <img src="<?php echo get_template_directory_uri(); ?>/images/band.png"/>
+  <img src="    <?php the_field("band-container-kwaliteit") ?>"/>
 </div>
 <div class="onze-visie-title">
   <h2>

@@ -22,6 +22,6 @@ get_header(); ?>
         <?php the_field("prijs_op_aanvraag-text") ?>
       </p>
     </div>
-    <button class="more-info-btn">MEER WETEN</button>
+    <button id="wat-doen-wij-button" class="more-info-btn space-btn">    <a href="mailto: info@kidsart.nl">MEER WETEN</a></button>
   </div>
 </div>
