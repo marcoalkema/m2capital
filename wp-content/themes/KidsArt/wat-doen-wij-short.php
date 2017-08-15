@@ -12,5 +12,5 @@
   <a href="/wat-doen-wij-2">
     <button class="more-info-btn space-btn">MEER WETEN?</button>
   </a>
-  <img src="<?php echo get_template_directory_uri(); ?>/images/rand1.png" class="breakImg"/>
+  <img src="<?php echo get_template_directory_uri(); ?>/images/rand1.svg" class="breakImg"/>
 </div>

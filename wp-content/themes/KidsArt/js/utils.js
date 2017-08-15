@@ -34,25 +34,47 @@ window.onload = function () {
     map.classList.add("scrolloff") // set the pointer events to none on doc ready
   })
 
-  var slideIndex = 3;
-  carousel();
+  // console.log('contact', document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].href='mailto:info@kidsart.nl')
 
-  function carousel() {
-    var i;
-    var x = document.getElementById("headerSlider").childNodes;
-    for (i = 0; i < x.length; i++) {
-      if (i % 2 !== 0 && i < 6 && i !== 0) {
-        x[i].style.visibility = "hidden";
-        x[i].style.opacity = "0";
-        x[i].style.transition = "visibility 0s, opacity 1s linear";
-      }
-    }
+  var img = document.createElement("IMG");
+  img.setAttribute('src', '../images/fb2.svg');
 
-    slideIndex = slideIndex + 2;
-    if (slideIndex > 5) {slideIndex = 1}
-    x[(slideIndex)].style.visibility = "visible";
-    x[(slideIndex)].style.opacity = "1";
-    x[slideIndex].style.transition = "visibility 0s, opacity 1s linear";
-    setTimeout(carousel, 5000); // Change image every 2 seconds
-  }
+  var fb_li = document.getElementById('menu-item-725')
+  fb_li.appendChild(img);
+
+
+  var contactInnerHTML = document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0]
+  console.log('foo', contactInnerHTML)
+
+  var link = document.createElement("A");
+  link.setAttribute('href','mailto:info@kidsart.nl');
+  link.text=document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML
+  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML=''
+  contactInnerHTML.appendChild(link);
+
+  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].classList.add("mail-link")
+
+  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[5].classList.add("LRK-number")
+
+  // var slideIndex = 3;
+  // carousel();
+
+  // function carousel() {
+  //   var i;
+  //   var x = document.getElementById("headerSlider").childNodes;
+  //   for (i = 0; i < x.length; i++) {
+  //     if (i % 2 !== 0 && i < 6 && i !== 0) {
+  //       x[i].style.visibility = "hidden";
+  //       x[i].style.opacity = "0";
+  //       x[i].style.transition = "visibility 0s, opacity 1s linear";
+  //     }
+  //   }
+
+  //   slideIndex = slideIndex + 2;
+  //   if (slideIndex > 5) {slideIndex = 1}
+  //   x[(slideIndex)].style.visibility = "visible";
+  //   x[(slideIndex)].style.opacity = "1";
+  //   x[slideIndex].style.transition = "visibility 0s, opacity 1s linear";
+  //   setTimeout(carousel, 5000); // Change image every 2 seconds
+  // }
 }

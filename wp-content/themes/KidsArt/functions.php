@@ -572,11 +572,13 @@ add_shortcode('my_contact_field', 'mkContactField');
 
 function mkRates () {
   $ratesArray = get_field('tarieven-table', get_option('page_for_posts'));
-
+  $length = count($ratesArray['body']);
   $ratesHTML = '<table>';
 
-  for ($x = 0; $x <= 6; $x++) {
-    $ratesHTML = $ratesHTML . '<tr><td>' . ($ratesArray['header'][$x]['c']) . '</td><td>' . ($ratesArray['body'][0][$x]['c']) . '</td></tr>';
+  for ($x = 0; $x < $length; $x++) {
+      /* $ratesHTML = $ratesHTML . '<tr><td>' . ($ratesArray['header'][$x]['c']) . '</td><td>' . ($ratesArray['body'][0][$x]['c']) . '</td></tr>';*/
+
+      $ratesHTML = $ratesHTML . '<tr><td>' . ($ratesArray['body'][$x][0]['c']) . '</td><td>' . ($ratesArray['body'][$x][1]['c']) . '</td></tr>';
   }
   echo $ratesHTML . '</table>';
 }
@@ -719,3 +721,14 @@ function my_reverse_nav_menu($menu, $args) {
         add_meta_box('projects_refid', 'Page ID', 'cf_post_id', 'page', 'side', 'high');
       }
       add_action('add_meta_boxes', 've_custom_meta_boxes');
+
+      function custom_wpautop($content) {
+        if (get_post_meta(132, 'wpautop', true) == 'false')
+          return $content;
+        else
+          return wpautop($content);
+      }
+
+      remove_filter('the_content', 'wpautop');
+      add_filter('the_content', 'custom_wpautop');
+      ?>

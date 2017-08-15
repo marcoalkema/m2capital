@@ -70,7 +70,7 @@
       </div>
 
       <div class="row tt-col">
-        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tt-row tt-row-full">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 tt-row-col tt-row-full">
           <img src="<?php echo get_field('portfolio-gallery')[4]['sizes']['large']; ?>"/>
           <div class="portfolio-text-container">
             <div class="text-container-div">

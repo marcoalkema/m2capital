@@ -13,23 +13,18 @@
     <div class="contact-large">
       <?php echo do_shortcode( '[contact-form-7 id="277" title="Contact - Uitgebreid" html_id=the_ID()]' ); ?>
     </div>
-    <div class="row">
-      <div class="col-lg-4">
-      </div>
-      <div class="col-lg-8 location-title">
-        <h3>ONZE LOCATIE</h3>
-      </div>
-    </div>
     <div class="row contact-details">
-      <div class="col-lg-4 contact-fields">
+      <div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 contact-fields">
         <?php do_shortcode('[my_contact_field]'); ?>
       </div>
-      <div class="col-lg-8 gmap-container">
+      <div class="col-6 col-sm-6 col-md-8 col-lg-8 col-xl-8 gmap-container">
+        <div class="location-title">
+          <h3>ONZE LOCATIE</h3>
+        </div>
         <div id="map-overlay" onClick="style.pointerEvents='auto'">
           <?php do_shortcode('[my_google_map]'); ?>
         </div>
       </div>
     </div>
-
   </div>
 </div>

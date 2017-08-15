@@ -51,14 +51,14 @@
 
    <h3 class="menu-toggle"><?php _e( '', 'twentytwelve' ); ?>
    <button class="menu-toggle" type="submit" style="border: 0; background: transparent">
-   <img src="/../wp-content/uploads/2017/07/menu-icon.png" width="50" height="28" alt="submit" />
+     <img src="<?php echo get_template_directory_uri(); ?>/images/menu.svg" width="40" height="40" alt="menu" />
    </button>
    </h3>
 
    <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
    <div class="facebook-icon">
      <a href="http://<?php the_field('facebook-link', 5) ?>" target="_blank">
-       <img src="<?php echo get_template_directory_uri(); ?>/images/fb.png" height="30" width="30" class="img-responsive"/>
+       <img src="<?php echo get_template_directory_uri(); ?>/images/KidsArt_FB.svg" height="30" width="30" class="img-responsive"/>
      </a>
    </div>
    </nav><!-- #site-navigation -->

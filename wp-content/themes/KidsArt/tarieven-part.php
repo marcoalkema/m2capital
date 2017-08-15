@@ -10,8 +10,11 @@ get_header(); ?>
   <div class="rates-table">
     <?php echo do_shortcode("[my_rates]") ?>
   </div>
+  <div class="text-container space-text">
+    <?php the_field("tarieven-tekst2") ?>
+  </div>
   <div class="rand-container-grey">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/rand2.png" class="breakImg"/>
+    <img src="<?php echo get_template_directory_uri(); ?>/images/rand2.svg" class="breakImg"/>
   </div>
   <div class="grey-body tarieven">
     <h2 class="tarieven">

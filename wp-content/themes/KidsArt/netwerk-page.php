@@ -25,20 +25,10 @@ get_header(); ?>
           <?php printf(get_field('main-text', get_the_ID())); ?>
         </p>
       </div>
-      <img src="<?php echo get_template_directory_uri(); ?>/images/rand1.png"/>
+      <img src="<?php echo get_template_directory_uri(); ?>/images/rand1.svg"/>
     </div>
     <?php get_template_part("ons-netwerk", "part"); ?>
-    <div id="contact" class="contact-form-small contact_form-<?php the_ID(); ?>">
-      <div class="contact-title-container">
-        <div id="contact-title-<?php the_ID(); ?>" class="contact-title">
-          <h3>CONTACT OPNEMEN</h3>
-        </div>
-      </div>
-      <div class="contact-form-small-container">
-        <?php echo do_shortcode( '[contact-form-7 id="285" title="Contact - Compact" html_id=the_ID()]' ); ?>
-      </div>
-    </div>
-  </div>
+    <?php get_template_part("contact", "page"); ?>
 </article>
 
 <?php get_footer(); ?>
