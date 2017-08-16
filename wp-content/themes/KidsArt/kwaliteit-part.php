@@ -6,11 +6,11 @@
 
 get_header(); ?>
 <div class="beleidsplan">
-  <p class="download-button-text">
-    Download hier het pedagogisch bedrijfsplan:
-  </p>
   <a target="_blank" href="<?php the_field('beleidsplan-pdf') ?>">
-    <button class="more-info-btn btn-red">DOWNLOAD</button>
+    <button class="more-info-btn btn-pink quality-btn">PEDAGOGISCH BELEIDSPLAN</button>
+  </a>
+  <a target="_blank" href="<?php the_field('inspectierapport-pdf') ?>">
+    <button class="more-info-btn btn-red quality-btn">INSPECTIERAPPORT</button>
   </a>
 </div>
 <div class="band-container">

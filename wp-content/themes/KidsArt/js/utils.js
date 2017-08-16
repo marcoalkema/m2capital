@@ -33,18 +33,7 @@ window.onload = function () {
   map.addEventListener("mouseout", function () {
     map.classList.add("scrolloff") // set the pointer events to none on doc ready
   })
-
-  // console.log('contact', document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].href='mailto:info@kidsart.nl')
-
-  var img = document.createElement("IMG");
-  img.setAttribute('src', '../images/fb2.svg');
-
-  var fb_li = document.getElementById('menu-item-725')
-  fb_li.appendChild(img);
-
-
   var contactInnerHTML = document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0]
-  console.log('foo', contactInnerHTML)
 
   var link = document.createElement("A");
   link.setAttribute('href','mailto:info@kidsart.nl');
@@ -55,6 +44,7 @@ window.onload = function () {
   document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].classList.add("mail-link")
 
   document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[5].classList.add("LRK-number")
+
 
   // var slideIndex = 3;
   // carousel();

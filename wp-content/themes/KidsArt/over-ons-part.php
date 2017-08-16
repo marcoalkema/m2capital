@@ -34,7 +34,7 @@ get_header(); ?>
   </div>
 </div>
 <div class="template-container">
-  <h2 class="font-pink">
+  <h2 class="stagiaires-title font-pink">
     <?php the_field("stagiaires-title"); ?>
   </h2>
   <div class="text-container space-text">

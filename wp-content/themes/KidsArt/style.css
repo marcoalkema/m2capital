@@ -2104,7 +2104,7 @@ ul.nav-menu.toggled-on {
 .contact-fields tr:nth-child(3) > td {
   padding-bottom: 15px;
 }
-#menu-item-725 {
+#menu-item-739 {
   display: none;
 }
 .page-header-image {
@@ -2453,15 +2453,12 @@ ul.nav-menu.toggled-on {
 .font-turquoise {
   color: #00f2da;
 }
-
 .font-red {
   color: #ff0000;
 }
-
 .font-green {
   color: #00ff00;
 }
-
 .text-container {
   width: 66%;
   margin: 0 auto;
@@ -2570,6 +2567,9 @@ ul.nav-menu.toggled-on {
   font-size: 16px;
   letter-spacing: 1px;
 }
+.quality-btn {
+  min-width: 240px;
+}
 #contact-compact-submit-19 > input {
   text-decoration: underline;
   border-radius: 5px;
@@ -2599,6 +2599,10 @@ ul.nav-menu.toggled-on {
 }
 .space-text {
   padding-bottom: 70px!important;
+}
+.btn-pink {
+  background: #ff00ff;
+  color: #fff;
 }
 .btn-red {
   background: #ff0000;
@@ -2773,6 +2777,9 @@ ul.nav-menu.toggled-on {
   /* background-image: url("images/Kids-Graffiti.jpg"); */
   /* background-position: 3% 3%; */
 }
+.tmm_scblock {
+  display: none;
+}
 .tmm-text-box-container {
   position: absolute;
   left: 0;
@@ -2864,15 +2871,20 @@ ul.nav-menu.toggled-on {
   height: 50%;
   overflow: hidden;
 }
+.half-fst {
+  position: relative;
+  height: 50%;
+  overflow: hidden;
+}
 .half-cell-container {
   height: 100%;
   overflow: hidden;
 }
 .half-cell > img {
-  width: 100%;
+  height: 100%;
 }
 .half-fst > img {
-  /* height: 100%; */
+  width: 100%;
 }
 .half-fst {
   margin-top: 12px;
@@ -2992,11 +3004,29 @@ ul.nav-menu.toggled-on {
   -webkit-transform: translateY(40%);
   -ms-transform: translateY(40%);
 }
+
+.mask-yellow {
+  background: #ffff00;
+}
+.mask-green {
+  background: #00ff00;
+}
+.mask-pink {
+  background: #ff00ff;
+}
+.mask-red {
+  background: #ff0000;
+}
+.mask-blue {
+  background: #0049ff;
+}
+.mask-turquoise {
+  background: #00f2da;
+}
 .portfolio-item-mask {
   display: none;
   height: 100%;
   width: 100%;
-  background: #00ff00;
   opacity: 0.7;
   transform: translateY(-40%);
   -webkit-transform: translateY(-40%);
@@ -3054,12 +3084,12 @@ a {
   position: relative;
 }
 .rates-table td {
-  color: #555!important;
+  color: #666666!important;
   font-family: GillSans;
   font-size: 18px;
   /* border: 2px solid #555; */
-  border-top: 2px solid #555;
-  border-bottom: 2px solid #555;
+  border-top: 2px solid #666666;
+  border-bottom: 2px solid #666666;
   border-right: 0;
   text-align: center;
   table-layout: fixed;
@@ -3068,7 +3098,7 @@ a {
   /* padding: 0 70px 0 70px; */
 }
 .rates-table td:nth-child(1) {
-  border-left: 2px solid #555;
+  border-left: 2px solid #666666;
 }
 
 .rates-table td:nth-child(2) {
@@ -3077,7 +3107,7 @@ a {
 
 .rates-table td:nth-child(1):after {
   content:"";
-  background: black;
+  background: #666666;
   position: absolute;
   bottom: 15%;
   right: 0;
@@ -3090,6 +3120,9 @@ a {
   margin: 0!important;
   padding-bottom: 1rem!important;
 }
+#main-text-30 {
+  padding-bottom: 15px!important;
+}
 #main-text-30 > p {
   padding-bottom: 0.3rem;
 }
@@ -3099,9 +3132,12 @@ a {
 }
 
 .beleidsplan {
-  margin-bottom: 40px;
+  padding-bottom: 40px;
   width: 66%;
   margin: 0 auto;
+}
+.beleidsplan > a {
+  margin: 0 22px 0 22px;
 }
 .wat-doen-wij-short-text {
   color: #fff!important;
@@ -3437,8 +3473,21 @@ a {
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+  .beleidsplan  {
+    padding-bottom: 0;
+  }
+  .beleidsplan > a {
+    margin: 20px 0 10px 0;
+  }
+  .beleidsplan > a > button {
+    margin: 20px;
+  }
   .half-cell > img {
     height: 100%;
+  }
+  .half-fst > img {
+    height: 100%;
+    width: auto;
   }
   .sixth-cell > img {
     height: 100%;
@@ -3557,15 +3606,16 @@ a {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-  .mi_ {
-    width: 2em!important;
-  }
-  #menu-item-725 {
+  #menu-item-739 {
     display: inline-block!important;
     /* background: url('images/fb-mobile.svg') */
   }
-  #menu-item-725 > a > img {
-    width: 20px;
+  #menu-item-739 > a > span {
+    display: none;
+    visibility: none;
+  }
+  #menu-item-739 > a > img {
+    width: 22px!important;
   }
   .LRK-number {
     display: none;
@@ -3745,6 +3795,9 @@ a {
     font-size: 12px;
     min-width: 105px;
     margin-bottom: 5px;
+  }
+  .quality-btn {
+    min-width: 190px;
   }
   #oudercommisie-h2 {
     line-height: 0;

@@ -6,7 +6,7 @@
           <img src="<?php echo get_field('portfolio-gallery')[12]['sizes']['large']; ?>">
           <div class="portfolio-text-container">
             <div class="text-container-div">
-              <div class="portfolio-item-mask">
+              <div class="portfolio-item-mask mask-pink">
               </div>
               <div class="portfolio-item-text">
                 <?php echo get_field('portfolio-gallery')[12]['caption']; ?>
@@ -18,7 +18,7 @@
           <img src="<?php echo get_field('portfolio-gallery')[11]['sizes']['large']; ?>"/>
           <div class="portfolio-text-container">
             <div class="text-container-div">
-              <div class="portfolio-item-mask">
+              <div class="portfolio-item-mask mask-yellow">
               </div>
               <div class="portfolio-item-text">
                 <?php echo get_field('portfolio-gallery')[11]['caption']; ?>
@@ -33,7 +33,7 @@
           <img src="<?php echo get_field('portfolio-gallery')[8]['sizes']['large']; ?>"/>
           <div class="portfolio-text-container">
             <div class="text-container-div">
-              <div class="portfolio-item-mask">
+              <div class="portfolio-item-mask mask-red">
               </div>
               <div class="portfolio-item-text">
                 <?php echo get_field('portfolio-gallery')[8]['caption']; ?>
@@ -46,7 +46,7 @@
             <img src="<?php echo get_field('portfolio-gallery')[9]['sizes']['large']; ?>"/>
             <div class="portfolio-text-container">
               <div class="text-container-div">
-                <div class="portfolio-item-mask">
+                <div class="portfolio-item-mask mask-turquoise">
                 </div>
                 <div class="portfolio-item-text">
                   <?php echo get_field('portfolio-gallery')[9]['caption']; ?>
@@ -54,11 +54,11 @@
               </div>
             </div>
           </div>
-          <div class="half-cell half-fst">
+          <div class="half-fst">
             <img src="<?php echo get_field('portfolio-gallery')[6]['sizes']['large']; ?>"/>
             <div class="portfolio-text-container">
               <div class="text-container-div">
-                <div class="portfolio-item-mask">
+                <div class="portfolio-item-mask mask-green">
                 </div>
                 <div class="portfolio-item-text">
                   <?php echo get_field('portfolio-gallery')[6]['caption']; ?>
@@ -74,7 +74,7 @@
           <img src="<?php echo get_field('portfolio-gallery')[4]['sizes']['large']; ?>"/>
           <div class="portfolio-text-container">
             <div class="text-container-div">
-              <div class="portfolio-item-mask">
+              <div class="portfolio-item-mask mask-yellow">
               </div>
               <div class="portfolio-item-text">
                 <?php echo get_field('portfolio-gallery')[4]['caption']; ?>
@@ -91,7 +91,7 @@
         <img src="<?php echo get_field('portfolio-gallery')[10]['sizes']['large']; ?>"/>
         <div class="portfolio-text-container">
           <div class="text-container-div">
-            <div class="portfolio-item-mask">
+            <div class="portfolio-item-mask mask-pink">
             </div>
             <div class="portfolio-item-text">
               <?php echo get_field('portfolio-gallery')[10]['caption']; ?>
@@ -103,7 +103,7 @@
         <img src="<?php echo get_field('portfolio-gallery')[7]['sizes']['large']; ?>"/>
         <div class="portfolio-text-container">
           <div class="text-container-div">
-            <div class="portfolio-item-mask">
+            <div class="portfolio-item-mask mask-blue">
             </div>
             <div class="portfolio-item-text">
               <?php echo get_field('portfolio-gallery')[7]['caption']; ?>
@@ -115,7 +115,7 @@
         <img src="<?php echo get_field('portfolio-gallery')[5]['sizes']['large']; ?>"/>
         <div class="portfolio-text-container">
           <div class="text-container-div">
-            <div class="portfolio-item-mask">
+            <div class="portfolio-item-mask mask-red">
             </div>
             <div class="portfolio-item-text">
               <?php echo get_field('portfolio-gallery')[5]['caption']; ?>
@@ -127,7 +127,7 @@
         <img src="<?php echo get_field('portfolio-gallery')[3]['sizes']['large']; ?>"/>
         <div class="portfolio-text-container">
           <div class="text-container-div">
-            <div class="portfolio-item-mask">
+            <div class="portfolio-item-mask mask-green">
             </div>
             <div class="portfolio-item-text">
               <?php echo get_field('portfolio-gallery')[3]['caption']; ?>
@@ -145,7 +145,7 @@
       <img src="<?php echo get_field('portfolio-gallery')[2]['sizes']['large']; ?>"/>
       <div class="portfolio-text-container">
         <div class="text-container-div">
-          <div class="portfolio-item-mask">
+          <div class="portfolio-item-mask mask-blue">
           </div>
           <div class="portfolio-item-text">
             <?php echo get_field('portfolio-gallery')[2]['caption']; ?>
@@ -161,7 +161,7 @@
       <img src="<?php echo get_field('portfolio-gallery')[1]['sizes']['large']; ?>"/>
       <div class="portfolio-text-container">
         <div class="text-container-div">
-          <div class="portfolio-item-mask">
+          <div class="portfolio-item-mask mask-turquoise">
           </div>
           <div class="portfolio-item-text">
             <?php echo get_field('portfolio-gallery')[1]['caption']; ?>
@@ -173,7 +173,7 @@
       <img src="<?php echo get_field('portfolio-gallery')[0]['sizes']['large']; ?>"/>
       <div class="portfolio-text-container">
         <div class="text-container-div">
-          <div class="portfolio-item-mask">
+          <div class="portfolio-item-mask mask-green">
           </div>
           <div class="portfolio-item-text">
             <?php echo get_field('portfolio-gallery')[0]['caption']; ?>
