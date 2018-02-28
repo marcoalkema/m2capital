@@ -1,0 +1,13 @@
+			@font-face {
+				font-family: 'aramcapsitcstd';
+				font-style: normal;
+				src: url('/wp-content/uploads/useanyfont/171204085647AramCapsITCStd.eot');
+				src: local('aramcapsitcstd'), url('/wp-content/uploads/useanyfont/171204085647AramCapsITCStd.eot') format('embedded-opentype'), url('/wp-content/uploads/useanyfont/171204085647AramCapsITCStd.woff') format('woff');
+			}
+            
+            .aramcapsitcstd{font-family: 'aramcapsitcstd' !important;}
+            
+						h1, h2, h3, h4, h5, h6{
+					font-family: 'aramcapsitcstd' !important;
+				}
+		

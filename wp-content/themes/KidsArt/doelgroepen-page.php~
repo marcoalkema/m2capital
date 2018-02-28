@@ -1,0 +1,83 @@
+<?php
+/*
+   Template Name: doelgroepen-template
+ */
+
+
+get_header(); ?>
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
+    <div class="page-header-image">
+      <img src="<?php the_field("header_image"); ?>" class="headerImg"/>
+      <!-- <div class="page-title-container">
+           <div class="page-title-div">
+           <div class="page-title-background"></div>
+           <h1 id="page-title-<?php the_ID(); ?>" class="template-page-title"><?php printf(get_field('main-title', get_the_ID())); ?></h1>
+           </div>
+           </div> -->
+    </div>
+    <div class="template-page-content">
+      <div -<?php the_ID(); ?>" class="main-text">
+        <div class="h4_block">
+          <div class="h4_container">
+            <h4 class="green underlineGreen">
+              <?php printf(get_field('introduction_title', get_the_ID())); ?>
+            </h4>
+          </div>
+        </div>
+        <p>
+          <?php printf(get_field('introduction_text', get_the_ID())); ?>
+        </p>
+      </div>
+
+      <div <?php the_ID(); ?>" class="group-text textWhite has-background">
+        <div class="group_container">
+          <p class="textWhite">
+            <?php printf(get_field('group1_text', get_the_ID())); ?>
+          </p>
+          <button class="btn btn-white">
+            <?php printf(get_field('group1_button_text', get_the_ID())); ?>
+          </button>
+        </div>
+      </div>
+
+      <div <?php the_ID(); ?>" class="group-text">
+        <div class="group_container">
+          <p>
+            <?php printf(get_field('group2_text', get_the_ID())); ?>
+        </p>
+        <button class="btn btn-green">
+          <?php printf(get_field('group2_button_text', get_the_ID())); ?>
+        </button>
+        </div>
+      </div>
+
+      <div <?php the_ID(); ?>" class="group-text textWhite has-background">
+        <div class="group_container">
+        <p>
+          <?php printf(get_field('group3_text', get_the_ID())); ?>
+        </p>
+        <button class="btn btn-white">
+          <?php printf(get_field('group3_button_text', get_the_ID())); ?>
+        </button>
+        </div>
+      </div>
+
+      <div <?php the_ID(); ?>" class="group-text">
+        <div class="group_container">
+        <p>
+          <?php printf(get_field('group4_text', get_the_ID())); ?>
+        </p>
+        <button class="btn btn-green">
+          <?php printf(get_field('group4_button_text', get_the_ID())); ?>
+        </button>
+        </div>
+      </div>
+
+    </div>
+    <?php get_template_part("contact", "page"); ?>
+  </div>
+</article>
+
+<?php get_footer(); ?>

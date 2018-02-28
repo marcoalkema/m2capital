@@ -11,22 +11,47 @@
 ?>
 	</div><!-- #main .wrapper -->
 	<footer id="colophon" role="contentinfo">
-          <div class="row">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-              <p class="site-information">
-                © COPYRIGHT 2017, BSO KIDSART
-              </p>
+          <div class="footer-link-container">
+            <?php wp_nav_menu( array( 'theme_location' => 'secondary') ); ?>
+          </div>
+          <div class="social_icons_primary secondary_menu_icons">
+            <div class="maps-icon">
+              <a href="<?php
+                       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                         if ( ICL_LANGUAGE_CODE == 'nl' ) {
+                           echo get_home_url() . '/about/#waar_ben_ik';
+                         } else {
+                           echo '/about/?lang=en/#waar_ben_ik';
+                         };
+                       };
+                       ?>">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/GM.svg" height="28" width="28" class="img-responsive"/>
+              </a>
             </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-6">
-              <a href="/" class="footer-link">HOME</a>
-              |
-              <a href="/voorwaarden" class="footer-link">ALGEMENE VOORWAARDEN</a>
-              |
-              <a href="/ons-netwerk" >NETWERK</a>
+
+            <div class="facebook-icon">
+              <a href="http://<?php the_field('facebook-link', 5) ?>" target="_blank">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/FB.svg" height="25" width="25" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="youtube-icon">
+              <a href="http://<?php the_field('youtube_link', 5) ?>" target="_blank">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/YT.svg" height="25" width="25" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="instagram-icon">
+              <a href="http://<?php the_field('instagram_link', 5) ?>" target="_blank">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/IG.svg" height="25" width="25" class="img-responsive"/>
+              </a>
+            </div>
+            <div class="linkedin-icon">
+              <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/linkedIn.svg" height="25" width="25" class="img-responsive"/>
+              </a>
             </div>
           </div>
 	</footer>
-</div>
-             <?php wp_footer(); ?>
+        </div>
+        <?php wp_footer(); ?>
 </body>
 </html>

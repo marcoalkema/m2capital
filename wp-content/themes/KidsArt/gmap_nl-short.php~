@@ -1,0 +1,23 @@
+<div -<?php the_ID(); ?>" class="google_map has-background">
+  <div class="whereabouts-container">
+    <div class="h4_block">
+      <div class="h4_container">
+        <h4 class="white underlineWhite">
+          <?php printf(get_field('where_am_i_title', 760)); ?>
+        </h4>
+      </div>
+    </div>
+    <p class="textWhite">
+      <?php printf(get_field('where_am_i_text', 760)); ?>
+    </p>
+  </div>
+  <div class="map-canvas"></div>
+  <script>
+   gmaps_results_initialize(
+     <?php printf(json_encode(get_field('mijn_locatie', 760)['body'])); ?>,
+     <?php printf(json_encode(get_field('contact_lokaties', 760)['body'])); ?>,
+     ''
+   )
+  </script>
+  <!-- GOOGLE MAP -->
+</div>

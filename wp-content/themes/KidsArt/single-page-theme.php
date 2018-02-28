@@ -7,39 +7,34 @@
 get_header(); ?>
 
 <div id="primary" class="site-content">
-
   <div id="content" role="main">
     <div id="overlay-container" class="overlay">
-        <?php echo do_shortcode('[metaslider id=658]'); ?>
-      <!-- <div id="headerSlider" class=”mySlides”>
-           <img src="  <?php echo get_field('portfolio-gallery', 17)[10]['sizes']['large']; ?>" class="overlay-image"/>
-           <img src="  <?php echo get_field('portfolio-gallery', 17)[11]['sizes']['large']; ?>" class="overlay-image"/>
-           <img src="  <?php echo get_field('portfolio-gallery', 17)[12]['sizes']['large']; ?>" class="overlay-image"/>
-           </div> -->
-      <div class="overlay-title">
-        <div class="overlay-title-container">
-          <h1 id="landing-overlay-title" class="font-pink">ART IS FUN</h1>
-        </div>
-      </div>
-      <div id="overlay-arrow" class="overlay-arrow-container">
-        <div class="arrow">
-          <a href="#intro-content" data-ps2id="true" class="ps2id">
-            <img src="<?php echo get_template_directory_uri(); ?>/images/pijl_roze.svg" class="landing-overlay-arrow"/>
-          </a>
+      <?php echo do_shortcode('[metaslider id=176]'); ?>
+      <div class="page-title-container">
+        <div class="page-title-div">
+          <div class="page-title-background"></div>
+          <h6 id="landing-overlay-title" class="white landing-title">
+            <?php
+            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 5 : 1559;
+              printf(get_field('header_tagline', $ID));
+            }
+            ?>
+          </h6>
         </div>
       </div>
     </div>
   </div>
 
-  <?php get_template_part("intro", "short"); ?>
-  <?php get_template_part("wat-doen-wij", "short"); ?>
-  <?php get_template_part("band", "short"); ?>
-  <?php get_template_part("quotes", "short"); ?>
-    <div class="band-container">
-      <img src="<?php echo get_field('band-container-home', 5); ?>"/>
-    </div>
-  <?php get_template_part("onze-visie", "short"); ?>
-  <?php get_template_part("contact", "page"); ?>
+  <?php
+  get_template_part("introductie", "short");
+  get_template_part("gmap_nl", "short");
+  get_template_part("aanbod", "short");
+  get_template_part("tagline_nl", "short");
+  get_template_part("agenda", "short");
+  get_template_part("stories_nl", "short");
+  get_template_part("contact", "page");
+  ?>
 
 </div><!-- #primary -->
 

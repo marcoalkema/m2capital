@@ -74,6 +74,8 @@ function twentytwelve_setup() {
   }
   add_action( 'init', 'register_my_menus' );
 
+
+
   /*
    * This theme supports custom background color and image,
    * and here we also set up the default background color.
@@ -86,7 +88,13 @@ function twentytwelve_setup() {
   add_theme_support( 'post-thumbnails' );
   set_post_thumbnail_size( 624, 9999 ); // Unlimited height, soft crop
 }
+
 add_action( 'after_setup_theme', 'twentytwelve_setup' );
+
+add_action( 'wp_enqueue_scripts', 'load_dashicons_front_end' );
+function load_dashicons_front_end() {
+  wp_enqueue_style( 'dashicons' );
+}
 
 /**
  * Add support for a custom header image.
@@ -122,19 +130,21 @@ function twentytwelve_scripts_styles() {
     wp_enqueue_script( 'comment-reply' );
 
 
-  $font_url = twentytwelve_get_font_url();
-  /* wp_enqueue_style( 'SisterSpray', "fonts/SisterSpray.ttf");*/
-  /* wp_enqueue_style( 'SisterSpray', "fonts/GillSans.ttf");*/
-  if ( ! empty( $font_url ) )
-    wp_enqueue_style( 'twentytwelve-fonts', esc_url_raw( $font_url ), array(), null );
-
+  wp_enqueue_style( 'AramCapsITCStd', "/wp-content/themes/KidsArt/fonts/AramCapsITCStd.ttf");
   // Loads our main stylesheet.
   wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
 
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );
 
   wp_enqueue_script( 'utils_js', get_template_directory_uri() . '/js/utils.js' );
+  wp_enqueue_script( 'ggogleMap_js', get_template_directory_uri() . '/js/google-map.js' );
   wp_enqueue_script( 'navigation_js', get_template_directory_uri() . '/js/navigation.js' );
+
+  $my_location = array(
+    'me' => get_field('mijn_lokatie', 760)
+  );
+  $contact_location = printf(get_field('contact_lokaties', 760));
+  wp_localize_script( 'ggogleMap_js', 'gmap_local', $my_location);
 
 
   // Loads the Internet Explorer specific stylesheet.
@@ -169,6 +179,8 @@ function twentytwelve_mce_css( $mce_css ) {
   return $mce_css;
 }
 add_filter( 'mce_css', 'twentytwelve_mce_css' );
+
+
 
 /**
  * Filter the page title.
@@ -559,15 +571,28 @@ function mkGoogleMap () {
 }
 add_shortcode('my_google_map', 'mkGoogleMap');
 
-function mkContactField () {
-  $contactArray = get_field('contact_address', 19);
-  $contactHTML = '<table>';
+      function mkContactField () {
+        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
+          $contactArray = get_field('contact_address', $ID)['body'];
+          echo '<table>';
+          for ($x = 0; $x <= sizeof($contactArray); $x++) {
+            $detail = $contactArray[$x][0]['c'];
+            $content = $contactArray[$x][1]['c'];
 
-      for ($x = 0; $x <= 6; $x++) {
-    $contactHTML = $contactHTML . '<tr><td>' . ($contactArray['body'][0][$x]['c']) . '</td></tr>';
-  }
-  echo $contactHTML . '</table>';
-}
+            if (empty($content)) {
+              echo '<tr><td class="empty_contact">' . $detail . ' ' . $content . '</td></tr>';
+            } else {
+              if (strpos($content, '@') !== false) {
+                echo '<tr><td>' . $detail . ' ' . '<a class="mail-link" href="mailto: info@stepping-forward.com">' . $content . '</a></td></tr>';
+              } else {
+                echo '<tr><td>' . $detail . ' ' . $content . '</td></tr>';
+              }
+            }
+          };
+        };
+      echo '</table>';
+      }
 add_shortcode('my_contact_field', 'mkContactField');
 
 function mkRates () {
@@ -615,24 +640,7 @@ function post_content()
 add_action("wp_ajax_post_content", "post_content");
 add_action("wp_ajax_nopriv_post_content", "post_content");
 
-function posts_popup()
-{
-  ?>
-  <script>
-    function post_popup(id)
-    {
-      var xhr = new XMLHttpRequest();
-      xhr.open("GET", "<?php echo get_site_url(); ?>/wp-admin/admin-ajax.php?action=post_content&post_id="+id);
-      xhr.onload = function(){
-        var content = xhr.responseText;
-        alert(content);
-      }
-      xhr.send();
-    }
-  </script>
-      <?php
-      }
-add_action("wp_head", "posts_popup");
+
 
 /**
  * Enables a 'reverse' option for wp_nav_menu to reverse the order of menu
@@ -665,8 +673,6 @@ function my_reverse_nav_menu($menu, $args) {
       $query->set( 'post__not_in', array(4) ); // array page ids
       return $query;
       }
-
-      add_action( 'admin_menu', 'remove_menus' );
 
       add_action('admin_head', 'agentwp_dashboard_logo');
       function agentwp_dashboard_logo() {
@@ -722,13 +728,40 @@ function my_reverse_nav_menu($menu, $args) {
       }
       add_action('add_meta_boxes', 've_custom_meta_boxes');
 
-      function custom_wpautop($content) {
-        if (get_post_meta(132, 'wpautop', true) == 'false')
-          return $content;
-        else
-          return wpautop($content);
+      /* function custom_wpautop($content) {
+       *   if (get_post_meta(132, 'wpautop', true) == 'false')
+       *     return $content;
+       *   else
+       *     return wpautop($content);
+       * }
+
+       * remove_filter('the_content', 'wpautop');
+       * add_filter('the_content', 'custom_wpautop');*/
+
+      add_action('wp_dashboard_setup', 'my_custom_dashboard_widgets');
+
+      function my_custom_dashboard_widgets() {
+        global $wp_meta_boxes;
+
+        wp_add_dashboard_widget('custom_help_widget', 'Theme Support', 'custom_dashboard_help');
       }
 
-      remove_filter('the_content', 'wpautop');
-      add_filter('the_content', 'custom_wpautop');
+      function custom_dashboard_help() {
+        echo '<h1>Welkom op jouw Stepping Forward Wordpress!</h1>';
+        echo '<br/>';
+        echo '<h2>Links in publicaties</h2>';
+        echo '<p>Om een link te maken voor in de Publicaties pagina zet je het volgende in de <b>omschrijving/description</b> van de afbeelding in de WonderPlugin Grid Gallery plugin:</p>';
+        echo htmlspecialchars('<a href="http://delinknaardewebsite.nl"\> Hier de omschrijving van de link </a>');
+        echo '<br/>';
+        echo '<br/>';
+        echo '<h2>Gallery & Publicaties</h2>';
+        echo '<p>Wanneer je afbeeldingen en video\'s toevoegd in de gallery en bij de publicaties is het belangrijk om ze een titel mee te geven. Deze wordt getoond als gebruikers op jouw site met hun muis over de afbeelding bewegen.</p>';
+        echo '<br/>';
+        echo '<h2>Story\'s</h2>';
+        echo '<p>Story\'s kun je aanmaken links in het menu onder "Posts". Het is belangrijk wanneer je een Story aanmaakt om te letten op de volgende dingen:</p>';
+        echo ' <ul>
+<li>-Een Story heeft twee afbeeldingen nodig: Een header afbeelding voor op de pagina zelf en een "Featured Image" voor in het overzicht. Deze laatste vind je tijdens het aanmaken van je Story aan de rechterkant.</li>
+<li>-Geef een story de categorie "story" mee. Anders verschijnt de Story niet in het overzicht.</li></ul>';
+      }
+
       ?>

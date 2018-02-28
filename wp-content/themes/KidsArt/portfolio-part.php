@@ -87,7 +87,7 @@
 
 
     <div class="fst fst-right col-0 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-      <div class="sixth-cell">
+      <div class="sixth-cell one">
         <img src="<?php echo get_field('portfolio-gallery')[10]['sizes']['large']; ?>"/>
         <div class="portfolio-text-container">
           <div class="text-container-div">

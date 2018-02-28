@@ -18,32 +18,48 @@ window.onload = function () {
   //   x[i].parentNode.parentNode.parentNode.style.backgroundColor = 'white;'
   // }
 
-  // you want to enable the pointer events only on click;
-  var overlay = document.getElementById('map-overlay')
-  var map = document.getElementById('google-map')
+  // // you want to enable the pointer events only on click;
+  // var overlay = document.getElementById('map-overlay')
+  // var map = document.getElementById('google-map')
 
-  map.classList.add("scrolloff") // set the pointer events to none on doc ready
+  // map.classList.add("scrolloff") // set the pointer events to none on doc ready
 
-  overlay.addEventListener("click", function () {
-    map.classList.remove("scrolloff");
-  });
+  // overlay.addEventListener("click", function () {
+  //   map.classList.remove("scrolloff");
+  // });
 
   // you want to disable pointer events when the mouse leave the canvas area;
 
-  map.addEventListener("mouseout", function () {
-    map.classList.add("scrolloff") // set the pointer events to none on doc ready
-  })
-  var contactInnerHTML = document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0]
+  // map.addEventListener("mouseout", function () {
+  //   map.classList.add("scrolloff") // set the pointer events to none on doc ready
+  // })
+  // var contactInnerHTML = document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0]
+  // var link = document.createElement("A");
+  // var span = document.createElement("SPAN");
 
-  var link = document.createElement("A");
-  link.setAttribute('href','mailto:info@kidsart.nl');
-  link.text=document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML
-  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML=''
-  contactInnerHTML.appendChild(link);
+  // link.setAttribute('href','mailto:info@bsokidsart.nl');
+  // span.innerHTML = 'E: '
+  // link.text=document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].getElementsByTagName('td')[0].innerHTML=''
+  // contactInnerHTML.appendChild(span);
+  // contactInnerHTML.appendChild(link);
 
-  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].classList.add("mail-link")
+  // var telInnerHTML = document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].getElementsByTagName('td')[0]
+  // var tel = document.createElement("A");
+  // var telSpan = document.createElement("SPAN");
+  // telSpan.innerHTML = 'T: '
+  // tel.setAttribute('href','tel: ' + telInnerHTML.innerHTML)
+  // tel.text=document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].getElementsByTagName('td')[0].innerHTML
 
-  document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[5].classList.add("LRK-number")
+  // console.log('tel', tel)
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].getElementsByTagName('td')[0].innerHTML=''
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].getElementsByTagName('td')[0].appendChild(telSpan)
+
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].getElementsByTagName('td')[0].appendChild(tel)
+
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[3].classList.add("tel-link")
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[4].classList.add("mail-link")
+  // document.getElementsByClassName('contact-fields')[0].querySelectorAll('tr')[5].classList.add("LRK-number")
 
 
   // var slideIndex = 3;

@@ -2,30 +2,53 @@
 
 <?php get_header(); ?>
 
-<div id="primary" class="content-area">
-  <main id="main" class="site-main" role="main">
-    <div id="wat-doen-wij-uitgebreid">
-      <div class="row">
-        <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
-	  <img src="<?php echo get_field('tarieven-image')?>" height="200" width="200"/>
-        </div>
-        <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
-          <h3>Onze tarieven</h3>
-          <p>
-            <?php
-            echo do_shortcode( '[my_rates]' );
-            ?>
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-          <button type="button" class="btn btn-secondary">Over ons</button>
-        </div>
-        <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 text-center">
-          <button type="button" class="btn btn-secondary">Tarieven</button>
-        </div>
-      </div>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
+    <div class="page-header-image">
+      <img src="<?php the_field("main-header"); ?>" class="headerImg"/>
+      <!-- <div class="page-title-container">
+           <div class="page-title-div">
+           <div class="page-title-background"></div>
+           <h1 id="page-title-<?php the_ID(); ?>" class="template-page-title"><?php printf(get_field('main-title', get_the_ID())); ?></h1>
+           </div>
+           </div> -->
     </div>
+    <div class="template-page-content">
+      <div class="tarieven_algemeen">
+        <div class="tarieven-intro">
+          <?php printf(get_field('main-text', get_the_ID())); ?>
+        </div>
 
-    <?php get_footer(); ?>
+        <?php
+        $arr = get_field('fees-repeater', get_the_ID());
+
+        foreach($arr as $val) {
+          $ratesArray = $val['fees-table'];
+          $length = count($ratesArray['body']);
+          $ratesHTML = '<table class="fees_table">';
+
+          for ($x = 0; $x < $length; $x++) {
+            $ratesHTML = $ratesHTML .
+                         '<tr>
+                    <td>' . ($ratesArray['body'][$x][0]['c']) . '</td>
+                    <td>' . ($ratesArray['body'][$x][1]['c']) . '</td>
+                    <td>' . ($ratesArray['body'][$x][2]['c']) . '</td>
+                  </tr>';
+          }
+          echo '<div class="tarieven_container">';
+          echo '<div class="h4_block"><div class="h4_container"><h4 class="green underlineGreen">';
+          echo $val['fees-header'];
+          echo '</h4></div></div>';
+          echo $val['fees-text'];
+          echo '<div class="fees_table_container">';
+          echo $ratesHTML . '</table>';
+          echo '</div>';
+          echo '</div>';
+        }
+        ?>
+      </div>
+</article>
+
+<?php get_template_part("contact", "page"); ?>
+
+<?php get_footer(); ?>
