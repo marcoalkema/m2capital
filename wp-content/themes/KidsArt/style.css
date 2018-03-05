@@ -1,4 +1,4 @@
-S/*
+/*
 Theme Name: KidsArt
 Author: Marco Alkema
 Author URI: http://wordpress.org/
@@ -703,7 +703,7 @@ a:hover {
 
 .sub-menu > li {
   margin: 0!important;
-  background-color: #099794;
+  background-color: #ffffff;
   padding: 0!important;
 }
 .sub-menu > li > a {
@@ -712,7 +712,7 @@ a:hover {
 
 .main-navigation {
   position: fixed;
-  background: #00A99D;
+  background: #ffffff;
   top: 0;
   right: 0;
   left: 0;
@@ -733,7 +733,7 @@ a:hover {
   line-height: 1.42857143;
 }
 .main-navigation a {
-  color: #fff;
+  color: #21759b;
 }
 .main-navigation a:hover,
 .main-navigation a:focus {
@@ -842,7 +842,7 @@ footer[role="contentinfo"] {
   padding: 1.714285714rem 0;
 }
 footer[role="contentinfo"] a {
-  color: #fff;
+  color: ##21759b;
 }
 footer[role="contentinfo"] a:hover {
   color: #21759b;
@@ -1831,7 +1831,7 @@ ul.nav-menu.toggled-on {
   border-bottom: 1px solid #aaa;
   padding: 12px 0 12px 0;
   margin-top: 0;
-  background: #099794;
+  background: #ffffff;
   /* background: #4f4e4f; */
 }
 
@@ -1973,7 +1973,7 @@ h3 {
   font-weight: 200;
   letter-spacing: -1px;
   text-align: center;
-  color: #00A99D!important;
+  color: #000000!important;
 
   padding: 5% 0;
 }
@@ -1987,7 +1987,7 @@ h2 {
   font-weight: 200;
   letter-spacing: -1px;
   text-align: center;
-  color: #00A99D!important;
+  color: #000000!important;
   margin-top: 10px!important;
   line-height: 1.1;
 }
@@ -2025,11 +2025,11 @@ h4.white{
 }
 h4.underlineGreen{
   line-height: 95%!important;
-  border-bottom: 2px solid #00A99D;
+  border-bottom: 2px solid #ffffff;
   margin-bottom: 6px!important;
 }
 h4.green{
-  color: #00A99D!important;
+  color: #000000!important;
 }
 .aanbodH4 {
   margin: 15px 0 2px 0;
@@ -2049,7 +2049,7 @@ h6.white {
   color: #fff!important;
 }
 .textGreen {
-  color: #00A99D;
+  color: #000000;
 }
 .textWhite {
   color: #fff;
@@ -2071,7 +2071,7 @@ landing-overlay-title}
   height: 28px!important;
   min-width: 170px;
   line-height: 0.3!important;
-  color: #00A99D;
+  color: #000000;
   border: 1px solid #777!important;
   text-transform: lowercase;
   font-size: 24px!important;
@@ -2080,24 +2080,24 @@ landing-overlay-title}
   padding: 16px!important;
 }
 .btn > a{
-  color: #fff;
+  color: ##21759b;
   width:100px!important;
   min-width: 100px!important;
 }
 .btn.btn-green {
   color: #fff!important;
-  background-color: #00A99D!important;
+  background-color: #ffffff!important;
 }
 .btn.btn-green:hover {
   background-color: #00796D!important;
 }
 .btn.btn-white {
-  color: #00A99D!important;
+  color: #000000!important;
   background-color: #fff!important;
 }
 .btn.btn-white:hover {
   color: #fff!important;
-  background-color: #00A99D!important;
+  background-color: #ffffff!important;
 }
 
 /* LANDING PAGE  */
@@ -2132,7 +2132,7 @@ landing-overlay-title}
   min-height: 100%;
 }
 .agenda-intro-container {
-  background: #00A99D;
+  background: #ffffff;
 }
 .agenda-intro {
   width: 70%;
@@ -2171,7 +2171,7 @@ landing-overlay-title}
 }
 .circle.green{
   border: 1px solid #fff;
-  background: #00A99D;
+  background: #ffffff;
 }
 .circle.blue{
   background: #0071bc;
@@ -2197,18 +2197,18 @@ landing-overlay-title}
   font-weight: 200;
   letter-spacing: -1px;
   text-align: center;
-  color: #00A99D!important;
+  color: #000000!important;
   line-height: 1;
 }
 .tb-change-month span.dashicons{
   font-size: 4vw!important;
-  color: #00A99D!important;
+  color: #000000!important;
 }
 .tb-day{
   min-height: 72px;
 }
 .calendar_main_container{
-  border: 5px solid #00A99D!important;
+  border: 5px solid #ffffff!important;
 }
 /* .ui.tbk-grid .tbk-row.tb-days > .tbk-column { */
 /*   padding: 0!important; */
@@ -2226,7 +2226,7 @@ landing-overlay-title}
   /* height: 70px; */
   /* width: 100px; */
   /* margin-right: 0!important; */
-  border: 4px solid #00A99D!important;
+  border: 4px solid #ffffff!important;
 }
 
 .tb-pointing-label-dots,
@@ -2252,7 +2252,7 @@ landing-overlay-title}
 .tb-day,
 .tbk-month-selector,
 .tbk-year-selector{
-  color: #00A99D!important;
+  color: #000000!important;
 }
 .tbk-schedule-date{
   font-family: AramCapsITCStd!important;
@@ -2262,7 +2262,7 @@ landing-overlay-title}
   font-weight: 200;
   letter-spacing: -1px;
   text-align: center;
-  color: #00A99D!important;
+  color: #000000!important;
   line-height: 1;
 }
 .tbk-schedule-slots,
@@ -2276,7 +2276,7 @@ landing-overlay-title}
 }
 .ui.tb-day.slots{
   background-color: #ccc!important;
-  color: #00A99D!important;
+  color: #000000!important;
 }
 .stories-intro-container {
   margin: 58px 0;
@@ -2700,7 +2700,7 @@ landing-overlay-title}
 }
 .contact-title {
   font-size: 72px;
-  color: #ffffff;
+  color: #000000;
   display: inline-block;
 }
 .contact-title > h3 {
@@ -2762,7 +2762,7 @@ landing-overlay-title}
 .long_tagline {
   font-family: AramCapsITCStd!important;
   /* position: absolute; */
-  color: #00A99D;
+  color: #000000;
   z-index: 3;
   top: 80px;
   width: 70%;
@@ -2809,7 +2809,7 @@ landing-overlay-title}
   margin: 30px;
 }
 .references {
-  background: #00A99D;
+  background: #ffffff;
   color: white;
   padding-bottom: 40px;
 }
@@ -2822,7 +2822,7 @@ landing-overlay-title}
   margin: 30px;
 }
 .calendar {
-  background: #00A99D;
+  background: #ffffff;
   color: white;
   padding: 60px 0;
 }
@@ -2944,7 +2944,7 @@ landing-overlay-title}
   position: absolute;
   top: 0;
   left: 0;
-  background: #00A99D;
+  background: #ffffff;
   opacity: 0.7;
 }
 .template-page-title {
@@ -3028,9 +3028,9 @@ landing-overlay-title}
   float: right;
   z-index: 3;
 }
-.linkedin-icon img {
-  -webkit-filter: brightness(0) invert(1);; /* Safari 6.0 - 9.0 */
-  filter: brightness(0) invert(1);;
+/*.linkedin-icon img {
+/*  -webkit-filter: brightness(0) invert(1);; /* Safari 6.0 - 9.0 */
+  /*filter: brightness(0) invert(1);;*/
 }
 #landing-overlay-title {
   text-transform: lowercase;
@@ -3130,7 +3130,7 @@ landing-overlay-title}
   width: 100%!important;
   line-height: 0.3!important;
   color: #fff!important;
-  background: #00A99D!important;
+  background: #ffffff!important;
   border: 1px solid #777!important;
   text-transform: lowercase;
   font-size: 24px!important;
@@ -3314,7 +3314,7 @@ a {
   margin: 59px auto;
 }
 .other_stories{
-  background: #00A99D;
+  background: #ffffff;
 }
 .other_stories_container{
   width: 90%;
@@ -3356,7 +3356,7 @@ a {
   width: 100%;
   height: 100%;
   opacity: 0.7;
-  background: #00A99D;
+  background: #ffffff;
   z-index: 3;
 }
 .story_preview_text_container {
@@ -3393,7 +3393,7 @@ a {
   margin: 0 auto;
 }
 .other_portfolio{
-  background: #00A99D;
+  background: #ffffff;
   padding: 59px 0;
 }
 .other_portfolio_text{
@@ -3779,7 +3779,7 @@ a {
   }
   .menu-primary_-container,
   .menu-primary__-container{
-    margin-left: -24vw;
+    margin-left: -15vw;
   }
   .main-navigation li a {
     /* font-size: 22px; */
@@ -3803,7 +3803,7 @@ a {
   }
   .menu-primary_-container,
   .menu-primary__-container{
-    margin-left: -250px;
+    margin-left: -150px;
   }
   #landing-overlay-title {
     font-size: 6vw;
@@ -4706,7 +4706,7 @@ a {
   .contact-large-submit{
     font-family: AramCapsITCStd!important;
     margin: 0 auto;
-    color: #00A99D;
+    color: #00000;
     border: 1px solid #777!important;
     height: 30px!important;
     width: 210px!important;

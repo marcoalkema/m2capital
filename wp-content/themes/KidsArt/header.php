@@ -67,28 +67,28 @@
                            };
                          };
                          ?>">
-                  <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/11/SF-assets-06.png" height="25" width="25" class="img-responsive"/>
+                  <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/11/SF-assets-06-black.png" height="25" width="25" class="img-responsive"/>
               </a>
             </div>
 
             <div class="facebook-icon">
               <a href="<?php the_field('facebook-link', 5) ?>" target="_blank">
-                <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/12/SF-assets-09.png" height="21" width="21" class="img-responsive"/>
+                <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/12/SF-assets-09-black.png" height="21" width="21" class="img-responsive"/>
               </a>
             </div>
             <div class="youtube-icon">
               <a href="<?php the_field('youtube_link', 5) ?>" target="_blank">
-                <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-10.png" height="21" width="21" class="img-responsive"/>
+                <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-10-black.png" height="21" width="21" class="img-responsive"/>
               </a>
             </div>
             <div class="instagram-icon">
               <a href="<?php the_field('instagram_link', 5) ?>" target="_blank">
-                <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-11.png" height="21" width="21" class="img-responsive"/>
+                <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-11-black.png" height="21" width="21" class="img-responsive"/>
               </a>
             </div>
             <div class="linkedin-icon">
               <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
-                <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2018/02/SF-linkedin.png" height="21" width="21" class="img-responsive"/>
+                <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2018/02/SF-linkedin-black.png" height="21" width="21" class="img-responsive"/>
               </a>
             </div>
           </div>
