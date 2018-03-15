@@ -408,18 +408,18 @@ endif;
  * Extend the default WordPress body classes.
  *
  * Extends the default WordPress body class to denote:
- * 1. Using a full-width layout, when no active widgets in the sidebar
+ * 1. using a full-width layout, when no active widgets in the sidebar
  *    or full-width template.
- * 2. Front Page template: thumbnail in use and number of sidebars for
+ * 2. front page template: thumbnail in use and number of sidebars for
  *    widget areas.
- * 3. White or empty background color to change the layout and spacing.
- * 4. Custom fonts enabled.
- * 5. Single or multiple authors.
+ * 3. white or empty background color to change the layout and spacing.
+ * 4. custom fonts enabled.
+ * 5. single or multiple authors.
  *
- * @since Twenty Twelve 1.0
+ * @since twenty twelve 1.0
  *
- * @param array $classes Existing class values.
- * @return array Filtered class values.
+ * @param array $classes existing class values.
+ * @return array filtered class values.
  */
 function twentytwelve_body_class( $classes ) {
   $background_color = get_background_color();
@@ -443,7 +443,7 @@ function twentytwelve_body_class( $classes ) {
       $classes[] = 'custom-background-white';
   }
 
-  // Enable custom font class only if the font CSS is queued to load.
+  // enable custom font class only if the font css is queued to load.
   if ( wp_style_is( 'twentytwelve-fonts', 'queue' ) )
     $classes[] = 'custom-font-enabled';
 
@@ -455,12 +455,12 @@ function twentytwelve_body_class( $classes ) {
 add_filter( 'body_class', 'twentytwelve_body_class' );
 
 /**
- * Adjust content width in certain contexts.
+ * adjust content width in certain contexts.
  *
- * Adjusts content_width value for full-width and single image attachment
+ * adjusts content_width value for full-width and single image attachment
  * templates, and when there are no active widgets in the sidebar.
  *
- * @since Twenty Twelve 1.0
+ * @since twenty twelve 1.0
  */
 function twentytwelve_content_width() {
   if ( is_page_template( 'page-templates/full-width.php' ) || is_attachment() || ! is_active_sidebar( 'sidebar-1' ) ) {
@@ -471,37 +471,37 @@ function twentytwelve_content_width() {
 add_action( 'template_redirect', 'twentytwelve_content_width' );
 
 /**
- * Register postMessage support.
+ * register postmessage support.
  *
- * Add postMessage support for site title and description for the Customizer.
+ * add postmessage support for site title and description for the customizer.
  *
- * @since Twenty Twelve 1.0
+ * @since twenty twelve 1.0
  *
- * @param WP_Customize_Manager $wp_customize Customizer object.
+ * @param wp_customize_manager $wp_customize customizer object.
  */
 function twentytwelve_customize_register( $wp_customize ) {
-  $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
-  $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-  $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+  $wp_customize->get_setting( 'blogname' )->transport         = 'postmessage';
+  $wp_customize->get_setting( 'blogdescription' )->transport  = 'postmessage';
+  $wp_customize->get_setting( 'header_textcolor' )->transport = 'postmessage';
 }
 add_action( 'customize_register', 'twentytwelve_customize_register' );
 
 /**
- * Enqueue Javascript postMessage handlers for the Customizer.
+ * enqueue javascript postmessage handlers for the customizer.
  *
- * Binds JS handlers to make the Customizer preview reload changes asynchronously.
+ * binds js handlers to make the customizer preview reload changes asynchronously.
  *
- * @since Twenty Twelve 1.0
+ * @since twenty twelve 1.0
  */
 function twentytwelve_customize_preview_js() {
   wp_enqueue_script( 'twentytwelve-customizer', get_template_directory_uri() . '/js/theme-customizer.js', array( 'customize-preview' ), '20130301', true );
 }
 add_action( 'customize_preview_init', 'twentytwelve_customize_preview_js' );
 
-if(get_page_by_title("Home") == null)
+if(get_page_by_title("home") == null)
   {
     $post = array(
-                  "post_title" => "Home",
+                  "post_title" => "home",
                   "post_status" => "publish",
                   "post_type" => "page",
                   "menu_order" => "-100",
@@ -510,8 +510,8 @@ if(get_page_by_title("Home") == null)
 
     wp_insert_post($post);
 
-    $home_page = get_page_by_title("Home");
-    update_option("page_on_front",$home_page->ID);
+    $home_page = get_page_by_title("home");
+    update_option("page_on_front",$home_page->id);
     update_option("show_on_front","page");
   }
 
@@ -519,13 +519,13 @@ function new_nav_menu_items($items)
 {
   $items = "";
 
-  $args = array("post_type" => "page", "order" => "ASC", "orderby" => "menu_order");
-  $the_query = new WP_Query($args);
+  $args = array("post_type" => "page", "order" => "asc", "orderby" => "menu_order");
+  $the_query = new wp_query($args);
 
   if($the_query->have_posts()):
     while($the_query->have_posts()):
       $the_query->the_post();
-  $items .= '<li><a href="#post-'. get_the_ID() .'">' . get_the_title() . '</a></li>';
+  $items .= '<li><a href="#post-'. get_the_id() .'">' . get_the_title() . '</a></li>';
   endwhile;
   else:
     echo "";
