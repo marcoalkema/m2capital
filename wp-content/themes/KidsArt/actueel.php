@@ -12,7 +12,7 @@ get_header(); ?>
 		<?php
 		if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
 		    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1939 : 1962;
-		    printf(get_field('actueel_title', $ID));
+		    printf(get_field('actueel_titel', $ID));
 		};
 		?></h4>
 	</div>
