@@ -7,16 +7,16 @@
 get_header();  ?>
 <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
   <div class="page-header-image">
-    <img src="<?php the_field("story_header_image"); ?>" class="headerImg"/>
+    <img src="<?php the_field("actueel-post-img"); ?>" class="headerImg"/>
     <div class="page-title-container">
       <div class="page-title-div">
         <div class="page-title-background"></div>
-        <h3 id="landing-overlay-title" class="white"><?php printf(get_field('story_title', get_the_ID())); ?></h3>
+        <h3 id="landing-overlay-title" class="white"><?php printf(get_field('actueel-post-title', get_the_ID())); ?></h3>
       </div>
     </div>
   </div>
   <div class="template-page-content story">
-    <?php printf(get_field('post_content')); ?>
+    <?php printf(get_field('actueel-post-text')); ?>
   </div>
   <div class="other_stories">
     <?php

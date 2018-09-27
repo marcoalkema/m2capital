@@ -2191,6 +2191,23 @@ landing-overlay-title}
   background: #fe00ff;
 }
 
+
+/* PARTNERS */
+.partner-profiles {
+  width: 100%;
+}
+.partner-profiles-img {
+  height: 140px;
+  display: inline-block;
+  overflow: hidden;
+  margin: 10px;
+}
+
+.partner-profiles-img img {
+  max-height: 100%;
+  width: auto;
+}
+
 /* ANDERE VALUE MET KLEINERE RESOLUTIE */
 .ten.wide,
 .three.wide{
