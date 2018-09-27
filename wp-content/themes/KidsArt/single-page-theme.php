@@ -28,10 +28,10 @@ get_header(); ?>
   <?php
   get_template_part("introductie", "short");
   //get_template_part("gmap_nl", "short");
-  get_template_part("aanbod", "short");
-  get_template_part("tagline_nl", "short");
-  get_template_part("agenda", "short");
-  get_template_part("stories_nl", "short");
+  get_template_part("wat-doen-wij", "short");
+  /* get_template_part("tagline_nl", "short");
+   * get_template_part("agenda", "short");
+   * get_template_part("stories_nl", "short");*/
   get_template_part("contact", "page");
   ?>
 

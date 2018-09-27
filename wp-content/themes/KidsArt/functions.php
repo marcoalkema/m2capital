@@ -575,21 +575,14 @@ add_shortcode('my_google_map', 'mkGoogleMap');
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
           $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
           $contactArray = get_field('contact_address', $ID)['body'];
-          echo '<table>';
-          for ($x = 0; $x <= sizeof($contactArray); $x++) {
-            $detail = $contactArray[$x][0]['c'];
-            $content = $contactArray[$x][1]['c'];
-
-            if (empty($content)) {
-              echo '<tr><td class="empty_contact">' . $detail . ' ' . $content . '</td></tr>';
-            } else {
-              if (strpos($content, '@') !== false) {
-                echo '<tr><td>' . $detail . ' ' . '<a class="mail-link" href="mailto: info@stepping-forward.com">' . $content . '</a></td></tr>';
-              } else {
-                echo '<tr><td>' . $detail . ' ' . $content . '</td></tr>';
-              }
-            }
-          };
+          $address1 = $contactArray[0][1]['c'];
+          $address2 = $contactArray[1][1]['c'];
+          $phone = $contactArray[2][1]['c'];
+          $mail = $contactArray[3][1]['c'];
+          echo '<table class="contact-info">';
+          echo '<tr><td>M2 Capital</td></tr>';
+          echo '<tr><td>' . $phone. '</td><td>' . $address1 . '</td></tr>';
+          echo '<tr><td><a class="mail-link" href="mailto: info@m2capital.nl">' . $mail . '</a></td><td>' . $address2 . '</td></tr>';
         };
       echo '</table>';
       }
