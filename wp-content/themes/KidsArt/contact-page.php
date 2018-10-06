@@ -4,7 +4,7 @@
       <div class="contact-title">
         <div class="h4_block">
           <div class="h4_container">
-            <h4 class="black underlineBlack">
+            <h4 class="green underlineGreen">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                 $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
@@ -43,8 +43,6 @@
 
 
       <div class="row contact-details">
-        <div class="col-12 col-sm-5 col-md-5 col-lg-5 col-xl-5 contact-fields">
-        </div>
         <div class="col-12 col-sm-7 col-md-7 col-lg-7 col-xl-7 contact-large">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

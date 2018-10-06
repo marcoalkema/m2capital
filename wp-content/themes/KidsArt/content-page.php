@@ -9,6 +9,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="page-header-image">
+    <img src="<?php printf(get_field("header-img", 2131)); ?>" class="headerImg"/>
+  </div>
   <div class="entry-content" id="page-<?php the_ID(); ?>">
     <?php
     the_content();

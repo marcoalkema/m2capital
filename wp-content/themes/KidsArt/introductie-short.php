@@ -31,18 +31,26 @@
 
     if ($i % 2 == 0) {
       echo '<div class="row">';
-      echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col">';
+      echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col wat-doen-wij-info-container">';
+      echo '<div class="introduction-links-image-container">';
       echo '<img class="introduction-links-image" src="' . $val['introductie-links-img'] . '"/>';
-      echo '<div>' . $val['introductie-links-title'] . '</div>';
-      echo '<div>' . $val['introductie-links-text'] . '</div>';
-      echo '<button>' . $val['introductie-links-button-tekst'] . '"</button>';
+      echo '</div>';
+      echo '<div class="wat-doen-wij-header-container underlineWhite">' . $val['introductie-links-title'] . '</div>';
+      echo '<div class="wat-doen-wij-info-text-container">' . $val['introductie-links-text'] . '</div>';
+      echo '<div class="wat-doen-wij-btn-container">';
+      echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
+      echo '</div>';
       echo '</div>';
     } else {
-      echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col">';
+      echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col wat-doen-wij-info-container">';
+      echo '<div class="introduction-links-image-container">';
       echo '<img class="introduction-links-image" src="' . $val['introductie-links-img'] . '"/>';
-      echo '<div>' . $val['introductie-links-title'] . '</div>';
-      echo '<div>' . $val['introductie-links-text'] . '</div>';
-      echo '<button>' . $val['introductie-links-button-tekst'] . '"</button>';
+      echo '</div>';
+      echo '<div class="wat-doen-wij-header-container underlineWhite">' . $val['introductie-links-title'] . '</div>';
+      echo '<div class="wat-doen-wij-info-text-container">' . $val['introductie-links-text'] . '</div>';
+      echo '<div class="wat-doen-wij-btn-container">';
+      echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
+      echo '</div>';
       echo '</div>';
 
       if ($i % (1 * $row + ($row - 1)) == 0) {

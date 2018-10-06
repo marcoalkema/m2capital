@@ -25,7 +25,6 @@
     <staticContent>
       <mimeMap fileExtension=".ttf" mimeType="font/ttf" />
     </staticContent>
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyCpW3CEqv21aQv_jtW921jxglw-i4U09Xw"></script>
     <title><?php wp_title( 'Stepping forward', true, 'right' ); ?></title>
     <script src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/js/html5.js" type="text/javascript"></script>
     <link href="./wp-content/themes/KidsArt/fonts/AramCapsITCStd.ttf"/>

@@ -15,28 +15,34 @@
             <div class="contact-info-container">
               <?php do_shortcode('[my_contact_field]'); ?>
             </div>
-            <div>
-              Zaken doen?<br>
-              <button>Neem contact</button>
+            <div class="footer-link">
+              <p>
+                Zaken doen?<br>
+              </p>
+              <button class="footer-contact-btn">Neem contact</button>
             </div>
-            <div>
-              Volg ons op<br>
+            <div class="footer-link">
+              <p>
+                Volg ons op<br>
+              </p>
               <div class="linkedin-icon">
                 <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
-                  <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/linkedIn.svg" height="25" width="25" class="img-responsive"/>
+                  <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/linkedInGrey.png" height="40" width="40" class="img-responsive linkedInBtn"/>
                 </a>
               </div>
             </div>
-            <div>
-              FUNDA
+            <div class="footer-link">
+              <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
+                <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/fundaBusiness.svg" height="120" width="120" class="img-responsive"/>
+              </a>
             </div>
           </div>
           <div class="lower-footer">
+            <div class="copyright-text">
+              copyright by M2Capital 2018 ©
+            </div>
             <div class="footer-link-container">
               <?php wp_nav_menu( array( 'theme_location' => 'secondary') ); ?>
-            </div>
-            <div class="social_icons_primary secondary_menu_icons">
-
             </div>
           </div>
 	</footer>

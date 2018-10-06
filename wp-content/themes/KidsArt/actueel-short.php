@@ -28,7 +28,7 @@
                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
                printf(get_field('actueel-button-link', $ID));
              }?>">
-    <button>
+      <button class="btn btn-green">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
         $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;

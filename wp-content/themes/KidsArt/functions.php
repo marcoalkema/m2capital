@@ -102,6 +102,19 @@ function load_dashicons_front_end() {
 require( get_template_directory() . '/inc/custom-header.php' );
 
 /**
+ * Disable WP Members Select2 assets on WPCA pages
+ */
+function custom_cuar_wp_members_compatibility() {
+  if (  cuar_is_customer_area_page( get_queried_object_id() )   ||  cuar_is_customer_area_private_content(
+    get_the_ID() ) )
+  {
+    wp_dequeue_script('select2');
+    wp_dequeue_style('select2css');
+  }
+}
+add_action( 'admin_enqueue_scripts', 'custom_cuar_wp_members_compatibility', 99 );
+
+/**
  * Return the Google font stylesheet URL if available.
  *
  * The use of Open Sans by default is localized. For languages that use
@@ -563,7 +576,17 @@ function posts_callback($atts=null, $content=null)
   </div>
       <?php
       }
-add_shortcode("posts", "posts_callback");
+      add_shortcode("posts", "posts_callback");
+
+      /**
+       * Tells WP Customer Area that select2 does not need to be enqueued.
+       */
+      function cuar_remove_select_library()
+      {
+	add_theme_support( 'customer-area.library.jquery.select2' );
+      }
+      add_action('after_setup_theme', 'cuar_remove_select_library', 99);
+
 
 function mkGoogleMap () {
   $contactMap = get_field('contact_map', 19);
