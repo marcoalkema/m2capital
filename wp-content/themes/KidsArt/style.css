@@ -64,6 +64,12 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
   font-weight: 200;
 }
 
+@font-face {
+  font-family: Merriweather-Light;
+  src: url(./fonts/Merriweather-Light.otf);
+  font-weight: 200;
+}
+
 html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquobodyte, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -2075,6 +2081,9 @@ landing-overlay-title}
 .btn.btn-green {
   color: #fff!important;
   background-color: #1d70b7!important;
+  border-radius:0px;
+  margin-left: 36%;
+  margin-top: 30px;
 }
 
 .btn.btn-white {
@@ -2248,7 +2257,7 @@ landing-overlay-title}
   background-color: transparent!important;
 }
 .tb-weekline-day{
-  font-family: 'FrutigerLightCn'!important;
+  font-family: 'Merriweather-Light'!important;
   font-size: 25px!important;
 }
 .tbk-back-to-calendar > span,
@@ -2917,7 +2926,7 @@ landing-overlay-title}
 }
 .page-title-div {
   position: absolute;
-  top: 60%;
+  top: 70%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3012,12 +3021,16 @@ landing-overlay-title}
   /*filter: brightness(0) invert(1);;*/
 }
 #landing-overlay-title {
-  text-transform: lowercase;
+  /* text-transform: lowercase; */
+    font-family:"Merriweather-Light";
   font-size: 4.2vw!important;
   opacity: 0.8;
 }
 .page-title-div > #landing-overlay-title {
-  padding: 3%;
+    padding: 3%;
+    font-family:"Merriweather-Light"!important;
+    text-transform: uppercase!important;
+    font-size: 53px!important;
 }
 .page-title-div.about-page-title > #landing-overlay-title {
   padding: 0%;
@@ -3856,7 +3869,7 @@ a {
     color: #000;
   }
   .main-navigation li {
-    font-family: FrutigerLightCn;
+    font-family: Merriweather-Light;
     /* text-transform: lowercase!important; */
     font-weight: 200;
     font-size: 19px;
@@ -4851,6 +4864,7 @@ h4.underlineGreen{
   line-height: 95%!important;
   margin-bottom: 35px!important;
   padding-top: 35px;
+  text-transform: none;
 }
 h4.underlineGreen:after{
     content: "";
@@ -4858,6 +4872,7 @@ h4.underlineGreen:after{
     left: 50%;
     margin-left: -30%;
     bottom: -25px;
+    margin-bottom: -13px;
     width: 60%;
     border-bottom: 4px solid #4080bf;
 }
@@ -4963,23 +4978,24 @@ h4.green{
   padding: 3px 10px 5px 10px;
   height: 34px;
   line-height: 0;
+  width: 151px;
 }
 .wat-doen-wij-info-container {
 
 }
 .wat-doen-wij-btn-container {
-  margin-top: 40px;
+  margin-top: 67px;
   width: 100%;
   text-align: center;
 }
 
 .introduction-links-container {
-  padding: 10% 10% 5% 10%;
+    padding: 4% 2% 2% 2%;
   background: #4080bf;
 }
 .introduction-links-container .introduction-links-image-container {
-  width: 100%;
-  height: 250px;
+  width: 349px;
+  height: 290px;
   overflow: hidden;
 }
 
@@ -5002,7 +5018,7 @@ h4.green{
 }
 .wat-doen-wij-info-text-container > p {
   color: #fff;
-  font-size: 26px;
+  /* font-size: 26px; */
 }
 .wat-doen-wij-header-container.underlineWhite::after{
   content: "";
@@ -5020,23 +5036,29 @@ h4.green{
   opacity: 0.5;
 }
 .aanbod-intro-container .network-col {
-  padding: 15px!important;
+    padding: 15px 0 !important;
+    background-color: #d3d3d370;
+    margin: auto 13px;
+    float: right;
+    width: 22%;
 }
 
 .network-header-container {
-  background: #eee;
-  height: auto;
-  min-height: 180px;
-  color: #1d70b7;
-  display: flex;
+    height: auto;
+    min-height: 84px;
+    color: #1d70b7;
+    display: flex;
+    margin-top: -6%;
+    margin-bottom: 9%;
+    align-items: center;
 }
 
 .network-header-container h4 {
-  margin: auto; /* Important */
+  margin: 13% 0px 0px 0px!important;
   text-align: center;
-  padding: 20px 10px;
+  padding: 0px 10px;
   font-size: 2.7vw!important;
-  margin-bottom: 55px!important;
+  /* margin-bottom: 55px!important; */
 }
 
 .network-header-container h4.underlineGreen:after {
@@ -5044,7 +5066,7 @@ h4.green{
 }
 
 .network-image-container {
-  height: 250px;
+  /* height: 250px; */
   overflow: hidden;
 }
 .actueel-intro {
@@ -5070,7 +5092,7 @@ h4.green{
 .overlay {
   position: relative;
   width: 100%;
-  height: 500px;
+  height: 691px;
   overflow: hidden;
   margin-top: 7vw;
 }
@@ -5087,4 +5109,8 @@ h4.green{
 
 .main-navigation .menu-item-type-post_type, .main-navigation .menu-item-has-children {
     border-right: 1px solid #afadad;
+}
+
+p {
+    color: gray;
 }
