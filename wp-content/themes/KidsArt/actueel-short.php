@@ -1,9 +1,9 @@
 <div class="actueel-intro-container">
   <div>
-    <img href="<?php
+    <img src="<?php
                if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
-                 printf(get_field('actueel-header-img', $ID)); }?>" width="100%" height="300px"/>
+                 printf(get_field('actueel-header-image', $ID)); }?>" width="100%" height="500px"/>
   </div>
   <div class="actueel-intro">
     <div class="h4_block">

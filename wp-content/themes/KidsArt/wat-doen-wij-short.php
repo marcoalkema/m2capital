@@ -22,12 +22,13 @@
                $ID2 = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
                printf(get_field('actueel-button-link', $ID2));
              }?>">
-      <button class="btn btn-green">
-        <?php
-        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID3 = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
-          printf(get_field('actueel-button-text', $ID3));
-        }?>
+        <button class="btn btn-green">
+            <?php
+            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                /* $ID3 = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;*/
+                $ID1 = (ICL_LANGUAGE_CODE == 'nl') ? 867 : 1466;
+                printf(get_field('wat-doen-wij-btn-text', $ID1));
+            }?>
       </button>
     </a>
   </div>
