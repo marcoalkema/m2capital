@@ -35,7 +35,7 @@ get_header(); ?>
                   Over ons
               </div>
           </a>
-          <a href="#wie-zijn-wij-visie">
+          <a href="#wie-zijn-wij-visie ">
               <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
                   Onze Visie
               </div>

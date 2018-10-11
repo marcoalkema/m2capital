@@ -7,85 +7,69 @@
 get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
-    <div class="page-header-image">
-      <img src="<?php the_field("template-image"); ?>" class="headerImg"/>
-      <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
-    </div>
-    <div class="template-page-content">
-      <div id="main-title-<?php the_ID(); ?>" class="main-title">
-        <div class="h4_block">
-          <div class="h4_container">
-            <h4 class="green underlineGreen">
-              <?php printf(get_field('wie-zijn-wij-title', get_the_ID())); ?>
-            </h4>
+    <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
+        <div class="page-header-image">
+            <img src="<?php the_field("template-image"); ?>" class="headerImg"/>
+          <div class="page-title-div">
+              <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
           </div>
         </div>
-      </div>
-
-      <div id="title_text-<?php the_ID(); ?>" class="title_text">
-        <p>
-          <?php printf(get_field('wie-zijn-wij-tekst', get_the_ID())); ?>
-        </p>
-      </div>
-
-
-      <div class="table">
-          <div class="row m2btns">
-
-
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
-              <a href="#wie-zijn-wij-werkwijze">
-                  <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
-              </a>
-              </div>
-
-
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
-                  <a href="#wie-zijn-wij-werkwijze">
-                      <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
-                  </a>
-              </div>
-
-
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
-                  <a href="#wie-zijn-wij-werkwijze">
-                      <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
-                  </a>
-              </div>
-
-      </div>
-
-      <div class="row m2btns">
-
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
-              <div class="text_m2_div">
-                  <a href="#wie-zijn-wij-werkwijze" class="image_btn_text">
+        <div class="template-page-content">
+            <div id="main-title-<?php the_ID(); ?>" class="main-title">
+                <div class="h4_block">
+                    <div class="h4_container">
+                        <h4 class="green underlineGreen">
+                            <?php printf(get_field('wie-zijn-wij-title', get_the_ID())); ?>
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div id="title_text-<?php the_ID(); ?>" class="title_text">
+                <p>
+                    <?php printf(get_field('wie-zijn-wij-tekst', get_the_ID())); ?>
+                </p>
+            </div>
+            <div class="table m2_btn_table">
+                <div class="row">
+          <div class="col-sm-4">
+              <div class="btn-group-vertical">
+                  <a href="#over-ons">
+                      <button type="button" class="btn btn-primary m2btn">
+                      <img src="<?php the_field("image_btn"); ?>" class="m2btn_image" heigth="100px" width="100px" />
+                  </button>
+                  <button type="button" class="btn btn-primary btn_text_m2">
                       Over ons
+                  </button>
                   </a>
               </div>
-              </div>
-
-
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
-                  <div class="text_m2_div">
-                  <a href="#wie-zijn-wij-visie" class="image_btn_text">
+          </div>
+          <div class="col-sm-4">
+              <div class="btn-group-vertical">
+                  <a href="#wie-zijn-wij-visie">
+                  <button type="button" class="btn btn-primary m2btn">
+                      <img src="<?php the_field("image_btn"); ?>" class="m2btn_image" heigth="100px" width="100px" />
+                  </button>
+                  <button type="button" class="btn btn-primary btn_text_m2">
                       Onze Visie
+                  </button>
                   </a>
-                  </div>
               </div>
-
-
-              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
-                  <div class="text_m2_div">
-                  <a href="#wie-zijn-wij-visie" class="image_btn_text">
+          </div>
+          <div class="col-sm-4">
+              <div class="btn-group-vertical">
+                  <a href="#wie-zijn-wij-werkwijze">
+                  <button type="button" class="btn btn-primary m2btn">
+                      <img src="<?php the_field("image_btn"); ?>" class="m2btn_image" heigth="100px" width="100px" />
+                  </button>
+                  <button type="button" class="btn btn-primary btn_text_m2">
                       Werkwijze
+                  </button>
                   </a>
-                  </div>
               </div>
-
-
+          </div>
       </div>
+      </div>
+        </div>
       </div>
       <div class="visie">
         <img src="<?php
@@ -146,7 +130,7 @@ get_header(); ?>
 
           <div class="h4_block">
             <div class="h4_container">
-              <h4 class="green underlineGreen">
+              <h4 class="green underlineGreen smalleUnderline">
                 <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                   $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
@@ -156,7 +140,7 @@ get_header(); ?>
               </h4>
             </div>
 
-            <div>
+            <div class="grijs">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                 $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
@@ -165,84 +149,85 @@ get_header(); ?>
               ?>
             </div>
             <a href="#contact">
-              <button>Contact</button>
+                <button class="btn btn-green margin_btn">Contact</button>
             </a>
           </div>
         </div>
 
         <div id="wie-zijn-wij-wie" class="wie">
-          <img src="<?php
-                    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
-                      printf(get_field('over-ons-img', $ID));
-                    }?>" class="over-ons-img"/>
+            <img src="<?php
+                      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+                          printf(get_field('over-ons-img', $ID));
+                      }?>" class="over-ons-img"/>
 
-          <div id="wie-zijn-wij-visie" class="h4_block">
-            <div class="h4_container">
-              <h4 class="green underlineGreen">
+            <div id="wie-zijn-wij-visie" class="h4_block">
+                <div id="over-ons" class="h4_container">
+                    <h4 class="green underlineGreen">
+                        <?php
+                        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+                            printf(get_field('over-ons-title', $ID));
+                        }
+                        ?>
+                    </h4>
+                </div>
+            </div>
+            <div>
                 <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
-                  printf(get_field('over-ons-title', $ID));
+                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+                    printf(get_field('over-ons-text', $ID));
                 }
                 ?>
-              </h4>
             </div>
-          </div>
-          <div>
+
             <?php
-            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
-              printf(get_field('over-ons-text', $ID));
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+            $arr = get_field('over-ons-profielen', $ID);
+            $i = 0;
+            $row = 1;
+            foreach($arr as $val) {
+
+                if ($i % 2 == 0) {
+                    echo '<div class="row">';
+                    echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 wie-foto-container">';
+                    echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-mark" src="' . $val['foto'] . '"/>';
+                    echo '<h4 class="green underLineGreen">' . $val['naam'] . '</h4>';
+                    echo '<div>' . $val['omschrijving'] . '</div>';
+                    echo '<a href="' . $val['linkedin-url'] . '">';
+                    echo '<button>LinkedBTN</button>';
+                    echo '</a>';
+                    echo '</div>';
+                    echo '</div>';
+                } else {
+                    echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 wie-foto-container">';
+                    echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-michiel" src="' . $val['foto'] . '"/></div>';
+                    echo '<h4 class="green underLineGreen">' . $val['naam'] . '</h4>';
+                    echo '<div>' . $val['omschrijving'] . '</div>';
+                    echo '<a href="' . $val['linkedin-url'] . '">';
+                    echo '<button>LinkedBTN</button>';
+                    echo '</a>';
+                    echo '</div>';
+
+                    if ($i % (1 * $row + ($row - 1)) == 0) {
+                        echo '</div>';
+                        $row++;
+                    }
+                }
+                ;
+                if ($i == count($arr) - 1) {
+                    echo '</div>';
+
+                    if ($i % 2 != 0) {
+                        echo '</div>';
+                    }
+                }
+                $i++;
+
             }
+
             ?>
-          </div>
-
-          <?php
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
-          $arr = get_field('over-ons-profielen', $ID);
-          $i = 0;
-          $row = 1;
-          foreach($arr as $val) {
-
-            if ($i % 2 == 0) {
-              echo '<div class="row">';
-              echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">';
-              echo '<img class="introduction-links-image" src="' . $val['foto'] . '"/>';
-              echo '<h4>' . $val['naam'] . '</h4>';
-              echo '<div>' . $val['omschrijving'] . '</div>';
-              echo '<a href="' . $val['linkedin-url'] . '">';
-              echo '<button>LinkedBTN</button>';
-              echo '</a>';
-              echo '</div>';
-            } else {
-              echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">';
-              echo '<img class="introduction-links-image" src="' . $val['foto'] . '"/>';
-              echo '<h4>' . $val['naam'] . '</h4>';
-              echo '<div>' . $val['omschrijving'] . '</div>';
-              echo '<a href="' . $val['linkedin-url'] . '">';
-              echo '<button>LinkedBTN</button>';
-              echo '</a>';
-              echo '</div>';
-
-              if ($i % (1 * $row + ($row - 1)) == 0) {
-                echo '</div>';
-                $row++;
-              }
-            }
-            ;
-            if ($i == count($arr) - 1) {
-              echo '</div>';
-
-              if ($i % 2 != 0) {
-                echo '</div>';
-              }
-            }
-            $i++;
-
-          }
-
-          ?>
         </div>
 
         <div class="partners">
