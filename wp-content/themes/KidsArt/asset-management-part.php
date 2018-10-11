@@ -18,7 +18,7 @@
   </div>
 </div>
 
-<div>
+<div class="asset-management-text-block">
   <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

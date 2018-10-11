@@ -52,19 +52,19 @@ get_header(); ?>
           if ($i % 4 == 0) {
             echo '<div class="row wat-doen-wij-row">';
             echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 wat-doen-wij-col">';
-            echo '<img class="network-image" src="' . $val['img'] . '"/>';
+            echo '<img class="wat-doen-wij-image" src="' . $val['img'] . '"/>';
             echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
             echo $val['text'];
-            echo '<a target="_blank" href="' . $val['link'] . '">';
+            echo '<a href="' . $val['link'] . '">';
             echo '</a>';
             echo '<button class="btn btn-green">lees meer</button>';
             echo '</div>';
           } else {
             echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 wat-doen-wij-col">';
-            echo '<img class="network-image" src="' . $val['img'] . '"/>';
+            echo '<img class="wat-doen-wij-image" src="' . $val['img'] . '"/>';
             echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
             echo $val['text'];
-            echo '<a target="_blank" href="' . $val['link'] . '">';
+            echo '<a href="' . $val['link'] . '">';
             echo '<button class="btn btn-green">lees meer</button>';
             echo '</a>';
             echo '</div>';

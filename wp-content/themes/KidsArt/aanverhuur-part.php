@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div>
+<div class="aan-verhuur-text-block">
   <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

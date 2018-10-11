@@ -9,7 +9,7 @@
 
 .wat-doen-wij-row {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 auto 40px auto;
 }
 
 .wat-doen-wij-col {
@@ -18,6 +18,11 @@
   padding: 20px 0 0 0;
   margin: 2%;
   text-align: center;
+  overflow: hidden;
+}
+
+.wat-doen-wij-image {
+  height: 190px;
 }
 
 .wat-doen-wij-col p {
@@ -33,4 +38,64 @@
 .wat-doen-wij-col .btn-green {
   margin: 0 auto 25px auto!important;
   min-width: 0;
+}
+
+#aan-verhuur,
+#beleggingsadvies,
+#her-ontwikkel,
+#asset-management {
+  padding-bottom: 40px;
+}
+
+#aan-verhuur .h4_block,
+#beleggingsadvies .h4_block,
+#her-ontwikkel .h4_block,
+#asset-management .h4_block {
+  margin-top: 20px;
+}
+
+#aan-verhuur p,
+#beleggingsadvies p,
+#her-ontwikkel p,
+#asset-management p {
+  width: 76%;
+  margin: 30px auto;
+}
+
+#aan-verhuur .metaslider,
+#beleggingsadvies .metaslider,
+#her-ontwikkel .metaslider,
+#asset-management .metaslider {
+  margin: 50px 6%!important;
+  width: 88%!important;
+}
+
+#aan-verhuur button,
+#beleggingsadvies button,
+#her-ontwikkel button,
+#asset-management button {
+  color: #fff;
+  background: #999;
+  height: 30px;
+  line-height: 0;
+  margin-bottom: 30px;
+}
+
+.aan-verhuur-text-block,
+.beleggingsadvies-text-block,
+.her-ontwikkel-text-block,
+.asset-management-text-block {
+  text-align: center;
+}
+
+.aan-verhuur-text-block p,
+.beleggingsadvies-text-block p,
+.her-ontwikkel-text-block p,
+.asset-management-text-block p {
+  text-align: left;
+}
+
+#aan-verhuur,
+#her-ontwikkel {
+  background: #f2f2f2;
 }

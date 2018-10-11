@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div>
+<div class="her-ontwikkel-text-block">
   <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

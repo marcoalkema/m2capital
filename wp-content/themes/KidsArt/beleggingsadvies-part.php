@@ -11,7 +11,7 @@
   </div>
 </div>
 
-<div>
+<div class="beleggingsadvies-text-block">
   <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
