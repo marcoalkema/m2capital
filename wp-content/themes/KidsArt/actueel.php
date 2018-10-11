@@ -9,8 +9,11 @@ get_header(); ?>
   <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
     <div class="page-header-image">
       <img src="<?php the_field("actueel-img"); ?>" class="headerImg"/>
+      <div class="page-title-div">
+        <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
+      </div>
     </div>
-    <div class="template-page-content network-page">
+    <div class="template-page-content actueel-page">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">
 
         <div class="h4_block">
@@ -24,15 +27,13 @@ get_header(); ?>
 	      ?></h4>
           </div>
         </div>
-        <p>
-          <?php
-          if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1939 : 1962;
-            printf(get_field('actueel-text', $ID));
-          };
-          ?>
-        </p>
       </div>
+      <?php
+      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1939 : 1962;
+        printf(get_field('actueel-text', $ID));
+      };
+      ?>
     </div>
 
     <div>
