@@ -19,6 +19,7 @@
   margin: 2%;
   text-align: center;
   overflow: hidden;
+  min-height: 51vw;
 }
 
 .wat-doen-wij-image {

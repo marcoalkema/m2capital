@@ -2199,8 +2199,10 @@ landing-overlay-title}
 }
 
 .partner-profiles-img img {
-  max-height: 100%;
-  width: auto;
+    max-height: 64px;
+    width: auto;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
 
 /* ANDERE VALUE MET KLEINERE RESOLUTIE */
@@ -5289,4 +5291,9 @@ h4.underlineGreen.lijn::after {
     width: 33%;
     margin-left: -17%;
     margin-bottom: -10px;
+}
+
+.partners p {
+        width: 80%;
+    margin: 0 11vw 59px 11vw;
 }
