@@ -24,27 +24,27 @@ get_header(); ?>
       </div>
 
       <div id="title_text-<?php the_ID(); ?>" class="title_text">
-        <p>
-          <?php printf(get_field('wie-zijn-wij-tekst', get_the_ID())); ?>
-        </p>
+          <p>
+              <?php printf(get_field('wie-zijn-wij-tekst', get_the_ID())); ?>
+          </p>
       </div>
 
       <div class="row">
-        <a href="#wie-zijn-wij-wie">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Over ons
-          </div>
-        </a>
-        <a href="#wie-zijn-wij-visie">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Onze Visie
-          </div>
-        </a>
-        <a href="#wie-zijn-wij-werkwijze">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Werkwijze
-          </div>
-        </a>
+          <a href="#wie-zijn-wij-wie">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  Over ons
+              </div>
+          </a>
+          <a href="#wie-zijn-wij-visie">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  Onze Visie
+              </div>
+          </a>
+          <a href="#wie-zijn-wij-werkwijze">
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                  Werkwijze
+              </div>
+          </a>
       </div>
 
       <div class="visie">

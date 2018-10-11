@@ -29,24 +29,64 @@ get_header(); ?>
         </p>
       </div>
 
-      <div class="row">
-        <a href="#wie-zijn-wij-wie">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Over ons
-          </div>
-        </a>
-        <a href="#wie-zijn-wij-visie">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Onze Visie
-          </div>
-        </a>
-        <a href="#wie-zijn-wij-werkwijze">
-          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-            Werkwijze
-          </div>
-        </a>
+
+      <div class="table">
+          <div class="row m2btns">
+
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
+              <a href="#wie-zijn-wij-werkwijze">
+                  <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
+              </a>
+              </div>
+
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
+                  <a href="#wie-zijn-wij-werkwijze">
+                      <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
+                  </a>
+              </div>
+
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn_image_row">
+                  <a href="#wie-zijn-wij-werkwijze">
+                      <img src="<?php the_field("image_btn"); ?>" class="image_btn_image"/>
+                  </a>
+              </div>
+
       </div>
 
+      <div class="row m2btns">
+
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
+              <div class="text_m2_div">
+                  <a href="#wie-zijn-wij-werkwijze" class="image_btn_text">
+                      Over ons
+                  </a>
+              </div>
+              </div>
+
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
+                  <div class="text_m2_div">
+                  <a href="#wie-zijn-wij-visie" class="image_btn_text">
+                      Onze Visie
+                  </a>
+                  </div>
+              </div>
+
+
+              <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 image_btn">
+                  <div class="text_m2_div">
+                  <a href="#wie-zijn-wij-visie" class="image_btn_text">
+                      Werkwijze
+                  </a>
+                  </div>
+              </div>
+
+
+      </div>
+      </div>
       <div class="visie">
         <img src="<?php
                   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

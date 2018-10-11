@@ -2875,7 +2875,7 @@ landing-overlay-title}
 }
 
 .current_page_item {
-  border-bottom: 2px solid #fff;
+  /* border-bottom: 2px solid #fff; */
 }
 
 
@@ -5141,7 +5141,7 @@ p {
 
 }
 
-li.current-menu-item a::after{
+#site-navigation li.current-menu-item a::after{
     content: "";
     position: absolute;
     left: 50%;
@@ -5154,4 +5154,33 @@ li.current-menu-item a::after{
 
 li.current-menu-item a{
     font-family:"Merriweather-Bold";
+}
+
+.image_btn_text {
+      color: white;
+}
+
+.image_btn {
+    text-align: center;
+
+}
+
+.image_btn_image {
+    height: 100px;
+    width: 100px;
+}
+
+.image_btn_image_row {
+  text-align: center;
+}
+
+.row.m2btns {
+  width: 70vw;
+  margin-left: 13vw;
+}
+.text_m2_div{
+        background-color: #1d70b7;
+    width: 134px;
+    /* text-align: center; */
+    margin-left: 4vw;
 }
