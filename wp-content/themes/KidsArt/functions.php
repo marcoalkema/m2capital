@@ -148,6 +148,7 @@ function twentytwelve_scripts_styles() {
   wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
 
   wp_enqueue_style( 'bootstrap_css', get_template_directory_uri() . '/css/bootstrap.css' );
+  wp_enqueue_style( 'marco_css', get_template_directory_uri() . '/css/marco.css' );
 
   wp_enqueue_script( 'utils_js', get_template_directory_uri() . '/js/utils.js' );
   wp_enqueue_script( 'ggogleMap_js', get_template_directory_uri() . '/js/google-map.js' );

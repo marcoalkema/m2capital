@@ -10,7 +10,9 @@ get_header(); ?>
   <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
     <div class="page-header-image">
       <img src="<?php the_field("wat-doen-wij-img", get_the_ID()); ?>" class="headerImg"/>
-      <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('wat-doen-wij-img', get_the_ID())); ?></h6>
+      <div class="page-title-div">
+        <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('header-title', get_the_ID())); ?></h6>
+      </div>
     </div>
     <div class="template-page-content">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">
@@ -48,20 +50,22 @@ get_header(); ?>
         foreach($arr as $val) {
 
           if ($i % 4 == 0) {
-            echo '<div class="row">';
-            echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 network-col">';
+            echo '<div class="row wat-doen-wij-row">';
+            echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 wat-doen-wij-col">';
             echo '<img class="network-image" src="' . $val['img'] . '"/>';
-            echo '<h4>' . $val['title'] . '</h4>';
-            echo '<p>' . $val['text'] . '</p>';
+            echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
+            echo $val['text'];
             echo '<a target="_blank" href="' . $val['link'] . '">';
             echo '</a>';
+            echo '<button class="btn btn-green">lees meer</button>';
             echo '</div>';
           } else {
-            echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 network-col">';
+            echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 wat-doen-wij-col">';
             echo '<img class="network-image" src="' . $val['img'] . '"/>';
-            echo '<h4>' . $val['title'] . '</h4>';
-            echo '<p>' . $val['text'] . '</p>';
+            echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
+            echo $val['text'];
             echo '<a target="_blank" href="' . $val['link'] . '">';
+            echo '<button class="btn btn-green">lees meer</button>';
             echo '</a>';
             echo '</div>';
 
