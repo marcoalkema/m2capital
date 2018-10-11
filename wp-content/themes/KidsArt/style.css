@@ -4879,7 +4879,7 @@ h4.underlineGreen{
   padding-top: 35px;
   text-transform: none;
 }
-h4.underlineGreen:after{
+h4.underlineGreen::after{
     content: "";
     position: absolute;
     left: 50%;
@@ -5269,7 +5269,7 @@ li.current-menu-item a{
 }
 
 .wie-foto-container {
-    padding: 0 0!important;
+    padding: 0 7vw!important;
 }
 
 .wie-foto {
@@ -5288,4 +5288,9 @@ li.current-menu-item a{
     width: 100%;
     object-fit: cover;
     object-position: 63% 0%;
+}
+h4.underlineGreen.lijn::after {
+    width: 33%;
+    margin-left: -17%;
+    margin-bottom: -10px;
 }
