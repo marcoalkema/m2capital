@@ -1,0 +1,36 @@
+.page-header-image {
+  background: #1d70b7;
+}
+
+.page-header-image > img {
+  opacity: 0.5;
+  min-height: 150px;
+}
+
+.wat-doen-wij-row {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.wat-doen-wij-col {
+  width: 21%;
+  background-color: #f2f2f2;
+  padding: 20px 0 0 0;
+  margin: 2%;
+  text-align: center;
+}
+
+.wat-doen-wij-col p {
+  padding: 10px 20px;
+  text-align: left;
+}
+
+.wat-doen-wij-col h4.underlineGreen {
+  padding-top: 10px!important;
+  margin-bottom: 55px!important;
+}
+
+.wat-doen-wij-col .btn-green {
+  margin: 0 auto 25px auto!important;
+  min-width: 0;
+}
