@@ -70,6 +70,28 @@
   width: 88%!important;
 }
 
+#aan-verhuur .metaslider .flex-control-nav,
+#beleggingsadvies .metaslider .flex-control-nav,
+#her-ontwikkel .metaslider .flex-control-nav,
+#asset-management .metaslider .flex-control-nav {
+  position: relative;
+  bottom: -10px;
+}
+
+#aan-verhuur .metaslider .flex-control-paging li a.flex-active,
+#beleggingsadvies .metaslider .flex-control-paging li a.flex-active,
+#her-ontwikkel .metaslider .flex-control-paging li a.flex-active,
+#asset-management .metaslider .flex-control-paging li a.flex-active {
+  background: #666;
+}
+
+#aan-verhuur .metaslider .flex-control-paging li a,
+#beleggingsadvies .metaslider .flex-control-paging li a,
+#her-ontwikkel .metaslider .flex-control-paging li a,
+#asset-management .metaslider .flex-control-paging li a {
+  border: 1px solid #666!important;
+}
+
 #aan-verhuur button,
 #beleggingsadvies button,
 #her-ontwikkel button,
