@@ -27,7 +27,7 @@
         echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview">';
         echo '<div class="story_preview_container">';
         echo '<div class="story_preview_image">';
-        echo '<img class="story_thumbnail" src="' . get_the_post_thumbnail_url(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
+        echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
         echo '</div>';
         echo '<div class="story_preview_text">';
         echo '<div class="story_preview_text_container">';
@@ -44,7 +44,7 @@
         echo get_field('actueel-post-excerpt', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
         echo '</p>';
         echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-        echo '<button>Lees meer</button>';
+        echo '<button class="btn btn-green">Lees meer</button>';
         echo '</a>';
         echo '</div>';
         echo '</div>';

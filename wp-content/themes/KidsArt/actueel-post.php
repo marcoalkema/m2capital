@@ -2,7 +2,6 @@
   <img src="<?php the_field("post-img"); ?>" class="headerImg"/>
   <div class="page-title-container">
     <div class="page-title-div">
-      <div class="page-title-background"></div>
       <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
     </div>
   </div>
@@ -24,7 +23,19 @@
   <?php printf(get_field('post-text'));
   ?>
 </div>
+
 <div class="other_stories">
+
+  <div class="h4_block">
+    <div class="h4_container">
+      <h4 class="underlineGreen">
+        <?php printf(get_field('soortgelijke_projecten_titel', 1939)); ?>
+      </h4>
+    </div>
+  </div>
+
+  <?php printf(get_field('soortgelijke_projecten_text', 1939)); ?>
+
   <?php
   $args = array(
     'numberposts' => 3,
@@ -45,32 +56,35 @@
 
   for ($x = 0; $x <= count(wp_get_recent_posts( $args, ARRAY_A )).length - 1; $x++) {
     echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-    echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview">';
-    echo '<div class="story_preview_container">';
-    echo '<div class="story_preview_text">';
-    echo '<div class="story_preview_text_mask">';
-    echo '</div>';
-    echo '<div class="story_preview_text_container">';
-    echo '<div class="h4_block">';
-    echo '<div class="h4_container">';
-    echo '<h4>';
-    echo get_field('post-title', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
-    echo '</h4>';
-    echo '</div>';
-    echo '</div>';
-    echo '<p class="story_excerpt textWhite">';
-    echo get_field('post-excerpt', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
-    echo '</p>';
-    echo '</div>';
-    echo '</div class="story_preview_image">';
-    echo '<img class="story_thumbnail" src="' . get_field('post-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
+    echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story">';
+      echo '<div class="story_preview_container">';
+        echo '<div class="story_preview_image">';
+          echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
+        echo '</div>';
+        echo '<div class="story_preview_text">';
+          echo '<div class="story_preview_text_container">';
+            echo '<div class="h4_block">';
+              echo '<div class="h4_container">';
+                echo '<h4 class="green underlineGreen">';
+                 echo wp_get_recent_posts( $args, ARRAY_A )[$x]['post_title'];
+                echo '</h4>';
+              echo '<br/>';
+            echo '</div>';
+          echo '</div>';
+        echo '</div>';
+      echo '</div>';
     echo '</div>';
     echo '</div>';
     echo '</a>';
   };
   echo '</div>';
   ?>
+
+  <p><?php printf(get_field('volledige_overzicht_text', 1939)); ?></p>
+  <button class="whiteBlue"><?php printf(get_field('volledige-overzicht-button-text', 1939)); ?></button>
+
 </div>
+
 <?php get_template_part("contact", "page"); ?>
 <script>
  var category = <?php echo get_the_category()[0]->cat_ID ?>;

@@ -1,7 +1,3 @@
-<div>
-  HEADERZZZ
-</div>
-
 <?php
 $fields = get_field_objects();
 
@@ -23,27 +19,39 @@ $args = array(
 $more_details = get_field('meer_details', get_the_ID());
 
 /* STANDAARD FOTO*/
+echo '<div class="aanverhuur-container">';
 echo '<div class="page-header-image">';
 echo '<img src="' . get_field('afbeelding', get_the_ID()) . '" class="headerImg"/>';
 echo '</div>';
-echo '<div class="row">';
+echo '<div class="row intro-details">';
 /* Heading*/
-echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">';
+echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 intro-type">';
 echo  get_field('status', get_the_ID());
+echo '<br>';
 echo  get_field('status_2', get_the_ID());
 echo '</div>';
-echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">';
+echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">';
+echo '<h4 class="green underlineGreen">';
 echo  get_field('adres', get_the_ID());
+echo '</h4>';
 echo '</div>';
-echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">';
+echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 intro-price">';
 echo  get_field('prijs', get_the_ID());
 echo  get_field('prijs2', get_the_ID());
 echo '</div>';
 echo '</div>';
+/* Intro*/
+echo '<div class="aanverhuur-intro">';
+echo  get_field('introductie_tekst', get_the_ID());
+echo '</div>';
 /* Kenmerken*/
-echo '<div>';
-echo '<h3>Kenmerken van het object</h3>';
-echo '<table>';
+echo '<div class="aanverhuur-kenmerken">';
+echo '<div class="h4_block">';
+echo '<div class="h4_container">';
+echo '<h4 class="aanverhuur-kenmerken-titel">Kenmerken van het object</h4>';
+echo '</div>';
+echo '</div>';
+echo '<table class="kenmerken-tabel">';
 echo '<tr>';
 echo '<td>Soort object:</td>';
 echo '<td>' . get_field('soort_object', get_the_ID()) . '</td>';
@@ -79,8 +87,8 @@ echo '</div>';
 
 /* MEER KENMERKEN*/
 if (!empty($more_details)) {
-  echo '<button>Meer details</button>';
-  echo '<div>';
+  echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
+  echo '<div class="meer-kenmerken-tabel">';
   echo '<table>';
   for ($x = 0; $x <= count($more_details); $x++) {
     echo '<tr>';
@@ -93,22 +101,80 @@ if (!empty($more_details)) {
 }
 
 /* OMSCHRIJVING*/
-echo '<div>';
-echo '<h3>Omschrijving van het object</h3>';
-echo '<div>' . get_field('omschrijving', get_the_ID()) . '</div>';
-echo '<button>Meer kenmerken</button>';
+echo '<div class="aanverhuur-omschrijving">';
+echo '<div class="h4_block">';
+echo '<div class="h4_container">';
+echo '<h4 class="aanverhuur-kenmerken-titel">Omschrijving van het object</h4>';
+echo '</div>';
+echo '</div>';
+echo '<div class="meer-omschrijving">' . get_field('omschrijving', get_the_ID()) . '</div>';
+echo '<button class="btn btn-green big meer-omschrijving-btn">Meer kenmerken</button>';
 
 /* OMSCHRIJVING MEER*/
-echo '<div>' . get_field('omschrijving_meer', get_the_ID()) . '</div>';
+echo '<div class="meer-omschrijving-container">' . get_field('omschrijving_meer', get_the_ID()) . '</div>';
 echo '</div>';
 
 /* CONTACT*/
-echo '<div>';
-echo '<button>Deze ruimte komen bezichtigen</button>';
+echo '<div class="aanverhuur-contact">';
+echo '<a href="#contact">';
+echo '<button class="btn btn-green big bezichtigings-btn-btn">';
+echo '<div class="h4_block">';
+echo '<div class="h4_container">';
+echo '<h4 class="bezichtigings-btn">';
+echo 'Deze ruimte komen <br> bezichtigen';
+echo '</h4>';
 echo '</div>';
-
-
 echo '</div>';
-echo '</div>';
+echo '<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>';
+echo '<h3>bezichtiging plannen</h3>';
+echo '</button>';
 echo '</a>';
+echo '</div>';
+echo '</div>';
+
+$args1 = array(
+  'numberposts' => 3,
+  'offset' => 0,
+  'category' => get_the_category()[0]->cat_ID,
+  'orderby' => 'post_date',
+  'order' => 'DESC',
+  'include' => '',
+  'exclude' => '',
+  'meta_key' => '',
+  'meta_value' =>'',
+  'post_type' => 'post',
+  'post_status' => 'draft, publish, future, pending, private',
+  'suppress_filters' => true
+);
+
+echo '<div class="row other_aanverhuur_container">';
+
+for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x++) {
+  echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
+  echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story">';
+  echo '<div class="story_preview_container">';
+  echo '<div class="story_preview_image">';
+  echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
+  echo '</div>';
+  echo '<div class="story_preview_text">';
+  echo '<div class="story_preview_text_container">';
+  echo '<div class="h4_block">';
+  echo '<div class="h4_container">';
+  echo '<h4 class="green underlineGreen">';
+  echo wp_get_recent_posts( $args1, ARRAY_A )[$x]['post_title'];
+  echo '</h4>';
+  echo '<br/>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</a>';
+};
+echo '</div>';
+
+echo '</div>';
+echo '</div>';
 ?>
+<?php get_template_part("contact", "page"); ?>

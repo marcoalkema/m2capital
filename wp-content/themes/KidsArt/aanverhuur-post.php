@@ -25,18 +25,20 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
       echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview">';
       echo '<div class="story_preview_container">';
-      echo '<div class="story_preview_text_container">';
-      echo '<div class="h4_block">';
-      echo '<div class="h4_container">';
       echo '<div class="story_preview_image">';
       echo '<img class="story_thumbnail" src="' . get_field("afbeelding", wp_get_recent_posts($args, ARRAY_A )[$x]['ID']) . '"/>';
       echo '</div>';
+      echo '<div class="story_preview_text_container">';
+      echo '<div class="h4_block">';
+      echo '<div class="h4_container">';
       echo '<h4>';
       echo get_field('adres', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
       echo '</h4>';
-      echo '<h4>';
+      echo '<div class="object-type">';
       echo get_field('soort_object', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
-      echo '</h4>';
+      echo '</div>';
+      echo '</div>';
+      echo '</div>';
       echo '<p class="post-excerpt textWhite">';
       echo get_field('samenvatting', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
       echo '</p>';
@@ -67,3 +69,35 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   echo '</div>';
 }
 ?>
+
+<div class="project-else">
+  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
+  <button class="btn btn-green">Meer aanbod?</button>
+  <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
+  <a href=""> <!-- Base link on what project we're in -->
+    <button class="btn btn-green big">
+      <span class="btn-text">
+        Beleggingsadvies
+      </span><br> <!-- Base text on what project we're in -->
+      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
+    </button>
+  </a>
+
+  <a href=""> <!-- Base link on what project we're in -->
+    <button class="btn btn-green big">
+      <span class="btn-text">
+        Asset management
+      </span><br> <!-- Base text on what project we're in -->
+      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
+    </button>
+  </a>
+
+  <a href=""> <!-- Base link on what project we're in -->
+    <button class="btn btn-green big">
+      <span class="btn-text">
+        (Her)ontwikkeling
+      </span><br> <!-- Base text on what project we're in -->
+      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
+    </button>
+  </a>
+</div>

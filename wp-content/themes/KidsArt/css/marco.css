@@ -123,6 +123,7 @@
   background: #f2f2f2;
 }
 
+.asset-management-page > p,
 .actueel-page > p {
   width: 60%;
   margin: 0 auto;
@@ -175,6 +176,7 @@
   background: #1d70b7!important;
   color: #fff!important;
   text-align: center;
+  margin-top: 80px;
   padding-bottom: 80px;
 }
 
@@ -185,7 +187,308 @@
   text-align: center;
 }
 
+.other_stories h4.underlineGreen::after {
+  border-bottom: 4px solid #fff
+}
+
 .whiteBlue {
   min-width: 151px;
   width: auto;
+}
+
+.interest-in-project {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.interest-in-project p {
+  text-align: center;
+}
+
+#post-2134 .story_preview,
+#post-2136 .story_preview,
+/* #post-2138 .story_preview, */
+#post-2131 .story_preview {
+  margin: 0;
+}
+
+#post-2134 .story_preview_container,
+#post-2136 .story_preview_container,
+/* #post-2138 .story_preview_container */
+#post-2131 .story_preview_container {
+  padding: 70px;
+  min-height: 620px!important;
+}
+
+#post-2134 .story_preview_image,
+#post-2136 .story_preview_image,
+/* #post-2138 .story_preview_image, */
+#post-2131 .story_preview_image {
+  overflow: hidden;
+}
+
+#post-2134 .other_stories_container,
+#post-2136 .other_stories_container,
+/* #post-2138 .other_stories_container, */
+#post-2131 .other_stories_container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+
+#post-2134 .story_preview_text,
+#post-2136 .story_preview_text,
+/* #post-2138 .story_preview_text, */
+#post-2131 .story_preview_text {
+  background: #f2f2f2;
+  height: 80%;
+  margin-top: 0;
+}
+
+#post-2134 .story_preview_text_container,
+#post-2136 .story_preview_text_container,
+/* #post-2138 .story_preview_text_container, */
+#post-2131 .story_preview_text_container {
+  padding: 10px;
+}
+
+#post-2134 .btn.btn-green.big,
+#post-2136 .btn.btn-green.big,
+#post-2131 .btn.btn-green.big {
+  height: 130px;
+  width: 400px;
+  margin: 5px 70px;
+  font-size: 40px!important;
+}
+
+#post-2138 .btn.btn-green.big {
+  height: 130px;
+  width: 300px;
+  margin: 5px 50px;
+  font-size: 36px!important;
+}
+
+.project-else {
+  margin: 50px 0 100px 0;
+  text-align: center;
+}
+
+.project-else p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.project-else > span {
+  font-size: 30px;
+  color: #1d70b7!important;
+  font-weight: 200;
+  margin-bottom: -20px;
+}
+
+#post-2138 .btn.btn-green.big > .glyphicon-menu-down,
+#post-2136 .btn.btn-green.big > .glyphicon-menu-down,
+#post-2134 .btn.btn-green.big > .glyphicon-menu-down,
+#post-2131 .btn.btn-green.big > .glyphicon-menu-down {
+  top: 36px;
+}
+
+.btn.btn-green.big > .btn-text {
+  margin-top: -10px;
+  position: relative;
+}
+
+.btn.btn-green.big > .btn-text::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  bottom: -11px;
+  margin-bottom: -5px;
+  width: 60%;
+  border-bottom: 4px solid #fff;
+}
+
+#post-2138 .story_preview_text_container {
+  position: relative;
+}
+
+#post-2138 .story_preview_text_container {
+  padding: 10px;
+}
+
+.object-type {
+  background: #1d70b7;
+  color: #fff;
+  padding: 3px 15px;
+  min-width: 80%;
+  margin: 0 auto;
+}
+
+#post-2138 .story_preview_container {
+  padding-top: 10px;
+  background: #f2f2f2;
+}
+
+#post-2138 .story_preview_text_container h4 {
+  margin-top: 0;
+}
+
+#post-2138 .story_preview_text_container .h4_container {
+  position: relative;
+}
+
+#post-2138 .h4_block {
+  margin-bottom: 30px;
+}
+
+.object-type::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -40%;
+  bottom: -11px;
+  margin-bottom: -5px;
+  width: 80%;
+  border-bottom: 4px solid #1d70b7;
+}
+
+.aanverhuur-intro {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.aanverhuur-intro p {
+  width: 90%;
+  margin: 30px auto;
+}
+
+.intro-details {
+  width: 74.5%;
+  margin: 10px auto 0 auto;
+}
+
+.intro-price {
+  text-align: right;
+}
+
+.intro-type,
+.intro-price {
+  margin-top: 45px;
+}
+
+.aanverhuur-kenmerken {
+  position: relative;
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.aanverhuur-kenmerken-titel {
+  color: #666;
+}
+
+.btn.btn-green.big .h4_container,
+.aanverhuur-omschrijving .h4_container,
+.aanverhuur-kenmerken .h4_container {
+  position: relative;
+}
+
+.aanverhuur-kenmerken-titel::after {
+  content: "";
+  position: absolute;
+  left: 60%;
+  margin-left: -40%;
+  bottom: -10px;
+  margin-bottom: 0px;
+  width: 60%;
+  border-bottom: 4px solid #666;
+}
+
+.meer-kenmerken-btn {
+  margin: 0 auto;
+}
+
+.kenmerken-tabel {
+  margin-top: 30px!important;
+}
+
+.aanverhuur-container {
+  text-align: center;
+}
+
+.meer-kenmerken-tabel {
+  display: none;
+  width: 60%;
+  margin: 30px auto 0 auto;
+}
+
+.aanverhuur-omschrijving {
+  background: #f2f2f2;
+  margin-top: 60px;
+  padding: 0 15% 60px 15%;
+  position: relative;
+}
+
+.meer-omschrijving {
+  padding-top: 20px;
+}
+
+.meer-omschrijving-container {
+  display: none;
+  padding: 20px 0;
+}
+
+.aanverhuur-contact {
+  margin-bottom: 20px;
+}
+
+.aanverhuur-contact .big {
+  height: 250px;
+  width: 300px;
+  margin: 40px auto;
+  font-size: 30px!important;
+  text-align: center;
+  position: relative;
+}
+
+.aanverhuur-contact .big h4 {
+  line-height: 1.2;
+}
+
+.aanverhuur-contact .big .glyphicon-menu-down {
+  margin: 20px auto 10px auto;
+}
+
+.aanverhuur-contact .big h3 {
+  color: #fff!important;
+  font-size: 2vw!important;
+}
+
+.aanverhuur-contact .big h3::after {
+  content: "";
+  position: absolute;
+  left: 27.5%;
+  margin: 0 auto;
+  bottom: 20px;
+  margin-bottom: 0px;
+  width: 45%;
+  border-bottom: 1px solid #fff;
+}
+
+
+.bezichtigings-btn::after {
+  content: "";
+  position: absolute;
+  left: 60%;
+  margin-left: -40%;
+  bottom: -10px;
+  margin-bottom: 0px;
+  width: 60%;
+  border-bottom: 2px solid #fff;
+}
+
+.other_aanverhuur_container {
+  padding: 0 7%;
+  background: #1d70b7;
 }
