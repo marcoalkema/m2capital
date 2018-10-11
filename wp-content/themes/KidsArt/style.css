@@ -5194,7 +5194,13 @@ li.current-menu-item a{
 .m2btn_image {
     margin-top: -54%;
 }
+#wie-zijn-wij-wie .m2btn_image {
 
+    margin-top: -1%;
+    margin-left: 9vw;
+    height: 40px;
+    width: 40px;
+}
 .btn_text_m2 {
     margin-top: 7%!important;
     text-transform:none!important;
@@ -5265,8 +5271,8 @@ li.current-menu-item a{
     margin-bottom: 5vw;
 }
 
-.introduction-links-image.wie-foto {
-
+.wie-foto {
+    margin-bottom: 10vw;
 }
 
 .wie-foto-container {
