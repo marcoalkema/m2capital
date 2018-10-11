@@ -4,7 +4,7 @@
       <div class="contact-title">
         <div class="h4_block">
           <div class="h4_container">
-            <h4 class="green underlineGreen">
+            <h4 class="green underlineGreen smalleUnderline">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                 $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;

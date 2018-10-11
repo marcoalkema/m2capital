@@ -5136,6 +5136,10 @@ p {
 .column > h2 {
     font-size: 69px!important;
     color: gray!important;
+    text-align: center;
+    width: 93%;
+    margin-left: -1%;
+    text-transform:none!important;
 }
 .footer-link-container .menu-secondary-container > ul > li {
         padding: 0 1.2vw;
@@ -5220,30 +5224,31 @@ li.current-menu-item a{
 
 .visie .section .column > p, h2 {
     width: 80%;
-    margin: 0 auto 59px 11vw;
+    margin: 0 11vw 59px 11vw;
 }
 
 .aanbod-intro-container .aanbod-intro > p {
     width: 80%;
-    margin: 0 auto 59px 11vw;
+    margin: 0 11vw 59px 11vw;
+    text-align: left;
 }
 
 #wie-zijn-wij-werkwijze .section .column > p {
     width: 80%;
-    margin: 0 auto 59px 11vw;
+    margin: 0 11vw 59px 11vw;
     /* margin: 0 auto 59px auto; */
 }
 
-#wie-zijn-wij-werkwijze .smalleUnderline.underlineGreen::after {
-    width: 18%;
-    margin: 0 auto 59px 11vw;
-    /* margin-left: -10%; */
+.smalleUnderline::after {
+    width: 18%!important;
+    /* margin: 0 11vw 59px 11vw; */
+    margin-left: -9%!important;
 
 }
 
 #wie-zijn-wij-wie > div > p {
     width: 80%;
-    margin: 0 auto 59px 11vw;
+    margin: 0 11vw 59px 11vw;
     /* margin: 0 auto 59px auto; */
 }
 
