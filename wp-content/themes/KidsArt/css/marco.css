@@ -121,3 +121,23 @@
 #her-ontwikkel {
   background: #f2f2f2;
 }
+
+.actueel-page > p {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.story_preview_text_container h4.underlineGreen {
+  padding-top: 0!important;
+  margin-bottom: 5px!important;
+}
+
+.story_preview_text {
+  position: relative;
+  margin-top: 10px;
+}
+
+.story_preview_image {
+  height: 250px;
+  overflow: hidden;
+}

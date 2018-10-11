@@ -3327,12 +3327,6 @@ a {
   top: 0;
   position: absolute;
 }
-.story_preview_image{
-  width: 100%;
-}
-.story_preview_image img {
-  width: 100%;
-}
 .story_thumbnail{
   min-height: 100%!important;
   min-width: 100%!important;
