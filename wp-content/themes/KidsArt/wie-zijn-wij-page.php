@@ -197,23 +197,25 @@ get_header(); ?>
                     echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-mark" src="' . $val['foto'] . '"/>';
                     echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
                     echo '<div>' . $val['omschrijving'] . '</div>';
-                    echo '<a href="' . $val['linkedin-url'] . '">';
                     echo '<button type="button" class="btn btn-primary m2btn">';
-                    echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" heigth="100px" width="100px" />';
-                    echo '</button>';
+                    echo '<a href="' . $val['linkedin-url'] . '">';
+                    echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
                     echo '</a>';
+                    echo '</button>';
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
                 } else {
                     echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 wie-foto-container">';
                     echo '<div class="wrapper">';
-                    echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-michiel" src="' . $val['foto'] . '"/></div>';
+                    echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-michiel" src="' . $val['foto'] . '"/>';
                     echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
                     echo '<div>' . $val['omschrijving'] . '</div>';
+                    echo '<button type="button" class="btn btn-primary m2btn">';
                     echo '<a href="' . $val['linkedin-url'] . '">';
-                    echo '<button>LinkedBTN</button>';
+                    echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
                     echo '</a>';
+                    echo '</button>';
                     echo '</div>';
                     echo '</div>';
                     echo '</div>';
@@ -242,23 +244,23 @@ get_header(); ?>
         <div class="partners">
             <div id="wie-zijn-wij-visie" class="h4_block">
                 <div class="h4_container">
-              <h4 class="green underlineGreen">
+                    <h4 class="green underlineGreen">
+                        <?php
+                        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+                            printf(get_field('partners-title', $ID));
+                        }
+                        ?>
+                    </h4>
+                </div>
+            </div>
+            <div>
                 <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
-                  printf(get_field('partners-title', $ID));
+                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+                    printf(get_field('partners-text', $ID));
                 }
                 ?>
-              </h4>
-            </div>
-          </div>
-          <div>
-            <?php
-            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
-              printf(get_field('partners-text', $ID));
-            }
-            ?>
           </div>
           <div class="partner-profiles">
             <?php
