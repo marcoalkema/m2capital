@@ -23,11 +23,7 @@
         printf(get_field('actueel-text', $ID));
       }?>
     </div>
-    <a href="<?php
-             if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-               $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
-               printf(get_field('actueel-button-link', $ID));
-             }?>">
+    <a href="<?php printf(get_site_url() . '/actueel');?>">
       <button class="btn btn-green">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
