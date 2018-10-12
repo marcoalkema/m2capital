@@ -549,6 +549,42 @@
 }
 
 .layoutArea > .column > h2 {
-  margin: 5%;
-  padding: 0 5%;
+  margin: 5% 5% 2% 5%;
+  padding: 2% 5%;
+}
+
+.wie-foto {
+  text-align: center;
+}
+
+.wie-foto p {
+  text-align: left;
+}
+
+#wie-zijn-wij-wie .m2btn_image {
+  margin-left: 0!important;
+}
+
+.wie-foto h4.underlineGreen {
+  margin-bottom: 3.5vw!important;
+}
+
+.m2BtnImage {
+  height: 100px;
+  line-height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  background: #1d70b7;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 900;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.m2BtnImage > span {
+ display: inline-block;
+ vertical-align: middle;
+ line-height: normal;
+
 }
