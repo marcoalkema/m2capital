@@ -6,10 +6,13 @@
 
 get_header(); ?>
 
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
         <div class="page-header-image">
-            <img src="<?php the_field("template-image"); ?>" class="headerImg"/>
+            <div class="blue-image-filter">
+                <img src="<?php the_field("template-image"); ?>" class="headerImg"/>
+            </div>
           <div class="page-title-div">
               <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
           </div>
@@ -72,11 +75,13 @@ get_header(); ?>
         </div>
       </div>
       <div class="visie">
-        <img src="<?php
-                  if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
-                    printf(get_field('visie-img', $ID));
-                  }?>" class="visie-img"/>
+          <!-- <div class="light-blue-image-filter"> -->
+              <img src="<?php
+                        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
+                            printf(get_field('visie-img', $ID));
+                        }?>" class="visie-img light-blue-image-filter"/>
+              <!-- </div> -->
 
         <div id="wie-zijn-wij-visie" class="h4_block">
           <div class="h4_container">
@@ -159,7 +164,7 @@ get_header(); ?>
                       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                           $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
                           printf(get_field('over-ons-img', $ID));
-                      }?>" class="over-ons-img"/>
+                      }?>" class="over-ons-img light-blue-image-filter"/>
 
             <div id="wie-zijn-wij-visie" class="h4_block">
                 <div id="over-ons" class="h4_container">

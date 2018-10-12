@@ -4871,7 +4871,7 @@ a {
 h4.underlineGreen{
   position:relative;
   line-height: 95%!important;
-  margin-bottom: 35px!important;
+  margin-bottom: 2vw!important;
   padding-top: 35px;
   text-transform: none;
 }
@@ -4880,8 +4880,8 @@ h4.underlineGreen::after{
     position: absolute;
     left: 50%;
     margin-left: -30%;
-    bottom: -11px;
-    margin-bottom: -13px;
+    bottom: -1vw;
+    margin-bottom: -1vw;
     width: 60%;
     border-bottom: 4px solid #4080bf;
 }
@@ -4929,6 +4929,8 @@ h4.green{
 .contact-form-template {
   width: 68%;
   margin: 0 auto;
+
+
 }
 .contact-form-title {
   margin-bottom: 12px!important;
@@ -5129,7 +5131,7 @@ p {
     /* margin-left: 50px; */
 }
 
-.column > h2 {
+.column > h2, .column > pre {
     font-size: 69px!important;
     color: gray!important;
     text-align: center;
@@ -5137,6 +5139,17 @@ p {
     margin-left: -1%;
     text-transform:none!important;
 }
+
+.page-template-wie-zijn-wij-page .column > h2 {
+    width: 83%;
+    margin: 3% auto 3% 8%!important;
+}
+
+.page-template-wie-zijn-wij-page .column > p {
+
+    margin: auto auto 0px auto!important;
+}
+
 .footer-link-container .menu-secondary-container > ul > li {
         padding: 0 1.2vw;
 
@@ -5218,34 +5231,20 @@ li.current-menu-item a{
     height: 500px;
 }
 
-.visie .section .column > p, h2 {
-    width: 80%;
-    margin: 0 11vw 59px 11vw;
-}
 
-.aanbod-intro-container .aanbod-intro > p {
-    width: 80%;
-    margin: 0 11vw 59px 11vw;
-    text-align: left;
-}
 
-#wie-zijn-wij-werkwijze .section .column > p {
-    width: 80%;
-    margin: 0 11vw 59px 11vw;
-    /* margin: 0 auto 59px auto; */
-}
+/* .aanbod-intro-container .aanbod-intro > p { */
+/*     width: 80%; */
+/*     margin: 0 11vw 59px 11vw; */
+/*     text-align: left; */
+/* } */
+
 
 .smalleUnderline::after {
     width: 18%!important;
     /* margin: 0 11vw 59px 11vw; */
     margin-left: -9%!important;
 
-}
-
-#wie-zijn-wij-wie > div > p {
-    width: 80%;
-    margin: 0 11vw 59px 11vw;
-    /* margin: 0 auto 59px auto; */
 }
 
 .over-ons-img {
@@ -5257,10 +5256,14 @@ li.current-menu-item a{
     color: gray;
 }
 
-#wie-zijn-wij-werkwijze > #wie-zijn-wij-wie > .row {
+#wie-zijn-wij-werkwijze > #wie-zijn-wij-wie > .row,
+.partners p, #wie-zijn-wij-wie > div > p,
+#wie-zijn-wij-werkwijze .section .column > p,
+.aanbod-intro-container .aanbod-intro > p,
+.visie .section .column > p, h2 {
     width: 80%;
     margin: 0 11vw 59px 11vw;
-
+    text-align: left;
 }
 
 .entry-content p {
@@ -5273,7 +5276,7 @@ li.current-menu-item a{
 }
 
 .wie-foto {
-    margin-bottom: 10vw;
+    margin-bottom: 4vw;
 }
 
 .wie-foto-container {
@@ -5293,7 +5296,36 @@ h4.underlineGreen.lijn::after {
     margin-bottom: -10px;
 }
 
-.partners p {
-        width: 80%;
-    margin: 0 11vw 59px 11vw;
+.wie-foto > h4 {
+    padding-top: 3%!important;
+}
+
+.blue-image-filter::after {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: '';
+  background: #2c4cff;
+  opacity: 0.68;
+
+    /* filter: url(http://localhost:8888/wp-content/themes/KidsArt/svgfilter.xml#blue); */
+    /* -webkit-filter: url(http://localhost:8888/wp-content/themes/KidsArt/svgfilter.xml#blue); */
+}
+
+.light-blue-image-filter {
+  /* position: absolute; */
+  /* top: 0; */
+  /* left: 0; */
+  /* right: 0; */
+  /* bottom: 0; */
+  /* content: ''; */
+  /* background: #2c4cff; */
+  /* opacity: 0.68; */
+      /* filter: url(#more-light-blue); */
+    /* -webkit-filter: url(#more-light-blue);
+     */
+    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }

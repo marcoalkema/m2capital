@@ -19,7 +19,7 @@
   margin: 2%;
   text-align: center;
   overflow: hidden;
-  min-height: 51vw;
+  min-height: 42vw;
 }
 
 .wat-doen-wij-image {
@@ -59,8 +59,13 @@
 #beleggingsadvies p,
 #her-ontwikkel p,
 #asset-management p {
-  width: 76%;
-  margin: 30px auto;
+  /* width: 76%; */
+    /* margin: 2vw auto; */
+
+    width: 80%;
+    margin: 0 11vw 59px 11vw;
+    text-align: left;
+
 }
 
 #aan-verhuur .metaslider,
@@ -491,4 +496,30 @@
 .other_aanverhuur_container {
   padding: 0 7%;
   background: #1d70b7;
+}
+
+.asset-management-foto {
+    width: 38vw;
+    height: 100%;
+    margin: 1px;
+    margin-top: 1.3vw;
+}
+
+.tekstlinks {
+    font-size: 69px!important;
+    color: gray!important;
+    text-align: center;
+    width: 100%;
+    margin-left: 20%;
+    text-transform: none!important;
+    line-height: initial;
+    /* padding-top: 2.5vw; */
+    /* float: left; */
+    /* display: inline-block; */
+    margin: 1px;
+}
+
+.asset-management-text-block .section > .layoutArea > .column > p {
+    margin: 3vw 11vw 1vw 11vw!important;
+    padding: 1vw 0px 1vw 0px;
 }

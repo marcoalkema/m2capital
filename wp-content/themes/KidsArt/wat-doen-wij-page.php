@@ -8,8 +8,10 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
-    <div class="page-header-image">
-      <img src="<?php the_field("wat-doen-wij-img", get_the_ID()); ?>" class="headerImg"/>
+      <div class="page-header-image">
+          <div class="blue-image-filter">
+              <img src="<?php the_field("wat-doen-wij-img", get_the_ID()); ?>" class="headerImg"/>
+          </div>
       <div class="page-title-div">
         <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('header-title', get_the_ID())); ?></h6>
       </div>
