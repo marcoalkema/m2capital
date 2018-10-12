@@ -523,3 +523,21 @@
     margin: 3vw 11vw 1vw 11vw!important;
     padding: 1vw 0px 1vw 0px;
 }
+
+.category-header {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1vw;
+  background: #1d70b7;
+}
+
+.contact-info-container {
+  padding-left: 10%!important;
+}
+
+.upper-footer {
+  height: 170px;
+  padding: 20px 0 40px 0!important;
+}

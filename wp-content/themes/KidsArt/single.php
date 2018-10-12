@@ -11,7 +11,7 @@ get_header();  ?>
   $category_id = get_cat_ID('Client');
   if ($cat == 25) {
     get_template_part("aanverhuur", "post-page");
-  } else if ($cat == 23) {
+  } else if ($cat == 23 || $cat == 27 || $cat == 26 || $cat == 24) {
     get_template_part("actueel", "post");
   } else if ($category_id == 0) {
     get_template_part("client", "post");

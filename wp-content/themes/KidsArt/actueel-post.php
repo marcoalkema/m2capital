@@ -86,15 +86,3 @@
 </div>
 
 <?php get_template_part("contact", "page"); ?>
-<script>
- var category = <?php echo get_the_category()[0]->cat_ID ?>;
- console.log(category)
- if (category === 12 ||
-     category === 13 ||
-     category === 17 ||
-     category === 14
- ) {
-   document.getElementById('menu-item-1556').style.borderBottom = '2px solid white'
-   document.getElementById('menu-item-1555').style.borderBottom = '2px solid white'
- }
-</script>
