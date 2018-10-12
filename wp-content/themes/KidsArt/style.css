@@ -3887,6 +3887,7 @@ a {
   .main-navigation li ul {
     margin: 0;
     padding: 0;
+    padding-left: 10px!important;
     position: absolute;
     top: 100%;
     z-index: 1;
@@ -5064,7 +5065,7 @@ h4.green{
   margin: auto 13px;
   float: right;
   width: 22%;
-  min-height: 350px;
+  min-height: 321px;
 }
 
 .network-header-container {
