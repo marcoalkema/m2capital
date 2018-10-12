@@ -3208,9 +3208,10 @@ landing-overlay-title}
   overflow: hidden;
 }
 .site-logo {
-  margin-top: 4%;
-  margin-bottom: 4%;
-  margin-left: 15%;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    padding-left: 2%;
+    margin-left: -3%;
 }
 .social_icons_primary {
   position: absolute;
@@ -5341,4 +5342,22 @@ h4.underlineGreen.lijn::after {
     /* -webkit-filter: url(#more-light-blue);
      */
     filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+}
+.glyphicon.glyphicon-menu-down {
+    display: block;
+    color: #1d70b7;
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    padding-top: 3px;
+    padding-left: 0px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+.overlay-plaatje {
+        width: 13vw;
+    height: auto;
+    margin: 16vw 0 auto;
 }
