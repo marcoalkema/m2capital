@@ -263,7 +263,7 @@ img {
   text-align: center;
   padding: 6px;
   text-decoration: none;
-  font-size: 1.55vw;
+  font-size: 1.3vw;
 }
 .menu-secondary-engels-container{
   margin-left: -100px;
@@ -401,6 +401,7 @@ img[class*="align"],
 img[class*="wp-image-"],
 img[class*="attachment-"] {
   height: auto; /* Make sure images with WordPress-added height and width attributes are scaled correctly */
+  margin: 20px 0;
 }
 img.size-full,
 img.size-large,
@@ -2073,7 +2074,7 @@ landing-overlay-title}
   color: #000000;
   border: 1px solid #777!important;
   text-transform: lowercase;
-  font-size: 24px!important;
+  font-size: 20px!important;
   font-stretch: condensed!important;
   font-weight: 400!important;
   line-height: 0.1!important;
@@ -2189,20 +2190,21 @@ landing-overlay-title}
 
 /* PARTNERS */
 .partner-profiles {
-  width: 100%;
+  width: 90%;
+  margin: -20px auto 40px auto;
 }
 .partner-profiles-img {
-  height: 140px;
+  height: 100px;
   display: inline-block;
   overflow: hidden;
   margin: 10px;
 }
 
 .partner-profiles-img img {
-    max-height: 64px;
-    width: auto;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);
+  height: 100%;
+  width: auto;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 /* ANDERE VALUE MET KLEINERE RESOLUTIE */
@@ -2430,7 +2432,7 @@ landing-overlay-title}
   -webkit-transform: translateY(30%);
   -ms-transform: translateY(30%);
   float: right;
-  margin-right: 3%;
+  margin-right: 5%;
 }
 #menu-primary_,
 #menu-primary__{
@@ -4949,7 +4951,6 @@ h4.green{
   font-size: 1.6vw;
   padding: 5px 0;
   width: 100%;
-  height: 58px;
 }
 
 /* FOOTER */
@@ -4974,9 +4975,14 @@ h4.green{
 
 .lower-footer {
   width: 100%;
-  height: 100px;
+  height: 80px;
   padding: 20px 0;
   background: #444;
+  font-size: 1.3vw;
+}
+
+.lower-footer a {
+  font-size: 1.4vw;
 }
 
 .footer-link-container {
@@ -5227,10 +5233,10 @@ li.current-menu-item a{
 }
 
 .m2_btn_table {
-    margin-top: 11vw;
-    margin-left: 15vw;
-    margin-bottom: 7vw!important;
-    width: 77%!important;
+  margin-top: 1vw;
+  margin-left: 17vw;
+  margin-bottom: 7vw!important;
+  width: 77%!important;
 }
 
 .visie > img {
@@ -5260,7 +5266,8 @@ li.current-menu-item a{
 }
 
 .grijs {
-    color: gray;
+  margin-top: 30px;
+  color: gray;
 }
 
 #wie-zijn-wij-werkwijze > #wie-zijn-wij-wie > .row,
