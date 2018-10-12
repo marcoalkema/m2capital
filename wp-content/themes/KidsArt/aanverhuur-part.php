@@ -24,22 +24,55 @@
   <?php echo do_shortcode("[metaslider id=2107]"); ?>
 
   <div>
-    <?php
-    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
-      printf(get_field('aanverhuur-text2', $ID));
-    }
-    ?>
+      <?php
+      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+          printf(get_field('aanverhuur-text2', $ID));
+      }
+      ?>
+  </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <div class="wrapper">
+
+                  <img src="<?php
+                            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+                                printf(get_field('aanverhuur-foto', $ID));
+                            }
+                            ?>" class="asset-management-foto" />
+              </div>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+              <div class="wrapper tekstrechts">
+                  <?php
+                  if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+                      printf(get_field('aanverhuur-header-tekst', $ID));
+                  }
+                  ?>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div>
+      <?php
+      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+          printf(get_field('aanverhuur-text3', $ID));
+      }
+      ?>
   </div>
 
   <a href="<?php printf(get_site_url()) ?>/aan-verhuur_/">
-  <button>
-    <?php
-    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
-      printf(get_field('aanverhuur-button-text', $ID));
-    }
-    ?>
-  </button>
+      <button>
+          <?php
+          if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+              printf(get_field('aanverhuur-button-text', $ID));
+          }
+          ?>
+      </button>
   </a>
 </div>

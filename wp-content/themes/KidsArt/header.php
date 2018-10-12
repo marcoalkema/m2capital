@@ -45,52 +45,10 @@
             </div>
           </div>
 
-          <!-- <h3 class="menu-toggle"><?php _e( '', 'twentytwelve' ); ?>
-               <button class="menu-toggle" type="submit" style="border: 0; background: transparent">
-               <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/hamburger.svg" width="40" height="40" alt="menu" />
-               </button>
-               </h3> -->
-
           <?php get_home_url() ?>
 
           <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
 
-          <!-- <div class="social_icons_primary">
-               <div class="maps-icon">
-               <a href="<?php
-                        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                        if ( ICL_LANGUAGE_CODE == 'nl' ) {
-                        echo get_home_url() . '/about/#waar_ben_ik';
-                        } else {
-                        echo '/about/?lang=en/#waar_ben_ik';
-                        };
-                        };
-                        ?>">
-               <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/11/SF-assets-06-black.png" height="25" width="25" class="img-responsive"/>
-               </a>
-               </div> -->
-
-            <!-- <div class="facebook-icon">
-                 <a href="<?php the_field('facebook-link', 5) ?>" target="_blank">
-                 <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2017/12/SF-assets-09-black.png" height="21" width="21" class="img-responsive"/>
-                 </a>
-                 </div>
-                 <div class="youtube-icon">
-                 <a href="<?php the_field('youtube_link', 5) ?>" target="_blank">
-                 <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-10-black.png" height="21" width="21" class="img-responsive"/>
-                 </a>
-                 </div>
-                 <div class="instagram-icon">
-                 <a href="<?php the_field('instagram_link', 5) ?>" target="_blank">
-                 <img src="<?php echo get_template_directory_uri() ?>/../../uploads/2017/12/SF-assets-11-black.png" height="21" width="21" class="img-responsive"/>
-                 </a>
-                 </div>
-                 <div class="linkedin-icon">
-                 <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
-                 <img src="<?php echo get_template_directory_uri() ?>/../..//uploads/2018/02/SF-linkedin-black.png" height="21" width="21" class="img-responsive"/>
-                 </a>
-                 </div>
-                 </div> -->
         </nav><!-- #site-navigation -->
 
       </header><!-- #masthead -->
