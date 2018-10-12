@@ -32,7 +32,7 @@
 }
 
 .wat-doen-wij-col h4 {
-    font-size: 23px!important;
+  font-size: 23px!important;
 }
 
 .wat-doen-wij-col h4.underlineGreen {
@@ -64,11 +64,11 @@
 #her-ontwikkel p,
 #asset-management p {
   /* width: 76%; */
-    /* margin: 2vw auto; */
+  /* margin: 2vw auto; */
 
-    width: 80%;
-    margin: 0 11vw 59px 11vw;
-    text-align: left;
+  width: 80%;
+  margin: 0 11vw 59px 11vw;
+  text-align: left;
 
 }
 
@@ -504,29 +504,29 @@
 }
 
 .asset-management-foto {
-    width: 38vw;
-    height: 100%;
-    margin: 1px;
-    margin-top: 1.3vw;
+  width: 38vw;
+  height: 100%;
+  margin: 1px;
+  margin-top: 1.3vw;
 }
 
 .tekstlinks {
-    font-size: 69px!important;
-    color: gray!important;
-    text-align: center;
-    width: 100%;
-    margin-left: 20%;
-    text-transform: none!important;
-    line-height: initial;
-    /* padding-top: 2.5vw; */
-    /* float: left; */
-    /* display: inline-block; */
-    margin: 1px;
+  font-size: 69px!important;
+  color: gray!important;
+  text-align: center;
+  width: 100%;
+  margin-left: 20%;
+  text-transform: none!important;
+  line-height: initial;
+  /* padding-top: 2.5vw; */
+  /* float: left; */
+  /* display: inline-block; */
+  margin: 1px;
 }
 
 .asset-management-text-block .section > .layoutArea > .column > p {
-    margin: 3vw 11vw 1vw 11vw!important;
-    padding: 1vw 0px 1vw 0px;
+  margin: 3vw 11vw 1vw 11vw!important;
+  padding: 1vw 0px 1vw 0px;
 }
 
 .category-header {
@@ -585,8 +585,42 @@
 }
 
 .m2BtnImage > span {
- display: inline-block;
- vertical-align: middle;
- line-height: normal;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
 
+.wysiwyg {
+  height: auto;
+}
+
+.wysiwyg h1 {
+  position:relative;
+  line-height: 95%!important;
+  margin-bottom: 3vw!important;
+  padding-top: 35px;
+  text-transform: none;
+  color: #1d70b7!important;
+}
+
+.wysiwyg h1::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -10%;
+  bottom: -1vw;
+  margin-bottom: -1vw;
+  width: 20%;
+  border-bottom: 4px solid #4080bf;
+}
+
+.wysiwyg h2 {
+  font-size: 50px!important;
+  color: gray!important;
+  text-align: center;
+  width: 100%;
+  text-transform: none!important;
+  line-height: initial;
+  padding-top: 30px;
+  margin: 1% 1% 30px 1%;
 }
