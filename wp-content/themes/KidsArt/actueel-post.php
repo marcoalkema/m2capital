@@ -22,6 +22,24 @@
   </div>
   <?php printf(get_field('post-text'));
   ?>
+
+  <div class="interest-in-project">
+    <div class="h4_block">
+      <div class="h4_container">
+        <h4 class="green underlineGreen">
+          <?php printf(get_field('wie-zijn-wij-title123123', get_the_ID())); ?>
+          Geinteresseerd in dit project?
+        </h4>
+      </div>
+    </div>
+    <p>
+      Neem dan contact op met ons via de onderstaande knop!
+    </p>
+    <a href="#contact">
+      <button class="btn btn-green">Contact</button>
+    </a>
+  </div>
+
 </div>
 
 <div class="other_stories">

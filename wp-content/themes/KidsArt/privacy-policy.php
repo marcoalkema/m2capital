@@ -10,7 +10,9 @@ get_header(); ?>
   <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
     <div class="page-header-image">
       <img src="<?php the_field("privacy-img", get_the_ID()); ?>" class="headerImg"/>
-      <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('privacy-img', get_the_ID())); ?></h6>
+      <div class="page-title-div">
+        <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('privacy-title', get_the_ID())); ?></h6>
+      </div>
     </div>
     <div class="template-page-content">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">

@@ -1,0 +1,7 @@
+.page-header-image {
+  background: #1d70b7;
+}
+
+.page-header-image > img {
+  opacity: 0.5;
+}

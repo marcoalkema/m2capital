@@ -15,7 +15,9 @@ get_header(); ?>
                                 printf(get_field('header_image', $ID));
                               }
                               ?>" class="headerImg"/>
-      <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('privacy-img', get_the_ID())); ?></h6>
+      <div class="page-title-div">
+        <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('disclaimer-title', get_the_ID())); ?></h6>
+      </div>
     </div>
     <div class="template-page-content">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">
