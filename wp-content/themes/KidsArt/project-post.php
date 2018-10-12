@@ -61,7 +61,10 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
   <button class="btn btn-green">Meer projecten zien?</button>
   <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-  <a href=""> <!-- Base link on what project we're in -->
+  <a href="<?php
+           $cat = get_field('categorie', get_the_ID());
+           $link = $cat == 27 || $cat == 24 || $cat == 25 ? '/beleggingsadvies__/' : '/asset-management_/';
+           printf(get_site_url() . $link)?>"> <!-- Base link on what project we're in -->
     <button class="btn btn-green big">
       <span class="btn-text">
         <?php
@@ -76,7 +79,10 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
     </button>
   </a>
-  <a href=""> <!-- Base link on what project we're in -->
+  <a href="<?php
+           $cat = get_field('categorie', get_the_ID());
+           $link = $cat == 27 || $cat == 26 || $cat == 25 ? '/herontwikkeling_/' : '/asset-management_/';
+           printf(get_site_url() . $link)?>"> <!-- Base link on what project we're in -->
     <button class="btn btn-green big">
       <span class="btn-text">
         <?php

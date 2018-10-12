@@ -145,6 +145,7 @@
 .story_preview_text_container h4.underlineGreen {
   padding-top: 0!important;
   margin-bottom: 5px!important;
+  font-size: 25px!important;
 }
 
 .story_preview_text {
@@ -551,6 +552,7 @@
 .layoutArea > .column > h2 {
   margin: 5% 5% 2% 5%;
   padding: 2% 5%;
+  font-size: 4vw!important;
 }
 
 .wie-foto {

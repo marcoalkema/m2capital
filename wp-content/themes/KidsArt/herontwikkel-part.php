@@ -31,7 +31,7 @@
     }
     ?>
   </div>
-
+  <a href="<?php printf(get_site_url()) ?>/herontwikkeling_/">
   <button>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
@@ -40,4 +40,5 @@
     }
     ?>
   </button>
+  </a>
 </div>

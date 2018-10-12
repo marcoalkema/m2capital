@@ -31,53 +31,54 @@
   <?php echo do_shortcode("[metaslider id=2072]");?>
 
   <div>
-      <?php
-      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
-          printf(get_field('asset-management-text2', $ID));
-      }
-      ?>
+    <?php
+    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+      printf(get_field('asset-management-text2', $ID));
+    }
+    ?>
   </div>
   <div class="container">
-      <div class="row">
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <div class="wrapper tekstlinks">
-              <?php
-              if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
-                  printf(get_field('asset-management-header_tekst', $ID));
-              }
-              ?>
-              </div>
-          </div>
-          <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
-              <div class="wrapper">
-              <img src="<?php
-                        if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
-                            printf(get_field('asset-management-foto_project', $ID));
-                        }
-                        ?>" class="asset-management-foto" />
-              </div>
-          </div>
+    <div class="row">
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="wrapper tekstlinks">
+          <?php
+          if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+            printf(get_field('asset-management-header_tekst', $ID));
+          }
+          ?>
+        </div>
       </div>
+      <div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6">
+        <div class="wrapper">
+          <img src="<?php
+                    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+                      printf(get_field('asset-management-foto_project', $ID));
+                    }
+                    ?>" class="asset-management-foto" />
+        </div>
+      </div>
+    </div>
   </div>
   <div>
+    <?php
+    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+      printf(get_field('asset-management-text3', $ID));
+    }
+    ?>
+  </div>
+
+  <a href="<?php printf(get_site_url()) ?>/asset-management_/">
+    <button>
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
-          printf(get_field('asset-management-text3', $ID));
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+        printf(get_field('asset-management-button-text', $ID));
       }
       ?>
-          </div>
-
-
-          <button>
-              <?php
-              if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
-                  printf(get_field('asset-management-button-text', $ID));
-              }
-              ?>
-          </button>
+    </button>
+  </a>
 </div>

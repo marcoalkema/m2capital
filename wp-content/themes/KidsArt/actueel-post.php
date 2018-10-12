@@ -35,7 +35,7 @@
     <p>
       Neem dan contact op met ons via de onderstaande knop!
     </p>
-    <a href="#contact">
+    <a href="#contact" data-ps2id="true" class="ps2id">
       <button class="btn btn-green">Contact</button>
     </a>
   </div>
