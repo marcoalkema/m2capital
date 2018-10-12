@@ -35,6 +35,7 @@
     if ($i % 2 == 0) {
       echo '<div class="row">';
       echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col wat-doen-wij-info-container">';
+      echo '<a href="' . get_site_url() . '/' . $val['introductie-links-link'] . '" data-ps2id="true" class="ps2id">';
       echo '<div class="introduction-links-image-container">';
       echo '<img class="introduction-links-image" src="' . $val['introductie-links-img'] . '"/>';
       echo '</div>';
@@ -43,9 +44,11 @@
       echo '<div class="wat-doen-wij-btn-container">';
       echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
       echo '</div>';
+      echo '</a>';
       echo '</div>';
     } else {
       echo '<div class="col-6 col-sm-6 col-md-6 col-lg-6 col-xl-6 network-col wat-doen-wij-info-container">';
+      echo '<a href="' . get_site_url() . '/' . $val['introductie-links-link'] . '" data-ps2id="true" class="ps2id">';
       echo '<div class="introduction-links-image-container">';
       echo '<img class="introduction-links-image" src="' . $val['introductie-links-img'] . '"/>';
       echo '</div>';
@@ -54,6 +57,7 @@
       echo '<div class="wat-doen-wij-btn-container">';
       echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
       echo '</div>';
+      echo '</a>';
       echo '</div>';
 
       if ($i % (1 * $row + ($row - 1)) == 0) {

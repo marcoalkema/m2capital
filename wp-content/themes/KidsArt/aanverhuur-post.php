@@ -74,7 +74,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
   <button class="btn btn-green">Meer aanbod?</button>
   <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-  <a href=""> <!-- Base link on what project we're in -->
+  <a href="<?php printf(get_site_url()) ?>/beleggingsadvies_/"> <!-- Base link on what project we're in -->
     <button class="btn btn-green big">
       <span class="btn-text">
         Beleggingsadvies
@@ -83,7 +83,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     </button>
   </a>
 
-  <a href=""> <!-- Base link on what project we're in -->
+  <a href="<?php printf(get_site_url()) ?>/asset-management_/"> <!-- Base link on what project we're in -->
     <button class="btn btn-green big">
       <span class="btn-text">
         Asset management
@@ -92,7 +92,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     </button>
   </a>
 
-  <a href=""> <!-- Base link on what project we're in -->
+  <a href="<?php printf(get_site_url()) ?>/herontwikkeling__/"> <!-- Base link on what project we're in -->
     <button class="btn btn-green big">
       <span class="btn-text">
         (Her)ontwikkeling

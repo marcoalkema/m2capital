@@ -36,7 +36,7 @@ get_header(); ?>
         <div class="row">
           <div class="col-sm-4">
             <div class="btn-group-vertical">
-              <a href="#over-ons">
+              <a href="#over-ons" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
                   <span>
                     M2
@@ -50,7 +50,7 @@ get_header(); ?>
           </div>
           <div class="col-sm-4">
             <div class="btn-group-vertical">
-              <a href="#wie-zijn-wij-visie">
+              <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
                   <span>
                     M2
@@ -64,7 +64,7 @@ get_header(); ?>
           </div>
           <div class="col-sm-4">
             <div class="btn-group-vertical">
-              <a href="#wie-zijn-wij-werkwijze">
+              <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
                   <span>
                     M2
@@ -159,7 +159,7 @@ get_header(); ?>
           }
           ?>
         </div>
-        <a href="#contact">
+        <a href="#contact" data-ps2id="true" class="ps2id">
           <button class="btn btn-green margin_btn">Contact</button>
         </a>
       </div>
@@ -209,7 +209,7 @@ get_header(); ?>
           echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
           echo '<div>' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
-          echo '<a href="' . $val['linkedin-url'] . '">';
+          echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
           echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
           echo '</a>';
           echo '</button>';
@@ -223,7 +223,7 @@ get_header(); ?>
           echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
           echo '<div>' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
-          echo '<a href="' . $val['linkedin-url'] . '">';
+          echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
           echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
           echo '</a>';
           echo '</button>';

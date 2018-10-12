@@ -66,7 +66,7 @@ get_header(); ?>
             echo '<img class="wat-doen-wij-image" src="' . $val['img'] . '"/>';
             echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
             echo $val['text'];
-            echo '<a href="' . $val['link'] . '">';
+            echo '<a href="' . $val['link'] . '" data-ps2id="true" class="ps2id">';
             echo '<button class="btn btn-green">lees meer</button>';
             echo '</a>';
             echo '</div>';
