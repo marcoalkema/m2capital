@@ -5344,7 +5344,8 @@ h4.underlineGreen.lijn::after {
      */
     filter: sepia(100%) hue-rotate(190deg) saturate(500%);
 }
-.glyphicon.glyphicon-menu-down {
+
+#overlay-container .glyphicon.glyphicon-menu-down {
     display: block;
     color: #1d70b7;
     background-color: white;
