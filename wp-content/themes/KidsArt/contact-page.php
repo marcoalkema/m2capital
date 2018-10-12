@@ -31,7 +31,7 @@
     <div id="foldalbe-contact" class="foldalbe-contact">
 
       <div class="contact-text">
-        <p class="textBlack">
+        <p>
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
             $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;

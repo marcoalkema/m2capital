@@ -541,3 +541,8 @@
   height: 170px;
   padding: 20px 0 40px 0!important;
 }
+
+.layoutArea > .column > h2 {
+  margin: 40px;
+  padding-top: 30px;
+}
