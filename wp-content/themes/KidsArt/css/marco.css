@@ -607,6 +607,9 @@
 
 .wysiwyg {
   height: auto;
+  word-break: normal;
+  word-wrap: break-word;
+  white-space: pre-line;
 }
 
 .wysiwyg h1 {
