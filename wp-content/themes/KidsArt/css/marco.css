@@ -607,6 +607,8 @@
 
 .wysiwyg {
   height: auto;
+  width: 80%;
+  margin: 0 auto 20px auto;
   word-break: normal;
   word-wrap: break-word;
   white-space: pre-line;
@@ -639,8 +641,14 @@
   width: 100%;
   text-transform: none!important;
   line-height: initial;
-  padding-top: 30px;
+  padding-top: 20px;
   margin: 1% 1% 30px 1%;
+  display: table-cell;
+}
+
+.wysiwyg p {
+  width: 100%!important;
+  margin: 0!important;
 }
 
 #asset-management .container,
