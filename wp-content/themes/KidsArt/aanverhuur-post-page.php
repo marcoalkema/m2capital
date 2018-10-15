@@ -130,6 +130,11 @@ echo '<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
 echo '<h3>bezichtiging plannen</h3>';
 echo '</button>';
 echo '</a>';
+echo '<div class="socialShareIcons">';
+echo 'Zelf delen?';
+echo '</br>';
+echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
+echo '</div>';
 echo '</div>';
 echo '</div>';
 
