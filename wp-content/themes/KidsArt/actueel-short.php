@@ -1,9 +1,9 @@
 <div class="actueel-intro-container">
-  <div>
-    <img src="<?php
-               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                 $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
-                 printf(get_field('actueel-header-image', $ID)); }?>" width="100%" height="500px"/>
+    <div class="">
+        <img src="<?php
+                  if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
+                      printf(get_field('actueel-header-image', $ID)); }?>" class="headerImg" width="100%" height="500px"/>
   </div>
   <div class="actueel-intro">
     <div class="h4_block">
@@ -24,7 +24,7 @@
       }?>
     </div>
     <a href="<?php printf(get_site_url() . '/actueel');?>">
-      <button class="btn btn-green">
+      <button class="btn btn-green btn-primary">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
         $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;

@@ -18,10 +18,10 @@
     </div>
 
     <div class="centerBtns">
-      <button id="foldBtn" class="btn btn-green foldBtn active_">
+      <button id="foldBtn" class="btn btn-green foldBtn active_ btn-primary">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? "Meer info" : "More info";
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? "Contact" : "Contact";
           echo $ID;
         };
         ?>

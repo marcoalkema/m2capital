@@ -49,18 +49,13 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 /*   src: url(./fonts/AramCapsITCStd.ttf) */
 /* } */
 @font-face {
-  font-family: AramCapsITCStd;
+  font-family: MerriweatherRegular;
   src: url(./fonts/Merriweather-Regular.otf);
   font-weight: 200;
 }
 @font-face {
-  font-family: FrutigerLight;
-  src: url(./fonts/Merriweather-Regular.otf);
-  font-weight: 200;
-}
-@font-face {
-  font-family: FrutigerLightCn;
-  src: url(./fonts/Merriweather-Regular.otf);
+  font-family: MetaPlusNormal;
+  src: url(./fonts/MetaPlusNormal-Roman.otf);
   font-weight: 200;
 }
 
@@ -72,7 +67,7 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 
 @font-face {
   font-family: Merriweather-Bold;
-  src: url(./fonts/Merriweather-Bold.ttf);
+  src: url(./fonts/Merriweather-Bold.otf);
   font-weight: 200;
 }
 
@@ -108,13 +103,10 @@ body {
   margin-right: 0px;
   margin-bottom: 0px;
   margin-left: 0px;
-  font-family: "FrutigerLight"!important;
+  font-family: "MetaPlusNormal";
 }
 body.custom-font-enabled {
-  font-family: 'Frutiger';
-  font-family: 'FrutigerLight';
-  font-family: AramCapsITCStd!important;
-  font-family: 'FrutigerLTCom-Condensed';
+  font-family: 'MetaPlusNormal';
 }
 ol,
 ul {
@@ -264,6 +256,8 @@ img {
   padding: 6px;
   text-decoration: none;
   font-size: 1.3vw;
+  font-family: MetaPlusNormal;
+  letter-spacing: 0.05em;
 }
 .menu-secondary-engels-container{
   margin-left: -100px;
@@ -942,7 +936,7 @@ article.sticky .featured-post {
   /* padding-left: 3.6%; */
   text-transform: uppercase;
   font-size: 4.5vw;
-  font-family: sisterSpray;
+  font-family: MetaPlusNormal;
   padding-top: 2.5%;
 }
 .entry-content h2,
@@ -1976,7 +1970,7 @@ ul.nav-menu.toggled-on {
 /* FONTS */
 h1 {
   text-transform: lowercase!important;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -1984,7 +1978,7 @@ h1 {
 }
 h3 {
   text-transform: lowercase;
-  font-family: 'AramCapsITCStd'!important;
+  font-family: 'MerriweatherRegular'!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -1998,7 +1992,7 @@ h3.white{
 }
 h2 {
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2017,7 +2011,7 @@ h2 {
 }
 h4 {
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2042,7 +2036,7 @@ h4.white{
 
 h6 {
   text-transform: lowercase!important;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 5.8vw!important;
   font-weight: 400;
   letter-spacing: -1px;
@@ -2218,7 +2212,7 @@ landing-overlay-title}
 .tbk-calendar-month-selector,
 .tbk-calendar-year-selector{
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 6vw!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2260,7 +2254,7 @@ landing-overlay-title}
 .tbk-reservation-form-container,
 .tb-frontend-calendar .tbk-field > label
 {
-  font-family: 'FrutigerLight'!important;
+  font-family: 'MetaPlusNormal'!important;
 }
 
 .ui.tbk-circular.label, .ui.tbk-circular.labels .label{
@@ -2270,7 +2264,7 @@ landing-overlay-title}
   background-color: transparent!important;
 }
 .tb-weekline-day{
-  font-family: 'Merriweather-Light'!important;
+  font-family: 'MetaPlusNormal'!important;
   font-size: 25px!important;
 }
 .tbk-back-to-calendar > span,
@@ -2281,9 +2275,9 @@ landing-overlay-title}
   color: #000000!important;
 }
 .tbk-schedule-date{
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 4vw!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2294,7 +2288,7 @@ landing-overlay-title}
 .tbk-schedule-slots,
 .tbk-cell,
 .tbk-slot-label{
-  font-family: 'FrutigerLight'!important;
+  font-family: 'MetaPlusNormal'!important;
 }
 .tbk-slot-label{
   font-size: 14px!important;
@@ -2390,7 +2384,7 @@ landing-overlay-title}
 .fees_table > tbody > tr > td:nth-child(1) {
   padding-top: 9px;
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MetaPlusNormal!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2511,7 +2505,7 @@ landing-overlay-title}
 
 .text-slider-post {
   padding: 0 20% 0 20%;
-  font-family: GillSans!important;
+  font-family: MerriweatherRegular!important;
 }
 
 #text-slider {
@@ -2520,7 +2514,7 @@ landing-overlay-title}
 #text-slider .text-slideshow article span {
   text-transform: uppercase;
   text-align: right;
-  font-family: sisterSpray;
+  font-family: MerriweatherRegular;
   font-size: 1.2vw!important;
   color: #888!important;
   line-height: 5;
@@ -2659,7 +2653,7 @@ landing-overlay-title}
   z-index: 5;
 }
 .wat-doen-wij-button-field-container > .wat-doen-wij-link-text p {
-  font-family: 'GillSansLight'
+    font-family: MetaPlusNormal;
 }
 #wat-doen-wij h2 {
   margin-top: 5%;
@@ -2736,7 +2730,7 @@ landing-overlay-title}
   display: inline-block;
   padding-top: 2%;
   text-transform: uppercase;
-  font-family: sisterSpray;
+  font-family: MerriweatherRegular;
   width: 100%;
   margin: 0 auto;
 }
@@ -2778,7 +2772,7 @@ landing-overlay-title}
   min-width: 100%;
 }
 .long_tagline {
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   /* position: absolute; */
   color: #000000;
   z-index: 3;
@@ -3036,13 +3030,13 @@ landing-overlay-title}
 }
 #landing-overlay-title {
   /* text-transform: lowercase; */
-    font-family:"Merriweather-Light";
+    font-family:"MerriweatherRegular";
   font-size: 4.2vw!important;
   opacity: 0.8;
 }
 .page-title-div > #landing-overlay-title {
     padding: 3%;
-    font-family:"Merriweather-Light"!important;
+    font-family:"MerriweatherRegular"!important;
     text-transform: uppercase!important;
     font-size: 53px!important;
 }
@@ -3180,7 +3174,7 @@ landing-overlay-title}
   padding: 0!important;
 }
 .contact-message > label > span > textarea{
-  font-family: FrutigerLight!important;
+  font-family: MetaPlusNormal!important;
   text-decoration: none!important;
   font-weight: normal;
   width: 100%;
@@ -3390,7 +3384,7 @@ a {
 }
 .wonderplugin-gridgallery-item-description{
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -3403,7 +3397,7 @@ a {
 }
 .wonderplugin-gridgallery-item-title{
   text-transform: lowercase;
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -3558,7 +3552,7 @@ a {
   display: none!important;
 }
 .pcolor {
-  font-family: AramCapsITCStd!important;
+  font-family: MerriweatherRegular!important;
   font-size: 4vw!important;
   line-height: 1.1!important;
   font-style: normal!important;
@@ -3567,7 +3561,7 @@ a {
   left: 5vw!important;
 }
 .aurl {
-  font-family: FrutigerLight!important;
+  font-family: MetaPlusNormal!important;
   position: absolute;
   bottom: 1.5vw;
   left: 13.3vw;
@@ -3877,7 +3871,7 @@ a {
     color: #000;
   }
   .main-navigation li {
-    font-family: Merriweather-Light;
+    font-family: MerriweatherRegular;
     /* text-transform: lowercase!important; */
     font-weight: 200;
     font-size: 19px;
@@ -4667,7 +4661,7 @@ a {
     font-size: 8vw!important;
   }
   .contact-large-submit{
-    font-family: AramCapsITCStd!important;
+    font-family: MerriweatherRegular!important;
     margin: 0 auto;
     color: #00000;
     border: 1px solid #777!important;
@@ -4871,13 +4865,21 @@ a {
   float: left;
   margin-left: 80px;
   padding-bottom: 20px;
+  display: block!important;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-family: MetaPlusNormal;
+  letter-spacing: 0.05em;
+
 }
 
 h4.underlineGreen{
   position:relative;
   line-height: 95%!important;
   margin-bottom: 3vw!important;
-  padding-top: 35px;
+  padding-top: 1vw;
   text-transform: none;
 }
 h4.underlineGreen::after{
@@ -4886,9 +4888,12 @@ h4.underlineGreen::after{
     left: 50%;
     margin-left: -30%;
     bottom: -1vw;
-    margin-bottom: -1vw;
+    margin-bottom: -0.7vw;
     width: 60%;
     border-bottom: 4px solid #4080bf;
+}
+.network-header-container > h4.underlineGreen::after{
+    margin-bottom: -1.7vw;
 }
 h4.green{
   color: #1d70b7!important;
@@ -4942,6 +4947,10 @@ h4.green{
 
 
 }
+.contact-form-template #foldBtn{
+    margin-top:0!important;
+    text-transform:none;
+}
 .contact-form-title {
   margin-bottom: 12px!important;
   text-align: center;
@@ -4962,7 +4971,13 @@ h4.green{
   height: 150px;
   padding: 20px 5%;
   margin: 0 auto;
-  background: #888
+  background: #888;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.3vw;
+  font-family: MetaPlusNormal;
+  letter-spacing: 0.05em;
 }
 
 .upper-footer > div {
@@ -4970,6 +4985,23 @@ h4.green{
   width: 18%;
   margin: 1%;
   display: inline;
+}
+
+.upper-footer .contact-info-container .contact-info tbody {
+    letter-spacing: 0.1em;
+}
+
+.upper-footer .contact-info-container .contact-info tbody tr:nth-child(1) {
+    font-family:MerriweatherBold;
+    letter-spacing: 0.1em;
+}
+.upper-footer .contact-info-container .contact-info tbody tr:nth-child(2), .upper-footer .contact-info-container .contact-info tbody tr:nth-child(3) {
+    font-family:MetaPlusNormal!important;
+    letter-spacing: 0.1em;
+}
+
+.footer-link.merriweather {
+     font-family:MerriweatherBold;
 }
 
 .contact-info-container {
@@ -5015,7 +5047,7 @@ h4.green{
 }
 
 .introduction-links-container {
-  padding: 6% 2% 6% 2%;
+  padding: 6% 2% 1% 2%;
   background: #4080bf;
 }
 .introduction-links-container .introduction-links-image-container {
@@ -5032,28 +5064,48 @@ h4.green{
 .network-col {
   padding: 0 100px 40px 100px!important;
 }
+
+.hoverovereffect:hover .network-image {
+    transform: scale(1.05);
+    background-color: white;
+    opacity: 0.8;
+}
+.hoverovereffect:hover .network-header-container {
+    color: #8dc0f7;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
+    transform: scale(1.05);
+}
 .wat-doen-wij-header-container {
   color: #fff;
   font-size: 32px;
   text-align: center;
+  font-family:Merriweather-Light!important;
+  font-weight: normal!important;
 }
 .wat-doen-wij-header-container {
   position: relative;
   margin-top: 20px;
   margin-bottom: 40px;
 }
+.wat-doen-wij-info-text-container {
+    margin-bottom: 4vw;
+}
 .wat-doen-wij-info-text-container > p {
-  color: #fff;
+    color: #fff;
+      font-family:Merriweather-Light!important;
+      font-weight: normal!important;
+      text-align:justify;
   /* font-size: 26px; */
 }
 .wat-doen-wij-header-container.underlineWhite::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  margin-left: -30%;
-  bottom: -20px;
-  width: 60%;
-  border-bottom: 4px solid #fff;
+      content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -23%;
+    bottom: -2vw;
+    width: 46%;
+    border-bottom: 4px solid #fff;
 }
 #overlay-container .metaslider {
   background: #1d70b7;
@@ -5107,6 +5159,7 @@ h4.green{
 
 .actueel-intro .btn {
   margin-top: 60px;
+  min-width: 12em!important;
 }
 .stories_text{
   width: 100%;
@@ -5233,6 +5286,17 @@ li.current-menu-item a{
 .btn_text_m2 {
     margin-top: 7%!important;
     text-transform:none!important;
+    border-radius: 0px!important;
+}
+.btn-group-vertical:hover .m2BtnImage {
+    background: #286090;
+        transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
+}
+.btn-group-vertical:hover .btn-primary {
+    background-color: #286090!important;
+        transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
 }
 
 .m2_btn_table {
@@ -5246,7 +5310,17 @@ li.current-menu-item a{
     width: 100%;
     height: 500px;
 }
-
+.visie {
+    background: #f2f2f2;
+    padding-bottom: 3vw
+}
+.btn-primary:hover {
+        background-color: #286090!important;
+}
+#wie-zijn-wij-werkwijze .column img {
+        width: 100%;
+    height: auto;
+}
 
 
 /* .aanbod-intro-container .aanbod-intro > p { */
@@ -5269,7 +5343,8 @@ li.current-menu-item a{
 }
 
 .grijs {
-  margin-top: 30px;
+  /* margin-top: 30px; */
+    font-family:MetaPlusNormal;
   color: gray;
 }
 
@@ -5279,7 +5354,7 @@ li.current-menu-item a{
 .aanbod-intro-container .aanbod-intro > p,
 .visie .section .column > p, h2 {
     width: 80%;
-    margin: 0 11vw 59px 11vw;
+    margin: 0 11vw 3vw 11vw;
     text-align: left;
 }
 
@@ -5290,6 +5365,7 @@ li.current-menu-item a{
 
 .btn.btn-green.margin_btn {
     margin-bottom: 5vw;
+    text-transform:none;
 }
 
 .wie-foto {
@@ -5318,7 +5394,6 @@ h4.underlineGreen.lijn::after {
 }
 
 .blue-image-filter::after {
-
   position: absolute;
   top: 0;
   left: 0;
@@ -5327,9 +5402,6 @@ h4.underlineGreen.lijn::after {
   content: '';
   background: #1d70b7;
   opacity: 0.68;
-
-    /* filter: url(http://localhost:8888/wp-content/themes/KidsArt/svgfilter.xml#blue); */
-    /* -webkit-filter: url(http://localhost:8888/wp-content/themes/KidsArt/svgfilter.xml#blue); */
 }
 
 .light-blue-image-filter {
@@ -5344,7 +5416,8 @@ h4.underlineGreen.lijn::after {
       /* filter: url(#more-light-blue); */
     /* -webkit-filter: url(#more-light-blue);
      */
-    filter: sepia(100%) hue-rotate(190deg) saturate(500%);
+    /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */
+        margin-bottom: 3vw;
 }
 
 #overlay-container .glyphicon.glyphicon-menu-down {

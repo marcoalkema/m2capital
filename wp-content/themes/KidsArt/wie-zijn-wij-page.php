@@ -35,45 +35,48 @@ get_header(); ?>
       <div class="table m2_btn_table">
         <div class="row">
           <div class="col-sm-4">
-            <div class="btn-group-vertical">
-              <a href="#over-ons" data-ps2id="true" class="ps2id">
-                <div class="m2BtnImage">
-                  <span>
-                    M2
-                  </span>
-                </div>
-                <button type="button" class="btn btn-primary btn_text_m2">
-                  Over ons
-                </button>
-              </a>
+              <div class="btn-group-vertical">
+                  <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
+                      <div class="m2BtnImage">
+                          <span>
+                              M2
+                          </span>
+                      </div>
+                      <button type="button" class="btn btn-primary btn_text_m2">
+                          Onze Visie
+                      </button>
+                  </a>
             </div>
           </div>
           <div class="col-sm-4">
             <div class="btn-group-vertical">
-              <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
-                <div class="m2BtnImage">
-                  <span>
-                    M2
-                  </span>
-                </div>
-                <button type="button" class="btn btn-primary btn_text_m2">
-                  Onze Visie
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="btn-group-vertical">
+
               <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
-                <div class="m2BtnImage">
-                  <span>
-                    M2
-                  </span>
-                </div>
-                <button type="button" class="btn btn-primary btn_text_m2">
-                  Werkwijze
-                </button>
+                  <div class="m2BtnImage">
+                      <span>
+                          M2
+                      </span>
+                  </div>
+                  <button type="button" class="btn btn-primary btn_text_m2">
+                      Werkwijze
+                  </button>
               </a>
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="btn-group-vertical">
+
+              <a href="#over-ons" data-ps2id="true" class="ps2id">
+                  <div class="m2BtnImage">
+                      <span>
+                          M2
+                      </span>
+                  </div>
+                  <button type="button" class="btn btn-primary btn_text_m2">
+                      Over ons
+                  </button>
+              </a>
+
             </div>
           </div>
         </div>

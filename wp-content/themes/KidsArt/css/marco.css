@@ -595,13 +595,15 @@
   color: #fff;
   font-size: 42px;
   font-weight: 900;
-  margin: 0 auto;
+  margin: 0 3.4vw 0 auto;
   text-align: center;
 }
-
+/* .m2BtnImage:hover { */
+/*     background: #286090; */
+/* } */
 .m2BtnImage > span {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: initial;
   line-height: normal;
 }
 
@@ -649,6 +651,10 @@
 .wysiwyg p {
   width: 100%!important;
   margin: 0!important;
+}
+
+.wysiwyg > h2:nth-child(2) {
+
 }
 
 #asset-management .container,
