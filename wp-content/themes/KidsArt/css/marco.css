@@ -70,6 +70,15 @@
   min-width: 0;
 }
 
+#her-ontwikkel .wysiwyg, #aan-verhuur .wysiwyg {
+        margin: -4vw auto 20px auto;
+}
+
+
+.her-ontwikkel-text-block, .beleggingsadvies-text-block, .aan-verhuur-text-block {
+    margin-top: -4vw;
+}
+
 #aan-verhuur,
 #beleggingsadvies,
 #her-ontwikkel,
