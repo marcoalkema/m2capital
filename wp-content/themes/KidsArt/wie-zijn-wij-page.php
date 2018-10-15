@@ -235,20 +235,20 @@ get_header(); ?>
           echo '</div>';
 
 
-          if ($i % (1 * $row + ($row - 1)) == 0) {
-            echo '</div>';
-            $row++;
-          }
+            if ($i % (1 * $row + ($row - 1)) == 0) {
+                echo '</div>';
+                $row++;
+            }
         }
-        ;
-        if ($i == count($arr) - 1) {
-          echo '</div>';
+          ;
+          if ($i == count($arr) - 1) {
+              echo '</div>';
 
-          if ($i % 2 != 0) {
-            echo '</div>';
+              if ($i % 2 != 0) {
+                  echo '</div>';
+              }
           }
-        }
-        $i++;
+          $i++;
 
       }
 
@@ -277,19 +277,42 @@ get_header(); ?>
         ?>
       </div>
       <div class="partner-profiles">
-        <?php
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
-        $arr = get_field('partners-profiles', $ID);
-        $i = 0;
-        $row = 1;
-        foreach($arr as $val) {
-          echo '<div class="partner-profiles-img">';
-          echo '<a href="' . $val['link'] . '" target="blank">';
-          echo '<img src="' . $val['img'] . '"/>';
-          echo '</a>';
-          echo '</div>';
-        }
-        ?>
+          <?php
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+          $arr = get_field('partners-profiles', $ID);
+          $i = 0;
+          $row = 5;
+          foreach($arr as $val) {
+              if ($i % 5 == 0) {
+                  echo '<div class="row">';
+                  echo '<div class="col-md-2 col-md-offset-1 partner-profiles-img">';
+                  echo '<a href="' . $val['link'] . '" target="blank">';
+                  echo '<img src="' . $val['img'] . '"/>';
+                  echo '</a>';
+                  echo '</div>';
+              } else {
+                  echo '<div class="partner-profiles-img col-md-2">';
+                  echo '<a href="' . $val['link'] . '" target="blank">';
+                  echo '<img src="' . $val['img'] . '"/>';
+                  echo '</a>';
+                  echo '</div>';
+
+                  if ($i % (1 * $row + ($row - 1)) == 0) {
+                      echo '</div>';
+                      $row++;
+                  }
+              }
+          ;
+          if ($i == count($arr) - 1) {
+              echo '</div>';
+
+              if ($i % 5 != 0) {
+                  echo '</div>';
+              }
+          }
+          $i++;
+          }
+          ?>
       </div>
     </div>
 
