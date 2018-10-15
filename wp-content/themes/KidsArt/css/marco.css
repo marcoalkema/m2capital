@@ -19,16 +19,41 @@
   margin: 2%;
   text-align: center;
   overflow: hidden;
-  min-height: 42vw;
+  min-height: 37vw;
 }
+
+.wat-doen-wij-col:hover img {
+    transform: scale(1.05);
+    background-color: white;
+    opacity: 0.8;
+}
+
+.wat-doen-wij-col:hover .btn-primary {
+    background-color: #286090!important;
+}
+
+.wat-doen-wij-col:hover h4 {
+    color: #8dc0f7;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease; /* Safari */
+    transform: scale(1.05);
+}
+
+.wat-doen-wij-col:hover h4.underlineGreen:hover::after {
+  border-bottom: 4px solid #8dc0f7!important;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease; /* Safari */
+  transform: scale(1.05);
+}
+
 
 .wat-doen-wij-image {
   height: 190px;
 }
 
 .wat-doen-wij-col p {
-  padding: 10px 20px;
-  text-align: justify;
+    padding: 1vw 1vw;
+    text-align: justify;
 }
 
 .wat-doen-wij-col h4 {
@@ -37,12 +62,21 @@
 
 .wat-doen-wij-col h4.underlineGreen {
   padding-top: 10px!important;
-  margin-bottom: 55px!important;
+  margin-bottom: 2vw!important;
 }
 
 .wat-doen-wij-col .btn-green {
   margin: 0 auto 25px auto!important;
   min-width: 0;
+}
+
+#her-ontwikkel .wysiwyg, #aan-verhuur .wysiwyg {
+        margin: -4vw auto 20px auto;
+}
+
+
+.her-ontwikkel-text-block, .beleggingsadvies-text-block, .aan-verhuur-text-block {
+    margin-top: -4vw;
 }
 
 #aan-verhuur,

@@ -5199,7 +5199,7 @@ h4.green{
 /* } */
 
 .main-navigation .menu-item-type-post_type, .main-navigation .menu-item-has-children {
-    border-right: 1px solid #afadad;
+    border-right: 3px solid #afadad;
 }
 
 p {
@@ -5243,7 +5243,7 @@ p {
     bottom: 14px;
     margin-bottom: -13px;
     width: 80%;
-    border-bottom: 4px solid #4080bf;
+    border-bottom: 4px solid #21759b;
 }
 
 li.current-menu-item a{
