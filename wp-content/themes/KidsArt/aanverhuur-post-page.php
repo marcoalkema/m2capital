@@ -157,7 +157,7 @@ echo '<div class="row other_aanverhuur_container">';
 
 for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x++) {
   echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
-  echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story">';
+  echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
   echo '<div class="story_preview_container">';
   echo '<div class="story_preview_image">';
   echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
