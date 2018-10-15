@@ -31,7 +31,9 @@
         echo '</div>';
         echo '<div class="story_preview_text">';
         echo '<div class="story_preview_text_container">';
+        echo '<div class="actueelDate">';
         echo date('n-j-Y', strtotime(wp_get_recent_posts( $args, ARRAY_A )[$x]['post_date']));
+        echo '</div>';
         echo '<div class="h4_block">';
         echo '<div class="h4_container">';
         echo '<h4 class="green underlineGreen">';

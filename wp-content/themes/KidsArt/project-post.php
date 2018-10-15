@@ -57,8 +57,6 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
 }
 ?>
 
-herontwikkelMeerArrow
-
 <div class="project-else">
   <span class="glyphicon glyphicon-menu-down <?php
                                              $cat = get_field('categorie', get_the_ID());
