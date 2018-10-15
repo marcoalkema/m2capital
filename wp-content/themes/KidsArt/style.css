@@ -5064,6 +5064,9 @@ h4.green{
 .network-col {
   padding: 0 100px 40px 100px!important;
 }
+.h4.underlineGreen:hover {
+        border-bottom: 4px solid black;
+}
 
 .hoverovereffect:hover .network-image {
     transform: scale(1.05);
@@ -5283,6 +5286,11 @@ li.current-menu-item a{
     height: 40px;
     width: 40px;
 }
+
+#wie-zijn-wij-wie .row {
+    /* margin: 0 1.6vw 3vw 1.6vw; */
+    margin-bottom: 4vw;
+}
 .btn_text_m2 {
     margin-top: 7%!important;
     text-transform:none!important;
@@ -5368,8 +5376,27 @@ li.current-menu-item a{
     text-transform:none;
 }
 
+.btn.btn-primary.m2btn:hover {
+    background-color: transparent!important;
+
+}
+.btn.btn-primary.m2btn {
+        height: 40px;
+    width: 40px;
+
+}
+
 .wie-foto {
     margin-bottom: 4vw;
+}
+
+#wie-zijn-wij-wie .wie-foto p {
+        text-align: justify;
+    width: 350px;
+    height: auto;
+    align-content: ;
+    margin: 0 auto;
+    padding-bottom: 3vw;
 }
 
 .wie-foto-container {
@@ -5378,8 +5405,8 @@ li.current-menu-item a{
 
 .wie-foto-mark,
 .wie-foto-michiel {
-    height: 100%;
-    width: 100%;
+        height: 350px;
+    width: 350px;
     object-fit: cover;
     object-position: 63% 0%;
 }
