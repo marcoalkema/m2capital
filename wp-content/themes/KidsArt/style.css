@@ -3271,7 +3271,7 @@ a {
 /* STORYS */
 
 .story {
-  width: 70%;
+  width: 80%;
   margin: 59px auto;
 }
 .other_stories{
@@ -5035,11 +5035,8 @@ h4.green{
   line-height: 0;
   width: 151px;
 }
-.wat-doen-wij-info-container {
 
-}
 .wat-doen-wij-btn-container {
-  margin-top: 67px;
   width: 100%;
   text-align: center;
 }

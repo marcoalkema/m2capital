@@ -1,5 +1,5 @@
 <div class="actueel-intro-container">
-    <div class="">
+  <div class="actueel-intro-container-img">
         <img src="<?php
                   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                       $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
