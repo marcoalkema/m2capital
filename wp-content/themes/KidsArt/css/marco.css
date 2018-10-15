@@ -709,3 +709,16 @@ span.herontwikkelMeerArrow {
 .actueel-intro-container-img img {
   opacity: 0.5;
 }
+
+.main-navigation .menu-item-has-children.wpml-ls-current-language {
+  border: 0!important;
+  margin-left: 20px!important;
+}
+
+.wpml-ls-menu-item .wpml-ls-flag {
+  display: block!important;
+}
+
+.wpml-ls-item .sub-menu li a span {
+  display: none;
+}
