@@ -2187,7 +2187,7 @@ landing-overlay-title}
 /* PARTNERS */
 .partner-profiles {
   width: 90%;
-  margin: -20px auto 40px auto;
+  margin: 0 3vw 0vw 3vw;
 }
 .partner-profiles-img {
   height: 100px;
@@ -2197,8 +2197,8 @@ landing-overlay-title}
 }
 
 .partner-profiles-img img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   -webkit-filter: grayscale(100%);
   filter: grayscale(100%);
 }
@@ -5427,18 +5427,6 @@ h4.underlineGreen.lijn::after {
 }
 
 .light-blue-image-filter {
-  /* position: absolute; */
-  /* top: 0; */
-  /* left: 0; */
-  /* right: 0; */
-  /* bottom: 0; */
-  /* content: ''; */
-  /* background: #2c4cff; */
-  /* opacity: 0.68; */
-      /* filter: url(#more-light-blue); */
-    /* -webkit-filter: url(#more-light-blue);
-     */
-    /* filter: sepia(100%) hue-rotate(190deg) saturate(500%); */
         margin-bottom: 3vw;
 }
 
