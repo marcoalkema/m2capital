@@ -5066,19 +5066,21 @@ h4.green{
         border-bottom: 4px solid black;
 }
 
+.hoverovereffect:hover .story_thumbnail,
 .hoverovereffect:hover .network-image {
     transform: scale(1.05);
     background-color: white;
     opacity: 0.8;
 }
+.hoverovereffect:hover .h4_container h4,
 .hoverovereffect:hover .network-header-container {
-    color: #8dc0f7;
+    color: #8dc0f7!important;
     transition: all 0.5s ease;
     -webkit-transition: all 0.5s ease; /* Safari */
     transform: scale(1.05);
 }
 
-.hoverovereffect:hover h4.underlineGreen:hover::after {
+.hoverovereffect:hover h4.underlineGreen::after {
   border-bottom: 4px solid #8dc0f7!important;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease; /* Safari */

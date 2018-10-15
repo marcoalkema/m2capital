@@ -24,7 +24,7 @@
         if ($x % 3 == 0) {
           echo '<div class="row other_stories_container">';
         }
-        echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview">';
+        echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview hoverovereffect">';
         echo '<div class="story_preview_container">';
         echo '<div class="story_preview_image">';
         echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';

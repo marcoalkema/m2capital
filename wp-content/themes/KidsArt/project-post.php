@@ -23,7 +23,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
         echo '<div class="row other_stories_container">';
       }
       echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-      echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview">';
+      echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview hoverovereffect">';
       echo '<div class="story_preview_container">';
       echo '<div class="story_preview_image">';
       echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
@@ -64,18 +64,18 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                                                printf("herontwikkelMeerArrow");
                                              } ?>" aria-hidden="true"></span><br>
   <button class="btn btn-green <?php
-                 $cat = get_field('categorie', get_the_ID());
-                 if ($cat == 24 ) {
-                 printf("herontwikkelMeerBtn");
-          } ?>">
-          <?php
-          $cat = get_field('categorie', get_the_ID());
-          if ($cat == 24 ) {
-            printf("Meer projecten zullen volgen");
-          } else {
-            printf("Meer projecten zien?");
-          }
-          ?>
+                               $cat = get_field('categorie', get_the_ID());
+                               if ($cat == 24 ) {
+                                 printf("herontwikkelMeerBtn");
+                               } ?>">
+    <?php
+    $cat = get_field('categorie', get_the_ID());
+    if ($cat == 24 ) {
+      printf("Meer projecten zullen volgen");
+    } else {
+      printf("Meer projecten zien?");
+    }
+    ?>
   </button>
   <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
   <a href="<?php

@@ -21,7 +21,6 @@
             <button class="btn btn-green btn-primary">
                 <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                    /* $ID3 = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;*/
                     $ID1 = (ICL_LANGUAGE_CODE == 'nl') ? 867 : 1466;
                     printf(get_field('wat-doen-wij-btn-text', $ID1));
                 }?>
