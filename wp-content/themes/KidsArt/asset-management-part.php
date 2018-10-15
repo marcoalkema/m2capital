@@ -71,7 +71,7 @@
     ?>
   </div>
 
-  <a href="<?php printf(get_site_url()) ?>/asset-management_/">
+  <a href="<?php printf(get_site_url()) ?>/asset-management/">
     <button>
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

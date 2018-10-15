@@ -134,7 +134,7 @@
 
 .asset-management-page > p,
 .actueel-page > p {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -265,18 +265,16 @@
 
 #post-2134 .btn.btn-green.big,
 #post-2136 .btn.btn-green.big,
+#post-2138 .btn.btn-green.big,
 #post-2131 .btn.btn-green.big {
-  height: 130px;
-  width: 400px;
-  margin: 5px 70px;
-  font-size: 40px!important;
-}
-
-#post-2138 .btn.btn-green.big {
-  height: 130px;
-  width: 300px;
+  height: 100px;
+  width: 260px;
   margin: 5px 50px;
-  font-size: 2.2vw!important;
+  font-size: 27px!important;
+  padding-bottom: 20px;
+}
+#post-2131 .btn.btn-green.big h4 {
+  font-size: 27px!important;
 }
 
 .project-else {
@@ -306,6 +304,7 @@
 .btn.btn-green.big > .btn-text {
   margin-top: -10px;
   position: relative;
+  font-size: 27px;
 }
 
 .btn.btn-green.big > .btn-text::after {
@@ -378,6 +377,10 @@
   margin: 10px auto 0 auto;
 }
 
+.intro-type {
+  text-align: left;
+}
+
 .intro-price {
   text-align: right;
 }
@@ -385,6 +388,10 @@
 .intro-type,
 .intro-price {
   margin-top: 45px;
+}
+
+.smallStatus {
+  font-size: 12px;
 }
 
 .aanverhuur-kenmerken {
@@ -454,16 +461,16 @@
 }
 
 .aanverhuur-contact .big {
-  height: 250px;
-  width: 300px;
+  height: 220px;
+  width: 280px;
   margin: 40px auto;
-  font-size: 30px!important;
   text-align: center;
   position: relative;
 }
 
 .aanverhuur-contact .big h4 {
   line-height: 1.2;
+  font-size: 27px!important;
 }
 
 .aanverhuur-contact .big .glyphicon-menu-down {
@@ -666,4 +673,12 @@
 
 .beleggingsadvies-text-block .page .section .column {
     height: 11vw!important;
+}
+
+.btn.btn-green.herontwikkelMeerBtn {
+  background-color: #999!important;
+}
+
+span.herontwikkelMeerArrow {
+  color: #999!important;
 }

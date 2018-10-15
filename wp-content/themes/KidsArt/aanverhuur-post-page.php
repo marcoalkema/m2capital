@@ -28,7 +28,7 @@ echo '<div class="row intro-details">';
 echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 intro-type">';
 echo  get_field('status', get_the_ID());
 echo '<br>';
-echo  get_field('status_2', get_the_ID());
+echo  '<div class="smallStatus">' . get_field('status_2', get_the_ID()) . '</div>';
 echo '</div>';
 echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">';
 echo '<h4 class="green underlineGreen">';
@@ -37,7 +37,8 @@ echo '</h4>';
 echo '</div>';
 echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 intro-price">';
 echo  get_field('prijs', get_the_ID());
-echo  get_field('prijs2', get_the_ID());
+echo '<br>';
+echo  '<div class="smallStatus">' . get_field('prijs2', get_the_ID()) . '</div>';
 echo '</div>';
 echo '</div>';
 /* Intro*/
@@ -116,7 +117,7 @@ echo '</div>';
 
 /* CONTACT*/
 echo '<div class="aanverhuur-contact">';
-echo '<a href="#contact">';
+echo '<a href="#contact" data-ps2id="true" class="ps2id">';
 echo '<button class="btn btn-green big bezichtigings-btn-btn">';
 echo '<div class="h4_block">';
 echo '<div class="h4_container">';

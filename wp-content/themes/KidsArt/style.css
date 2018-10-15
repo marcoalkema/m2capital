@@ -3121,11 +3121,8 @@ landing-overlay-title}
   padding: 7px 7px 7px 7px!important;
   z-index: 2;
 }
-.wpcf7-not-valid-tip {
-  color: white!important;
-}
 .wpcf7-response-output {
-  color: white!important;
+  color: red!important;
   border: 2px solid red!important;
 }
 .contact-inputs > label {
@@ -3140,7 +3137,8 @@ landing-overlay-title}
   text-decoration: none!important;
   width: 100%;
   /* padding: 0 6px 1px 6px; */
-  font-size: 22px;
+  color:    #666;
+  font-size: 16px;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    #666;

@@ -32,7 +32,7 @@
       ?>
   </div>
 
-  <a href="<?php printf(get_site_url()) ?>/aan-verhuur_/">
+  <a href="<?php printf(get_site_url()) ?>/aan-verhuur/">
       <button>
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
