@@ -704,10 +704,14 @@ span.herontwikkelMeerArrow {
 
 .actueel-intro-container-img {
   background:  #1d70b7;
+  height: 500px;
+  overflow: hidden;
 }
 
 .actueel-intro-container-img img {
   opacity: 0.5;
+  width: 100%;
+  min-height: 100%;
 }
 
 .main-navigation .menu-item-has-children.wpml-ls-current-language {
@@ -721,4 +725,8 @@ span.herontwikkelMeerArrow {
 
 .wpml-ls-item .sub-menu li a span {
   display: none;
+}
+
+#menu-item-1555 {
+  cursor: default;
 }

@@ -84,13 +84,13 @@ get_header(); ?>
     </div>
   </div>
   <div class="visie">
-    <!-- <div class="light-blue-image-filter"> -->
-    <img src="<?php
-              if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
-                printf(get_field('visie-img', $ID));
-              }?>" class="visie-img light-blue-image-filter"/>
-    <!-- </div> -->
+    <div class="actueel-intro-container-img">
+      <img src="<?php
+                if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
+                  printf(get_field('visie-img', $ID));
+                }?>" class="visie-img light-blue-image-filter"/>
+    </div>
 
     <div id="wie-zijn-wij-visie" class="h4_block">
       <div class="h4_container">
@@ -169,12 +169,13 @@ get_header(); ?>
     </div>
 
     <div id="wie-zijn-wij-wie" class="wie">
+      <div class="actueel-intro-container-img">
       <img src="<?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
                   $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
                   printf(get_field('over-ons-img', $ID));
                 }?>" class="over-ons-img light-blue-image-filter"/>
-
+      </div>
       <div id="wie-zijn-wij-visie" class="h4_block">
         <div id="over-ons" class="h4_container">
           <h4 class="green underlineGreen">
