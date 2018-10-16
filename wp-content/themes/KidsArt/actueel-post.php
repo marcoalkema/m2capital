@@ -36,6 +36,8 @@ $cat = get_the_category()[0]->name;
     echo 'Zelf delen?</br>';
     echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
     echo '</div>';
+    echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
+    echo get_the_category()[0]->name;
 }
 ?>
 
