@@ -2662,27 +2662,28 @@ landing-overlay-title}
   position: relative;
 }
 
-.foldalbe-contact,
 .foldBtn {
   display: none!important;
 }
 
 .foldalbe-contact {
   max-height: 0;
+  visibility: hidden;
+  /* display: none!important; */
   overflow: hidden;
 
-  /* Set our transitions up. */
-  -webkit-transition: max-height 0.8s;
-  -moz-transition: max-height 0.8s;
-  transition: max-height 0.8s;
+  -webkit-transition: visibility 5s, max-height 5s!important;
+  -moz-transition: visibility 5s, max-height 5s!important;
+  transition: visibility 5s, max-height 5s!important;
 }
 
 .foldalbe-contact.active {
-  display: block!important;
-  max-height: 5000px;
-  -webkit-transition: max-height 0.8s;
-  -moz-transition: max-height 0.8s;
-  transition: max-height 0.8s;
+  max-height: 5000px!important;
+  visibility: visible;
+  -webkit-transition: visibility 5s, max-height 5s!important;
+  -moz-transition: visibility 5s, max-height 5s!important;
+  transition: visibility 5s, max-height 5s!important;
+  /* display: block!important; */
 }
 .foldBtn.active_ {
   display: inline-block!important;
@@ -3083,6 +3084,7 @@ landing-overlay-title}
   margin-left: 20%;
 }
 .contact-large-submit {
+  font-family: MerriweatherRegular!important;
   padding: 0 7px 0 7px;
 }
 .contact-large-submit_ {
@@ -3097,6 +3099,7 @@ landing-overlay-title}
   background: #1d70b7!important;
   border: 1px solid #777!important;
   text-transform: lowercase;
+  font-family: MerriweatherRegular!important;
   font-size: 24px!important;
   font-stretch: condensed!important;
   font-weight: 400!important;
@@ -3181,10 +3184,10 @@ landing-overlay-title}
   font-weight: normal;
   width: 100%;
   height: 120px;
-  color: #c9c9c9!important;
+  color: #666!important;
   padding: 7px 6px 7px 6px;
   margin: 7px 0;
-  text-align: center!important;
+  text-align: left!important;
 }
 
 
@@ -4846,6 +4849,8 @@ a {
 }
 
 .footer-contact-btn {
+  font-family: MerriweatherBold!important;
+  font-weight: 600;
   color: #888;
   height: 30px;
   line-height: 30px;
@@ -4949,8 +4954,9 @@ h4.green{
 
 }
 .contact-form-template #foldBtn{
-    margin-top:0!important;
-    text-transform:none;
+  font-family: MerriweatherRegular!important;
+  margin-top:0!important;
+  text-transform:none;
 }
 .contact-form-title {
   margin-bottom: 12px!important;
