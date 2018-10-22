@@ -201,6 +201,7 @@
 
 .story_preview_container {
   min-height: 600px;
+  overflow: hidden;
 }
 
 .story {

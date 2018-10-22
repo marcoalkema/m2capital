@@ -3290,9 +3290,9 @@ a {
   margin: 0 auto!important;
 }
 .story_preview{
-  margin: 4%;
+  /* margin: 4%; */
   overflow: hidden;
-  padding: 0!important;
+  padding: 0 20px!important;
 }
 .story_preview_container{
   height: 500px!important;

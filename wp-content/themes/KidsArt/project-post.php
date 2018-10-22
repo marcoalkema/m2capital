@@ -1,11 +1,9 @@
 <?php
 $fields = get_field_objects();
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-  $cat = get_field('categorie', get_the_ID());
   $args = array(
     'numberposts' => 0,
     'offset' => 0,
-    'category' => $cat,
     'orderby' => 'post_date',
     'order' => 'ASC',
     'include' => '',
@@ -56,82 +54,4 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   echo '</div>';
 }
 ?>
-
-<div class="project-else">
-  <span class="glyphicon glyphicon-menu-down <?php
-                                             $cat = get_field('categorie', get_the_ID());
-                                             if ($cat == 24 ) {
-                                               printf("herontwikkelMeerArrow");
-                                             } ?>" aria-hidden="true"></span><br>
-  <button class="btn btn-green <?php
-                               $cat = get_field('categorie', get_the_ID());
-                               if ($cat == 24 ) {
-                                 printf("herontwikkelMeerBtn");
-                               } ?>">
-    <?php
-    $cat = get_field('categorie', get_the_ID());
-    if ($cat == 24 ) {
-      printf("Meer projecten zullen volgen");
-    } else {
-      printf("Meer projecten zien?");
-    }
-    ?>
-  </button>
-  <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-  <a href="<?php
-           $cat = get_field('categorie', get_the_ID());
-           $link = $cat == 27 || $cat == 24 || $cat == 25 ? '/beleggingsadvies/' : '/asset-management/';
-           printf(get_site_url() . $link)?>"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        <?php
-        $cat = get_field('categorie', get_the_ID());
-        if ($cat == 27 || $cat == 24 || $cat == 25) {
-          echo 'Beleggingsadvies';
-        } else {
-          echo 'Asset Management';
-        }
-        ?>
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
-
-  <a href="<?php
-           $cat = get_field('categorie', get_the_ID());
-           $link = $cat == 27 || $cat == 26 || $cat == 25 ? '/herontwikkeling/' : '/asset-management/';
-           printf(get_site_url() . $link)?>"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        <?php
-        $cat = get_field('categorie', get_the_ID());
-        if ($cat == 27 || $cat == 26 || $cat == 25) {
-          echo '(Her)ontwikkeling';
-        } else {
-          echo 'Asset management';
-        }
-        ?>
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
-
-  <a href="<?php
-           $cat = get_field('categorie', get_the_ID());
-           $link = $cat == 27 || $cat == 26 || $cat == 24 ? '/aan-verhuur/' : '/asset-management/';
-           printf(get_site_url() . $link)?>"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        <?php
-        $cat = get_field('categorie', get_the_ID());
-        if ($cat == 27 || $cat == 26 || $cat == 24) {
-          echo 'Aan & Verhuur';
-        } else {
-          echo 'Asset management';
-        }
-        ?>
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
 </div>
