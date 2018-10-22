@@ -157,7 +157,7 @@ get_header(); ?>
           ?>
         </div>
         <a href="#contact" data-ps2id="true" class="ps2id">
-          <button class="btn btn-green margin_btn">Contact</button>
+          <button class="btn btn-green margin_btn bezichtigings-btn-btn">Contact</button>
         </a>
       </div>
     </div>

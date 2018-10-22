@@ -19,20 +19,22 @@
               <p>
                 Zaken doen?<br>
               </p>
-              <button class="footer-contact-btn">Neem contact</button>
+              <a href="mailto:<?php printf(get_field('mail_address', 5));?>">
+                <button class="footer-contact-btn">Neem contact</button>
+              </a>
             </div>
-            <div class="footer-link">
+            <div class="footer-link merriweather">
               <p>
                 Volg ons op<br>
               </p>
               <div class="linkedin-icon">
-                <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
+                <a href="http://<?php the_field('linkedin_link', 5) ?>" target="_blank">
                   <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/linkedInGrey.png" height="40" width="40" class="img-responsive linkedInBtn"/>
                 </a>
               </div>
             </div>
             <div class="footer-link">
-              <a href="<?php the_field('linkedin_link', 5) ?>" target="_blank">
+              <a href="http://<?php the_field('youtube_link', 5) ?>" target="_blank">
                 <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/fundaBusiness.svg" height="120" width="120" class="img-responsive"/>
               </a>
             </div>

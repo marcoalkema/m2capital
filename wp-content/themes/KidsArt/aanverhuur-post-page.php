@@ -155,6 +155,18 @@ $args1 = array(
 
 echo '<div class="row other_aanverhuur_container">';
 
+echo '<div class="other_stories">';
+echo '<div class="h4_block">';
+echo '<div class="h4_container">';
+echo '<h4 class="underlineGreen">';
+echo '<p>' . get_field('soortgelijk_aanbod_titel', 2138) . '</p>';
+echo '</div>';
+echo '</div>';
+echo '</h4>';
+echo get_field('soortgelijk_aanbod_tekst', 2138);
+echo '</div>';
+
+echo '<div class="meerAanbodVerhuurContainer">';
 for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x++) {
   echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
   echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
@@ -179,8 +191,16 @@ for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x+
   echo '</a>';
 };
 echo '</div>';
+echo '<div class="meerAanbodVerhuur">';
+echo '<p>' . get_field('soortgelijk_aanbod_btn_txt', 2138) . '</p>';
+echo '<a href="' . get_site_url() . '/aan-verhuur' . '">';
+echo '<button class="whiteBlue">' . get_field('soortgelijk_aanbod_btn_txt2', 2138) . '</button>';
+echo '</a>';
+echo '</div>';
+echo '</div>';
 
 echo '</div>';
 echo '</div>';
 ?>
+
 <?php get_template_part("contact", "page"); ?>

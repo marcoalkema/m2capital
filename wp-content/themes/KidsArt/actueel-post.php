@@ -37,7 +37,7 @@ $cat = get_the_category()[0]->name;
     echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
     echo '</div>';
     echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
-}
+  }
 ?>
 
 </div>
@@ -55,7 +55,7 @@ if ($cat != 'Actueel') {
   echo '</div>';
   echo '<p>Neem dan contact op met ons via de onderstaande knop!</p>';
   echo '<a href="#contact" data-ps2id="true" class="ps2id">';
-  echo '<button class="btn btn-green">Contact</button>';
+  echo '<button class="btn btn-green bezichtigings-btn-btn">Contact</button>';
   echo '</a>';
   echo '</div>';
   }
@@ -125,7 +125,16 @@ if ($cat != 'Actueel') {
   ?>
 
   <p><?php printf(get_field('volledige_overzicht_text', 1939)); ?></p>
-  <button class="whiteBlue"><?php printf(get_field('volledige-overzicht-button-text', 1939)); ?></button>
+  <a href="<?php
+           $cat = get_the_category()[0]->name;
+           if ($cat == 'Actueel') {
+             printf(get_site_url() . '/actueel');
+           } else {
+             printf(get_site_url() . '/projecten');
+           }
+           ?>">
+    <button class="whiteBlue"><?php printf(get_field('volledige-overzicht-button-text', 1939)); ?></button>
+  </a>
 
 </div>
 
