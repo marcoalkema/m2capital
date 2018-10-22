@@ -3285,17 +3285,17 @@ a {
   background: #ffffff;
 }
 .other_stories_container{
-  width: 90%;
+  width: 96%;
   padding-left: 2%;
   margin: 0 auto!important;
 }
 .story_preview{
   /* margin: 4%; */
   overflow: hidden;
-  padding: 0 20px!important;
+  padding: 0 40px!important;
 }
 .story_preview_container{
-  height: 500px!important;
+  height: 400px!important;
 }
 .story_preview_text{
   height: 50%;
@@ -3331,6 +3331,7 @@ a {
   width: 100%;
   top: 0;
   position: absolute;
+  padding: 10px;
 }
 .story_thumbnail{
   min-height: 100%!important;

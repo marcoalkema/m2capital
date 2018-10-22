@@ -200,7 +200,10 @@
 }
 
 .story_preview_container {
-  min-height: 600px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eee;
+  min-height: 490px;
   overflow: hidden;
 }
 
@@ -357,6 +360,10 @@
   border-bottom: 4px solid #fff;
 }
 
+.story_preview {
+  margin-bottom: 50px;
+}
+
 #post-2138 .story_preview_text_container {
   position: relative;
 }
@@ -366,11 +373,14 @@
 }
 
 .object-type {
+  font-family: MetaPlusNormal!important;
+  text-transform: uppercase;
   background: #1d70b7;
   color: #fff;
   padding: 3px 15px;
   min-width: 80%;
   margin: 0 auto;
+  font-size: 14px;
 }
 
 #post-2138 .story_preview_container {
@@ -797,4 +807,30 @@ span.herontwikkelMeerArrow {
   display: inline;
   width: 25%;
   float: right;
+}
+
+.aanverhuuritems .story_preview_container h4 {
+  color: #1d70b7!important;
+}
+
+.aanverhuuritems .story_preview_container {
+  min-height: 570px;
+}
+
+.aanverhuuritems .info1,
+.aanverhuuritems .info2 {
+  color: gray;
+}
+
+.aanverhuuritems .info2 td {
+  padding-top: 5px;
+}
+
+.aanverhuuritems .info1 td:nth-child(2),
+.aanverhuuritems .info2 td:nth-child(2){
+  text-align: right;
+}
+
+.aanverhuuritems .smallTxt {
+  font-size: 12px;
 }

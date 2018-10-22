@@ -20,10 +20,10 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   for ($x = 0; $x <=14; $x++) {
     if (!empty(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'])) {
       if ($x % 3 == 0) {
-        echo '<div class="row other_stories_container">';
+        echo '<div class="row other_stories_container aanverhuuritems">';
       }
       echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-      echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview">';
+      echo '<div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 story_preview">';
       echo '<div class="story_preview_container">';
       echo '<div class="story_preview_image">';
       echo '<img class="story_thumbnail" src="' . get_field("afbeelding", wp_get_recent_posts($args, ARRAY_A )[$x]['ID']) . '"/>';
@@ -45,13 +45,13 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '<br/>';
       echo '<div>';
       echo '<table>';
-      echo '<tr>';
+      echo '<tr class="info1">';
       echo '<td>' . get_field('status', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
       echo '<td>' . get_field('prijs', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
       echo '</tr>';
-      echo '<tr>';
-      echo '<td>' . get_field('status_2', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
-      echo '<td>' . get_field('prijs2', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
+      echo '<tr class="info2">';
+      echo '<td class="smallTxt">' . get_field('status_2', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
+      echo '<td class="smallTxt">' . get_field('prijs2', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
       echo '</tr>';
       echo '</table>';
       echo '</div>';
@@ -69,35 +69,3 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   echo '</div>';
 }
 ?>
-
-<div class="project-else">
-  <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-  <button class="btn btn-green">Meer aanbod?</button>
-  <p>Zie ook onze andere portfolio pagina’s. Cum sociis natoque penatibus et magnis dis parturient montes.</p>
-  <a href="<?php printf(get_site_url()) ?>/beleggingsadvies/"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        Beleggingsadvies
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
-
-  <a href="<?php printf(get_site_url()) ?>/asset-management/"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        Asset management
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
-
-  <a href="<?php printf(get_site_url()) ?>/herontwikkeling/"> <!-- Base link on what project we're in -->
-    <button class="btn btn-green big">
-      <span class="btn-text">
-        (Her)ontwikkeling
-      </span><br> <!-- Base text on what project we're in -->
-      <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>
-    </button>
-  </a>
-</div>
