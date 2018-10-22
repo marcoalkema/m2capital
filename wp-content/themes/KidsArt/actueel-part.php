@@ -7,7 +7,7 @@
       'offset' => 0,
       'category' => $ID,
       'orderby' => 'post_date',
-      'order' => 'ASC',
+      'order' => 'DESC',
       'include' => '',
       'exclude' => '',
       'meta_key' => '',
@@ -24,7 +24,8 @@
         if ($x % 3 == 0) {
           echo '<div class="row other_stories_container">';
         }
-        echo '<div class="col-3 col-sm-3 col-md-3 col-lg-3 col-xl-3 story_preview hoverovereffect">';
+        echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
+        echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview hoverovereffect">';
         echo '<div class="story_preview_container">';
         echo '<div class="story_preview_image">';
         echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
@@ -43,13 +44,14 @@
         echo '</div>';
         echo '</div>';
         echo '<p class="actueel-post-excerpt">';
-        echo get_field('actueel-post-excerpt', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
+        echo get_field('post-excerpt', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
         echo '</p>';
-        echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
         echo '<button class="btn btn-green">Lees meer</button>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
+        echo '</div>';
         echo '</a>';
-        echo '</div>';
-        echo '</div>';
 
 
         if ($x % 3 == 2) {

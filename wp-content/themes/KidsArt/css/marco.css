@@ -476,7 +476,9 @@
 }
 
 .kenmerken-tabel {
+  font-family: MetaPlusNormal!important;
   margin-top: 30px!important;
+  color: #666;
 }
 
 .aanverhuur-container {
@@ -528,7 +530,9 @@
 
 .aanverhuur-contact .big h3 {
   color: #fff!important;
-  font-size: 2vw!important;
+  font-weight: 900;
+  font-size: 1.1vw!important;
+  letter-spacing: 0.3px;
 }
 
 .aanverhuur-contact .big h3::after {
@@ -537,7 +541,7 @@
   left: 27.5%;
   margin: 0 auto;
   bottom: 20px;
-  margin-bottom: 0px;
+  margin-bottom: 5px;
   width: 45%;
   border-bottom: 1px solid #fff;
 }
@@ -833,4 +837,83 @@ span.herontwikkelMeerArrow {
 
 .aanverhuuritems .smallTxt {
   font-size: 12px;
+}
+
+.aanverhuur-intro .flex-control-nav {
+  bottom: 0;
+  margin-bottom: -40px!important;
+}
+
+.aanverhuur-intro .flex-control-paging li a {
+  border: 1px solid #666;
+  border-radius: 100%;
+}
+
+.aanverhuur-intro .flex-control-paging li a.flex-active {
+  background: #666;
+}
+
+#page-1939 {
+  background: transparent;
+}
+
+#page-1939 .story_preview_container {
+  background: transparent;
+}
+
+#page-1939 .story_preview,
+#page-1939 .story_preview_text,
+#page-1939 .story_preview_container {
+  height: auto!important;
+}
+
+#page-1939 .story_preview_image {
+  overflow: hidden;
+}
+
+#page-1939 .hoverovereffect:hover .h4_container h4, .hoverovereffect:hover .network-header-container {
+  transform: none;
+}
+
+#page-1939 .hoverovereffect:hover {
+  background: transparent!important;
+}
+
+#page-1939 .hoverovereffect:hover {
+  background: transparent!important;
+}
+
+#page-1939 .story_preview_text {
+  height: auto!important;
+}
+
+.story_preview_text_container {
+  position: relative!important;
+}
+
+/* #page-1939 .hoverovereffect:hover .story_preview_container { */
+/*   background: #eee; */
+/* } */
+
+.story_preview_story .story_preview_container {
+  background: #eee;
+}
+
+.story_preview_story .story_preview_container .story_preview_image {
+  overflow: hidden;
+}
+
+#metaslider_176 .flex-control-nav {
+  top: 45em!important;
+  bottom: 0!important;
+}
+
+#metaslider_176 .flex-control-nav li a {
+  border: 1px solid white;
+  border-radius: 100%;
+  background: transparent;
+}
+
+#metaslider_176 .flex-control-nav li a.flex-active {
+  background: white;
 }

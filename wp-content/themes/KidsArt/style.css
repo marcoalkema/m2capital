@@ -5077,6 +5077,7 @@ h4.green{
         border-bottom: 4px solid black;
 }
 
+.hoverovereffect:hover .introduction-links-image,
 .hoverovereffect:hover .story_thumbnail,
 .hoverovereffect:hover .network-image {
     transform: scale(1.05);

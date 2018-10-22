@@ -30,14 +30,13 @@ $cat = get_the_category()[0]->name;
   if ($cat == 'Actueel') {
     echo '<div class="actueelBron">';
     echo 'Bron:</br>';
-    echo printf(get_field('bron', get_the_ID()));
+    echo get_field('bron', get_the_ID());
     echo ' </div>';
     echo '<div class="socialShareIcons2">';
-    echo 'Zelf delen?</br>';
+    echo get_field('social_media_tekst', 1939) . '</br>';
     echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
     echo '</div>';
     echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
-    echo get_the_category()[0]->name;
 }
 ?>
 
