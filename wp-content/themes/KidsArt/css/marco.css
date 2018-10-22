@@ -917,3 +917,9 @@ span.herontwikkelMeerArrow {
 #metaslider_176 .flex-control-nav li a.flex-active {
   background: white;
 }
+
+.m2BtnImage img{
+  height: 60%;
+  filter: brightness(0) invert(1);
+  margin-top: -10%;
+}

@@ -38,9 +38,7 @@ get_header(); ?>
               <div class="btn-group-vertical">
                   <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
                       <div class="m2BtnImage">
-                          <span>
-                              M2
-                          </span>
+                        <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
                       </div>
                       <button type="button" class="btn btn-primary btn_text_m2">
                           Onze Visie
@@ -53,9 +51,7 @@ get_header(); ?>
 
               <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
                   <div class="m2BtnImage">
-                      <span>
-                          M2
-                      </span>
+                    <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
                   </div>
                   <button type="button" class="btn btn-primary btn_text_m2">
                       Werkwijze
@@ -67,10 +63,8 @@ get_header(); ?>
             <div class="btn-group-vertical">
 
               <a href="#over-ons" data-ps2id="true" class="ps2id">
-                  <div class="m2BtnImage">
-                      <span>
-                          M2
-                      </span>
+                <div class="m2BtnImage">
+                  <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
                   </div>
                   <button type="button" class="btn btn-primary btn_text_m2">
                       Over ons
@@ -284,7 +278,7 @@ get_header(); ?>
           $i = 0;
           $row = 5;
           foreach($arr as $val) {
-              if ($i % 5 == 0) {
+              if ($i % 4 == 0) {
                   echo '<div class="row">';
                   echo '<div class="col-md-2 col-md-offset-1 partner-profiles-img">';
                   echo '<a href="' . $val['link'] . '" target="blank">';
@@ -307,7 +301,7 @@ get_header(); ?>
           if ($i == count($arr) - 1) {
               echo '</div>';
 
-              if ($i % 5 != 0) {
+              if ($i % 4 != 0) {
                   echo '</div>';
               }
           }
