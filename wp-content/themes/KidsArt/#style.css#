@@ -5067,7 +5067,7 @@ h4.green{
 }
 
 .introduction-links-container {
-  padding: 6% 2% 1% 2%;
+  /* padding: 6% 2% 1% 2%; */
   background: #4080bf;
 }
 .introduction-links-container .introduction-links-image-container {
@@ -5087,7 +5087,7 @@ h4.green{
 }
 
 .network-col {
-  padding: 0 100px 40px 100px!important;
+  /* padding: 0 100px 40px 100px!important; */
 }
 .h4.underlineGreen:hover {
         border-bottom: 4px solid black;

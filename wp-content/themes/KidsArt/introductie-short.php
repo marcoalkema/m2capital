@@ -26,6 +26,7 @@
 </div>
 
 <div class="introduction-links-container">
+    <div class="image_bar">
   <?php
   $arr = get_field('introduction-links', $ID);
   $i = 0;
@@ -78,4 +79,5 @@
   }
 
   ?>
+    </div>
 </div>
