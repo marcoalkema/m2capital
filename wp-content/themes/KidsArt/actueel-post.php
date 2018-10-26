@@ -20,8 +20,7 @@
       </h4>
     </div>
   </div>
-  <?php printf(get_field('post-text'));
-  ?>
+  <?php printf(get_field('post-text'));?>
 </div>
 
 <div class="actueelPostInfo">
@@ -100,25 +99,25 @@ if ($cat != 'Actueel') {
 
   for ($x = 0; $x <= count(wp_get_recent_posts( $args, ARRAY_A )).length - 1; $x++) {
     echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-    echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
-    echo '<div class="story_preview_container">';
-    echo '<div class="story_preview_image">';
-    echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
-    echo '</div>';
-    echo '<div class="story_preview_text">';
-    echo '<div class="story_preview_text_container">';
-    echo '<div class="h4_block">';
-    echo '<div class="h4_container">';
-    echo '<h4 class="green underlineGreen">';
-    echo wp_get_recent_posts( $args, ARRAY_A )[$x]['post_title'];
-    echo '</h4>';
-    echo '<br/>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
+      echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
+        echo '<div class="story_preview_container">';
+          echo '<div class="story_preview_image">';
+            echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
+          echo '</div>';
+          echo '<div class="story_preview_text">';
+            echo '<div class="story_preview_text_container">';
+              echo '<div class="h4_block">';
+                echo '<div class="h4_container">';
+                  echo '<h4 class="green underlineGreen">';
+                    echo wp_get_recent_posts( $args, ARRAY_A )[$x]['post_title'];
+                  echo '</h4>';
+                  echo '<br/>';
+                echo '</div>';
+              echo '</div>';
+            echo '</div>';
+          echo '</div>';
+        echo '</div>';
+      echo '</div>';
     echo '</a>';
   };
   echo '</div>';

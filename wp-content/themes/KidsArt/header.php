@@ -37,6 +37,12 @@
 
         <nav id="site-navigation" class="main-navigation" role="navigation"><link rel="icon" href="http://www.wpbeginner.com/favicon.png" type="image/x-icon" />
 
+          <h3 class="menu-toggle"><?php _e( '', 'twentytwelve' ); ?>
+            <button class="menu-toggle" type="submit" style="border: 0; background: transparent">
+              <img src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/images/hamburger.svg" width="40" height="40" alt="menu" />
+            </button>
+          </h3>
+
           <div id="header-info">
             <div id="header-logo">
               <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">

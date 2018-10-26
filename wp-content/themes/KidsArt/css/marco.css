@@ -431,6 +431,7 @@
 .intro-details {
   width: 74.5%;
   margin: 10px auto 0 auto;
+  position: relative;
 }
 
 .intro-type {
