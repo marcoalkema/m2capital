@@ -5439,6 +5439,7 @@ h4.green{
 .actueel-intro .btn {
   margin-bottom: 60px;
   /* min-width: 12em!important; */
+  display: block;
 }
 .stories_text{
   width: 100%;
@@ -5749,3 +5750,8 @@ li.current-menu-item a{
      margin-top: 40px!important;
      margin-bottom: 40px!important;
  }
+/* LATE CHANGES DUNNO IF THEY WORK */
+.wie-zijn-wij-wie-text-container, #wie-zijn-wij-werkwijze .column, .visie .column {
+    width: 80%;
+    margin: 0 auto;
+}
