@@ -762,7 +762,8 @@ a:hover {
   z-index: 100;
 }
 .menu-toggle img{
-  filter: invert(100%);
+  -webkit-filter: sepia(100%) hue-rotate(90deg) saturate(400%);
+  filter: sepia(100%) hue-rotate(180deg) saturate(200%);
   width: 50px;
   height: 50px;
 }
@@ -1849,7 +1850,7 @@ ul.nav-menu.toggled-on {
 }
 
 .nav-menu.toggled-on > li > a {
-  color: #fff!important;
+  color: #1d70b7!important;
 }
 
 @media (max-width : 1100px) {
@@ -4559,6 +4560,33 @@ a {
     padding-right: 20px!important;
   }
 
+  .intro-price {
+    position: absolute!important;
+    top: 0;
+    right: 0;
+  }
+  .kenmerken-tabel {
+    margin-left: 2.5%!important;
+  }
+
+  .kenmerken-tabel tr > td{
+    font-size: 0.6em!important;
+  }
+
+  .norm_row.sfsi_wDiv {
+    width: 100%!important;
+  }
+
+  .sfsi_wicons {
+    width: 40px!important;
+    height: 40px!important;
+  }
+
+  .inerCnt a img {
+    width: 40px!important;
+    height: 40px!important;
+  }
+
   .partner-profiles-img {
     height: auto!important;
     width: 25%!important;
@@ -4681,6 +4709,7 @@ a {
   #menu-item-739 > a > img {
     width: 22px!important;
   }
+
   .LRK-number {
     /* display: none; */
   }
@@ -4715,8 +4744,8 @@ a {
   .menu-primary_-container,
   .menu-primary__-container{
     background: white;
-    /* margin-left: -5%; */
-    width: auto;
+    margin-right: 0;
+    width: 100%;
   }
   .text-container {
     padding-top: 0;
@@ -4899,6 +4928,22 @@ a {
     top: 2px;
     right: 4px;
   }
+
+  .wat-doen-wij-info-container {
+    width: 100%!important;
+    padding: 0!important;
+    margin-bottom: 40px;
+  }
+
+  #wie-zijn-wij-wie .wie-foto p {
+    padding-bottom: 0!important;
+  }
+
+  #wie-zijn-wij-wie .btn.btn-primary.m2btn {
+    margin-top: 0!important;
+    margin-bottom: 5vw!important;
+  }
+
   .overlay {
     height: 43vw;
   }
