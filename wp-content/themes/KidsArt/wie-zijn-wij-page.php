@@ -280,13 +280,13 @@ get_header(); ?>
           foreach($arr as $val) {
               if ($i % 4 == 0) {
                   echo '<div class="row">';
-                  echo '<div class="col-md-2 col-md-offset-1 partner-profiles-img">';
+                  echo '<div class="col-4 col-sm-4 col-md-2 col-md-offset-1 partner-profiles-img">';
                   echo '<a href="' . $val['link'] . '" target="blank">';
                   echo '<img src="' . $val['img'] . '"/>';
                   echo '</a>';
                   echo '</div>';
               } else {
-                  echo '<div class="partner-profiles-img col-md-2">';
+                echo '<div class="partner-profiles-img col-md-2 col-4 col-sm-4">';
                   echo '<a href="' . $val['link'] . '" target="blank">';
                   echo '<img src="' . $val['img'] . '"/>';
                   echo '</a>';
