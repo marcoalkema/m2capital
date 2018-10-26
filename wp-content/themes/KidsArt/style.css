@@ -4577,7 +4577,7 @@ a {
   }
 
   .norm_row.sfsi_wDiv {
-    width: 100%!important;
+    width: 80%!important;
   }
 
   .sfsi_wicons {
@@ -4938,6 +4938,56 @@ a {
     margin-bottom: 40px;
   }
 
+  .wie-zijn-wij-wie-text-container,
+  #wie-zijn-wij-werkwijze .column,
+  .visie .column {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .aanverhuur-container {
+    width: 100%!important;
+  }
+
+  .actueelBron {
+    display: inline;
+    width: 50%!important;
+    float: left;
+  }
+
+  .socialShareIcons2 {
+    display: inline;
+    width: 50%!important;
+    float: right;
+  }
+
+  .socialShareIcons {
+    text-align: left;
+    width: 80%!important;
+    margin: 0 auto!important;
+  }
+
+  .other_aanverhuur_container {
+    margin-right: 0!important;
+    margin-left: 0!important;
+  }
+
+  .meer-kenmerken-tabel {
+    display: none;
+    width: 95%!important;
+    margin: 30px auto 0 auto;
+  }
+
+  .meer-kenmerken-tabel tr td {
+    font-size: 0.6em!important;
+  }
+
+  .aanverhuur-omschrijving {
+    width: 100%;
+    padding: 0 5% 60px 5%!important;
+  }
+
+
   #wie-zijn-wij-wie .wie-foto p {
     padding-bottom: 0!important;
   }
@@ -5031,6 +5081,8 @@ a {
   .menu-primary_-container,
   .menu-primary__-container{
     margin-left: 0!important;
+    width: 100%;
+    margin-right: 0;
   }
   #menu-primary_,
   #menu-primary__{

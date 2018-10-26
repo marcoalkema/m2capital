@@ -182,7 +182,7 @@ get_header(); ?>
           </h4>
         </div>
       </div>
-      <div>
+      <div class="wie-zijn-wij-wie-text-container">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
           $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
@@ -263,7 +263,7 @@ get_header(); ?>
           </h4>
         </div>
       </div>
-      <div>
+      <div class="wie-zijn-wij-wie-text-container">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
           $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;

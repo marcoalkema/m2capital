@@ -90,6 +90,11 @@ echo '</div>';
 if (!empty($more_details)) {
   echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
   echo '<div class="meer-kenmerken-tabel">';
+  echo '<div class="h4_block">';
+  echo '<div class="h4_container">';
+  echo '<h4 class="aanverhuur-kenmerken-titel">Meer kenmerken</h4>';
+  echo '</div>';
+  echo '</div>';
   echo '<table>';
   for ($x = 0; $x <= count($more_details); $x++) {
     echo '<tr>';
