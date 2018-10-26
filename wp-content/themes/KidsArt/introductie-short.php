@@ -43,7 +43,7 @@
       echo '<div class="wat-doen-wij-header-container underlineWhite">' . $val['introductie-links-title'] . '</div>';
       echo '<div class="wat-doen-wij-info-text-container">' . $val['introductie-links-text'] . '</div>';
       echo '<div class="wat-doen-wij-btn-container">';
-      echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
+      echo '<button class="btn whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
       echo '</div>';
       echo '</a>';
       echo '</div>';
@@ -56,7 +56,7 @@
       echo '<div class="wat-doen-wij-header-container underlineWhite">' . $val['introductie-links-title'] . '</div>';
       echo '<div class="wat-doen-wij-info-text-container">' . $val['introductie-links-text'] . '</div>';
       echo '<div class="wat-doen-wij-btn-container">';
-      echo '<button class="whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
+      echo '<button class="btn whiteBlue">' . $val['introductie-links-button-tekst'] . '</button>';
       echo '</div>';
       echo '</a>';
       echo '</div>';

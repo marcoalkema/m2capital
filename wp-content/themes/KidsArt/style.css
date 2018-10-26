@@ -2065,7 +2065,9 @@ h6.white {
 
 /* BUTTONS */
 .btn {
-  min-width: 170px;
+  /* min-width: 170px; */
+        padding-left: 24px!important;
+    padding-right: 24px!important;
   color: #000000;
   border: 1px solid #777!important;
   text-transform: lowercase;
@@ -3703,7 +3705,7 @@ h6.white {
      margin-left: -19vw;
    }
    #header-logo{
-     margin-left: -300px;
+     margin-left: -460px;
    }
  }
  @media screen and (max-width: 1200px) {
@@ -4345,71 +4347,6 @@ h6.white {
    .fees_table > tbody > tr > td:nth-child(3){
      padding-right: 0;
    }
-   .aanbod-intro-container .network-col {
-     width: 100%!important;
-     margin: 20px 0!important;
-   }
-
-   .network-image {
-     width: 100%!important;
-     height: auto!important;
-   }
-
-   .actueel-intro-container-img {
-     height: 300px!important;
-   }
-
-   .wat-doen-wij-col {
-     width: 100%!important;
-     margin: 20px 0!important;
-   }
-
-   .story_preview {
-     margin: 20px auto!important;
-   }
-
-   .other_stories_container {
-     padding-left: 0!important;
-   }
-
-   .story_preview_container,
-   .story_preview {
-     padding: 0!important;
-     margin: 15px auto!important;
-   }
-
-   .story_preview_container {
-     padding-top: 20px!important;
-   }
-
-   .contact-large {
-     margin-left: 0!important;
-   }
-
-   .contact-large-submit > input {
-     width: 100%!important;
-     margin-left: 0!important;
-   }
-
-   .aanverhuur-kenmerken {
-     width: 100%!important;
-   }
-
-   .m2_btn_table {
-     width: 80%!important;
-     margin: 0 auto!important;
-   }
-
-   .btn-group-vertical {
-     text-align: center!important;
-     width: 100%!important;
-     margin-bottom: 20px;
-   }
-
-   .m2BtnImage {
-     margin: 0 auto!important;
-   }
-
    #header-logo a img{
      margin: 0!important;
    }
@@ -5027,7 +4964,7 @@ h6.white {
  .contact-title-container-large {
    text-align: center;
    width: 100%;
-   padding-top: 20px;
+   /* padding-top: 20px; */
  }
  .contact-form-container {
    width: 60%;
@@ -5039,10 +4976,15 @@ h6.white {
 
 
  }
+ .contact-form-template .green.underlineGreen.smalleUnderline {
+     margin-top: 60px!important;
+         line-height: normal;
+ }
  .contact-form-template #foldBtn{
    font-family: MerriweatherRegular!important;
-   margin-top:0!important;
+   /* margin-top:0!important; */
    text-transform:none;
+   margin-bottom: 60px!important;
  }
  .contact-form-title {
    margin-bottom: 12px!important;
@@ -5121,16 +5063,6 @@ h6.white {
    width: 86%;
  }
 
- .whiteBlue {
-   margin: 0 auto;
-   background: #fff;
-   color: #1d70b7;
-   font-size: 26px;
-   padding: 3px 10px 5px 10px;
-   height: 34px;
-   line-height: 0;
-   width: 151px;
- }
 
  .wat-doen-wij-btn-container {
    width: 100%;
@@ -5138,11 +5070,15 @@ h6.white {
  }
 
  .introduction-links-container {
-   padding: 6% 2% 1% 2%;
-   background: #4080bf;
+
+       margin: 0 auto;
+    background: #4080bf;
+    margin-bottom: 10px;
+    box-shadow: 0 5px 10px #c2c2c2;
  }
  .introduction-links-container .introduction-links-image-container {
-   height: 250px;
+     height: 300px;
+     width:auto;
    overflow: hidden;
    margin: 0 auto;
  }
@@ -5152,8 +5088,10 @@ h6.white {
  }
 
  .image_bar {
-   width: 80%;
+   width: 87%;
    margin: 0 auto!important;
+   padding-top: 40px;
+    padding-bottom: 40px;
  }
 
  .network-col {
@@ -5228,7 +5166,7 @@ h6.white {
    margin: auto 13px;
    float: right;
    width: 22%;
-   min-height: 321px;
+   min-height: 331px;
  }
 
  .network-header-container {
@@ -5260,15 +5198,19 @@ h6.white {
  .actueel-intro {
    text-align: center;
    width: 80%;
-   margin: 60px auto 100px auto;
+   margin: 0 auto;
  }
  .actueel-intro p {
-   text-align: left;
+   text-align: justify;
+ }
+
+ .actueel-intro h4.underlineGreen {
+     margin-top: 60px!important;
  }
 
  .actueel-intro .btn {
-   margin-top: 60px;
-   min-width: 12em!important;
+   margin-bottom: 60px;
+   /* min-width: 12em!important; */
  }
  .stories_text{
    width: 100%;
@@ -5307,13 +5249,14 @@ h6.white {
  /* } */
 
  .main-navigation .menu-item-type-post_type, .main-navigation .menu-item-has-children {
-   border-right: 3px solid #afadad;
+   border-right: 2px solid #ddd;
  }
 
  p {
    /* max widht */
    color: gray;
    margin: 20px auto!important;
+   text-align: justify;
  }
 
  .btn.btn-green.anders {
@@ -5571,4 +5514,11 @@ h6.white {
    width: 13vw;
    height: auto;
    margin: 9em 0 auto;
+ }
+
+ .actueel-intro .layoutArea > .column > h2 {
+     margin: 0 auto;
+     padding: 0;
+     margin-top: 40px!important;
+     margin-bottom: 40px!important;
  }

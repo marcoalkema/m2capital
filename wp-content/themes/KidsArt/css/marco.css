@@ -240,8 +240,19 @@
 }
 
 .whiteBlue {
-  min-width: 151px;
+  /* min-width: 151px; */
   width: auto;
+
+   margin: 0 auto;
+   background: #fff;
+   color: #1d70b7;
+       border-radius: 0px;
+ /*   font-size: 26px; */
+ /*   padding: 3px 10px 5px 10px; */
+ /*   height: 34px; */
+ /*   line-height: 0; */
+ /*   width: 151px; */
+
 }
 
 .interest-in-project {
