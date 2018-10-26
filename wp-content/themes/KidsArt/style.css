@@ -5081,6 +5081,8 @@ a {
   .menu-primary_-container,
   .menu-primary__-container{
     margin-left: 0!important;
+    width: 100%;
+    margin-right: 0;
   }
   #menu-primary_,
   #menu-primary__{
