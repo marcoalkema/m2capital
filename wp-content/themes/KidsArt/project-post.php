@@ -1,10 +1,10 @@
 <?php
-$fields = get_field_objects();
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   $args = array(
     'numberposts' => 0,
     'offset' => 0,
     'orderby' => 'post_date',
+    'category' => '24, 27, 26',
     'order' => 'ASC',
     'include' => '',
     'exclude' => '',
@@ -16,7 +16,8 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   );
 
   for ($x = 0; $x <=14; $x++) {
-    if (!empty(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'])) {
+    $IDx = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
+    if (!empty($IDx) && ($IDx !== 25) && ($IDx !== 23)) {
       if ($x % 3 == 0) {
         echo '<div class="row other_stories_container">';
       }
