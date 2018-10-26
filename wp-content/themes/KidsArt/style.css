@@ -5246,8 +5246,9 @@ h4.green{
 }
 
 .introduction-links-container {
-
-         margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    margin: 0 auto;
     background: #4080bf;
     margin-bottom: 10px;
     box-shadow: 0 5px 10px #c2c2c2;
