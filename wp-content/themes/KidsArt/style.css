@@ -79,6 +79,8 @@ html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquobodyte, p
   line-height: 120%;
   letter-spacing: -1px;
   vertical-align: baseline;
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
 }
 
 p > span {
@@ -2077,6 +2079,7 @@ h6.white {
   font-weight: 400!important;
   line-height: 0.1!important;
   height: 28px;
+  font-family: MerriweatherRegular;
 }
 .btn > a{
   color: ##21759b;
@@ -2089,6 +2092,7 @@ h6.white {
   border-radius:0px;
   /* margin-left: 36%; */
   margin: 20px auto;
+  padding: 15px 12px;
 }
 
 .btn.btn-white {
@@ -2113,7 +2117,7 @@ h6.white {
 }
 
 .aanbod-intro h4.underlineGreen {
-  margin-top: 60px!important;
+  margin-top: 50px!important;
 }
 
 .aanbod-intro row {
@@ -4105,7 +4109,7 @@ a {
 
 .footer-contact-btn {
   font-family: MerriweatherBold!important;
-  font-weight: 600;
+  /* font-weight: 600; */
   color: #888;
   height: 27px;
   line-height: 27px;
@@ -5368,7 +5372,6 @@ h4.green{
 }
 .wat-doen-wij-info-text-container > p {
   color: #fff;
-  font-family:Merriweather-Light!important;
   font-weight: normal!important;
   text-align:justify;
 }
@@ -5377,7 +5380,7 @@ h4.green{
   position: absolute;
   left: 50%;
   margin-left: -23%;
-  bottom: -2vw;
+  bottom: -20px;
   width: 46%;
   border-bottom: 4px solid #fff;
 }
@@ -5434,6 +5437,7 @@ h4.green{
 
 .actueel-intro p {
   text-align: justify;
+  margin-bottom: 40px!important;
 }
 
 .actueel-intro .btn {
@@ -5483,9 +5487,10 @@ h4.green{
 
 p {
   /* max widht */
-  color: gray;
+  color: #666;
   margin: 20px auto!important;
-   text-align: justify;
+  text-align: justify;
+  font-family: MetaPlusNormal;
 }
 
 .btn.btn-green.anders {

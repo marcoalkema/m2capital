@@ -639,6 +639,20 @@
   font-weight: 900;
 }
 
+.footer-link > p {
+    text-align: center;
+    font-family: MerriweatherRegular!important;
+    font-weight: normal;
+    letter-spacing: 1px;
+
+}
+
+.upper-footer .contact-info tr:first-child td {
+    font-family: MerriweatherRegular!important;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
 .layoutArea > .column > h2 {
   margin: 5% 5% 2% 5%;
   padding: 2% 5%;
