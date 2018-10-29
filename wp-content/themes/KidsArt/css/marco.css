@@ -133,6 +133,7 @@
   height: 30px;
   line-height: 0;
   margin-bottom: 60px;
+  font-family: MerriweatherRegular;
 }
 
 .aan-verhuur-text-block,
@@ -248,6 +249,8 @@
    background: #fff;
    color: #1d70b7;
        border-radius: 0px;
+       font-family: MerriweatherRegular;
+    padding-top: 4px;
  /*   font-size: 26px; */
  /*   padding: 3px 10px 5px 10px; */
  /*   height: 34px; */
