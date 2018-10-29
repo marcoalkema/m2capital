@@ -4859,7 +4859,13 @@ a {
   #menu-item-739 > a > img {
     width: 22px!important;
   }
-
+  .wat-doen-wij-col p {
+    padding: 1vw 5vw!important;
+  }
+  .wat-doen-wij-image {
+    height: 1;
+    width: 100%!important;
+  }
   .LRK-number {
     /* display: none; */
   }
