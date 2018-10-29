@@ -30,7 +30,7 @@
 
     <div class="network-container">
         <?php
-        $arr = get_field('wat-doen-wij-links', $ID);
+        $arr = array_reverse(get_field('wat-doen-wij-links', $ID));
         $i = 0;
         $row = 1;
         foreach($arr as $val) {

@@ -2700,17 +2700,17 @@ h6.white {
   /* display: none!important; */
   overflow: hidden;
 
-  -webkit-transition: visibility 5s, max-height 5s!important;
-  -moz-transition: visibility 5s, max-height 5s!important;
-  transition: visibility 5s, max-height 5s!important;
+  -webkit-transition: visibility 2s, max-height 2s!important;
+  -moz-transition: visibility 2s, max-height 2s!important;
+  transition: visibility 2s, max-height 2s!important;
 }
 
 .foldalbe-contact.active {
   max-height: 5000px!important;
   visibility: visible;
-  -webkit-transition: visibility 5s, max-height 5s!important;
-  -moz-transition: visibility 5s, max-height 5s!important;
-  transition: visibility 5s, max-height 5s!important;
+  -webkit-transition: visibility 2s, max-height 2s!important;
+  -moz-transition: visibility 2s, max-height 2s!important;
+  transition: visibility 2s, max-height 2s!important;
   /* display: block!important; */
 }
 .foldBtn.active_ {
@@ -4969,6 +4969,9 @@ a {
   }
   .contact-title h3 {
     font-size: 18px;
+  }
+  #page-1939 .story_preview_container {
+    background: #eee!important;
   }
   .tt-row-col > img {
     /* margin-left: -20%; */

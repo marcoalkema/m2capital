@@ -892,6 +892,10 @@ span.herontwikkelMeerArrow {
   background: transparent;
 }
 
+#page-1939 .story_preview_container:hover{
+  background: #eee;
+}
+
 #page-1939 .story_preview,
 #page-1939 .story_preview_text,
 #page-1939 .story_preview_container {
