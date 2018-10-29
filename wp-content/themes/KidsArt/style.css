@@ -325,6 +325,12 @@ input[type="color"] {
   border-radius: 0;
   padding: 0;
 }
+input[type="email"]:focus::-webkit-input-placeholder, input[type="text"]:focus::-webkit-input-placeholder/* , input[type="email"]:focus:-moz-placeholder, input[type="text"]:focus:-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="text"]:focus::-moz-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="text"]:focus:-ms-input-placeholder */ {
+      color:transparent;
+}
+textarea:focus::-webkit-input-placeholder {
+    color:transparent;
+}
 
 /* Buttons */
 input[type="submit"],
@@ -669,7 +675,7 @@ a:hover {
   width: 100%
 }
 #header-logo a img {
-  height: 6vw;
+  height: 4.3vw;
 }
 .header-image {
   position: absolute;
@@ -734,8 +740,7 @@ a:hover {
 
 .main-navigation li {
   float: right;
-  margin-top: 24px;
-  margin-top: 1.714285714rem;
+      margin-top: 1.114286rem;
   /* font-size: 21px; */
   /* font-size: 1.057142857rem; */
   font-size: 1.15vw;
@@ -3296,7 +3301,7 @@ h6.white {
 }
 .site-logo {
   margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 2%;
   padding-left: 2%;
   margin-left: -3%;
 }
@@ -3769,7 +3774,7 @@ a {
   .main-navigation li a {
     /* font-size: 22px; */
     /* font-size: 1em; */
-    font-size: 1.6vw;
+    font-size: 1.35vw;
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -5016,6 +5021,52 @@ a {
   #landing-overlay-title{
     font-size: 8vw!important;
   }
+  .page-title-div > #landing-overlay-title {
+      font-size: 6.9vw!important;
+    margin-top: 27vw!important;
+  }
+  #overlay-container.overlay {
+      height:68vw;
+      margin-top: 0px;
+
+  }
+  .wat-doen-wij-header-container.underlineWhite {
+      font-size: 2.3em;
+  }
+  .introduction-links-container .wat-doen-wij-header-container.underlineWhite::after {
+      bottom: -26px;
+  }
+  .aanbod-intro-container .network-header-container h4 {
+      font-size: 2em!important;
+  }
+  .aanbod-intro-container .network-container .network-header-container h4::after {
+          margin-bottom: -5.7vw;
+  }
+  #content #overlay-container .glyphicon.glyphicon-menu-down {
+      display: block;
+    color: #1d70b7;
+    background-color: white;
+    height: 16px;
+    width: 16px;
+    padding-top: 1px;
+    padding-left: 0px;
+    padding-right: 11px;
+    margin: 0 auto;
+    border: 3px solid white;
+    border-radius: 25px;
+    font-size: 2.9vw;
+  }
+  #main .introduction-container {
+          height: 106vw;
+    margin-top: -9vw!important;
+  }
+  img.overlay-plaatje {
+      margin-top: 27vw;
+  }
+  .actueel-intro-container .actueel-intro .layoutArea > .column > h2 {
+      font-size: 2em!important;
+  }
+
   .contact-large-submit{
     font-family: MerriweatherRegular!important;
     margin: 0 auto;
@@ -5408,7 +5459,7 @@ h4.green{
   margin: auto 13px;
   float: right;
   width: 22%;
-  min-height: 331px;
+  min-height: 336px;
 }
 
 .network-header-container {
@@ -5499,7 +5550,7 @@ h4.green{
 
 p {
   /* max widht */
-  color: #2b2a2a;
+  color: #666666;
   margin: 20px auto!important;
   text-align: justify;
   font-family: MetaPlusNormal;
@@ -5662,9 +5713,9 @@ li.current-menu-item a{
 
 
 .smalleUnderline::after {
-  width: 18%!important;
+  /* width: 18%!important; */
   /* margin: 0 11vw 59px 11vw; */
-  margin-left: -9%!important;
+  /* margin-left: -9%!important; */
 
 }
 
@@ -5676,7 +5727,7 @@ li.current-menu-item a{
 .grijs {
   /* margin-top: 30px; */
   font-family:MetaPlusNormal;
-  color: #2b2a2a;
+  color: #666666;
   margin-top: 20px;
 }
 
