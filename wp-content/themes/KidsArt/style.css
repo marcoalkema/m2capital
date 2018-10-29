@@ -5179,7 +5179,7 @@ a {
   .flex-control-nav,
   .flex-control-paging,
   .flex-direction-nav {
-    display: none;
+    display: block;
   }
   .wpml-ls-menu-item{
     margin-left: 0!important;
@@ -5922,11 +5922,13 @@ li.current-menu-item a{
 #wie-zijn-wij-wie .container > .row > div:first-child {
     float: left;
     padding: 0;
+    width: 100%;
 }
 
 #wie-zijn-wij-wie .container > .row > div:last-child {
-        float: right;
-    padding: 0;
+  float: right;
+  padding: 0;
+  width: 100%;
 }
 
 #wie-zijn-wij-wie .container{
