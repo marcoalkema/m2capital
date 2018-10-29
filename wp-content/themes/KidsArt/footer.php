@@ -15,7 +15,7 @@
             <div class="contact-info-container">
               <?php do_shortcode('[my_contact_field]'); ?>
             </div>
-            <div class="footer-link merriweather">
+            <div class="footer-link merriweather zaken-doen">
               <p>
                 Zaken doen?<br>
               </p>

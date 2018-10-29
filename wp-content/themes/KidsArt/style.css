@@ -4595,6 +4595,7 @@ a {
     font-family: MerriweatherBold;
     display: inline-block;
     float: left!important;
+    margin: 0 12%;
   }
 
   .contact-info-container {
@@ -4736,6 +4737,10 @@ a {
     margin: 0;
     width: 100%;
   }
+  .zaken-doen {
+    display: none!important;
+  }
+
   .menu-secondary-container,
   .menu-secondary-engels-container{
     margin-left: 0;
@@ -4841,10 +4846,23 @@ a {
   }
   .footer-link-container{
     padding-left: 20px!important;
+    float: left;
   }
   .copyright-text {
+    display: block;
+    padding-bottom: 0!important;
+    margin-left: 6.5vw!important;
+    font-size: 18px;
+  }
+  .lower-footer {
+    height: 110px;
+  }
+  #menu-item-2322,
+  #menu-item-2119,
+  #menu-item-561,
+  #menu-item-2120,
+  #menu-item-562 {
     display: none!important;
-    margin-left: 0!important;
   }
 
   .social_icons_primary > div{
