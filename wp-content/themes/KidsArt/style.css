@@ -3752,6 +3752,10 @@ a {
   transition: width 0ms;
 }
 
+.main-navigation .menu-item-has-children.wpml-ls-current-language {
+  border: 0!important;
+  margin-left: 20px!important;
+}
 
 /* =Media queries
 -------------------------------------------------------------- */
@@ -4593,7 +4597,10 @@ a {
     width: 100%!important;
     margin: 20px 0!important;
   }
-
+  .main-navigation .menu-item-has-children.wpml-ls-current-language {
+    border: 0!important;
+    margin-left: 0px!important;
+  }
   .network-image {
     width: 100%!important;
     height: auto!important;
