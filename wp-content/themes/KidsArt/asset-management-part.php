@@ -20,14 +20,12 @@
 </div>
 
 <div class="asset-management-text-block">
-  <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
       printf(get_field('asset-management-text1', $ID));
     }
     ?>
-  </p>
 
   <?php echo do_shortcode("[metaslider id=2072]");?>
 
