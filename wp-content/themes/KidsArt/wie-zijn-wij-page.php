@@ -205,7 +205,7 @@ get_header(); ?>
           echo '<div class="wrapper">';
           echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-mark" src="' . $val['foto'] . '"/>';
           echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
-          echo '<div>' . $val['omschrijving'] . '</div>';
+          echo '<div class="omschrijving">' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
           echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
           echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
@@ -219,7 +219,7 @@ get_header(); ?>
           echo '<div class="wrapper">';
           echo '<div class="wie-foto"><img class="introduction-links-image wie-foto-michiel" src="' . $val['foto'] . '"/>';
           echo '<h4 class="green underlineGreen lijn">' . $val['naam'] . '</h4>';
-          echo '<div>' . $val['omschrijving'] . '</div>';
+          echo '<div class="omschrijving">' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
           echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
           echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';

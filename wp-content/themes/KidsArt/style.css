@@ -4580,6 +4580,12 @@ a {
     margin: 0 10%!important;
     padding-bottom: 20px;
   }
+  #wie-zijn-wij-visie  .green.underlineGreen {
+      margin-top: -11px;
+  }
+  #wie-zijn-wij-wie .container .row {
+      margin-bottom: 0px;
+  }
 
   .upper-footer {
     height: 260px!important;
@@ -5059,8 +5065,10 @@ a {
   }
 
 
-  #wie-zijn-wij-wie .wie-foto p {
-    padding-bottom: 0!important;
+  #wie-zijn-wij-wie .row .wie-foto p {
+      padding-bottom: 0!important;
+      width:100%;
+      margin-top: 0px!important;
   }
 
   #wie-zijn-wij-wie .btn.btn-primary.m2btn {
