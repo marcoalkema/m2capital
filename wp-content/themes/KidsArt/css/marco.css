@@ -70,11 +70,6 @@
   margin: -4vw auto 20px auto;
 }
 
-
-.her-ontwikkel-text-block, .beleggingsadvies-text-block, .aan-verhuur-text-block {
-  margin-top: -4vw;
-}
-
 #aan-verhuur,
 #beleggingsadvies,
 #her-ontwikkel,
@@ -93,14 +88,10 @@
 #beleggingsadvies p,
 #her-ontwikkel p,
 #asset-management p {
-  /* width: 76%; */
-  /* margin: 2vw auto; */
-
   width: 80%;
-  margin: 0 11vw 59px 11vw;
+  margin: 20px auto 59px auto!important;
   text-align: justify;
-      display: inline-block;
-
+  display: inline-block;
 }
 
 #aan-verhuur .metaslider,

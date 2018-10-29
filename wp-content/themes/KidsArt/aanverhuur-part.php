@@ -12,14 +12,12 @@
 </div>
 
 <div class="aan-verhuur-text-block">
-  <p>
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
       printf(get_field('aanverhuur-text1', $ID));
     }
     ?>
-  </p>
 
   <?php echo do_shortcode("[metaslider id=2107]"); ?>
 
