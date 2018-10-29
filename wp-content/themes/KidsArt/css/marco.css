@@ -200,7 +200,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   background: #eee;
-  min-height: 490px;
+  min-height: 510px;
   overflow: hidden;
 }
 
@@ -791,6 +791,7 @@ span.herontwikkelMeerArrow {
 
 .actueel-post-excerpt {
   padding: 10px;
+  height: 100px;
 }
 
 .actueel-intro-container-img {
@@ -900,7 +901,7 @@ span.herontwikkelMeerArrow {
 #page-1939 .story_preview,
 #page-1939 .story_preview_text,
 #page-1939 .story_preview_container {
-  /* height: auto!important; */
+  height: 600px!important;
 }
 
 #page-1939 .story_preview_image {
