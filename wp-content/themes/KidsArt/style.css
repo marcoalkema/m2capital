@@ -3752,6 +3752,10 @@ a {
   transition: width 0ms;
 }
 
+.main-navigation .menu-item-has-children.wpml-ls-current-language {
+  border: 0!important;
+  margin-left: 20px!important;
+}
 
 /* =Media queries
 -------------------------------------------------------------- */
@@ -4530,15 +4534,37 @@ a {
   }
   img.alignleft,
   .wp-caption.alignleft {
-    margin: 0 0 20px 0!important;
     float: none;
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
   }
   img.alignright,
   .wp-caption.alignright {
-    margin: 0 0 20px 0!important;
+    width: 110%;
+    margin-left: -5%;
     float: none;
+  }
+  .other_stories_container {
     width: 100%;
+  }
+  .story_preview_image {
+    width: 90%;
+    margin-left: 5%;
+    height: 1!important;
+    overflow: hidden;
+  }
+  .asset-management-page > p, .actueel-page > p {
+    width: 80%!important;
+  }
+  .story_preview_text_container {
+    padding: 0 10%;
+  }
+  .post-excerpt p {
+    width: 80%;
+  }
+  .aanverhuur-table-items {
+    width: 90%!important;
+    margin: 0 auto!important;
   }
   .tb-day{
     min-height: 100%;
@@ -4571,7 +4597,10 @@ a {
     width: 100%!important;
     margin: 20px 0!important;
   }
-
+  .main-navigation .menu-item-has-children.wpml-ls-current-language {
+    border: 0!important;
+    margin-left: 0px!important;
+  }
   .network-image {
     width: 100%!important;
     height: auto!important;
@@ -4668,15 +4697,17 @@ a {
       margin-bottom: 0px;
   }
   .visie .actueel-intro-container-img img {
-    /*       width: 100%; */
-      /* height: 100%; */
-          width: auto;
+    width: auto;
     height: 100%;
     margin-left: -20vw;
   }
 
+  .flexslider .slides li {
+    height: 100%;
+  }
+
   .upper-footer {
-    height: 260px!important;
+    height: 280px!important;
     padding: 0!important;
     margin-right: 0!important;
   }
@@ -4859,7 +4890,13 @@ a {
   #menu-item-739 > a > img {
     width: 22px!important;
   }
-
+  .wat-doen-wij-col p {
+    padding: 1vw 5vw!important;
+  }
+  .wat-doen-wij-image {
+    height: 1;
+    width: 100%!important;
+  }
   .LRK-number {
     /* display: none; */
   }
@@ -5151,6 +5188,7 @@ a {
     text-align: left;
     width: 80%!important;
     margin: 0 auto!important;
+    font-size: 21px;
   }
 
   .other_aanverhuur_container {
@@ -5212,8 +5250,8 @@ a {
     margin-top: 27vw!important;
   }
   #overlay-container.overlay {
-      height:68vw;
-      margin-top: 0px;
+    height:68vw;
+    margin-top: 80px;
 
   }
   .page-template-projecten .page-title-div > #landing-overlay-title {
@@ -5252,7 +5290,7 @@ a {
     font-size: 2.9vw;
   }
   #main .introduction-container {
-    height: 125vw;
+    height: 165vw;
     margin-top: -9vw!important;
   }
   .row.intro-details {

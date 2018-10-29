@@ -39,12 +39,12 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '</div>';
       echo '</div>';
       echo '</div>';
-      echo '<p class="post-excerpt textWhite">';
+      echo '<div class="post-excerpt textWhite">';
       echo get_field('samenvatting', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
-      echo '</p>';
+      echo '</div>';
       echo '<br/>';
       echo '<div>';
-      echo '<table>';
+      echo '<table class="aanverhuur-table-items">';
       echo '<tr class="info1">';
       echo '<td>' . get_field('status', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
       echo '<td>' . get_field('prijs', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
