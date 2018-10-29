@@ -4526,7 +4526,7 @@ a {
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
   html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquobodyte, pre, a, abbr, acronym, address, big, cite, code, del, dfn, img, ins, kbd, q, s, samp, sub, sup, tt, var, b, u, i, center, dl, dt, dd, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video{
-    font-size: 16px;
+    font-size: 19px;
   }
   img.alignleft,
   .wp-caption.alignleft {
@@ -4551,6 +4551,9 @@ a {
   }
   .introduction-links-container {
     padding-bottom: 0!important;
+  }
+  .page-template-wie-zijn-wij-page .partners {
+      margin-top: -15vw;
   }
   .fees_table_container {
     margin-bottom: 20px!important;
@@ -4589,6 +4592,15 @@ a {
 
   .other_stories_container {
     padding-left: 0!important;
+  }
+  .page-header-image .headerImg {
+      width: auto;
+    height: 125vw;
+    overflow: hidden;
+    margin-right: 50vw;
+  }
+  .main .page-header-image {
+
   }
 
   .story_preview_container,
@@ -4998,7 +5010,7 @@ a {
   .page-header-image {
     position: relative;
     width: 100%;
-    height: 45vw;
+    height: 125vw;
     background: #ddd;
     overflow: hidden;
     /* margin-top: 60px; */
@@ -5182,7 +5194,7 @@ a {
     font-size: 8vw!important;
   }
   .page-title-div > #landing-overlay-title {
-      font-size: 6.9vw!important;
+      font-size: 2.9em!important;
     margin-top: 27vw!important;
   }
   #overlay-container.overlay {
@@ -5315,6 +5327,7 @@ a {
     font-size: 32px;
     width: 100%;
     margin: 0 auto;
+    font-family: MerriweatherRegular;
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -6014,8 +6027,6 @@ li.current-menu-item a{
 .visie p:last-child {
     margin-bottom: 60px!important;
 }
-
-
 
 .page-template-wie-zijn-wij-page .section .layoutArea .column > p {
     margin-bottom: 0px!important;
