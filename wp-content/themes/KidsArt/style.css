@@ -4530,15 +4530,37 @@ a {
   }
   img.alignleft,
   .wp-caption.alignleft {
-    margin: 0 0 20px 0!important;
     float: none;
-    width: 100%;
+    width: 110%;
+    margin-left: -5%;
   }
   img.alignright,
   .wp-caption.alignright {
-    margin: 0 0 20px 0!important;
+    width: 110%;
+    margin-left: -5%;
     float: none;
+  }
+  .other_stories_container {
     width: 100%;
+  }
+  .story_preview_image {
+    width: 90%;
+    margin-left: 5%;
+    height: 1!important;
+    overflow: hidden;
+  }
+  .asset-management-page > p, .actueel-page > p {
+    width: 80%!important;
+  }
+  .story_preview_text_container {
+    padding: 0 10%;
+  }
+  .post-excerpt p {
+    width: 80%;
+  }
+  .aanverhuur-table-items {
+    width: 90%!important;
+    margin: 0 auto!important;
   }
   .tb-day{
     min-height: 100%;
@@ -5157,6 +5179,7 @@ a {
     text-align: left;
     width: 80%!important;
     margin: 0 auto!important;
+    font-size: 21px;
   }
 
   .other_aanverhuur_container {
