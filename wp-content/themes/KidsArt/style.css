@@ -2209,7 +2209,7 @@ h6.white {
 /* PARTNERS */
 .partner-profiles {
   width: 90%;
-  margin: 0 auto;
+  margin: 0 10%;
   margin-bottom: 60px;
 }
 .partner-profiles-img {
@@ -4574,6 +4574,7 @@ a {
 
   .partner-profiles {
     margin: 0 10%!important;
+    padding-bottom: 20px;
   }
 
   .upper-footer {

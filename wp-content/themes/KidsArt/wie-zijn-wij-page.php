@@ -277,26 +277,13 @@ get_header(); ?>
           $arr = get_field('partners-profiles', $ID);
           $i = 0;
           $row = 5;
+          echo '<div class="row">';
           foreach($arr as $val) {
-              if ($i % 4 == 0) {
-                  echo '<div class="row">';
-                  echo '<div class="col-4 col-sm-4 col-md-2 col-md-offset-1 partner-profiles-img">';
+                  echo '<div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-3 partner-profiles-img">';
                   echo '<a href="' . $val['link'] . '" target="blank">';
                   echo '<img src="' . $val['img'] . '"/>';
                   echo '</a>';
                   echo '</div>';
-              } else {
-                echo '<div class="partner-profiles-img col-md-2 col-4 col-sm-4">';
-                  echo '<a href="' . $val['link'] . '" target="blank">';
-                  echo '<img src="' . $val['img'] . '"/>';
-                  echo '</a>';
-                  echo '</div>';
-
-                  if ($i % (1 * $row + ($row - 1)) == 0) {
-                      echo '</div>';
-                      $row++;
-                  }
-              }
           ;
           if ($i == count($arr) - 1) {
               echo '</div>';
