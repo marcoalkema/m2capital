@@ -5138,15 +5138,14 @@ a {
     font-family: MerriweatherRegular!important;
     margin: 0 auto;
     color: #00000;
-    border: 1px solid #777!important;
     height: 30px!important;
-    width: 210px!important;
+    width: 145px!important;
     padding: 0;
   }
   input[type="submit"], input[type="button"], input[type="reset"], article.post-password-required input[type=submit], .bypostauthor cite span, .wpcf7-form-control wpcf7-submit{
-    padding: 6px 0 0 0!important;
-    font-size: 22px!important;
-    line-height: 0!important;
+    padding: 15px 12px!important;
+    font-size: 20px!important;
+    line-height: 0px!important;
     text-transform: lowercase;
     font-stretch: condensed!important;
     font-weight: 400!important;
