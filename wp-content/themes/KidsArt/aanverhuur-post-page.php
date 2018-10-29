@@ -145,7 +145,7 @@ echo '</h4>';
 echo '</div>';
 echo '</div>';
 echo '<span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span><br>';
-echo '<h3>bezichtiging plannen</h3>';
+echo '<h3><b>bezichtiging plannen</b></h3>';
 echo '</button>';
 echo '</a>';
 echo '<div class="socialShareIcons">';

@@ -466,7 +466,9 @@
 .btn.btn-green.big .h4_container,
 .aanverhuur-omschrijving .h4_container,
 .aanverhuur-kenmerken .h4_container {
+  margin-top: 20px;
   position: relative;
+  width: 100%;
 }
 
 .aanverhuur-kenmerken-titel::after {
@@ -511,27 +513,35 @@
 }
 
 .aanverhuur-contact .big {
-  height: 220px;
+  height: 210px;
   width: 280px;
   margin: 40px auto;
   text-align: center;
   position: relative;
+  padding: 0 0!important;
 }
 
 .aanverhuur-contact .big h4 {
+  margin-top: -15px;
   line-height: 1.2;
   font-size: 27px!important;
+  word-break: break-all;
+  word-wrap: break-word;
+  text-align: center;
+  overflow-wrap: break-word;
 }
 
 .aanverhuur-contact .big .glyphicon-menu-down {
   margin: 20px auto 10px auto;
+  font-size: 28px;
 }
 
 .aanverhuur-contact .big h3 {
   color: #fff!important;
-  font-weight: 900;
-  font-size: 1.1vw!important;
+  font-weight: 900!important;
+  font-size: 0.8vw!important;
   letter-spacing: 0.3px;
+  margin-bottom: 5px;
 }
 
 .aanverhuur-contact .big h3::after {
@@ -539,7 +549,7 @@
   position: absolute;
   left: 27.5%;
   margin: 0 auto;
-  bottom: 20px;
+  bottom: 15px;
   margin-bottom: 5px;
   width: 45%;
   border-bottom: 1px solid #fff;
