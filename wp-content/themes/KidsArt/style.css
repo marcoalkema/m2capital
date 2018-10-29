@@ -5255,6 +5255,25 @@ a {
     height: 125vw;
     margin-top: -9vw!important;
   }
+  .row.intro-details {
+          font-size: 2em;
+    font-family: MetaPlusNormal;
+  }
+  .row.intro-details .intro-type div, .row.intro-details .intro-price div {
+      font-size: inherit;
+  }
+  .aanverhuur-contact .socialShareIcons {
+      font-size: 1.5em;
+  }
+  .sfsi_widget {
+      padding-top: 3vw!important;
+  }
+  .btn.btn-green.big.bezichtigings-btn-btn h3 b{
+      font-size: 8em;
+  }
+  .wpml-ls-menu-item .wpml-ls-flag[title="EN"] {
+
+  }
   img.overlay-plaatje {
       margin-top: 27vw;
   }
