@@ -5021,6 +5021,20 @@ a {
     overflow: hidden;
     /* margin-top: 60px; */
   }
+  .page-title-container {
+     position: relative;
+    width: 100%;
+    height: 125vw;
+    background: #ddd;
+    overflow: hidden;
+    /* margin-top: 60px; */
+  }
+  .page-title-container img {
+      width: auto;
+    height: 125vw;
+    overflow: hidden;
+    margin-right: 50vw;
+  }
   .overlay {
     margin-top: 50px;
   }
@@ -5207,6 +5221,15 @@ a {
       height:68vw;
       margin-top: 0px;
 
+  }
+  .page-template-projecten .page-title-div > #landing-overlay-title {
+          margin-top: 38vw!important;
+  }
+  .page-template-asset-management-page .page-title-div > #landing-overlay-title {
+      margin-top: 13vw!important;
+  }
+  #post-2138 .template-page-content.asset-management-page .h4_block {
+          margin-bottom: 0px;
   }
   .wat-doen-wij-header-container.underlineWhite {
       font-size: 2.3em;
