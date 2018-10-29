@@ -4495,6 +4495,9 @@ a {
   td {
     font-size: 1rem
   }
+  .introduction-links-container {
+    padding-bottom: 0!important;
+  }
   .fees_table_container {
     margin-bottom: 20px!important;
     padding: 0!important;
