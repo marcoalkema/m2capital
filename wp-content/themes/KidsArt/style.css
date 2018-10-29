@@ -4183,6 +4183,59 @@ a {
 }
 
 
+.wie-foto {
+      margin-bottom: 40px;
+}
+
+#wie-zijn-wij-wie .container > .row > div:first-child {
+  float: left;
+  padding: 0!important;
+  width: 50%;
+}
+
+#wie-zijn-wij-wie .container > .row > div:last-child {
+  float: right;
+  padding: 0!important;
+  width: 50%;
+}
+
+#wie-zijn-wij-wie .container{
+  width:80%;
+  margin: 0 auto;
+}
+
+#wie-zijn-wij-wie .wie-foto p {
+  text-align: justify;
+  width: 350px;
+  height: auto;
+  /* align-content: ; */
+  margin: 0 auto;
+  /* padding-bottom: 3vw; */
+}
+
+.wie-foto-container {
+  padding: 0 7vw!important;
+}
+
+.wie-foto-mark,
+.wie-foto-michiel {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+  object-position: 63% 0%;
+}
+
+/* .wie-foto-michiel { */
+/*   float: right; */
+/* } */
+
+/* .wie-foto-mark { */
+/*   float: left; */
+/* } */
+
+.wie-foto > h4 {
+  padding-top: 3%!important;
+}
 
 /* Minimum width of 960 pixels. */
 @media screen and (min-width: 960px) {
@@ -4547,6 +4600,22 @@ a {
   .story_preview_container {
     padding-top: 20px!important;
   }
+
+  #wie-zijn-wij-wie .container {
+    width: 100%;
+  }
+
+  .wie-foto {
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  #wie-zijn-wij-wie .container > .row > div:first-child {
+    width: 100%!important;
+  }
+
+
 
   .contact-large {
     margin-left: 0!important;
@@ -5081,7 +5150,9 @@ a {
       margin-top: 0px!important;
   }
   #wie-zijn-wij-wie .row .wie-foto .omschrijving {
-      padding-top: 20px;
+    padding-top: 20px;
+    width: 90%;
+    margin: 0 auto;
   }
 
   #wie-zijn-wij-wie .btn.btn-primary.m2btn {
@@ -5146,7 +5217,7 @@ a {
     font-size: 2.9vw;
   }
   #main .introduction-container {
-          height: 106vw;
+    height: 125vw;
     margin-top: -9vw!important;
   }
   img.overlay-plaatje {
@@ -5200,6 +5271,28 @@ a {
   .next {
     top: 20%;
     zoom: 0.6;
+  }
+  .image_bar {
+    width: 100%!important;
+  }
+  .introduction-links-container .introduction-links-image-container {
+    width: 85%!important;
+    margin: 0 auto;
+  }
+  .wat-doen-wij-info-text-container {
+    width: 74%;
+    margin: 0 auto;
+  }
+  .network-container {
+    width: 100%;
+  }
+  .network-image-container {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .wie-foto-container {
+    width: 100%!important;
+    padding: 0 0 !important;
   }
   .contact-text p {
     padding: 0;
@@ -5855,35 +5948,6 @@ li.current-menu-item a{
 
 }
 
-.wie-foto {
-      margin-bottom: 40px;
-}
-
-#wie-zijn-wij-wie .wie-foto p {
-  text-align: justify;
-  width: 350px;
-  height: auto;
-  /* align-content: ; */
-  margin: 0 auto;
-  /* padding-bottom: 3vw; */
-}
-
-.wie-foto-container {
-  padding: 0 7vw!important;
-}
-
-.wie-foto-mark,
-.wie-foto-michiel {
-  height: 350px;
-  width: 350px;
-  object-fit: cover;
-  object-position: 63% 0%;
-}
-
-.wie-foto > h4 {
-  padding-top: 3%!important;
-}
-
 .blue-image-filter::after {
   position: absolute;
   top: 0;
@@ -5951,21 +6015,7 @@ li.current-menu-item a{
     margin-bottom: 60px!important;
 }
 
-#wie-zijn-wij-wie .container > .row > div:first-child {
-    float: left;
-    padding: 0;
-    width: 100%;
-}
 
-#wie-zijn-wij-wie .container > .row > div:last-child {
-  float: right;
-  padding: 0;
-  width: 100%;
-}
-
-#wie-zijn-wij-wie .container{
-    width:100%;
-}
 
 .page-template-wie-zijn-wij-page .section .layoutArea .column > p {
     margin-bottom: 0px!important;
