@@ -5069,6 +5069,9 @@ a {
       width:100%;
       margin-top: 0px!important;
   }
+  #wie-zijn-wij-wie .row .wie-foto .omschrijving {
+      padding-top: 20px;
+  }
 
   #wie-zijn-wij-wie .btn.btn-primary.m2btn {
     margin-top: 0!important;
