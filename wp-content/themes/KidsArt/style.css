@@ -770,7 +770,7 @@ a:hover {
 }
 .menu-toggle img{
   -webkit-filter: sepia(100%) hue-rotate(90deg) saturate(400%);
-  filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+  filter: sepia(100%) hue-rotate(167deg) saturate(200%);
   width: 50px;
   height: 50px;
 }
@@ -4000,6 +4000,7 @@ a {
     top: 0;
     left: 100%;
   }
+
   .main-navigation ul li:hover > ul,
   .main-navigation ul li:focus > ul,
   .main-navigation .focus > ul {
@@ -4586,6 +4587,40 @@ a {
       margin-bottom:0!important;
 
   }
+   .home #overlay-container img {
+       height: 125vw;
+       width:100%!important;
+   }
+   .home #overlay-container {
+       height: 125vw!important;
+   }
+   .home #overlay-container .page-title-container {
+       margin-top: -150vw;
+       background-color: transparent;
+       height: 150%;
+   }
+   .home #overlay-container .page-title-container .page-title-div {
+
+   }
+   .home #overlay-container .page-title-container img {
+               height: 253px;
+    width: auto!important;
+    margin-left: 23vw;
+    margin-top: 22vw;
+   }
+   .home #overlay-container .page-title-container #landing-overlay-title {
+       margin-top: 73vw!important;
+       line-height: 1.2!important;
+       margin-left: 2vw!important;
+   }
+   .home #content #overlay-container .glyphicon.glyphicon-menu-down {
+       height: 36px;
+    width: 36px;
+    font-size: 7.9vw;
+    padding-left: 0.5px;
+    margin-top: 4vw;
+    padding-top: 2px;
+   }
   .aanverhuur-table-items {
     width: 90%!important;
     margin: 0 auto!important;
