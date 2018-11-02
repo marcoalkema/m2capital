@@ -38,7 +38,7 @@ get_header(); ?>
               <div class="btn-group-vertical">
                   <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
                       <div class="m2BtnImage">
-                        <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
+                        <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/visie.svg"/>
                       </div>
                       <button type="button" class="btn btn-primary btn_text_m2">
                           Onze Visie
@@ -50,8 +50,8 @@ get_header(); ?>
             <div class="btn-group-vertical">
 
               <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
-                  <div class="m2BtnImage">
-                    <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
+                <div class="m2BtnImage">
+                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/werkwijze.svg"/>
                   </div>
                   <button type="button" class="btn btn-primary btn_text_m2">
                       Werkwijze
@@ -64,7 +64,7 @@ get_header(); ?>
 
               <a href="#over-ons" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
-                  <img src="<?php printf(get_field('image_btn', get_the_ID())); ?>"/>
+                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/ons.svg"/>
                   </div>
                   <button type="button" class="btn btn-primary btn_text_m2">
                       Over ons
