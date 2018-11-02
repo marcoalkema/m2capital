@@ -770,7 +770,7 @@ a:hover {
 }
 .menu-toggle img{
   -webkit-filter: sepia(100%) hue-rotate(90deg) saturate(400%);
-  filter: sepia(100%) hue-rotate(180deg) saturate(200%);
+  filter: sepia(100%) hue-rotate(167deg) saturate(200%);
   width: 50px;
   height: 50px;
 }
@@ -4000,6 +4000,7 @@ a {
     top: 0;
     left: 100%;
   }
+
   .main-navigation ul li:hover > ul,
   .main-navigation ul li:focus > ul,
   .main-navigation .focus > ul {
@@ -4563,6 +4564,64 @@ a {
   .post-excerpt p {
     width: 80%;
   }
+  .green.underlineGreen .category-header {
+          font-size: 4vw;
+    padding: 9px 10px 7px 10px;
+        margin-bottom: 0;
+  }
+  .post-template-default.single.single-post .page-title-container {
+      position: absolute;
+    top: 14vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    width: 74%;
+    margin: 0 auto;
+    font-size: 0.7em;
+    background: transparent;
+    overflow: initial;
+  }
+
+  .template-page-content.story {
+      margin-top:0!important;
+      margin-bottom:0!important;
+
+  }
+   .home #overlay-container img {
+       height: 125vw;
+       width:100%!important;
+   }
+   .home #overlay-container {
+       height: 125vw!important;
+   }
+   .home #overlay-container .page-title-container {
+       margin-top: -150vw;
+       background-color: transparent;
+       height: 150%;
+   }
+   .home #overlay-container .page-title-container .page-title-div {
+
+   }
+   .home #overlay-container .page-title-container img {
+               height: 253px;
+    width: auto!important;
+    margin-left: 23vw;
+    margin-top: 22vw;
+   }
+   .home #overlay-container .page-title-container #landing-overlay-title {
+       margin-top: 73vw!important;
+       line-height: 1.2!important;
+       margin-left: 2vw!important;
+   }
+   .home #content #overlay-container .glyphicon.glyphicon-menu-down {
+       height: 36px;
+    width: 36px;
+    font-size: 7.9vw;
+    padding-left: 0.5px;
+    margin-top: 4vw;
+    padding-top: 2px;
+   }
   .aanverhuur-table-items {
     width: 90%!important;
     margin: 0 auto!important;
@@ -4580,7 +4639,7 @@ a {
     padding-bottom: 0!important;
   }
   .page-template-wie-zijn-wij-page .partners {
-      margin-top: -15vw;
+      margin-top: -5vw;
   }
   .fees_table_container {
     margin-bottom: 20px!important;
@@ -4651,6 +4710,7 @@ a {
     width: 90%;
     margin: 0 auto;
     overflow: hidden;
+    margin-top: 20px;
   }
 
   #wie-zijn-wij-wie .container > .row > div:first-child {
@@ -5227,6 +5287,15 @@ a {
   .template-page-content .h4_block h4.underlineGreen {
           margin-top: 10vw;
   }
+  .page-template-wat-doen-wij-page  .template-page-content .h4_block h4.underlineGreen {
+          width: 95%;
+  }
+  #aan-verhuur div p, #beleggingsadvies div p, #her-ontwikkel div p, #asset-management div p {
+      margin-bottom: 0px!important;
+  }
+  #her-ontwikkel .wysiwyg, #aan-verhuur .wysiwyg, #asset-management .wysiwyg, #beleggingsadvies .wysiwyg {
+      margin-top: -10vw!important;
+  }
   .section .layoutArea > .column > h2 {
       font-size: 2em!important;
   }
@@ -5249,6 +5318,9 @@ a {
   .page-title-div > #landing-overlay-title {
       font-size: 2.9em!important;
     margin-top: 27vw!important;
+  }
+  .page-template-wat-doen-wij-page .page-title-div > #landing-overlay-title {
+       margin-top: 23vw!important;
   }
   #overlay-container.overlay {
     height:68vw;
@@ -5293,6 +5365,34 @@ a {
   #main .introduction-container {
     height: 165vw;
     margin-top: -9vw!important;
+  }
+  .row.intro-details {
+          font-size: 2em;
+    font-family: MetaPlusNormal;
+  }
+  .row.intro-details .intro-type div, .row.intro-details .intro-price div {
+      font-size: inherit;
+  }
+  .aanverhuur-contact .socialShareIcons {
+      font-size: 1.5em;
+  }
+  .sfsi_widget {
+      padding-top: 3vw!important;
+  }
+  .btn.btn-green.big.bezichtigings-btn-btn h3 b{
+      font-size: 8em;
+  }
+  .wpml-ls-menu-item .wpml-ls-flag[title="EN"] {
+      display:none!important;
+  }
+  .wpml-ls-menu-item .wpml-ls-flag[title="NL"] {
+      margin-left: 43vw;
+  }
+  .wpml-ls-menu-item a .wpml-ls-flag+span {
+      margin-left: 7vw;
+  }
+  #masthead #site-navigation li.current-menu-item a::after {
+      display:none;
   }
   img.overlay-plaatje {
       margin-top: 27vw;
@@ -6094,6 +6194,6 @@ li.current-menu-item a{
     margin-bottom: 0px!important;
 }
 
-.page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p {
+.page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p:last-child {
     margin-bottom: 60px!important;
 }
