@@ -241,16 +241,15 @@
   border-bottom: 4px solid #fff
 }
 
-.whiteBlue {
+.btn.btn-green.btn-primary.whiteBlue {
   /* min-width: 151px; */
-  width: auto;
-
-   margin: 0 auto;
-   background: #fff;
-   color: #1d70b7;
-       border-radius: 0px;
-       font-family: MerriweatherRegular;
-    padding-top: 4px;
+    width: auto;
+    margin: 0 auto;
+    background: #fff!important;
+    color: #1d70b7!important;
+    border-radius: 0px;
+    font-family: MerriweatherRegular;
+    border-color: transparent!important;
  /*   font-size: 26px; */
  /*   padding: 3px 10px 5px 10px; */
  /*   height: 34px; */
@@ -939,7 +938,7 @@ span.herontwikkelMeerArrow {
 }
 
 #metaslider_176 .flex-control-nav {
-  top: 45em!important;
+  top: 47em!important;
   bottom: 0!important;
 }
 

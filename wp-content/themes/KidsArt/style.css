@@ -4206,13 +4206,13 @@ a {
 }
 
 #wie-zijn-wij-wie .container{
-  width:80%;
+  width:100%;
   margin: 0 auto;
 }
 
 #wie-zijn-wij-wie .wie-foto p {
   text-align: justify;
-  width: 350px;
+  width: 62%;
   height: auto;
   /* align-content: ; */
   margin: 0 auto;
@@ -5053,6 +5053,7 @@ a {
   }
   .lower-footer {
     height: 110px;
+      padding: 20px 0 20px 2%;
   }
   #menu-item-2322,
   #menu-item-2119,
@@ -5781,9 +5782,15 @@ h4.green{
   font-weight: normal!important;
 }
 .wat-doen-wij-header-container {
-  position: relative;
-  margin-top: 20px;
-  margin-bottom: 40px;
+  /* position: relative; */
+  /* margin-top: 20px; */
+  /* margin-bottom: 40px; */
+
+      position: relative;
+    margin-top: 20px!important;
+    margin-bottom: 40px!important;
+    width: fit-content;
+    margin: 0 auto;
 }
 .wat-doen-wij-info-text-container {
   margin-bottom: 4vw;
@@ -5795,13 +5802,22 @@ h4.green{
   text-align:justify;
 }
 .wat-doen-wij-header-container.underlineWhite::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  margin-left: -23%;
-  bottom: -20px;
-  width: 46%;
-  border-bottom: 4px solid #fff;
+  /* content: ""; */
+  /* position: absolute; */
+  /* left: 50%; */
+  /* margin-left: -23%; */
+  /* bottom: -20px; */
+  /* width: 46%; */
+  /* border-bottom: 4px solid #fff; */
+
+    content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -30%;
+    /* margin: 0 auto; */
+    bottom: -20px;
+    width: 60%;
+    border-bottom: 4px solid #fff;
 }
 #overlay-container .metaslider {
   background: #1d70b7;
@@ -6010,7 +6026,7 @@ li.current-menu-item a{
 
 #wie-zijn-wij-wie .row {
   /* margin: 0 1.6vw 3vw 1.6vw; */
-  margin-bottom: 4vw;
+  /* margin-bottom: 4vw; */
 }
 .btn_text_m2 {
   margin-top: 7%!important;
