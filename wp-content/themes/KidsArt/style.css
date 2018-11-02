@@ -2964,12 +2964,12 @@ h6.white {
   left: 0;
   right: 0;
   text-align: center;
-  width: 74%;
+  width: 100%;
   margin: 0 auto;
 }
 .page-title-div {
   position: absolute;
-  top: 70%;
+  top: 60%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -3132,10 +3132,10 @@ h6.white {
   /* opacity: 0.8; */
 }
 .page-title-div > #landing-overlay-title {
-  padding: 3%;
+  padding: 0 3% 0 3%;
   font-family:"MerriweatherRegular"!important;
   text-transform: uppercase!important;
-  font-size: 53px!important;
+  font-size: 4.5vw!important;
 }
 .page-title-div.about-page-title > #landing-overlay-title {
   padding: 0%;
@@ -6154,7 +6154,7 @@ li.current-menu-item a{
 .overlay-plaatje {
   width: 13vw;
   height: auto;
-  margin: 9em 0 auto;
+  margin: 3em 0 auto;
 }
  .actueel-intro .layoutArea > .column > h2 {
      margin: 0 auto;

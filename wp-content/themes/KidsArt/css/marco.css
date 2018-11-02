@@ -159,7 +159,7 @@
 
 .asset-management-page > p,
 .actueel-page > p {
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
 }
 
@@ -628,7 +628,7 @@
 }
 
 .contact-info-container {
-  padding-left: 5%!important;
+  padding-left: 8%!important;
 }
 
 .upper-footer {
