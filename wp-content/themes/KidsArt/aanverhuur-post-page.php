@@ -177,7 +177,7 @@ echo '<div class="other_stories">';
 echo '<div class="h4_block">';
 echo '<div class="h4_container">';
 echo '<h4 class="underlineGreen">';
-echo '<p>' . get_field('soortgelijk_aanbod_titel', 2138) . '</p>';
+echo get_field('soortgelijk_aanbod_titel', 2138);
 echo '</div>';
 echo '</div>';
 echo '</h4>';

@@ -33,14 +33,12 @@ get_header(); ?>
             </div>
 
             <div id="title_text-<?php the_ID(); ?>" class="title_text">
-                <p>
-                    <?php
-                    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 1;
-                        printf(get_field('wat-doen-wij-text', $ID));
-                    }
-                    ?>
-                </p>
+              <?php
+              if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 1;
+                printf(get_field('wat-doen-wij-text', $ID));
+              }
+              ?>
             </div>
 
             <div class="">

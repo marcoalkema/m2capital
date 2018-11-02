@@ -2969,7 +2969,7 @@ h6.white {
 }
 .page-title-div {
   position: absolute;
-  top: 60%;
+  top: 65%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -5713,6 +5713,10 @@ h4.green{
   padding: 15px 12px;
   height: 28px;
   line-height: 1px;
+}
+
+.m2_btn_table > .row > .col-sm-4 {
+  padding-right: 0!important;
 }
 
 .wat-doen-wij-btn-container {

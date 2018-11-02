@@ -67,8 +67,9 @@
   min-width: 0;
 }
 
-#her-ontwikkel .wysiwyg, #aan-verhuur .wysiwyg {
-  margin: -4vw auto 20px auto;
+#her-ontwikkel .wysiwyg,
+#aan-verhuur .wysiwyg {
+  margin: -4vw auto 0 auto;
 }
 
 #aan-verhuur,
@@ -99,7 +100,7 @@
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
 #asset-management .metaslider {
-  margin: 50px 6%!important;
+  margin: 0 6%!important;
   width: 88%!important;
 }
 
@@ -710,7 +711,7 @@
 .wysiwyg {
   height: auto;
   width: 80%;
-  margin: 0 auto 20px auto;
+  margin: 0 auto;
   word-break: normal;
   word-wrap: break-word;
   white-space: pre-line;
@@ -909,7 +910,10 @@ span.herontwikkelMeerArrow {
   overflow: hidden;
 }
 
-#page-1939 .hoverovereffect:hover .h4_container h4, .hoverovereffect:hover .network-header-container {
+#page-1939 .hoverovereffect:hover .h4_container h4,
+.hoverovereffect:hover .network-header-container,
+.meerAanbodVerhuurContainer .hoverovereffect:hover .h4_container h4,
+.other_stories_container .hoverovereffect:hover .h4_container h4 {
   transform: none;
 }
 
