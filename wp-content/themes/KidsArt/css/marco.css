@@ -627,13 +627,13 @@
 }
 
 .contact-info-container {
-  padding-left: 10%!important;
+  padding-left: 5%!important;
 }
 
 .upper-footer {
   height: 170px;
-  padding: 20px 0 40px 20px!important;
-  /* margin-right: -4.5%; */
+  padding: 20px 0 40px 0!important;
+  margin-right: -2%;
 }
 
 .upper-footer .contact-info tr:first-child td,
