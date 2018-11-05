@@ -809,6 +809,11 @@ span.herontwikkelMeerArrow {
   opacity: 0.5;
   width: 100%;
   min-height: 0;
+
+/*       width: auto; */
+/*     height: 100%; */
+/*     margin-left: -20vw; */
+/*     object-fit: cover; */
 }
 
 .wpml-ls-menu-item .wpml-ls-flag {

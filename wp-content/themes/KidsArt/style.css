@@ -4692,6 +4692,9 @@ a {
     height: 125vw;
     width:100%!important;
   }
+  .home #overlay-container .slides img {
+          object-fit: cover;
+  }
   .home #overlay-container {
     height: 125vw!important;
   }
@@ -4785,10 +4788,17 @@ a {
     margin: 0 auto;
   }
   .page-header-image .headerImg {
-    width: auto;
-    height: 125vw;
+    /* width: auto; */
+    /* height: 125vw; */
+    /* overflow: hidden; */
+    /* margin-right: 50vw; */
+
+        height: 125vw;
+    object-fit: cover;
+    /* object-position: center; */
     overflow: hidden;
     margin-right: 50vw;
+
   }
   .main .page-header-image {
 
@@ -4869,9 +4879,17 @@ a {
     margin-bottom: 0px;
   }
   .visie .actueel-intro-container-img img {
-    width: auto;
+      width: auto!important;
     height: 100%;
     margin-left: -20vw;
+    object-fit:cover;
+  }
+
+  .actueel-intro-container-img img {
+      width: auto!important;
+    height: 100%;
+    margin-left: -20vw;
+    object-fit: cover;
   }
 
   .flexslider .slides li {
@@ -5066,8 +5084,15 @@ a {
     padding: 1vw 5vw!important;
   }
   .wat-doen-wij-image {
-    height: 1;
+    /* height: 1; */
     width: 100%!important;
+    object-fit:cover;
+  }
+  .wat-doen-wij-col h4.green.underlineGreen {
+      margin-bottom: 9vw!important;
+  }
+  .object-type {
+      font-size: 19px!important;
   }
   .LRK-number {
     /* display: none; */
