@@ -80,7 +80,7 @@ html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquobodyte, p
   letter-spacing: -1px;
   vertical-align: baseline;
   -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 p > span {
@@ -326,10 +326,10 @@ input[type="color"] {
   padding: 0;
 }
 input[type="email"]:focus::-webkit-input-placeholder, input[type="text"]:focus::-webkit-input-placeholder/* , input[type="email"]:focus:-moz-placeholder, input[type="text"]:focus:-moz-placeholder, input[type="email"]:focus::-moz-placeholder, input[type="text"]:focus::-moz-placeholder, input[type="email"]:focus:-ms-input-placeholder, input[type="text"]:focus:-ms-input-placeholder */ {
-      color:transparent;
+  color:transparent;
 }
 textarea:focus::-webkit-input-placeholder {
-    color:transparent;
+  color:transparent;
 }
 
 /* Buttons */
@@ -734,15 +734,15 @@ a:hover {
   left: 0;
   z-index: 99;
   height: auto;
-      -moz-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
-    -webkit-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
-    box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+  box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
   width: 100%;
   text-align: center; }
 
 .main-navigation li {
   float: right;
-      margin-top: 1.114286rem;
+  margin-top: 1.114286rem;
   /* font-size: 21px; */
   /* font-size: 1.057142857rem; */
   font-size: 1.15vw;
@@ -767,6 +767,7 @@ a:hover {
   bottom: 0;
   width: 50px;
   /* float: right; */
+
   margin-top: 1%;
   z-index: 100;
 }
@@ -965,7 +966,7 @@ article.sticky .featured-post {
   line-height: 1.846153846;
 }
 h4.aanverhuur-kenmerken-titel {
-    line-height:normal;
+  line-height:normal;
 }
 .entry-content h5,
 .comment-content h5 {
@@ -2040,6 +2041,7 @@ h4.black{
   color: #000!important;
 }
 h4.underlineWhite{
+  font-family: MerriweatherRegular!important;
   line-height: 95%!important;
   border-bottom: 2px solid #fff;
   margin-bottom: 6px!important;
@@ -2081,8 +2083,8 @@ h6.white {
 /* BUTTONS */
 .btn {
   /* min-width: 170px; */
-        padding-left: 24px!important;
-    padding-right: 24px!important;
+  padding-left: 24px!important;
+  padding-right: 24px!important;
   color: #000000;
   border: 1px solid #777!important;
   text-transform: lowercase;
@@ -3289,6 +3291,73 @@ h6.white {
 }
 
 
+.wysiwyg {
+  height: auto;
+  width: 80%;
+  margin: 0 auto;
+  word-break: normal;
+  word-wrap: break-word;
+  white-space: pre-line;
+}
+
+.wysiwyg h1 {
+  position:relative;
+  line-height: 1.5!important;
+  margin-bottom: 3vw!important;
+  padding-top: 35px;
+  text-transform: none;
+  color: #1d70b7!important;
+}
+
+.wysiwyg ul,
+.wysiwyg li {
+  list-style: inherit!important;
+  font-family: MetaPlusNormal!important;
+  color: #666!important;
+  margin: 0 1%!important;
+}
+
+.wysiwyg ul {
+  margin: 0 1% -20px 1%!important;
+}
+
+.wysiwyg h1::after{
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -10%;
+  bottom: -1vw;
+  margin-bottom: -1vw;
+  width: 20%;
+  border-bottom: 4px solid #4080bf;
+}
+
+.wysiwyg h2 {
+  font-size: 50px!important;
+  color: gray!important;
+  text-align: center;
+  width: 100%;
+  text-transform: none!important;
+  line-height: initial;
+  padding-top: 20px;
+  margin: 1% 1% 30px 1%;
+  display: table-cell;
+}
+
+.wysiwyg p {
+  width: 100%!important;
+  margin: 0!important;
+}
+
+.wysiwyg p:last-child {
+    /* margin-bottom:40px!important; */
+}
+
+.wysiwyg > h2:nth-child(2) {
+
+}
+
+
 /* HEADER MENU */
 
 .current-menu-item.menu-menu-item-625,
@@ -4196,7 +4265,7 @@ a {
 
 
 .wie-foto {
-      margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
 #wie-zijn-wij-wie .container > .row > div:first-child {
@@ -4214,7 +4283,7 @@ a {
 #wie-zijn-wij-wie .container{
   width:100%;
   margin: 0 auto;
-      margin-top: 40px;
+  margin-top: 60px;
 }
 
 #wie-zijn-wij-wie .wie-foto p {
@@ -4557,27 +4626,51 @@ a {
     width: 100%;
   }
   .story_preview_image {
-    width: 90%;
-    margin-left: 5%;
+    width: 100%;
     height: 1!important;
     overflow: hidden;
+  }
+  .actueel-post-excerpt {
+    width: 100%!important;
+    padding: 1vw 5vw!important
   }
   .asset-management-page > p, .actueel-page > p {
     width: 80%!important;
   }
   .story_preview_text_container {
-    padding: 0 10%;
+    padding: 0 0;
+  }
+  #post-2138 .post-excerpt {
+    padding: 0 0!important;
+  }
+  #post-2138 .story_preview_text_container {
+    padding: 10px 0 0 0!important;
+  }
+  .intro-type, .intro-price {
+    margin-top: 0!important;
+    font-size: 14px!important;
+  }
+  .category-header,
+  .aanverhuur-container .category-header {
+    font-size: 18px!important;
+  }
+  .aanverhuur-intro {
+    width: 100%!important;
+  }
+  .aanverhuur-intro p {
+    width: 90%!important;
   }
   .post-excerpt p {
-    width: 80%;
+    width: 100%;
+    padding: 1vw 5vw!important;
   }
   .green.underlineGreen .category-header {
-          font-size: 4vw;
+    font-size: 4vw;
     padding: 9px 10px 7px 10px;
-        margin-bottom: 0;
+    margin-bottom: 0;
   }
   .post-template-default.single.single-post .page-title-container {
-      position: absolute;
+    position: absolute;
     top: 14vw;
     bottom: 0;
     left: 0;
@@ -4591,44 +4684,44 @@ a {
   }
 
   .template-page-content.story {
-      margin-top:0!important;
-      margin-bottom:0!important;
+    margin-top:0!important;
+    margin-bottom:0!important;
 
   }
-   .home #overlay-container img {
-       height: 125vw;
-       width:100%!important;
-   }
-   .home #overlay-container {
-       height: 125vw!important;
-   }
-   .home #overlay-container .page-title-container {
-       margin-top: -150vw;
-       background-color: transparent;
-       height: 150%;
-   }
-   .home #overlay-container .page-title-container .page-title-div {
+  .home #overlay-container img {
+    height: 125vw;
+    width:100%!important;
+  }
+  .home #overlay-container {
+    height: 125vw!important;
+  }
+  .home #overlay-container .page-title-container {
+    margin-top: -150vw;
+    background-color: transparent;
+    height: 150%;
+  }
+  .home #overlay-container .page-title-container .page-title-div {
 
-   }
-   .home #overlay-container .page-title-container img {
-               height: 203px;
+  }
+  .home #overlay-container .page-title-container img {
+    height: 203px;
     width: auto!important;
     margin-left: 27vw;
     margin-top: 18vw;
-   }
-   .home #overlay-container .page-title-container #landing-overlay-title {
-       margin-top: 53vw!important;
-       line-height: 1.2!important;
-       margin-left: 2vw!important;
-   }
-   .home #content #overlay-container .glyphicon.glyphicon-menu-down {
-       height: 36px;
+  }
+  .home #overlay-container .page-title-container #landing-overlay-title {
+    margin-top: 53vw!important;
+    line-height: 1.2!important;
+    margin-left: 2vw!important;
+  }
+  .home #content #overlay-container .glyphicon.glyphicon-menu-down {
+    height: 36px;
     width: 36px;
     font-size: 7.9vw;
     padding-left: 0.5px;
     margin-top: 4vw;
     padding-top: 2px;
-   }
+  }
   .aanverhuur-table-items {
     width: 90%!important;
     margin: 0 auto!important;
@@ -4646,7 +4739,7 @@ a {
     padding-bottom: 0!important;
   }
   .page-template-wie-zijn-wij-page .partners {
-      margin-top: -5vw;
+    margin-top: -5vw;
   }
   .fees_table_container {
     margin-bottom: 20px!important;
@@ -4688,9 +4781,11 @@ a {
 
   .other_stories_container {
     padding-left: 0!important;
+    width: 90%!important;
+    margin: 0 auto;
   }
   .page-header-image .headerImg {
-      width: auto;
+    width: auto;
     height: 125vw;
     overflow: hidden;
     margin-right: 50vw;
@@ -4698,11 +4793,14 @@ a {
   .main .page-header-image {
 
   }
-
   .story_preview_container,
   .story_preview {
     padding: 0!important;
-    margin: 15px auto!important;
+    margin: 10px auto 0 auto!important;
+  }
+
+  .wysiwyg h2 {
+    font-size: 30px!important;
   }
 
   .story_preview_container {
@@ -4740,8 +4838,14 @@ a {
   }
 
   .m2_btn_table {
-    width: 80%!important;
-    margin: 0 auto!important;
+    display: none;
+    /* width: 80%!important; */
+    /* margin: 0 auto!important; */
+  }
+
+  .network-container > .row {
+    width: 90%!important;
+    margin: 0 auto;
   }
 
   .btn-group-vertical {
@@ -4759,10 +4863,10 @@ a {
     padding-bottom: 20px;
   }
   #wie-zijn-wij-visie  .green.underlineGreen {
-      margin-top: 10vw;
+    margin-top: 10vw;
   }
   #wie-zijn-wij-wie .container .row {
-      margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .visie .actueel-intro-container-img img {
     width: auto;
@@ -5060,7 +5164,7 @@ a {
   }
   .lower-footer {
     height: 110px;
-      padding: 20px 0 20px 2%;
+    padding: 20px 0 20px 2%;
   }
   #menu-item-2322,
   #menu-item-2119,
@@ -5122,7 +5226,7 @@ a {
     /* margin-top: 60px; */
   }
   .page-title-container {
-     position: relative;
+    position: relative;
     width: 100%;
     height: 125vw;
     background: #ddd;
@@ -5130,7 +5234,7 @@ a {
     /* margin-top: 60px; */
   }
   .page-title-container img {
-      width: auto;
+    width: auto;
     height: 125vw;
     overflow: hidden;
     margin-right: 50vw;
@@ -5278,9 +5382,9 @@ a {
 
 
   #wie-zijn-wij-wie .row .wie-foto p {
-      padding-bottom: 0!important;
-      width:100%;
-      margin-top: 0px!important;
+    padding-bottom: 0!important;
+    width:100%;
+    margin-top: 0px!important;
   }
   #wie-zijn-wij-wie .row .wie-foto .omschrijving {
     padding-top: 20px;
@@ -5293,19 +5397,19 @@ a {
     margin-bottom: 5vw!important;
   }
   .template-page-content .h4_block h4.underlineGreen {
-          margin-top: 10vw;
+    margin-top: 10vw;
   }
   .page-template-wat-doen-wij-page  .template-page-content .h4_block h4.underlineGreen {
-          width: 95%;
+    width: 95%;
   }
   #aan-verhuur div p, #beleggingsadvies div p, #her-ontwikkel div p, #asset-management div p {
-      margin-bottom: 0px!important;
+    margin-bottom: 0px!important;
   }
   #her-ontwikkel .wysiwyg, #aan-verhuur .wysiwyg, #asset-management .wysiwyg, #beleggingsadvies .wysiwyg {
-      margin-top: -10vw!important;
+    margin-top: -10vw!important;
   }
   .section .layoutArea > .column > h2 {
-      font-size: 2em!important;
+    font-size: 2em!important;
   }
   .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p {
 
@@ -5324,11 +5428,11 @@ a {
     font-size: 8vw!important;
   }
   .page-title-div > #landing-overlay-title {
-      font-size: 2.9em!important;
+    font-size: 2.9em!important;
     margin-top: 27vw!important;
   }
   .page-template-wat-doen-wij-page .page-title-div > #landing-overlay-title {
-       margin-top: 23vw!important;
+    margin-top: 23vw!important;
   }
   #overlay-container.overlay {
     height:68vw;
@@ -5336,28 +5440,28 @@ a {
 
   }
   .page-template-projecten .page-title-div > #landing-overlay-title {
-          margin-top: 38vw!important;
+    margin-top: 38vw!important;
   }
   .page-template-asset-management-page .page-title-div > #landing-overlay-title {
-      margin-top: 13vw!important;
+    margin-top: 13vw!important;
   }
   #post-2138 .template-page-content.asset-management-page .h4_block {
-          margin-bottom: 0px;
+    margin-bottom: 0px;
   }
   .wat-doen-wij-header-container.underlineWhite {
-      font-size: 2.3em;
+    font-size: 30px;
   }
   .introduction-links-container .wat-doen-wij-header-container.underlineWhite::after {
-      bottom: -26px;
+    bottom: -26px;
   }
   .aanbod-intro-container .network-header-container h4 {
-      font-size: 2em!important;
+    font-size: 2em!important;
   }
   .aanbod-intro-container .network-container .network-header-container h4::after {
-          margin-bottom: -5.7vw;
+    margin-bottom: -5.7vw;
   }
   #content #overlay-container .glyphicon.glyphicon-menu-down {
-      display: block;
+    display: block;
     color: #1d70b7;
     background-color: white;
     height: 16px;
@@ -5374,39 +5478,42 @@ a {
     height: 165vw;
     margin-top: -9vw!important;
   }
+  .other_stories p {
+    text-align: left!important;
+  }
   .row.intro-details {
-          font-size: 2em;
+    font-size: 2em;
     font-family: MetaPlusNormal;
   }
   .row.intro-details .intro-type div, .row.intro-details .intro-price div {
-      font-size: inherit;
+    font-size: inherit;
   }
   .aanverhuur-contact .socialShareIcons {
-      font-size: 1.5em;
+    font-size: 1.5em;
   }
   .sfsi_widget {
-      padding-top: 3vw!important;
+    padding-top: 3vw!important;
   }
   .btn.btn-green.big.bezichtigings-btn-btn h3 b{
-      font-size: 8em;
+    font-size: 8em;
   }
   .wpml-ls-menu-item .wpml-ls-flag[title="EN"] {
-      display:none!important;
+    display:none!important;
   }
   .wpml-ls-menu-item .wpml-ls-flag[title="NL"] {
-      margin-left: 43vw;
+    margin-left: 43vw;
   }
   .wpml-ls-menu-item a .wpml-ls-flag+span {
-      margin-left: 7vw;
+    margin-left: 7vw;
   }
   #masthead #site-navigation li.current-menu-item a::after {
       /* display:none; */
   }
   img.overlay-plaatje {
-      margin-top: 27vw;
+    margin-top: 27vw;
   }
   .actueel-intro-container .actueel-intro .layoutArea > .column > h2 {
-      font-size: 2em!important;
+    font-size: 2em!important;
   }
 
   .contact-large-submit{
@@ -5469,7 +5576,7 @@ a {
     width: 100%;
   }
   .network-image-container {
-    width: 85%;
+    width: 100%;
     margin: 0 auto;
   }
   .wie-foto-container {
@@ -5630,24 +5737,24 @@ h4.underlineGreen{
   text-transform: none;
 }
 h4.underlineGreen::after{
-        content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -30%;
-    /* margin: 0 auto; */
-    bottom: -20px;
-    width: 60%;
-    border-bottom: 4px solid #4080bf;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  /* margin: 0 auto; */
+  bottom: -20px;
+  width: 60%;
+  border-bottom: 4px solid #4080bf;
 }
 .wie-foto h4.underlineGreen::after {
-            content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -10%;
-    /* margin: 0 auto; */
-    bottom: -20px;
-    width: 21%;
-    border-bottom: 4px solid #4080bf;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -10%;
+  /* margin: 0 auto; */
+  bottom: -20px;
+  width: 21%;
+  border-bottom: 4px solid #4080bf;
 }
 .network-header-container > h4.underlineGreen::after{
   margin-bottom: -1.7vw;
@@ -5704,16 +5811,16 @@ h4.green{
 
 
 }
- .contact-form-template .green.underlineGreen.smalleUnderline {
-     margin-top: 60px!important;
-         line-height: normal;
+.contact-form-template .green.underlineGreen.smalleUnderline {
+  margin-top: 60px!important;
+  line-height: normal;
 }
 
 .contact-form-template #foldBtn{
   font-family: MerriweatherRegular!important;
   /* margin-top:0!important; */
   text-transform:none;
-   margin-bottom: 60px!important;
+  margin-bottom: 60px!important;
 }
 .contact-form-title {
   margin-bottom: 12px!important;
@@ -5749,16 +5856,19 @@ h4.green{
 }
 
 .introduction-links-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
-    margin: 0 auto;
-    background: #4080bf;
-    margin-bottom: 10px;
-    box-shadow: 0 5px 10px #c2c2c2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  background: #4080bf;
+
+}
+#main.wrapper {
+  margin-bottom: 5px;
+  box-shadow: 0 5px 10px #c2c2c2;
 }
 .introduction-links-container .introduction-links-image-container {
-    height: 300px;
-    width:auto;
+  height: 300px;
+  width:auto;
   overflow: hidden;
   margin: 0 auto;
 }
@@ -5805,7 +5915,7 @@ h4.green{
   color: #fff;
   font-size: 2.3vw;
   text-align: center;
-  font-family: MerriweatherLight!important;
+  font-family: MerriweatherRegular!important;
   font-weight: normal!important;
 }
 .wat-doen-wij-header-container {
@@ -5813,11 +5923,11 @@ h4.green{
   /* margin-top: 20px; */
   /* margin-bottom: 40px; */
 
-      position: relative;
-    margin-top: 20px!important;
-    margin-bottom: 40px!important;
-    width: fit-content;
-    margin: 0 auto;
+  position: relative;
+  margin-top: 20px!important;
+  margin-bottom: 40px!important;
+  width: fit-content;
+  margin: 0 auto;
 }
 .wat-doen-wij-info-text-container {
   margin-bottom: 4vw;
@@ -5837,14 +5947,14 @@ h4.green{
   /* width: 46%; */
   /* border-bottom: 4px solid #fff; */
 
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -30%;
-    /* margin: 0 auto; */
-    bottom: -20px;
-    width: 60%;
-    border-bottom: 4px solid #fff;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  /* margin: 0 auto; */
+  bottom: -20px;
+  width: 60%;
+  border-bottom: 4px solid #fff;
 }
 #overlay-container .metaslider {
   background: #1d70b7;
@@ -5893,9 +6003,9 @@ h4.green{
   margin: 0 auto;
 }
 
- .actueel-intro h4.underlineGreen {
-     margin-top: 60px!important;
- }
+.actueel-intro h4.underlineGreen {
+  margin-top: 60px!important;
+}
 
 .actueel-intro p {
   text-align: justify;
@@ -5970,20 +6080,20 @@ p {
 }
 
 .page-template-wie-zijn-wij-page .column > h2 {
-      /* width: 83%; */
-    /* margin: 3% auto 3% 8%!important; */
-    margin: 0 auto;
-    padding: 0!important;
-    margin-top: 40px!important;
-    margin-bottom: 40px!important;
+  /* width: 83%; */
+  /* margin: 3% auto 3% 8%!important; */
+  margin: 0 auto;
+  padding: 0!important;
+  margin-top: 40px!important;
+  margin-bottom: 40px!important;
 }
 
 .page-template-wie-zijn-wij-page .column > p {
-    margin-bottom: 40px!important;
+  margin-bottom: 40px!important;
   /* margin: auto auto 0px auto!important; */
 }
 .page-template-wie-zijn-wij-page .column > p:last-child {
-    margin-bottom:60px!important;
+  margin-bottom:60px!important;
 }
 
 .footer-link-container .menu-secondary-container > ul > li {
@@ -5992,14 +6102,14 @@ p {
 }
 
 #site-navigation li.current-menu-item a::after{
-    content: "";
-    position: absolute;
-    left: 50%;
-    margin-left: -30%;
-    bottom: 16px;
-    margin-bottom: -13px;
-    width: 63%;
-    border-bottom: 2px solid #21759b;
+  content: "";
+  position: absolute;
+  left: 50%;
+  margin-left: -30%;
+  bottom: 16px;
+  margin-bottom: -13px;
+  width: 63%;
+  border-bottom: 2px solid #21759b;
 }
 
 li.current-menu-item a{
@@ -6072,13 +6182,15 @@ li.current-menu-item a{
 }
 
 .m2_btn_table {
-    margin-top: 20px;
-    /* margin-left: 17vw; */
-    margin-bottom: 60px!important;
-  /* width: 77%!important; */
+  margin-top: 20px;
+  margin-bottom: 100px!important;
   margin: 0 auto;
   text-align: center;
   padding-top: 20px;
+}
+
+#post-17 .flexslider {
+  margin-bottom: 20px!important;
 }
 
 .visie > img {
@@ -6088,7 +6200,7 @@ li.current-menu-item a{
 .visie {
   background: #f2f2f2;
   /* padding-bottom: 3vw; */
-  box-shadow: 0 5px 3px #c2c2c2;
+  box-shadow: 0 5px 10px #c2c2c2;
   height:100%;
 }
 .btn-primary:hover {
@@ -6100,8 +6212,8 @@ li.current-menu-item a{
 }
 
 #wie-zijn-wij-werkwijze h4:first-child {
-    margin-top: 60px;
-    margin-bottom: 20px;
+  margin-top: 60px;
+  margin-bottom: 20px;
 }
 
 /* .aanbod-intro-container .aanbod-intro > p { */
@@ -6148,7 +6260,7 @@ li.current-menu-item a{
 .entry-content p {
   /*     width: 80%; */
   /* margin: 0 auto 59px 11vw; */
-    text-align: justify;
+  text-align: justify;
 }
 
 .btn.btn-green.margin_btn {
@@ -6199,44 +6311,44 @@ li.current-menu-item a{
   height: auto;
   margin: 3em 0 auto;
 }
- .actueel-intro .layoutArea > .column > h2 {
-     margin: 0 auto;
-     padding: 0;
-     margin-top: 40px!important;
-     margin-bottom: 40px!important;
- }
+.actueel-intro .layoutArea > .column > h2 {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 40px!important;
+  margin-bottom: 40px!important;
+}
 /* LATE CHANGES DUNNO IF THEY WORK */
 .wie-zijn-wij-wie-text-container, #wie-zijn-wij-werkwijze .column, .visie .column {
-    width: 80%;
-    margin: 0 auto;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .template-page-content .main-title {
-    padding: 0;
+  padding: 0;
 
 }
 
 .template-page-content h4.underlineGreen {
-    margin-top: 60px;
-        line-height: 1.1;
+  margin-top: 60px;
+  line-height: 1.1;
 }
 
 .template-page-content #title_text {
-    text-align: justify;
+  text-align: justify;
 }
 
 .visie h4.underlineGreen {
-    margin-top: 60px;
+  margin-top: 60px;
 }
 
 .visie p:last-child {
-    margin-bottom: 60px!important;
+  margin-bottom: 60px!important;
 }
 
 .page-template-wie-zijn-wij-page .section .layoutArea .column > p {
-    margin-bottom: 0px!important;
+  margin-bottom: 0px!important;
 }
 
 .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p:last-child {
-    margin-bottom: 60px!important;
+  margin-bottom: 60px!important;
 }

@@ -34,6 +34,7 @@ echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">';
 echo '<h4 class="green underlineGreen">';
 echo  get_field('adres', get_the_ID());
 echo '</h4>';
+echo '<div class="category-header">Aan & verhuur</div>';
 echo '</div>';
 echo '<div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4 intro-price">';
 echo  get_field('prijs', get_the_ID());
@@ -101,22 +102,22 @@ echo '</div>';
 
 /* MEER KENMERKEN*/
 if (!empty($more_details)) {
-    echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
-    echo '<div class="meer-kenmerken-tabel">';
-    echo '<div class="h4_block">';
-    echo '<div class="h4_container">';
-    echo '<h4 class="aanverhuur-kenmerken-titel">Meer kenmerken</h4>';
-    echo '</div>';
-    echo '</div>';
-    echo '<table class="kenmerken-tabel kenmerken-tabel2">';
-    for ($x = 0; $x <= count($more_details); $x++) {
-        echo '<tr>';
-        echo '<td>' . $more_details['body'][$x][0]['c'] . '</td>';
-        echo '<td>' . $more_details['body'][$x][1]['c'] . '</td>';
-        echo '</tr>';
-    }
-    echo '</table>';
-    echo '</div>';
+  echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
+  echo '<div class="meer-kenmerken-tabel">';
+  echo '<div class="h4_block">';
+  echo '<div class="h4_container">';
+  echo '<h4 class="aanverhuur-kenmerken-titel">Meer kenmerken</h4>';
+  echo '</div>';
+  echo '</div>';
+  echo '<table class="kenmerken-tabel kenmerken-tabel2">';
+  for ($x = 0; $x <= count($more_details); $x++) {
+    echo '<tr>';
+    echo '<td>' . $more_details['body'][$x][0]['c'] . '</td>';
+    echo '<td>' . $more_details['body'][$x][1]['c'] . '</td>';
+    echo '</tr>';
+  }
+  echo '</table>';
+  echo '</div>';
 }
 
 /* OMSCHRIJVING*/
@@ -135,7 +136,7 @@ echo '</div>';
 
 /* CONTACT*/
 echo '<div class="aanverhuur-contact">';
-echo '<a href="#contact" data-ps2id="true" class="ps2id">';
+echo '<a href="#the_ID" data-ps2id="true" class="ps2id">';
 echo '<button class="btn btn-green big bezichtigings-btn-btn">';
 echo '<div class="h4_block">';
 echo '<div class="h4_container">';

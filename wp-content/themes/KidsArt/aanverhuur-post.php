@@ -43,7 +43,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo get_field('samenvatting', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
       echo '</div>';
       echo '<br/>';
-      echo '<div>';
+      echo '<div class="aanverhuur-table-container">';
       echo '<table class="aanverhuur-table-items">';
       echo '<tr class="info1">';
       echo '<td>' . get_field('status', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '</td>';
