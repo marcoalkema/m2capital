@@ -18,6 +18,8 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
   for ($x = 0; $x <=14; $x++) {
     $IDx = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
     if (!empty($IDx) && ($IDx !== 25) && ($IDx !== 23)) {
+      $foo = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
+      $cat = get_the_category($foo)[0]->name;
       if ($x % 3 == 0) {
         echo '<div class="row other_stories_container">';
       }
@@ -34,7 +36,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '<h4 class="green underlineGreen">';
       echo wp_get_recent_posts( $args, ARRAY_A )[$x]['post_title'];
       echo '</h4>';
-      echo '<br/>';
+      echo '<div class="category-header">' . $cat . '</div>';
       echo '</div>';
       echo '</div>';
       echo '<p class="actueel-post-excerpt">';

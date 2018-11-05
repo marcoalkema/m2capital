@@ -37,7 +37,7 @@
     }
     ?>
   </div>
-  <a href="<?php printf(get_site_url()) ?>/asset-management/">
+  <a href="<?php printf(get_site_url()) ?>/projecten/">
       <button class="btn btn-green btn-primary">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {

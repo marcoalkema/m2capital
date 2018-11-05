@@ -48,7 +48,7 @@
 .wat-doen-wij-col p {
   padding: 1vw 1vw 0 1vw;
   text-align: justify;
-  min-height: 160px;
+  min-height: 120px;
 }
 
 .wat-doen-wij-col h4 {
@@ -246,7 +246,7 @@
 }
 
 .other_stories p {
-  width: 76%;
+  width: 80%;
   margin: 30px auto;
   color: #fff!important;
   text-align: center;
@@ -284,29 +284,26 @@
 
 #post-2134 .story_preview,
 #post-2136 .story_preview,
-/* #post-2138 .story_preview, */
 #post-2131 .story_preview {
   margin: 0;
+  margin-bottom: 50px;
 }
 
 #post-2134 .story_preview_container,
 #post-2136 .story_preview_container,
-/* #post-2138 .story_preview_container */
 #post-2131 .story_preview_container {
-  padding: 70px;
-  min-height: 550px!important;
+  padding: 0;
+  min-height: 510px!important;
 }
 
 #post-2134 .story_preview_image,
 #post-2136 .story_preview_image,
-/* #post-2138 .story_preview_image, */
 #post-2131 .story_preview_image {
   overflow: hidden;
 }
 
 #post-2134 .other_stories_container,
 #post-2136 .other_stories_container,
-/* #post-2138 .other_stories_container, */
 #post-2131 .other_stories_container {
   width: 90%;
   margin: 0 auto;
@@ -316,16 +313,15 @@
 
 #post-2134 .story_preview_text,
 #post-2136 .story_preview_text,
-/* #post-2138 .story_preview_text, */
 #post-2131 .story_preview_text {
   background: #f2f2f2;
   height: 80%;
   margin-top: 0;
+  padding: 10px;
 }
 
 #post-2134 .story_preview_text_container,
 #post-2136 .story_preview_text_container,
-/* #post-2138 .story_preview_text_container, */
 #post-2131 .story_preview_text_container {
   padding: 10px;
 }
@@ -415,6 +411,25 @@
 
 #post-2138 .story_preview_text_container h4 {
   margin-top: 0;
+  margin-bottom: 0px!important;
+  text-transform: uppercase;
+  font-size: 26px!important;
+}
+
+#post-2138 .post-excerpt {
+  padding: 0 10px;
+}
+
+.aanverhuur-table-container {
+  padding: 0 10px!important;
+}
+
+.aanverhuur-container .category-header {
+  margin-top: 40px;
+}
+
+.aanverhuur-table-items {
+  margin-bottom: 0!important;
 }
 
 #post-2138 .story_preview_text_container .h4_container {
@@ -650,7 +665,21 @@
   background: #1d70b7;
   padding: 5px 10px;
   width: fit-content;
-  margin: 20px auto 40px auto;
+  margin: 10px auto 40px auto;
+}
+
+#post-2134 .story_preview_container h4.underlineGreen::after,
+#post-2136 .story_preview_container h4.underlineGreen::after,
+#post-2131 .story_preview_container h4.underlineGreen::after,
+#post-2129 .story_preview_container h4.underlineGreen::after {
+  bottom: -56px!important;
+}
+
+#post-2134 .actueel-post-excerpt,
+#post-2136 .actueel-post-excerpt,
+#post-2131 .actueel-post-excerpt,
+#post-2129 .actueel-post-excerpt {
+  margin-top: 0!important;
 }
 
 .contact-info-container {
@@ -730,59 +759,6 @@
     margin: 0 auto;
 }
 
-.wysiwyg {
-  height: auto;
-  width: 80%;
-  margin: 0 auto;
-  word-break: normal;
-  word-wrap: break-word;
-  white-space: pre-line;
-}
-
-.wysiwyg h1 {
-  position:relative;
-  line-height: 95%!important;
-  margin-bottom: 3vw!important;
-  padding-top: 35px;
-  text-transform: none;
-  color: #1d70b7!important;
-}
-
-.wysiwyg h1::after{
-  content: "";
-  position: absolute;
-  left: 50%;
-  margin-left: -10%;
-  bottom: -1vw;
-  margin-bottom: -1vw;
-  width: 20%;
-  border-bottom: 4px solid #4080bf;
-}
-
-.wysiwyg h2 {
-  font-size: 50px!important;
-  color: gray!important;
-  text-align: center;
-  width: 100%;
-  text-transform: none!important;
-  line-height: initial;
-  padding-top: 20px;
-  margin: 1% 1% 30px 1%;
-  display: table-cell;
-}
-
-.wysiwyg p {
-  width: 100%!important;
-  margin: 0!important;
-}
-
-.wysiwyg p:last-child {
-    /* margin-bottom:40px!important; */
-}
-
-.wysiwyg > h2:nth-child(2) {
-
-}
 
 #asset-management .container,
 #her-ontwikkel .container,
@@ -832,6 +808,7 @@ span.herontwikkelMeerArrow {
 .actueel-intro-container-img img {
   opacity: 0.5;
   width: 100%;
+  min-height: 0;
 }
 
 .wpml-ls-menu-item .wpml-ls-flag {
@@ -875,7 +852,7 @@ span.herontwikkelMeerArrow {
 }
 
 .aanverhuuritems .story_preview_container {
-  min-height: 570px;
+  min-height: 550px;
 }
 
 .aanverhuuritems .info1,

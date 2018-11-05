@@ -19,4 +19,14 @@ window.onload = function () {
       elem.classList.add('active')
     })
   }
+  if (document.querySelector('._mPS2id-h')) {
+    var elem = document.getElementById('foldalbe-contact')
+    var btn = document.getElementById('foldBtn')
+    document.querySelectorAll('._mPS2id-h').forEach(function (e) {
+      e.addEventListener('click', function () {
+      btn.classList.remove('active_')
+      elem.classList.add('active')
+      })
+    })
+  }
 }

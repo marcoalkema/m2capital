@@ -97,8 +97,6 @@ function nl () {
     document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
 
     function toggleMenu (e) {
-      console.log("e = ", e);
-
       if (window.mobileAndTabletcheck()) {
       reverseUL()
       if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
