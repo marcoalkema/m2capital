@@ -4913,7 +4913,9 @@ a {
   .wysiwyg h2 {
     font-size: 30px!important;
   }
-
+  #page-2129 .story_preview_text_container .h4_block {
+    margin-top: 30px;
+  }
   .story_preview_container {
     padding-top: 20px!important;
     height: 400px!important;
@@ -5973,8 +5975,8 @@ h4.green{
 
 }
 #main.wrapper {
-  margin-bottom: 5px;
-  box-shadow: 0 5px 10px #c2c2c2;
+  /* margin-bottom: 5px; */
+  /* box-shadow: 0 5px 10px #c2c2c2; */
 }
 .introduction-links-container .introduction-links-image-container {
   height: 300px;

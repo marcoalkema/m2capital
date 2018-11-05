@@ -9,7 +9,8 @@
 
 .wat-doen-wij-row {
   width: 90%;
-  margin: 0 auto 40px auto;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .wat-doen-wij-col {
@@ -148,6 +149,21 @@
   text-align: center;
 }
 
+.beleggingsadvies-text-block,
+.asset-management-text-block {
+  background: white;
+}
+
+#post-17 {
+  background: #f2f2f2;
+}
+
+#post-17 #asset-management__,
+#post-17 #beleggingsadvies,
+#post-17 .template-page-content {
+  background: white
+}
+
 .aan-verhuur-text-block p,
 .beleggingsadvies-text-block p,
 .her-ontwikkel-text-block p,
@@ -160,6 +176,10 @@
   background: #f2f2f2;
   margin-bottom: 5px;
   box-shadow: 0 5px 10px #c2c2c2;
+}
+
+#aan-verhuur {
+  margin-bottom: 15px;
 }
 
 .asset-management-page > p,
