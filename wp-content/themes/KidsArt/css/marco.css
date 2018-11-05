@@ -101,7 +101,8 @@
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
 #asset-management .metaslider {
-  margin: 0 6%!important;
+  /* margin: 0 6%!important; */
+      margin: 20px 6% 0 6%!important;
   width: 88%!important;
 }
 
@@ -599,6 +600,7 @@
   padding: 5px 10px;
   width: fit-content;
   margin: 10px auto 40px auto;
+      font-family: MetaNormalPlus;
 }
 
 #post-2134 .story_preview_container h4.underlineGreen::after,
