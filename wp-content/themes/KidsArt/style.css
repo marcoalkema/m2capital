@@ -4409,7 +4409,7 @@ a {
 /* } */
 
 .wie-foto > h4 {
-  padding-top: 3%!important;
+  padding-top: 1%!important;
 }
 
 /* Minimum width of 960 pixels. */
@@ -6092,7 +6092,7 @@ h4.green{
   left: 50%;
   margin-left: -30%;
   /* margin: 0 auto; */
-  bottom: -20px;
+  bottom: -22px;
   width: 60%;
   border-bottom: 4px solid #fff;
 }
