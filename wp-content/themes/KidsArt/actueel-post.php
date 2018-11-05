@@ -1,9 +1,7 @@
 <div class="page-header-image">
     <img src="<?php the_field("post-img"); ?>" class="headerImg"/>
-    <div class="page-title-container">
-        <div class="page-title-div">
-            <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
-        </div>
+    <div class="page-title-div">
+      <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
     </div>
 </div>
 <div class="template-page-content story">
@@ -23,10 +21,10 @@
     <?php printf(get_field('post-text'));?>
 </div>
 
-<div class="actueelPostInfo">
     <?php
     $cat = get_the_category()[0]->name;
     if ($cat == 'Actueel') {
+        echo '<div class="actueelPostInfo">';
         echo '<div class="actueelBron">';
         echo 'Bron:</br>';
         echo get_field('bron', get_the_ID());
@@ -35,11 +33,10 @@
         echo get_field('social_media_tekst', 1939) . '</br>';
         echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
         echo '</div>';
-        echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
+      echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
+      echo '</div>';
     }
     ?>
-
-</div>
 
 <?php
 $cat = get_the_category()[0]->name;

@@ -9,7 +9,8 @@
 
 .wat-doen-wij-row {
   width: 90%;
-  margin: 0 auto 40px auto;
+  padding-bottom: 40px;
+  margin: 0 auto;
 }
 
 .wat-doen-wij-col {
@@ -148,6 +149,21 @@
   text-align: center;
 }
 
+.beleggingsadvies-text-block,
+.asset-management-text-block {
+  background: white;
+}
+
+#post-17 {
+  background: #f2f2f2;
+}
+
+#post-17 #asset-management__,
+#post-17 #beleggingsadvies,
+#post-17 .template-page-content {
+  background: white
+}
+
 .aan-verhuur-text-block p,
 .beleggingsadvies-text-block p,
 .her-ontwikkel-text-block p,
@@ -162,99 +178,16 @@
   box-shadow: 0 5px 10px #c2c2c2;
 }
 
+#aan-verhuur {
+  margin-bottom: 15px;
+}
+
 .asset-management-page > p,
 .actueel-page > p {
   width: 80%;
   margin: 0 auto;
 }
 
-.storiesWhite .btn.btn-green {
-  margin: 20px!important;
-}
-
-.other_stories .story_preview_text_container h4.underlineGreen {
-        margin: 20px 0 0px 0!important;
-}
-
-.template-page-content.story {
-        margin-top: 0;
-}
-
-.story_preview_text_container h4.underlineGreen {
-  padding-top: 0!important;
-  margin: 0 0 0px 0!important;
-  font-size: 25px!important;
-  line-height:inherit;
-}
-.story_preview_story .story_preview_text_container {
-  padding: 0!important;
-}
-
-.story_preview_story .green.underlineGreen:after {
-  /* bottom: -10px!important; */
-}
-
-.story_preview_story .story_preview_container {
-  padding-bottom: 0!important;
-}
-
-.story_preview_text {
-  position: relative;
-  margin-top: 10px;
-}
-
-.story_preview_image {
-  height: 250px;
-  overflow: hidden;
-}
-
-.story_preview_image img {
-  height: 100%;
-}
-
-.story_preview_container {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background: #eee;
-  min-height: 510px;
-  overflow: hidden;
-}
-
-.story {
-  margin: 40px auto 20px auto;
-}
-
-.story_preview_story .story_preview_container {
-  padding-top: 10px;
-  background: #fff;
-  min-height: 0;
-  height: auto!important;
-  overflow: hidden;
-  margin: 40px 0;
-}
-
-.story_preview_story .story_preview_container .story_preview_text {
-  height: 80px;
-}
-
-.other_stories {
-  background: #1d70b7!important;
-  color: #fff!important;
-  text-align: center;
-  margin-top: 60px;
-  padding-bottom: 80px;
-}
-
-.other_stories p {
-  width: 80%;
-  margin: 30px auto;
-  color: #fff!important;
-  text-align: center;
-}
-
-.other_stories > .h4_block h4.underlineGreen::after {
-  border-bottom: 4px solid #fff
-}
 
 .btn.btn-green.btn-primary.whiteBlue {
   /* min-width: 151px; */
@@ -941,6 +874,8 @@ span.herontwikkelMeerArrow {
 /*   background: #eee; */
 /* } */
 
+
+
 .story_preview_story .story_preview_container {
   background: #eee;
 }
@@ -951,11 +886,6 @@ span.herontwikkelMeerArrow {
 
 .meerAanbodVerhuur .btn.btn-green.btn-primary.whiteBlue {
     margin-bottom: 60px;
-}
-
-#metaslider_176 .flex-control-nav {
-  top: 47em!important;
-  bottom: 0!important;
 }
 
 #metaslider_176 .flex-control-nav li a {
