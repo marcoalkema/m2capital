@@ -13,9 +13,9 @@ get_header(); ?>
       <div class="blue-image-filter">
         <img src="<?php the_field("template-image"); ?>" class="headerImg"/>
       </div>
-      <div class="page-title-div">
-        <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
-      </div>
+        <div class="page-title-div">
+          <h6 id="landing-overlay-title" class="white landing-title"><?php printf(get_field('main-title', get_the_ID())); ?></h6>
+        </div>
     </div>
     <div class="template-page-content">
       <div id="main-title-<?php the_ID(); ?>" class="main-title">
@@ -35,15 +35,15 @@ get_header(); ?>
       <div class="table m2_btn_table">
         <div class="row">
           <div class="col-sm-4">
-              <div class="btn-group-vertical">
-                  <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
-                      <div class="m2BtnImage">
-                        <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/visie.svg"/>
-                      </div>
-                      <button type="button" class="btn btn-green btn-primary btn_text_m2">
-                          Onze Visie
-                      </button>
-                  </a>
+            <div class="btn-group-vertical">
+              <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
+                <div class="m2BtnImage">
+                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/visie.svg"/>
+                </div>
+                <button type="button" class="btn btn-green btn-primary btn_text_m2">
+                  Onze Visie
+                </button>
+              </a>
             </div>
           </div>
           <div class="col-sm-4">
@@ -52,10 +52,10 @@ get_header(); ?>
               <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
                   <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/werkwijze.svg"/>
-                  </div>
-                  <button type="button" class="btn btn-green btn-primary btn_text_m2">
-                      Werkwijze
-                  </button>
+                </div>
+                <button type="button" class="btn btn-green btn-primary btn_text_m2">
+                  Werkwijze
+                </button>
               </a>
             </div>
           </div>
@@ -65,10 +65,10 @@ get_header(); ?>
               <a href="#over-ons" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
                   <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/ons.svg"/>
-                  </div>
-                  <button type="button" class="btn btn-green btn-primary btn_text_m2">
-                      Over ons
-                  </button>
+                </div>
+                <button type="button" class="btn btn-green btn-primary btn_text_m2">
+                  Over ons
+                </button>
               </a>
 
             </div>
@@ -164,11 +164,11 @@ get_header(); ?>
 
     <div id="wie-zijn-wij-wie" class="wie">
       <div class="actueel-intro-container-img">
-      <img src="<?php
-                if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
-                  printf(get_field('over-ons-img', $ID));
-                }?>" class="over-ons-img light-blue-image-filter"/>
+        <img src="<?php
+                  if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+                    printf(get_field('over-ons-img', $ID));
+                  }?>" class="over-ons-img light-blue-image-filter"/>
       </div>
       <div id="wie-zijn-wij-visie" class="h4_block">
         <div id="over-ons" class="h4_container">
@@ -230,20 +230,20 @@ get_header(); ?>
           echo '</div>';
 
 
-            if ($i % (1 * $row + ($row - 1)) == 0) {
-                echo '</div>';
-                $row++;
-            }
-        }
-          ;
-          if ($i == count($arr) - 1) {
-              echo '</div>';
-
-              if ($i % 2 != 0) {
-                  echo '</div>';
-              }
+          if ($i % (1 * $row + ($row - 1)) == 0) {
+            echo '</div>';
+            $row++;
           }
-          $i++;
+        }
+        ;
+        if ($i == count($arr) - 1) {
+          echo '</div>';
+
+          if ($i % 2 != 0) {
+            echo '</div>';
+          }
+        }
+        $i++;
 
       }
 
@@ -272,29 +272,29 @@ get_header(); ?>
         ?>
       </div>
       <div class="partner-profiles">
-          <?php
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
-          $arr = get_field('partners-profiles', $ID);
-          $i = 0;
-          $row = 5;
-          echo '<div class="row">';
-          foreach($arr as $val) {
-                  echo '<div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-3 partner-profiles-img">';
-                  echo '<a href="' . $val['link'] . '" target="blank">';
-                  echo '<img src="' . $val['img'] . '"/>';
-                  echo '</a>';
-                  echo '</div>';
+        <?php
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+        $arr = get_field('partners-profiles', $ID);
+        $i = 0;
+        $row = 5;
+        echo '<div class="row">';
+        foreach($arr as $val) {
+          echo '<div class="col-4 col-sm-4 col-md-3 col-lg-2 col-xl-3 partner-profiles-img">';
+          echo '<a href="' . $val['link'] . '" target="blank">';
+          echo '<img src="' . $val['img'] . '"/>';
+          echo '</a>';
+          echo '</div>';
           ;
           if ($i == count($arr) - 1) {
-              echo '</div>';
+            echo '</div>';
 
-              if ($i % 4 != 0) {
-                  echo '</div>';
-              }
+            if ($i % 4 != 0) {
+              echo '</div>';
+            }
           }
           $i++;
-          }
-          ?>
+        }
+        ?>
       </div>
     </div>
 

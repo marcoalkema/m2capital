@@ -4254,6 +4254,96 @@ a {
   padding-left: 5%!important;
 }
 
+.storiesWhite .btn.btn-green {
+  margin: 20px!important;
+}
+
+.other_stories .story_preview_text_container h4.underlineGreen {
+        margin: 20px 0 0px 0!important;
+}
+
+.template-page-content.story {
+        margin-top: 0;
+}
+
+.story_preview_text_container h4.underlineGreen {
+  padding-top: 0!important;
+  margin: 0 0 0px 0!important;
+  font-size: 25px!important;
+  line-height:inherit;
+}
+.story_preview_story .story_preview_text_container {
+  padding: 0!important;
+}
+
+.story_preview_story .green.underlineGreen:after {
+  /* bottom: -10px!important; */
+}
+
+.story_preview_story .story_preview_container {
+  padding-bottom: 0!important;
+  height: 400px!important;
+}
+
+.story_preview_text {
+  position: relative;
+  margin-top: 10px;
+}
+
+.story_preview_image {
+  height: 250px;
+  overflow: hidden;
+}
+
+.story_preview_image img {
+  height: 100%;
+}
+
+.story_preview_container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background: #eee;
+  min-height: 510px;
+  overflow: hidden;
+}
+
+.story {
+  margin: 40px auto 20px auto;
+}
+
+.story_preview_story .story_preview_container {
+  padding-top: 10px;
+  background: #fff;
+  min-height: 0;
+  height: auto;
+  overflow: hidden;
+  margin: 40px 0;
+}
+
+.story_preview_story .story_preview_container .story_preview_text {
+  height: 80px;
+}
+
+.other_stories {
+  background: #1d70b7!important;
+  color: #fff!important;
+  text-align: center;
+  margin-top: 60px;
+  padding-bottom: 80px;
+}
+
+.other_stories p {
+  width: 80%;
+  margin: 30px auto;
+  color: #fff!important;
+  text-align: center;
+}
+
+.other_stories > .h4_block h4.underlineGreen::after {
+  border-bottom: 4px solid #fff
+}
+
+
 .kenmerken-tabel2 {
   margin-right: 50%!important;
 }
@@ -4454,6 +4544,12 @@ a {
   }
 }
 
+#metaslider_176 .flex-control-nav {
+  top: 47em!important;
+  bottom: 0!important;
+}
+
+
 @media screen and (max-width : 767px) {
   .space-text {
     padding-bottom: 10px!important;
@@ -4545,6 +4641,7 @@ a {
   }
   #site-navigation{
     padding-top: 0px;
+    box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
   }
   .main-navigation ul{
     margin-top: -30px;
@@ -4615,6 +4712,7 @@ a {
     float: none;
     width: 110%;
     margin-left: -5%;
+    margin-bottom: 30px;
   }
   img.alignright,
   .wp-caption.alignright {
@@ -4707,12 +4805,18 @@ a {
     height: 203px;
     width: auto!important;
     margin-left: 27vw;
-    margin-top: 18vw;
+    margin-top: 40vw;
   }
+
+  #metaslider_176 .flex-control-nav {
+    top: 30em!important;
+  }
+
   .home #overlay-container .page-title-container #landing-overlay-title {
-    margin-top: 53vw!important;
-    line-height: 1.2!important;
-    margin-left: 2vw!important;
+    /* margin-top: 53vw!important; */
+    /* line-height: 1.2!important; */
+    /* margin-left: 2vw!important; */
+    display: none;
   }
   .home #content #overlay-container .glyphicon.glyphicon-menu-down {
     height: 36px;
@@ -4779,6 +4883,13 @@ a {
     margin: 20px auto!important;
   }
 
+  .current_page_item {
+    font-weight: 900;
+  }
+  .nav-menu.toggled-on:last-child {
+    box-shadow: 0 5px 10px #c2c2c2;
+  }
+
   .other_stories_container {
     padding-left: 0!important;
     width: 90%!important;
@@ -4805,6 +4916,7 @@ a {
 
   .story_preview_container {
     padding-top: 20px!important;
+    height: 400px!important;
   }
 
   #wie-zijn-wij-wie .container {
@@ -5409,7 +5521,7 @@ a {
     margin-top: -10vw!important;
   }
   .section .layoutArea > .column > h2 {
-    font-size: 2em!important;
+    font-size: 30px!important;
   }
   .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p {
 
@@ -5428,22 +5540,19 @@ a {
     font-size: 8vw!important;
   }
   .page-title-div > #landing-overlay-title {
-    font-size: 2.9em!important;
-    margin-top: 27vw!important;
+    font-size: 32px!important;
+    margin-top: 40vw!important;
   }
+  .page-template-asset-management-page .page-title-div > #landing-overlay-title,
+  .page-template-projecten .page-title-div > #landing-overlay-title,
   .page-template-wat-doen-wij-page .page-title-div > #landing-overlay-title {
-    margin-top: 23vw!important;
+    margin-top: 40vw!important;
+    font-size: 32px!important;
   }
   #overlay-container.overlay {
     height:68vw;
     margin-top: 80px;
 
-  }
-  .page-template-projecten .page-title-div > #landing-overlay-title {
-    margin-top: 38vw!important;
-  }
-  .page-template-asset-management-page .page-title-div > #landing-overlay-title {
-    margin-top: 13vw!important;
   }
   #post-2138 .template-page-content.asset-management-page .h4_block {
     margin-bottom: 0px;
@@ -5513,7 +5622,7 @@ a {
     margin-top: 27vw;
   }
   .actueel-intro-container .actueel-intro .layoutArea > .column > h2 {
-    font-size: 2em!important;
+    font-size: 30px!important;
   }
 
   .contact-large-submit{
@@ -5597,6 +5706,7 @@ a {
   }
   .wpml-ls-menu-item{
     margin-left: 0!important;
+    box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
   }
   #menu-primary_ a,
   #menu-primary__ a{

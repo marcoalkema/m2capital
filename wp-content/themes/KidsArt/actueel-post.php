@@ -1,9 +1,7 @@
 <div class="page-header-image">
     <img src="<?php the_field("post-img"); ?>" class="headerImg"/>
-    <div class="page-title-container">
-        <div class="page-title-div">
-            <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
-        </div>
+    <div class="page-title-div">
+      <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
     </div>
 </div>
 <div class="template-page-content story">
