@@ -5616,7 +5616,7 @@ a {
     margin-left: 7vw;
   }
   #masthead #site-navigation li.current-menu-item a::after {
-    display:none;
+      /* display:none; */
   }
   img.overlay-plaatje {
     margin-top: 27vw;
@@ -5698,6 +5698,23 @@ a {
   .main-navigation li{
     float: none!important;
     font-size: 16px!important;
+  }
+  .main-navigation .current_page_item a::after {
+             content: "";
+    position: absolute;
+    left: 50%;
+    margin-left: -30%;
+    /* margin: 0 auto; */
+        bottom: 6px!important;
+    width: 60%;
+    border-bottom: 4px solid #4080bf;
+
+  }
+  .main-navigation .current_page_item a {
+      position:relative;
+  }
+  .main-navigation .menu-item-type-post_type, .main-navigation .menu-item-has-children {
+      border-right: 0!important;
   }
   .flex-control-nav,
   .flex-control-paging,
