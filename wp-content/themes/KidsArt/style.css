@@ -712,6 +712,9 @@ a:hover {
   left: 0;
   right: 0;
 }
+.story .category-header {
+  margin-bottom: 20px!important;
+}
 /* Navigation Menu */
 .sub-menu {
   left: -13px!important;
@@ -6410,8 +6413,8 @@ li.current-menu-item a{
 
 }
 .btn.btn-primary.m2btn {
-  height: 40px;
-  width: 40px;
+  height: 50px;
+  width: 50px;
 
 }
 
@@ -6467,7 +6470,7 @@ li.current-menu-item a{
 
 .template-page-content h4.underlineGreen {
   margin-top: 60px;
-  line-height: 1.1;
+  line-height: 1.4;
 }
 
 .template-page-content #title_text {
