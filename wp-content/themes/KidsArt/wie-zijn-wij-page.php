@@ -40,7 +40,7 @@ get_header(); ?>
                       <div class="m2BtnImage">
                         <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/visie.svg"/>
                       </div>
-                      <button type="button" class="btn btn-primary btn_text_m2">
+                      <button type="button" class="btn btn-green btn-primary btn_text_m2">
                           Onze Visie
                       </button>
                   </a>
@@ -53,7 +53,7 @@ get_header(); ?>
                 <div class="m2BtnImage">
                   <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/werkwijze.svg"/>
                   </div>
-                  <button type="button" class="btn btn-primary btn_text_m2">
+                  <button type="button" class="btn btn-green btn-primary btn_text_m2">
                       Werkwijze
                   </button>
               </a>
@@ -66,7 +66,7 @@ get_header(); ?>
                 <div class="m2BtnImage">
                   <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/ons.svg"/>
                   </div>
-                  <button type="button" class="btn btn-primary btn_text_m2">
+                  <button type="button" class="btn btn-green btn-primary btn_text_m2">
                       Over ons
                   </button>
               </a>

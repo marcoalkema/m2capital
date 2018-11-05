@@ -30,7 +30,7 @@
       ?>
   </div>
   <a href="<?php printf(get_site_url()) ?>/herontwikkeling_/">
-      <button>
+      <button class="btn btn-green btn-primary">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
               $ID = (ICL_LANGUAGE_CODE == 'nl') ? 911 : 1;

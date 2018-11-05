@@ -131,13 +131,14 @@
 #her-ontwikkel button,
 #asset-management button {
   color: #fff;
-  background: #999;
+  background: #999!important;
   height: 28px;
   padding: 15px 12px;
   font-size: 20px!important;
   line-height: 1px;
   margin-bottom: 60px;
   font-family: MerriweatherRegular;
+  border:0!important;
 }
 
 .aan-verhuur-text-block,
@@ -171,17 +172,26 @@
   margin: 20px!important;
 }
 
+.other_stories .story_preview_text_container h4.underlineGreen {
+        margin: 20px 0 0px 0!important;
+}
+
+.template-page-content.story {
+        margin-top: 0;
+}
+
 .story_preview_text_container h4.underlineGreen {
   padding-top: 0!important;
-  margin: 0 0 5px 0!important;
+  margin: 0 0 0px 0!important;
   font-size: 25px!important;
+  line-height:inherit;
 }
 .story_preview_story .story_preview_text_container {
   padding: 0!important;
 }
 
 .story_preview_story .green.underlineGreen:after {
-  bottom: -10px!important;
+  /* bottom: -10px!important; */
 }
 
 .story_preview_story .story_preview_container {
@@ -431,6 +441,18 @@
   margin: 0 auto;
 }
 
+.aanverhuur-container .row.intro-details {
+    margin-top:60px;
+    margin-bottom: 40px;
+}
+
+.aanverhuur-intro p:first-child {
+    margin-bottom: 40px!important;
+}
+
+.aanverhuur-container h4.underlineGreen {
+    line-height:normal;
+}
 .aanverhuur-intro p {
   width: 90%;
   margin: 30px auto;
@@ -475,7 +497,7 @@
 .aanverhuur-kenmerken .h4_container {
   margin-top: 20px;
   position: relative;
-  width: 100%;
+  width: fit-content;
 }
 
 .aanverhuur-kenmerken-titel::after {
@@ -943,6 +965,10 @@ span.herontwikkelMeerArrow {
 
 .story_preview_story .story_preview_container .story_preview_image {
   overflow: hidden;
+}
+
+.meerAanbodVerhuur .btn.btn-green.btn-primary.whiteBlue {
+    margin-bottom: 60px;
 }
 
 #metaslider_176 .flex-control-nav {

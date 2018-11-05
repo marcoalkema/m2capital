@@ -3,18 +3,18 @@ $fields = get_field_objects();
 
 $cat = get_field('categorie', get_the_ID());
 $args = array(
-  'numberposts' => 0,
-  'offset' => 0,
-  'category' => $cat,
-  'orderby' => 'post_date',
-  'order' => 'ASC',
-  'include' => '',
-  'exclude' => '',
-  'meta_key' => '',
-  'meta_value' =>'',
-  'post_type' => 'post',
-  'post_status' => 'draft, publish, future, pending, private',
-  'suppress_filters' => true
+    'numberposts' => 0,
+    'offset' => 0,
+    'category' => $cat,
+    'orderby' => 'post_date',
+    'order' => 'ASC',
+    'include' => '',
+    'exclude' => '',
+    'meta_key' => '',
+    'meta_value' =>'',
+    'post_type' => 'post',
+    'post_status' => 'draft, publish, future, pending, private',
+    'suppress_filters' => true
 );
 $more_details = get_field('meer_details', get_the_ID());
 
@@ -101,22 +101,22 @@ echo '</div>';
 
 /* MEER KENMERKEN*/
 if (!empty($more_details)) {
-  echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
-  echo '<div class="meer-kenmerken-tabel">';
-  echo '<div class="h4_block">';
-  echo '<div class="h4_container">';
-  echo '<h4 class="aanverhuur-kenmerken-titel">Meer kenmerken</h4>';
-  echo '</div>';
-  echo '</div>';
-  echo '<table class="kenmerken-tabel kenmerken-tabel2">';
-  for ($x = 0; $x <= count($more_details); $x++) {
-    echo '<tr>';
-    echo '<td>' . $more_details['body'][$x][0]['c'] . '</td>';
-    echo '<td>' . $more_details['body'][$x][1]['c'] . '</td>';
-    echo '</tr>';
-  }
-  echo '</table>';
-  echo '</div>';
+    echo '<button class="btn btn-green meer-kenmerken-btn">Meer details</button>';
+    echo '<div class="meer-kenmerken-tabel">';
+    echo '<div class="h4_block">';
+    echo '<div class="h4_container">';
+    echo '<h4 class="aanverhuur-kenmerken-titel">Meer kenmerken</h4>';
+    echo '</div>';
+    echo '</div>';
+    echo '<table class="kenmerken-tabel kenmerken-tabel2">';
+    for ($x = 0; $x <= count($more_details); $x++) {
+        echo '<tr>';
+        echo '<td>' . $more_details['body'][$x][0]['c'] . '</td>';
+        echo '<td>' . $more_details['body'][$x][1]['c'] . '</td>';
+        echo '</tr>';
+    }
+    echo '</table>';
+    echo '</div>';
 }
 
 /* OMSCHRIJVING*/
@@ -157,18 +157,18 @@ echo '</div>';
 echo '</div>';
 
 $args1 = array(
-  'numberposts' => 3,
-  'offset' => 0,
-  'category' => get_the_category()[0]->cat_ID,
-  'orderby' => 'post_date',
-  'order' => 'DESC',
-  'include' => '',
-  'exclude' => '',
-  'meta_key' => '',
-  'meta_value' =>'',
-  'post_type' => 'post',
-  'post_status' => 'draft, publish, future, pending, private',
-  'suppress_filters' => true
+    'numberposts' => 3,
+    'offset' => 0,
+    'category' => get_the_category()[0]->cat_ID,
+    'orderby' => 'post_date',
+    'order' => 'DESC',
+    'include' => '',
+    'exclude' => '',
+    'meta_key' => '',
+    'meta_value' =>'',
+    'post_type' => 'post',
+    'post_status' => 'draft, publish, future, pending, private',
+    'suppress_filters' => true
 );
 
 echo '<div class="row other_aanverhuur_container">';
@@ -186,33 +186,33 @@ echo '</div>';
 
 echo '<div class="meerAanbodVerhuurContainer">';
 for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x++) {
-  echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
-  echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
-  echo '<div class="story_preview_container">';
-  echo '<div class="story_preview_image">';
-  echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
-  echo '</div>';
-  echo '<div class="story_preview_text">';
-  echo '<div class="story_preview_text_container">';
-  echo '<div class="h4_block">';
-  echo '<div class="h4_container">';
-  echo '<h4 class="green underlineGreen">';
-  echo wp_get_recent_posts( $args1, ARRAY_A )[$x]['post_title'];
-  echo '</h4>';
-  echo '<br/>';
-  echo '</div>';
-  echo '</div>';
-  echo '</div>';
-  echo '</div>';
-  echo '</div>';
-  echo '</div>';
-  echo '</a>';
+    echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
+    echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
+    echo '<div class="story_preview_container">';
+    echo '<div class="story_preview_image">';
+    echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
+    echo '</div>';
+    echo '<div class="story_preview_text">';
+    echo '<div class="story_preview_text_container">';
+    echo '<div class="h4_block">';
+    echo '<div class="h4_container">';
+    echo '<h4 class="green underlineGreen">';
+    echo wp_get_recent_posts( $args1, ARRAY_A )[$x]['post_title'];
+    echo '</h4>';
+    echo '<br/>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</a>';
 };
 echo '</div>';
 echo '<div class="meerAanbodVerhuur">';
 echo '<p>' . get_field('soortgelijk_aanbod_btn_txt', 2138) . '</p>';
 echo '<a href="' . get_site_url() . '/aan-verhuur' . '">';
-echo '<button class="whiteBlue">' . get_field('soortgelijk_aanbod_btn_txt2', 2138) . '</button>';
+echo '<button class="btn btn-green btn-primary whiteBlue">' . get_field('soortgelijk_aanbod_btn_txt2', 2138) . '</button>';
 echo '</a>';
 echo '</div>';
 echo '</div>';

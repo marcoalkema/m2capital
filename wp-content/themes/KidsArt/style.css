@@ -734,7 +734,9 @@ a:hover {
   left: 0;
   z-index: 99;
   height: auto;
-  box-shadow: 0 5px 10px #c2c2c2;
+      -moz-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+    box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
   width: 100%;
   text-align: center; }
 
@@ -962,6 +964,9 @@ article.sticky .featured-post {
   font-size: 1rem;
   line-height: 1.846153846;
 }
+h4.aanverhuur-kenmerken-titel {
+    line-height:normal;
+}
 .entry-content h5,
 .comment-content h5 {
   font-size: 13px;
@@ -984,6 +989,7 @@ article.sticky .featured-post {
   text-align: left;
   /* padding-bottom: 2rem; */
   /* font-size: 18px; */
+  padding-top: 0;
 }
 .entry-content a:visited,
 .comment-content a:visited {
@@ -2969,7 +2975,7 @@ h6.white {
 }
 .page-title-div {
   position: absolute;
-  top: 65%;
+  top: 64%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
@@ -4208,6 +4214,7 @@ a {
 #wie-zijn-wij-wie .container{
   width:100%;
   margin: 0 auto;
+      margin-top: 40px;
 }
 
 #wie-zijn-wij-wie .wie-foto p {
@@ -4604,13 +4611,13 @@ a {
 
    }
    .home #overlay-container .page-title-container img {
-               height: 253px;
+               height: 203px;
     width: auto!important;
-    margin-left: 23vw;
-    margin-top: 22vw;
+    margin-left: 27vw;
+    margin-top: 18vw;
    }
    .home #overlay-container .page-title-container #landing-overlay-title {
-       margin-top: 73vw!important;
+       margin-top: 53vw!important;
        line-height: 1.2!important;
        margin-left: 2vw!important;
    }
