@@ -2456,7 +2456,6 @@ h6.white {
 .menu-primary__-container{
   height: 100%;
   margin-left: -15vw;
-  margin-right: o px;
   display: inline-block;
   transform: translateY(30%);
   -webkit-transform: translateY(30%);
@@ -3851,7 +3850,6 @@ a {
 }
 @media screen and (max-width: 1400px) {
   #site-navigation{
-    padding-top: 5px;
     margin-top: 0px;
   }
   .main-navigation li a {
@@ -3878,11 +3876,10 @@ a {
 }
 @media screen and (max-width: 1145px) {
   #site-navigation{
-    padding-top: 15px;
     margin-top: 0px;
   }
   #header-logo{
-    margin-left: -450px;
+    margin-left: -250px;
   }
   .main-navigation li a {
     font-size: 22px;
@@ -3913,7 +3910,7 @@ a {
     margin-top: 0;
   }
   #header-logo{
-    margin-left: -440px;
+    margin-left: -140px;
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -3937,7 +3934,7 @@ a {
     height: 6vw;
   }
   #header-logo {
-    margin-left: -400px;
+    margin-left: -100px;
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -3956,7 +3953,10 @@ a {
 
 @media screen and (max-width: 890px){
   #header-logo{
-    margin-left: -70px;
+    margin-left: 0px;
+  }
+  .menu-primary_-container {
+    display: none;
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -3969,12 +3969,25 @@ a {
   .social_icons_primary {
     display: none;
   }
+  #menu-primary_ {
+    margin-top: 65px;
+    margin-right: -40px;
+    width: 30vw;
+  }
+  #menu-primary_ li {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 890px){
+  .menu-toggle {
+    display: none;
+  }
+  .menu-primary_-container {
+    display: inline-block;
+  }
 }
 
 @media screen and (max-width : 775px) {
-  #header-logo{
-    margin-left: -50px;
-  }
   .main-navigation li a {
     font-size: 19px;
     font-size: 0.8em;
@@ -4124,9 +4137,6 @@ a {
   .main-navigation .current_page_ancestor > a {
     /* font-weight: bold; */
     /* text-style: underline; */
-  }
-  .menu-toggle {
-    display: none;
   }
   .entry-header .entry-title {
     font-size: 22px;
@@ -4436,7 +4446,9 @@ a {
 }
 
 @media screen and (max-width: 1050px) {
-
+  .main-navigation ul {
+    margin-top: -20px;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -4583,6 +4595,9 @@ a {
 }
 
 @media screen and (max-width : 700px) {
+  .main-navigation ul {
+    margin-top: -20px;
+  }
   .contact-arrow-left,
   .contact-arrow-right{
     display: none;
@@ -4613,7 +4628,11 @@ a {
   }
   #menu-primary_,
   #menu-primary__{
-    margin-top: 0%;
+    width: 40vw;
+    margin-top: 80px;
+  }
+  #menu-primary_ li {
+    font-size: 24px;
   }
 }
 
@@ -4695,6 +4714,7 @@ a {
     font-size: 1.6em;
   }
   .menu-primary_-container {
+    margin-top: -20px;
     /* padding-left: 4.5vw; */
   }
   .facebook-icon {
@@ -5240,12 +5260,13 @@ a {
   }
   #menu-primary_,
   #menu-primary__{
+    margin-right: 0;
+    width: 100%;
     padding: 0px!important;
   }
   .menu-primary_-container,
   .menu-primary__-container{
     background: white;
-    /* margin-right: 0; */
     width: auto;
   }
   .text-container {
@@ -5583,6 +5604,13 @@ a {
     height:68vw;
     margin-top: 80px;
 
+  }
+  #menu-item-2007 {
+    background: rgb(210,210,210); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(210,210,210,1) 0%, rgba(210,210,210,1) 0%, rgba(233,233,233,1) 7%, rgba(255,255,255,1) 25%, rgba(254,254,254,1) 51%, rgba(254,254,254,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(210,210,210,1) 0%,rgba(210,210,210,1) 0%,rgba(233,233,233,1) 7%,rgba(255,255,255,1) 25%,rgba(254,254,254,1) 51%,rgba(254,254,254,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(210,210,210,1) 0%,rgba(210,210,210,1) 0%,rgba(233,233,233,1) 7%,rgba(255,255,255,1) 25%,rgba(254,254,254,1) 51%,rgba(254,254,254,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2d2d2', endColorstr='#fefefe',GradientType=0 ); /* IE6-9 */
   }
   #post-2138 .template-page-content.asset-management-page .h4_block {
     margin-bottom: 0px;

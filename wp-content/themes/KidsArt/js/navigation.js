@@ -21,23 +21,23 @@ function setMenuWidths (id) {
     var foo = document.getElementById(id)
     if (foo !== null) {
 
-    var prev = foo.previousElementSibling;
-    var next = foo.nextElementSibling;
+      var prev = foo.previousElementSibling;
+      var next = foo.nextElementSibling;
 
-    var distX = prev.offsetLeft - next.offsetLeft;
-    var distY = prev.offsetTop - next.offsetTop;
-    var distance = Math.sqrt(distX*distX + distY*distY);
+      var distX = prev.offsetLeft - next.offsetLeft;
+      var distY = prev.offsetTop - next.offsetTop;
+      var distance = Math.sqrt(distX*distX + distY*distY);
 
-    var doc = document.getElementById(id).querySelector('a')
-    var docWidth = doc.offsetWidth
-    var linkWidth = docWidth
+      var doc = document.getElementById(id).querySelector('a')
+      var docWidth = doc.offsetWidth
+      var linkWidth = docWidth
 
-    var elems = Array.from(document.getElementById(id).querySelector('.sub-menu').getElementsByTagName('a'))
-    elems.map(function (elem) {
-      elem.style.width = distance + 'px'
-      elem.style.paddingLeft = '0px'
-      elem.style.paddingRight = '0px'
-    })
+      var elems = Array.from(document.getElementById(id).querySelector('.sub-menu').getElementsByTagName('a'))
+      elems.map(function (elem) {
+        elem.style.width = distance + 'px'
+        elem.style.paddingLeft = '0px'
+        elem.style.paddingRight = '0px'
+      })
     }
   }, 500)
 }
@@ -73,21 +73,21 @@ function nl () {
     })
 
     navMenuItems.forEach(function (item) {
-        item.onclick = function(){
-          if (item.parentNode.id === 'menu-item-1554' || item.parentNode.id === 'menu-item-1555') {
-            if (item.parentNode.getElementsByTagName('ul')[0].style.display === 'block') {
-              item.parentNode.getElementsByTagName('ul')[0].style.display = 'none';
-            } else {
-              item.parentNode.getElementsByTagName('ul')[0].style.display = 'block';
-            }
+      item.onclick = function(){
+        if (item.parentNode.id === 'menu-item-1554' || item.parentNode.id === 'menu-item-1555') {
+          if (item.parentNode.getElementsByTagName('ul')[0].style.display === 'block') {
+            item.parentNode.getElementsByTagName('ul')[0].style.display = 'none';
+          } else {
+            item.parentNode.getElementsByTagName('ul')[0].style.display = 'block';
           }
         }
+      }
     })
 
     function reverseUL () {
       var parent = document.getElementById('menu-primary_'),
-      divs = parent.children,
-      i = divs.length - 1;
+          divs = parent.children,
+          i = divs.length - 1;
 
       for (; i--;) {
         parent.appendChild(divs[i])
@@ -97,29 +97,34 @@ function nl () {
     document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
 
     function toggleMenu (e) {
-      if (window.mobileAndTabletcheck()) {
-      reverseUL()
-      if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-        menu.className = 'nav-menu';
-        container.style.display = 'none'
+      if (true) {
+        reverseUL()
+        if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
+          console.log('1')
+          menu.className = 'nav-menu';
+          container.style.display = 'none'
 
-        navMenuItemsDividers.forEach(function (item) {
-          item.parentNode.style.display = 'block'
-        })}
-      if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
-        button.className = button.className.replace( ' toggled-on', '' );
-        menu.className = menu.className.replace( ' toggled-on', '' );
-        container.style.display = 'block';
-        navMenuItemsDividers.forEach(function (item) {
-          item.parentNode.style.display = 'none'
-        })} else {
-          button.className += ' toggled-on';
-          menu.className += ' toggled-on';
-          container.style.display = 'block'
           navMenuItemsDividers.forEach(function (item) {
-            item.parentNode.style.display = 'none'
-          })
-        }
+            item.parentNode.style.display = 'block'
+          })}
+        if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
+          console.log('2')
+          container.style.display = 'none'
+          button.className = button.className.replace( ' toggled-on', '' );
+          menu.className = menu.className.replace( ' toggled-on', '' );
+          // container.style.display = 'block';
+          // navMenuItemsDividers.forEach(function (item) {
+          //   item.parentNode.style.display = 'none'
+          // })
+        } else {
+            console.log('3')
+            button.className += ' toggled-on';
+            menu.className += ' toggled-on';
+            container.style.display = 'block'
+            navMenuItemsDividers.forEach(function (item) {
+              item.parentNode.style.display = 'none'
+            })
+          }
       };
     }
     button.onclick = toggleMenu
@@ -170,8 +175,8 @@ function en () {
 
     function reverseUL () {
       var parent = document.getElementById('menu-primary__'),
-      divs = parent.children,
-      i = divs.length - 1;
+          divs = parent.children,
+          i = divs.length - 1;
 
       for (; i--;) {
         parent.appendChild(divs[i])
@@ -190,23 +195,23 @@ function en () {
           menu.className = 'nav-menu';
           container.style.display = 'none'
 
-        navMenuItemsDividers.forEach(function (item) {
-          item.parentNode.style.display = 'block'
-        })}
-      if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
-        button.className = button.className.replace( ' toggled-on', '' );
-        menu.className = menu.className.replace( ' toggled-on', '' );
-        container.style.display = 'block';
-        navMenuItemsDividers.forEach(function (item) {
-          item.parentNode.style.display = 'none'
-        })} else {
-          button.className += ' toggled-on';
-          menu.className += ' toggled-on';
-          container.style.display = 'block'
+          navMenuItemsDividers.forEach(function (item) {
+            item.parentNode.style.display = 'block'
+          })}
+        if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
+          button.className = button.className.replace( ' toggled-on', '' );
+          menu.className = menu.className.replace( ' toggled-on', '' );
+          container.style.display = 'block';
           navMenuItemsDividers.forEach(function (item) {
             item.parentNode.style.display = 'none'
-          })
-        }
+          })} else {
+            button.className += ' toggled-on';
+            menu.className += ' toggled-on';
+            container.style.display = 'block'
+            navMenuItemsDividers.forEach(function (item) {
+              item.parentNode.style.display = 'none'
+            })
+          }
       };
     }
     button.onclick = toggleMenu
@@ -238,8 +243,8 @@ function nl_mobile () {
 
     function reverseUL () {
       var parent = document.getElementById('menu-primary_'),
-      divs = parent.children,
-      i = divs.length - 1;
+          divs = parent.children,
+          i = divs.length - 1;
 
       for (; i--;) {
         parent.appendChild(divs[i])
