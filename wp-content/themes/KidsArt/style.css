@@ -4004,6 +4004,9 @@ a {
   #menu-primary_ li {
     text-align: center;
   }
+  .menu-toggle {
+    display: block!important;;
+  }
 }
 @media screen and (min-width: 890px){
   .menu-toggle {

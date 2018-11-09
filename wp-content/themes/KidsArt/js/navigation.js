@@ -97,18 +97,16 @@ function nl () {
     document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
 
     function toggleMenu (e) {
-      if (true) {
+      if (document.body.clientWidth < 890 || window.mobileAndTabletcheck()) {
         reverseUL()
         if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
-          console.log('1')
           menu.className = 'nav-menu';
           container.style.display = 'none'
-
+          button.style.display = 'none'
           navMenuItemsDividers.forEach(function (item) {
             item.parentNode.style.display = 'block'
           })}
         if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
-          console.log('2')
           container.style.display = 'none'
           button.className = button.className.replace( ' toggled-on', '' );
           menu.className = menu.className.replace( ' toggled-on', '' );
@@ -117,14 +115,13 @@ function nl () {
           //   item.parentNode.style.display = 'none'
           // })
         } else {
-            console.log('3')
-            button.className += ' toggled-on';
-            menu.className += ' toggled-on';
-            container.style.display = 'block'
-            navMenuItemsDividers.forEach(function (item) {
-              item.parentNode.style.display = 'none'
-            })
-          }
+          button.className += ' toggled-on';
+          menu.className += ' toggled-on';
+          container.style.display = 'block'
+          navMenuItemsDividers.forEach(function (item) {
+            item.parentNode.style.display = 'none'
+          })
+        }
       };
     }
     button.onclick = toggleMenu
@@ -187,8 +184,6 @@ function en () {
     document.getElementById('menu-item-602').addEventListener('click', toggleMenu)
 
     function toggleMenu(e) {
-      console.log("e = ", e);
-
       if (window.mobileAndTabletcheck()) {
         reverseUL()
         if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
