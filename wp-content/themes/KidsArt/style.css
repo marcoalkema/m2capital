@@ -4515,13 +4515,16 @@ a {
     display: none;
   }
   .overlay-plaatje {
-    margin: 15vw 0 auto!important;
+    margin: 12vw 0 auto!important;
   }
   .page-title-div {
-    top: 75%;
+    top: 27vw;
+  }
+  #primary .page-title-div {
+    top: 47vw;
   }
   .overlay {
-    height: 591px!important;
+    height: 60vw!important;
   }
 }
 
