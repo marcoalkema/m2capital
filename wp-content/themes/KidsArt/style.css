@@ -553,6 +553,11 @@ img.wp-smiley,
   margin-top: 0;
 }
 
+.contact-info-container {
+  padding-left: 6.5vw!important;
+}
+
+
 
 /* =Basic structure
 -------------------------------------------------------------- */
@@ -619,6 +624,14 @@ a:hover {
 .widget-area {
   margin: 24px 0 0;
   margin: 1.714285714rem 0 0;
+}
+
+.network-header-container h4 {
+  margin: 13% auto 0px auto!important;
+  text-align: center;
+  padding: 0px 10px;
+  font-size: 2.2vw!important;
+  /* margin-bottom: 55px!important; */
 }
 
 /* Header */
@@ -4461,6 +4474,9 @@ a {
 }
 
 @media screen and (max-width: 1050px) {
+  .copyright-text {
+    padding-top: 3px;
+  }
   .main-navigation ul {
     margin-top: -20px;
   }
@@ -4473,6 +4489,18 @@ a {
 }
 
 @media screen and (max-width: 960px) {
+  .zaken-doen {
+    display: none!important;
+  }
+  .upper-footer > div {
+    width: 25%!important;
+  }
+  .upper-footer > .contact-info-container {
+    width: 47%!important;
+  }
+  .copyright-text {
+    margin-left: 8.7vw;
+  }
   .overlay {
     height: 60vw;
   }
@@ -4514,14 +4542,40 @@ a {
 }
 
 @media screen and (max-width : 770px) {
-  /* .tt-row-col > img { */
-  /*   width: 100%; */
-  /*   height: 100%; */
-  /* } */
-  /* .half-cell > img { */
-  /*   height: 100%; */
-  /*   width: auto; */
-  /* } */
+  #menu-item-2322,
+  #menu-item-2119,
+  #menu-item-561,
+  #menu-item-2120,
+  #menu-item-562 {
+    display: none!important;
+  }
+  .footer-link-container {
+    padding-left: 6vw!important;
+    float: left;
+    margin-left: 0!important;
+  }
+  .copyright-text {
+    padding-top: 5px;
+    padding-bottom: 0!important;
+}
+  .zaken-doen {
+    display: block!important;
+    margin-left: 11vw!important;
+  }
+  .upper-footer {
+    height: 270px!important;
+}
+  .footer-link > a > img {
+    margin: 30px auto!important;
+  }
+  .upper-footer > .contact-info-container {
+    margin-left: 8vw!important;
+    width: 100%!important;
+}
+  .footer-link.merriweather {
+    display: inline-block;
+    float: left!important;
+  }
   #colophon {
     font-size: 1vw!important;
     padding: 5px 0 5px 0;
@@ -4775,6 +4829,9 @@ a {
     margin-bottom: 40px;
     float: none;
   }
+  .network-header-container h4 {
+    margin: 16% auto 0px auto!important;
+}
   .other_stories_container {
     width: 100%;
   }
@@ -4908,7 +4965,7 @@ a {
     margin-top: 0px;
   }
   td {
-    font-size: 15px;
+    font-size: 4.5vw;
   }
   .introduction-links-container {
     padding-bottom: 0!important;
@@ -4954,6 +5011,10 @@ a {
     margin: 20px auto!important;
   }
 
+  .contact-info-container {
+    padding-left: 0!important;
+  }
+
   .current_page_item {
     font-weight: 900;
   }
@@ -4986,6 +5047,12 @@ a {
   .story_preview {
     padding: 0!important;
     margin: 10px auto 0 auto!important;
+  }
+  .upper-footer > div {
+    width: 30%!important;
+  }
+  .upper-footer > .contact-info-container {
+    width: 100%!important;
   }
 
   .wysiwyg h2 {
@@ -5062,15 +5129,16 @@ a {
   }
   .visie .actueel-intro-container-img img {
     width: auto!important;
+    width: 100%!important;
     height: 100%;
-    margin-left: -20vw;
+    margin: 0 auto;
     object-fit:cover;
   }
 
   .actueel-intro-container-img img {
-    width: auto!important;
+    width: 100%!important;
     height: 100%;
-    margin-left: -20vw;
+    margin: 0 auto;
     object-fit: cover;
   }
 
@@ -6199,14 +6267,6 @@ h4.green{
   margin-top: -6%;
   margin-bottom: 9%;
   align-items: center;
-}
-
-.network-header-container h4 {
-  margin: 13% auto 0px auto!important;
-  text-align: center;
-  padding: 0px 10px;
-  font-size: 2.2vw!important;
-  /* margin-bottom: 55px!important; */
 }
 
 .network-header-container h4.underlineGreen:after {
