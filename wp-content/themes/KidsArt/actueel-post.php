@@ -18,7 +18,7 @@
             </h4>
         </div>
     </div>
-    <?php printf(get_field('post-text'));?>
+    <?php echo get_field('post-text');?>
 </div>
 
     <?php

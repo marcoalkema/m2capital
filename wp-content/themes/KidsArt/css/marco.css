@@ -97,15 +97,6 @@
   display: inline-block;
 }
 
-#aan-verhuur .metaslider,
-#beleggingsadvies .metaslider,
-#her-ontwikkel .metaslider,
-#asset-management .metaslider {
-  /* margin: 0 6%!important; */
-      margin: 20px 6% 0 6%!important;
-  width: 88%!important;
-}
-
 #aan-verhuur .metaslider .flex-control-nav,
 #beleggingsadvies .metaslider .flex-control-nav,
 #her-ontwikkel .metaslider .flex-control-nav,
@@ -744,10 +735,7 @@ span.herontwikkelMeerArrow {
   opacity: 0.5;
   width: 100%;
   min-height: 0;
-
-/*       width: auto; */
-/*     height: 100%; */
-/*     margin-left: -20vw; */
+  height: 100%;
   object-fit: cover;
 }
 

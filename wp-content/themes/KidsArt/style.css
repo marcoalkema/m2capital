@@ -3352,7 +3352,7 @@ h6.white {
 }
 
 .wysiwyg p:last-child {
-    /* margin-bottom:40px!important; */
+  /* margin-bottom:40px!important; */
 }
 
 .wysiwyg > h2:nth-child(2) {
@@ -3651,6 +3651,15 @@ a {
   padding-bottom: 25px!important;
 }
 
+
+#aan-verhuur .metaslider,
+#beleggingsadvies .metaslider,
+#her-ontwikkel .metaslider,
+#asset-management .metaslider {
+  margin: 20px 6% 0 6%!important;
+  width: 88%!important;
+}
+
 .beleidsplan {
   padding-bottom: 40px;
   width: 66%;
@@ -3664,6 +3673,7 @@ a {
 }
 .network-image {
   height: 100%;
+  object-fit: cover;
 }
 .network-container {
   margin-bottom: 60px!important;
@@ -3700,6 +3710,10 @@ a {
   height: 550px;
 }
 
+#metaslider_176 .flex-control-nav {
+  top: 47em!important;
+  bottom: 0!important;
+}
 
 /* OTHER PLUGINS */
 .wrapper.testimonial1 {
@@ -4272,11 +4286,11 @@ a {
 }
 
 .other_stories .story_preview_text_container h4.underlineGreen {
-        margin: 20px 0 0px 0!important;
+  margin: 20px 0 0px 0!important;
 }
 
 .template-page-content.story {
-        margin-top: 0;
+  margin-top: 0;
 }
 
 .story_preview_text_container h4.underlineGreen {
@@ -4310,6 +4324,7 @@ a {
 
 .story_preview_image img {
   height: 100%;
+  object-fit: cover;
 }
 
 .story_preview_container {
@@ -4449,6 +4464,12 @@ a {
   .main-navigation ul {
     margin-top: -20px;
   }
+  .overlay-plaatje {
+    margin: 12vw 0 auto!important;
+  }
+  #metaslider_176 .flex-control-nav {
+    top: 43em!;
+  }
 }
 
 @media screen and (max-width: 960px) {
@@ -4457,6 +4478,22 @@ a {
   }
   .arrow {
     display: none;
+  }
+  .overlay-plaatje {
+    margin: 15vw 0 auto!important;
+  }
+  #metaslider_176 .flex-control-nav {
+    /* top: 63vw!important; */
+    display: none;
+  }
+  .overlay-plaatje {
+    margin: 15vw 0 auto!important;
+  }
+  .page-title-div {
+    top: 75%;
+  }
+  .overlay {
+    height: 591px!important;
   }
 }
 
@@ -4558,12 +4595,6 @@ a {
     font-size: 1vw!important;
   }
 }
-
-#metaslider_176 .flex-control-nav {
-  top: 47em!important;
-  bottom: 0!important;
-}
-
 
 @media screen and (max-width : 767px) {
   .space-text {
@@ -4735,12 +4766,13 @@ a {
     float: none;
     width: 110%;
     margin-left: -5%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
   img.alignright,
   .wp-caption.alignright {
     width: 110%;
     margin-left: -5%;
+    margin-bottom: 40px;
     float: none;
   }
   .other_stories_container {
@@ -4805,16 +4837,28 @@ a {
   }
 
   .template-page-content.story {
-    margin-top:0!important;
+    margin-top:20px!important;
     margin-bottom:0!important;
-
+    width: 100%!important;
+  }
+  .story p {
+    width: 80%!important;
+    margin: 20px auto!important;
+    text-align: justify!important;
+  }
+  #aan-verhuur .metaslider,
+  #beleggingsadvies .metaslider,
+  #her-ontwikkel .metaslider,
+  #asset-management .metaslider {
+    margin: 20px 0 0 0!important;
+    width: 100%!important;
   }
   .home #overlay-container img {
     height: 125vw;
     width:100%!important;
   }
   .home #overlay-container .slides img {
-          object-fit: cover;
+    object-fit: cover;
   }
   .home #overlay-container {
     height: 125vw!important;
@@ -4828,6 +4872,7 @@ a {
 
   }
   .home #overlay-container .page-title-container img {
+    margin-top: 40vw!important;
     height: 203px;
     width: auto!important;
     margin-left: 27vw;
@@ -4863,7 +4908,7 @@ a {
     margin-top: 0px;
   }
   td {
-    font-size: 1rem
+    font-size: 15px;
   }
   .introduction-links-container {
     padding-bottom: 0!important;
@@ -4927,7 +4972,7 @@ a {
     /* overflow: hidden; */
     /* margin-right: 50vw; */
 
-        height: 125vw;
+    height: 125vw;
     object-fit: cover;
     /* object-position: center; */
     overflow: hidden;
@@ -5016,14 +5061,14 @@ a {
     margin-bottom: 0px;
   }
   .visie .actueel-intro-container-img img {
-      width: auto!important;
+    width: auto!important;
     height: 100%;
     margin-left: -20vw;
     object-fit:cover;
   }
 
   .actueel-intro-container-img img {
-      width: auto!important;
+    width: auto!important;
     height: 100%;
     margin-left: -20vw;
     object-fit: cover;
@@ -5034,13 +5079,13 @@ a {
   }
 
   .upper-footer {
-    height: 280px!important;
+    height: 240px!important;
     padding: 0!important;
     margin-right: 0!important;
   }
 
   .footer-link {
-    margin-top: 20px!important;
+    /* margin-top: 20px!important; */
     width: 30%!important;
   }
 
@@ -5226,10 +5271,10 @@ a {
     object-fit:cover;
   }
   .wat-doen-wij-col h4.green.underlineGreen {
-      margin-bottom: 9vw!important;
+    margin-bottom: 9vw!important;
   }
   .object-type {
-      font-size: 19px!important;
+    font-size: 19px!important;
   }
   .LRK-number {
     /* display: none; */
@@ -5302,13 +5347,16 @@ a {
     padding: 5px 20px 5px 20px;
   }
   #colophon a {
-    font-size: 0.7em!important;
+    font-size: 0.7em;
+  }
+  #colophon .mail-link {
+    font-size: 15px;
   }
   #colophon p {
     font-size: 3.5em!important;
   }
   #colophon .footer-link-container .menu-secondary-container a {
-    font-size: 2.5em!important;
+    font-size: 3.5em!important;
   }
 
   #colophon .footer-link-container .menu-secondary-container li {
@@ -5543,6 +5591,11 @@ a {
     padding: 0 5% 60px 5%!important;
   }
 
+  .interest-in-project p {
+    width: 80%;
+    margin: 0 auto;
+    text-align: left!important;
+  }
 
   #wie-zijn-wij-wie .row .wie-foto p {
     padding-bottom: 0!important;
@@ -5591,7 +5644,7 @@ a {
     font-size: 8vw!important;
   }
   .page-title-div > #landing-overlay-title {
-    font-size: 32px!important;
+    font-size: 30px!important;
     margin-top: 40vw!important;
   }
   .page-template-asset-management-page .page-title-div > #landing-overlay-title,
@@ -5622,7 +5675,7 @@ a {
     bottom: -26px;
   }
   .aanbod-intro-container .network-header-container h4 {
-    font-size: 2em!important;
+    font-size: 1.5em!important;
   }
   .aanbod-intro-container .network-container .network-header-container h4::after {
     margin-bottom: -5.7vw;
@@ -5642,7 +5695,6 @@ a {
     font-size: 2.9vw;
   }
   #main .introduction-container {
-    height: 165vw;
     margin-top: -9vw!important;
   }
   .other_stories p {
@@ -5674,7 +5726,7 @@ a {
     margin-left: 7vw;
   }
   #masthead #site-navigation li.current-menu-item a::after {
-      /* display:none; */
+    /* display:none; */
   }
   img.overlay-plaatje {
     margin-top: 27vw;
@@ -5758,21 +5810,21 @@ a {
     font-size: 16px!important;
   }
   .main-navigation .current_page_item a::after {
-             content: "";
+    content: "";
     position: absolute;
     left: 50%;
     margin-left: -30%;
     /* margin: 0 auto; */
-        bottom: 6px!important;
+    bottom: 6px!important;
     width: 60%;
     border-bottom: 4px solid #4080bf;
 
   }
   .main-navigation .current_page_item a {
-      position:relative;
+    position:relative;
   }
   .main-navigation .menu-item-type-post_type, .main-navigation .menu-item-has-children {
-      border-right: 0!important;
+    border-right: 0!important;
   }
   .flex-control-nav,
   .flex-control-paging,
@@ -6477,7 +6529,7 @@ li.current-menu-item a{
 .overlay-plaatje {
   width: 13vw;
   height: auto;
-  margin: 3em 0 auto;
+  margin: 6vw 0 auto;
 }
 .actueel-intro .layoutArea > .column > h2 {
   margin: 0 auto;
