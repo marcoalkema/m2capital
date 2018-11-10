@@ -97,6 +97,7 @@
   display: inline-block;
 }
 
+/* miss iets mis HIEROOOOOO */
 #aan-verhuur .metaslider,
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
@@ -616,11 +617,6 @@
 #post-2129 .actueel-post-excerpt {
   margin-top: 0!important;
 }
-
-.contact-info-container {
-  padding-left: 8%!important;
-}
-
 .upper-footer {
   height: 170px;
   padding: 20px 0 40px 0!important;
@@ -744,11 +740,8 @@ span.herontwikkelMeerArrow {
   opacity: 0.5;
   width: 100%;
   min-height: 0;
-
-/*       width: auto; */
-/*     height: 100%; */
-/*     margin-left: -20vw; */
-/*     object-fit: cover; */
+  height: 100%;
+  object-fit: cover;
 }
 
 .wpml-ls-menu-item .wpml-ls-flag {
