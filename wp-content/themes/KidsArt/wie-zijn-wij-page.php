@@ -208,7 +208,7 @@ get_header(); ?>
           echo '<div class="omschrijving">' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
           echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
-          echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
+          echo '<img src="' . get_site_url(). '/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
           echo '</a>';
           echo '</button>';
           echo '</div>';
@@ -222,7 +222,7 @@ get_header(); ?>
           echo '<div class="omschrijving">' . $val['omschrijving'] . '</div>';
           echo '<button type="button" class="btn btn-primary m2btn">';
           echo '<a href="' . $val['linkedin-url'] . '" target="_blank">';
-          echo '<img src="http://localhost:8888/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
+          echo '<img src="' . get_site_url() . '/wp-content/uploads/2017/07/Linked-in_B-01.png" class="m2btn_image" />';
           echo '</a>';
           echo '</button>';
           echo '</div>';
