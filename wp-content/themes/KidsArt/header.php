@@ -45,9 +45,9 @@
 
           <div id="header-info">
             <div id="header-logo">
-              <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-                <img src="<?php echo the_field("main-logo", 5)?>" height="95" class="site-logo"/>
-              </a>
+                <a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                    <img src="<?php echo the_field("main-logo", 5)?>" height="95" class="site-logo"/>
+                </a>
             </div>
           </div>
 
@@ -55,8 +55,9 @@
 
           <?php wp_nav_menu( array( 'theme_location' => 'primary') ); ?>
 
-        </nav><!-- #site-navigation -->
 
+        </nav><!-- #site-navigation -->
+        <div class="transparentDivForClick"></div>
       </header><!-- #masthead -->
 
       <div id="main" class="wrapper">

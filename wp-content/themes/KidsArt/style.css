@@ -4917,19 +4917,29 @@ a {
     width: 100%!important;
   }
   .home #overlay-container img {
-    height: 125vw;
+    height: 115vw;
     width:100%!important;
   }
   .home #overlay-container .slides img {
     object-fit: cover;
   }
   .home #overlay-container {
-    height: 125vw!important;
+    height: 115vw!important;
   }
   .home #overlay-container .page-title-container {
     margin-top: -150vw;
     background-color: transparent;
     height: 150%;
+  }
+  .transparentDivForClick {
+      /* display: block!important; */
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    border: 4px solid red;
+    top: 0vw;
+    padding-top: 30vw;
   }
   .home #overlay-container .page-title-container .page-title-div {
 
@@ -5927,6 +5937,12 @@ a {
   #menu-primary__{
     margin-top: 0%;
   }
+  /* #menu-primary_ .menu-item:last-child:after { */
+  /*     content:""; */
+  /*     position:absolute; */
+  /*     height:100% */
+
+  /* } */
   .menu-item-has-children > a{
     padding-left: 27px;
   }
@@ -6637,4 +6653,8 @@ li.current-menu-item a{
 
 .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p:last-child {
   margin-bottom: 60px!important;
+}
+
+.transparentDivForClick {
+    display:none;
 }

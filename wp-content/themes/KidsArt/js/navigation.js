@@ -4,21 +4,21 @@
  */
 
 document.onload = (function () {
-  nl()
-  nl_mobile()
-  en()
-  setMenuWidths('menu-item-1555')
-  setMenuWidths('menu-item-1556')
+  nl();
+  nl_mobile();
+  en();
+  setMenuWidths('menu-item-1555');
+  setMenuWidths('menu-item-1556');
   window.addEventListener("resize", function () {
-    setMenuWidths('menu-item-1555')
-    setMenuWidths('menu-item-1556')
-  })
-  contactFoldable()
-}())
+    setMenuWidths('menu-item-1555');
+    setMenuWidths('menu-item-1556');
+  });
+  contactFoldable();
+}());
 
 function setMenuWidths (id) {
   setTimeout(function () {
-    var foo = document.getElementById(id)
+    var foo = document.getElementById(id);
     if (foo !== null) {
 
       var prev = foo.previousElementSibling;
@@ -28,24 +28,24 @@ function setMenuWidths (id) {
       var distY = prev.offsetTop - next.offsetTop;
       var distance = Math.sqrt(distX*distX + distY*distY);
 
-      var doc = document.getElementById(id).querySelector('a')
-      var docWidth = doc.offsetWidth
-      var linkWidth = docWidth
+      var doc = document.getElementById(id).querySelector('a');
+      var docWidth = doc.offsetWidth;
+      var linkWidth = docWidth;
 
-      var elems = Array.from(document.getElementById(id).querySelector('.sub-menu').getElementsByTagName('a'))
+      var elems = Array.from(document.getElementById(id).querySelector('.sub-menu').getElementsByTagName('a'));
       elems.map(function (elem) {
-        elem.style.width = distance + 'px'
-        elem.style.paddingLeft = '0px'
-        elem.style.paddingRight = '0px'
-      })
+        elem.style.width = distance + 'px';
+        elem.style.paddingLeft = '0px';
+        elem.style.paddingRight = '0px';
+      });
     }
-  }, 500)
+  }, 500);
 }
 
 function nl () {
   setTimeout(function () {
     var nav = document.getElementById( 'site-navigation' ), button, menu, container;
-    var nav2 = document.getElementsByClassName('main-navigation')
+    var nav2 = document.getElementsByClassName('main-navigation');
 
     if ( ! nav ) {
       return;
@@ -53,7 +53,7 @@ function nl () {
 
     button = nav.getElementsByTagName( 'h3' )[0];
     menu   = nav.getElementsByTagName( 'ul' )[0];
-    container = nav.getElementsByClassName('menu-primary_-container')[0]
+    container = nav.getElementsByClassName('menu-primary_-container')[0];
     if ( ! button ) {
       return;
     }
@@ -65,12 +65,12 @@ function nl () {
     }
 
     var navMenuItems = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
-      return a.innerHTML != '|'
-    })
+      return a.innerHTML != '|';
+    });
 
     var navMenuItemsDividers = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
-      return a.innerHTML == '|'
-    })
+      return a.innerHTML == '|';
+    });
 
     navMenuItems.forEach(function (item) {
       item.onclick = function(){
@@ -81,8 +81,8 @@ function nl () {
             item.parentNode.getElementsByTagName('ul')[0].style.display = 'block';
           }
         }
-      }
-    })
+      };
+    });
 
     function reverseUL () {
       var parent = document.getElementById('menu-primary_'),
@@ -90,26 +90,36 @@ function nl () {
           i = divs.length - 1;
 
       for (; i--;) {
-        parent.appendChild(divs[i])
+        parent.appendChild(divs[i]);
       }
     }
 
-    document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
+    document.getElementById('menu-item-592').addEventListener('click', toggleMenu);
+    document.querySelector('.transparentDivForClick').addEventListener('click', toggleMenu);
+
+    function hideTransparantDiv () {
+      document.querySelector('.transparentDivForClick').style = 'display:none!important;';
+    }
+    function showTransparantDiv () {
+      document.querySelector('.transparentDivForClick').style = 'display:block!important;';
+    }
 
     function toggleMenu (e) {
       if (document.body.clientWidth < 890 || window.mobileAndTabletcheck()) {
-        reverseUL()
+        reverseUL();
         if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
           menu.className = 'nav-menu';
-          container.style.display = 'none'
-          button.style.display = 'none'
+          container.style.display = 'none';
+          button.style.display = 'none';
           navMenuItemsDividers.forEach(function (item) {
-            item.parentNode.style.display = 'block'
-          })}
+            item.parentNode.style.display = 'block';
+          });
+        }
         if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
-          container.style.display = 'none'
+          container.style.display = 'none';
           button.className = button.className.replace( ' toggled-on', '' );
           menu.className = menu.className.replace( ' toggled-on', '' );
+          hideTransparantDiv();
           // container.style.display = 'block';
           // navMenuItemsDividers.forEach(function (item) {
           //   item.parentNode.style.display = 'none'
@@ -117,21 +127,22 @@ function nl () {
         } else {
           button.className += ' toggled-on';
           menu.className += ' toggled-on';
-          container.style.display = 'block'
+          container.style.display = 'block';
+          showTransparantDiv();
           navMenuItemsDividers.forEach(function (item) {
-            item.parentNode.style.display = 'none'
-          })
+            item.parentNode.style.display = 'none';
+          });
         }
       };
     }
-    button.onclick = toggleMenu
-  }, 500)
+    button.onclick = toggleMenu;
+  }, 500);
 }
 
 function en () {
   setTimeout(function () {
     var nav = document.getElementById( 'site-navigation' ), button, menu, container;
-    var nav2 = document.getElementsByClassName('main-navigation')
+    var nav2 = document.getElementsByClassName('main-navigation');
 
     if ( ! nav ) {
       return;
@@ -139,7 +150,7 @@ function en () {
 
     button = nav.getElementsByTagName( 'h3' )[0];
     menu   = nav.getElementsByTagName( 'ul' )[0];
-    container = nav.getElementsByClassName('menu-primary__-container')[0]
+    container = nav.getElementsByClassName('menu-primary__-container')[0];
     if ( ! button ) {
       return;
     }
@@ -151,12 +162,12 @@ function en () {
     }
 
     var navMenuItems = Array.from(document.getElementById('menu-primary__').getElementsByTagName( 'a' )).filter(function(a) {
-      return a.innerHTML != '|'
-    })
+      return a.innerHTML != '|';
+    });
 
     var navMenuItemsDividers = Array.from(document.getElementById('menu-primary__').getElementsByTagName( 'a' )).filter(function(a) {
-      return a.innerHTML == '|'
-    })
+      return a.innerHTML == '|';
+    });
 
     navMenuItems.forEach(function (item) {
       item.onclick = function () {
@@ -167,8 +178,8 @@ function en () {
             item.parentNode.getElementsByTagName('ul')[0].style.display = 'block';
           }
         }
-      }
-    })
+      };
+    });
 
     function reverseUL () {
       var parent = document.getElementById('menu-primary__'),
@@ -176,41 +187,43 @@ function en () {
           i = divs.length - 1;
 
       for (; i--;) {
-        parent.appendChild(divs[i])
+        parent.appendChild(divs[i]);
       }
     }
 
     // IF viewwidth < X
-    document.getElementById('menu-item-602').addEventListener('click', toggleMenu)
+    document.getElementById('menu-item-602').addEventListener('click', toggleMenu);
 
     function toggleMenu(e) {
       if (window.mobileAndTabletcheck()) {
-        reverseUL()
+        reverseUL();
         if ( -1 === menu.className.indexOf( 'nav-menu' ) ) {
           menu.className = 'nav-menu';
-          container.style.display = 'none'
+          container.style.display = 'none';
 
           navMenuItemsDividers.forEach(function (item) {
-            item.parentNode.style.display = 'block'
-          })}
+            item.parentNode.style.display = 'block';
+          });
+        }
         if ( -1 !== button.className.indexOf( 'toggled-on' ) ) {
           button.className = button.className.replace( ' toggled-on', '' );
           menu.className = menu.className.replace( ' toggled-on', '' );
           container.style.display = 'block';
           navMenuItemsDividers.forEach(function (item) {
-            item.parentNode.style.display = 'none'
-          })} else {
+            item.parentNode.style.display = 'none';
+          });
+        } else {
             button.className += ' toggled-on';
             menu.className += ' toggled-on';
-            container.style.display = 'block'
+            container.style.display = 'block';
             navMenuItemsDividers.forEach(function (item) {
-              item.parentNode.style.display = 'none'
-            })
+              item.parentNode.style.display = 'none';
+            });
           }
       };
     }
-    button.onclick = toggleMenu
-  }, 500)
+    button.onclick = toggleMenu;
+  }, 500);
 }
 
 function nl_mobile () {
@@ -223,12 +236,12 @@ function nl_mobile () {
 
     var link_ = offer.getElementsByTagName( 'a' )[0];
     var menu_   = offer.getElementsByTagName( 'ul' )[0];
-    var container_ = offer.getElementsByClassName('menu-primary_-container')[0]
+    var container_ = offer.getElementsByClassName('menu-primary_-container')[0];
     if ( ! menu ) {
       return;
     }
 
-    link_.href=''
+    link_.href='';
     // Hide button if menu is missing or empty.
     if ( ! menu || ! menu.childNodes.length ) {
       button.style.display = 'none';
@@ -242,23 +255,23 @@ function nl_mobile () {
           i = divs.length - 1;
 
       for (; i--;) {
-        parent.appendChild(divs[i])
+        parent.appendChild(divs[i]);
       }
     }
-  }, 500)
+  }, 500);
 }
 
 function contactFoldable () {
   setTimeout(function () {
-    var elem = document.getElementById('foldalbe-contact')
-    var btn = document.getElementById('foldBtn')
-    elem.classList.remove('active')
-    btn.classList.add('active_')
+    var elem = document.getElementById('foldalbe-contact');
+    var btn = document.getElementById('foldBtn');
+    elem.classList.remove('active');
+    btn.classList.add('active_');
     btn.addEventListener('click', function () {
-      btn.classList.remove('active_')
-      elem.classList.add('active')
-    })
-  }, 2000)
+      btn.classList.remove('active_');
+      elem.classList.add('active');
+    });
+  }, 2000);
 }
 
 window.mobileAndTabletcheck = function() {
