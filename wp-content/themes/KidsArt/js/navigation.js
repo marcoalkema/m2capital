@@ -94,7 +94,23 @@ function nl () {
       }
     }
 
-    document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
+    // document.getElementById('menu-item-592').addEventListener('click', toggleMenu)
+    // if (document.body.clientWidth < 890 || window.mobileAndTabletcheck()) {
+    //   if (document.querySelector('.site-content')) {
+    //     document.querySelector('.site-content').addEventListener('click', function () {
+    //       if (button.classList.contains('toggled-on')) {
+    //         toggleMenu()
+    //       }
+    //     })
+    //   }
+    //   if (document.querySelector('.entry-content')) {
+    //     document.querySelector('.entry-content').addEventListener('click', function () {
+    //     if (button.classList.contains('toggled-on')) {
+    //       toggleMenu()
+    //     }
+    //   })
+    //   }
+    // }
 
     function toggleMenu (e) {
       if (document.body.clientWidth < 890 || window.mobileAndTabletcheck()) {
