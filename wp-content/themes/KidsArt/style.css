@@ -2147,7 +2147,7 @@ h6.white {
 }
 
 .aanbod-intro h4.underlineGreen {
-  margin-top: 50px!important;
+  margin-top: 60px!important;
 }
 
 .aanbod-intro row {
@@ -4944,7 +4944,7 @@ a {
 
   }
   .home #overlay-container .page-title-container img {
-    margin-top: 40vw!important;
+    margin-top: 54vw!important;
     height: 203px;
     width: auto!important;
     margin-left: 27vw;
@@ -5778,7 +5778,7 @@ a {
     font-size: 2.9vw;
   }
   #main .introduction-container {
-    margin-top: -9vw!important;
+    /* margin-top: -9vw!important; HIEROO */
   }
   .other_stories p {
     text-align: left!important;
@@ -5869,6 +5869,10 @@ a {
   .introduction-links-container .introduction-links-image-container {
     width: 85%!important;
     margin: 0 auto;
+  }
+  .introduction-container h4.underlineGreen {
+          width: 120%;
+    margin-left: -7vw;
   }
   .wat-doen-wij-info-text-container {
     width: 74%;
