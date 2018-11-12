@@ -5526,7 +5526,7 @@ a {
   .page-header-image {
     position: relative;
     width: 100%;
-    height: 125vw;
+    height: 105vw;
     background: #ddd;
     overflow: hidden;
     /* margin-top: 60px; */
@@ -5740,7 +5740,7 @@ a {
   }
   .page-title-div > #landing-overlay-title {
     font-size: 30px!important;
-    margin-top: 40vw!important;
+    margin-top: 35vw!important;
   }
   .page-template-asset-management-page .page-title-div > #landing-overlay-title,
   .page-template-projecten .page-title-div > #landing-overlay-title,
