@@ -97,6 +97,16 @@
   display: inline-block;
 }
 
+/* miss iets mis HIEROOOOOO */
+#aan-verhuur .metaslider,
+#beleggingsadvies .metaslider,
+#her-ontwikkel .metaslider,
+#asset-management .metaslider {
+  margin: 0 6%!important;
+
+  width: 88%!important;
+}
+
 #aan-verhuur .metaslider .flex-control-nav,
 #beleggingsadvies .metaslider .flex-control-nav,
 #her-ontwikkel .metaslider .flex-control-nav,

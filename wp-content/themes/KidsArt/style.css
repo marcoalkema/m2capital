@@ -2147,7 +2147,7 @@ h6.white {
 }
 
 .aanbod-intro h4.underlineGreen {
-  margin-top: 50px!important;
+  margin-top: 60px!important;
 }
 
 .aanbod-intro row {
@@ -3261,6 +3261,7 @@ h6.white {
   /* padding: 0 6px 1px 6px; */
   color:    #666;
   font-size: 16px;
+  font-family: MetaPlusNormal!important;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    #666;
@@ -4245,7 +4246,7 @@ a {
   color: #888;
   height: 28px;
   line-height: 0.1px;
-  padding: 15px 12px!important;
+  padding: 15px 24px!important;
   border-radius: 0;
 }
 
@@ -4917,25 +4918,34 @@ a {
     width: 100%!important;
   }
   .home #overlay-container img {
-    height: 125vw;
+    height: 115vw;
     width:100%!important;
   }
   .home #overlay-container .slides img {
     object-fit: cover;
   }
   .home #overlay-container {
-    height: 125vw!important;
+    height: 115vw!important;
   }
   .home #overlay-container .page-title-container {
     margin-top: -150vw;
     background-color: transparent;
     height: 150%;
   }
+  .transparentDivForClick {
+      /* display: block!important; */
+    position: fixed;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    top: 0vw;
+    padding-top: 30vw;
+  }
   .home #overlay-container .page-title-container .page-title-div {
 
   }
   .home #overlay-container .page-title-container img {
-    margin-top: 40vw!important;
+    margin-top: 54vw!important;
     height: 203px;
     width: auto!important;
     margin-left: 27vw;
@@ -5769,7 +5779,7 @@ a {
     font-size: 2.9vw;
   }
   #main .introduction-container {
-    margin-top: -9vw!important;
+    /* margin-top: -9vw!important; HIEROO */
   }
   .other_stories p {
     text-align: left!important;
@@ -5861,6 +5871,10 @@ a {
     width: 85%!important;
     margin: 0 auto;
   }
+  .introduction-container h4.underlineGreen {
+          width: 120%;
+    margin-left: -7vw;
+  }
   .wat-doen-wij-info-text-container {
     width: 74%;
     margin: 0 auto;
@@ -5927,6 +5941,12 @@ a {
   #menu-primary__{
     margin-top: 0%;
   }
+  /* #menu-primary_ .menu-item:last-child:after { */
+  /*     content:""; */
+  /*     position:absolute; */
+  /*     height:100% */
+
+  /* } */
   .menu-item-has-children > a{
     padding-left: 27px;
   }
@@ -6637,4 +6657,8 @@ li.current-menu-item a{
 
 .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p:last-child {
   margin-bottom: 60px!important;
+}
+
+.transparentDivForClick {
+    display:none;
 }

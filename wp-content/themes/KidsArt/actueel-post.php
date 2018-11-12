@@ -1,7 +1,7 @@
 <div class="page-header-image">
     <img src="<?php the_field("post-img"); ?>" class="headerImg"/>
     <div class="page-title-div">
-      <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
+        <h3 id="landing-overlay-title" class="white"><?php printf(get_field('post-title', get_the_ID())); ?></h3>
     </div>
 </div>
 <div class="template-page-content story">
@@ -21,22 +21,22 @@
     <?php echo get_field('post-text');?>
 </div>
 
-    <?php
-    $cat = get_the_category()[0]->name;
-    if ($cat == 'Actueel') {
-        echo '<div class="actueelPostInfo">';
-        echo '<div class="actueelBron">';
-        echo 'Bron:</br>';
-        echo get_field('bron', get_the_ID());
-        echo ' </div>';
-        echo '<div class="socialShareIcons2">';
-        echo get_field('social_media_tekst', 1939) . '</br>';
-        echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
-        echo '</div>';
-      echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
-      echo '</div>';
-    }
-    ?>
+<?php
+$cat = get_the_category()[0]->name;
+if ($cat == 'Actueel') {
+    echo '<div class="actueelPostInfo">';
+    echo '<div class="actueelBron">';
+    echo 'Bron:</br>';
+    echo get_field('bron', get_the_ID());
+    echo ' </div>';
+    echo '<div class="socialShareIcons2">';
+    echo get_field('social_media_tekst', 1939) . '</br>';
+    echo do_shortcode('[DISPLAY_ULTIMATE_SOCIAL_ICONS]');
+    echo '</div>';
+    echo '<script>jQuery(document).ready(function(){jQuery(".actueel-class").addClass("current-menu-item")})</script>';
+    echo '</div>';
+}
+?>
 
 <?php
 $cat = get_the_category()[0]->name;
@@ -51,7 +51,7 @@ if ($cat != 'Actueel') {
     echo '</div>';
     echo '<p>Neem dan contact op met ons via de onderstaande knop!</p>';
     echo '<a href="#contact" data-ps2id="true" class="ps2id">';
-    echo '<button class="btn btn-green bezichtigings-btn-btn">Contact</button>';
+    echo '<button class="btn btn-green bezichtigings-btn-btn btn-primary">Contact</button>';
     echo '</a>';
     echo '</div>';
 }
