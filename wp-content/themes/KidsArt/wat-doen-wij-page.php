@@ -89,7 +89,7 @@ get_header(); ?>
                 ?>
             </div>
 
-            <div id="asset-management__">
+            <div id="asset-managementContainer">
                 <?php get_template_part("asset-management", "part"); ?>
             </div>
 
