@@ -211,7 +211,7 @@ for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x+
 };
 echo '</div>';
 echo '<div class="meerAanbodVerhuur">';
-echo '<p>' . get_field('soortgelijk_aanbod_btn_txt', 2138) . '</p>';
+echo '<p class="meerAanbodVerhuurText">' . get_field('soortgelijk_aanbod_btn_txt', 2138) . '</p>';
 echo '<a href="' . get_site_url() . '/aan-verhuur' . '">';
 echo '<button class="btn btn-green btn-primary whiteBlue">' . get_field('soortgelijk_aanbod_btn_txt2', 2138) . '</button>';
 echo '</a>';

@@ -15,7 +15,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     'suppress_filters' => true
   );
 
-  for ($x = 0; $x <=14; $x++) {
+  for ($x = 0; $x <= 9999999999999; $x++) {
     $IDx = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
     if (!empty($IDx) && ($IDx !== 25) && ($IDx !== 23)) {
       $foo = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];

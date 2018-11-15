@@ -788,8 +788,6 @@ a:hover {
   z-index: 100;
 }
 .menu-toggle img{
-  -webkit-filter: sepia(100%) hue-rotate(90deg) saturate(400%);
-  filter: sepia(100%) hue-rotate(167deg) saturate(200%);
   width: 50px;
   height: 50px;
 }
@@ -1111,10 +1109,8 @@ img.alignright,
 img.aligncenter,
 .wp-caption.aligncenter {
   clear: both;
-  margin-top: 12px;
-  margin-top: 0.857142857rem;
-  margin-bottom: 12px;
-  margin-bottom: 0.857142857rem;
+  margin-top: 60px;
+  margin-bottom: 40px;
   margin-left: auto!important;
   margin-right: auto!important;
 }
@@ -1641,6 +1637,13 @@ a.comment-edit-link:hover {
 /* =Plugins
 ----------------------------------------------- */
 
+.meerAanbodVerhuur p,
+.meerAanbodVerhuur {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+
 .dashicons {
   font-size: 1.425em!important;
   line-height: 1.15;
@@ -1817,6 +1820,15 @@ list {
   font-weight: bold;
   font-size: 24px!important;
   /* color: white; */
+}
+.neem-contact-op {
+  width: 80%;
+  margin: 0 auto;
+}
+.layoutArea > .column > h2 {
+  margin: 5% 5% 2% 5%;
+  padding: 2% 5%;
+  font-size: 4vw!important;
 }
 .about-photo {
   border: 5px solid #4c323f;
@@ -1995,6 +2007,12 @@ ul.nav-menu.toggled-on {
 }
 .lesson-card {
   height: 530px;
+}
+
+.other_aanverhuur_container {
+  width: 100%;
+  padding: 0 7%;
+  background: #1d70b7;
 }
 
 /* FONTS */
@@ -3393,6 +3411,11 @@ h6.white {
   border-bottom: 2px solid #fff;
 }
 
+.meerAanbodVerhuurContainer {
+  width: 100%;
+  float: left;
+}
+
 .headerImg {
   width: 100%;
   min-height: 100%;
@@ -4323,6 +4346,11 @@ a {
   font-size: 25px!important;
   line-height:inherit;
 }
+.actueelDate {
+  color: #999;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
 .story_preview_story .story_preview_text_container {
   padding: 0!important;
 }
@@ -4877,6 +4905,11 @@ a {
   .intro-type, .intro-price {
     margin-top: 0!important;
     font-size: 14px!important;
+  }
+  .layoutArea > .column > h2 {
+    width: 100%!important;
+    margin-left: 0;
+    margin-right: 0;
   }
   .category-header,
   .aanverhuur-container .category-header {
@@ -5725,6 +5758,9 @@ a {
   .page-template-wie-zijn-wij-page .visie .section .layoutArea .column > p {
 
   }
+  .other_aanverhuur_container {
+    padding: 0;
+  }
   .overlay {
     height: 43vw;
   }
@@ -5792,8 +5828,19 @@ a {
   #main .introduction-container {
     /* margin-top: -9vw!important; HIEROO */
   }
+  .meerAanbodVerhuurText,
   .other_stories p {
     text-align: left!important;
+  }
+  .meerAanbodVerhuur {
+    width: 80%;
+    margin: 20px auto!important;
+  }
+  .meerAanbodVerhuurContainer {
+    float: none;
+  }
+  .actueelDate {
+    margin-bottom: 10px;
   }
   .row.intro-details {
     font-size: 2em;

@@ -38,7 +38,7 @@ get_header(); ?>
             <div class="btn-group-vertical">
               <a href="#wie-zijn-wij-visie" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
-                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/visie.svg"/>
+                  <img src="<?php printf(get_field('onze_visie_img', get_the_ID()));?>"/>
                 </div>
                 <button type="button" class="btn btn-green btn-primary btn_text_m2">
                   Onze Visie
@@ -51,7 +51,7 @@ get_header(); ?>
 
               <a href="#wie-zijn-wij-werkwijze" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
-                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/werkwijze.svg"/>
+                  <img src="<?php printf(get_field('onze_werkwijze_img', get_the_ID()));?>"/>
                 </div>
                 <button type="button" class="btn btn-green btn-primary btn_text_m2">
                   Werkwijze
@@ -64,7 +64,7 @@ get_header(); ?>
 
               <a href="#over-ons" data-ps2id="true" class="ps2id">
                 <div class="m2BtnImage">
-                  <img src="<?php printf(get_site_url()) ?>/../wp-content/themes/KidsArt/images/ons.svg"/>
+                  <img src="<?php printf(get_field('over_ons_img', get_the_ID()));?>"/>
                 </div>
                 <button type="button" class="btn btn-green btn-primary btn_text_m2">
                   Over ons
@@ -148,7 +148,7 @@ get_header(); ?>
           </h4>
         </div>
 
-        <div class="grijs">
+        <div class="neem-contact-op grijs">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
             $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;

@@ -92,18 +92,17 @@
 #her-ontwikkel p,
 #asset-management p {
   width: 80%;
-  margin: 20px auto 59px auto!important;
+  /* margin: 20px auto 0px auto!important; */
   text-align: justify;
   display: inline-block;
 }
 
-/* miss iets mis HIEROOOOOO */
 #aan-verhuur .metaslider,
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
 #asset-management .metaslider {
-  margin: 0 6%!important;
-
+  /* margin: 20px 6% 0 20px!important; */
+  margin-bottom: 40px!important;
   width: 88%!important;
 }
 
@@ -546,12 +545,6 @@
   border-bottom: 2px solid #fff;
 }
 
-.other_aanverhuur_container {
-  width: 100%;
-  padding: 0 7%;
-  background: #1d70b7;
-}
-
 .asset-management-foto {
   width: 38vw;
   height: 100%;
@@ -601,7 +594,7 @@
   padding: 5px 10px;
   width: fit-content;
   margin: 10px auto 40px auto;
-      font-family: MetaNormalPlus;
+  font-family: MetaPlusNormal!important;
 }
 
 #post-2134 .story_preview_container h4.underlineGreen::after,
@@ -640,12 +633,6 @@
 .upper-footer .contact-info tr:first-child td {
     font-family: MerriweatherRegular!important;
     letter-spacing: 1px;
-}
-
-.layoutArea > .column > h2 {
-  margin: 5% 5% 2% 5%;
-  padding: 2% 5%;
-  font-size: 4vw!important;
 }
 
 .wie-foto {
@@ -713,11 +700,6 @@ span.herontwikkelMeerArrow {
 #main-title-2134 h4.underlineGreen::after{
   margin-left: -20%;
   width: 40%!important;
-}
-
-.actueelDate {
-  color: #999;
-  font-size: 16px;
 }
 
 #page-1939 .story_preview:hover {
@@ -835,7 +817,7 @@ span.herontwikkelMeerArrow {
 #page-1939 .story_preview,
 #page-1939 .story_preview_text,
 #page-1939 .story_preview_container {
-  height: 600px!important;
+  height: 610px!important;
 }
 
 #page-1939 .story_preview_image {
@@ -899,22 +881,10 @@ span.herontwikkelMeerArrow {
   margin-top: -10%;
 }
 
-.meerAanbodVerhuur p,
-.meerAanbodVerhuur {
-  width: 100%;
-  text-align: center;
-  color: #fff;
-}
-
 .meerAanbodVerhuur button {
   background: #fff;
   color: #1d70b7!important;
   margin-bottom: 40px;
-}
-
-.meerAanbodVerhuurContainer {
-  width: 100%;
-  float: left;
 }
 
 .other_aanverhuur_container .other_stories {

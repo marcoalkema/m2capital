@@ -17,7 +17,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     'suppress_filters' => true
   );
 
-  for ($x = 0; $x <=14; $x++) {
+  for ($x = 0; $x <= 9999999999; $x++) {
     if (!empty(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'])) {
       if ($x % 3 == 0) {
         echo '<div class="row other_stories_container aanverhuuritems">';
