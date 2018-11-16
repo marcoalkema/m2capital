@@ -1057,7 +1057,7 @@ h4.aanverhuur-kenmerken-titel {
 }
 .entry-content code,
 .comment-content code {
-  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-family: "MetaPlusNormal" /* Consolas, Monaco, Lucida Console, monospace; */
   font-size: 12px;
   font-size: 0.857142857rem;
   line-height: 2;
@@ -1066,7 +1066,7 @@ h4.aanverhuur-kenmerken-titel {
 .comment-content pre {
   border: 1px solid #ededed;
   color: #666;
-  font-family: Consolas, Monaco, Lucida Console, monospace;
+  font-family: "MetaPlusNormal"; /* Consolas, Monaco, Lucida Console, monospace; */
   font-size: 12px;
   font-size: 0.857142857rem;
   line-height: 1.714285714;
@@ -2018,7 +2018,7 @@ ul.nav-menu.toggled-on {
 /* FONTS */
 h1 {
   text-transform: lowercase!important;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2040,7 +2040,7 @@ h3.white{
 }
 h2 {
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2060,7 +2060,7 @@ h2 {
 }
 h4 {
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 30px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2075,7 +2075,7 @@ h4.black{
   color: #000!important;
 }
 h4.underlineWhite{
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   line-height: 95%!important;
   border-bottom: 2px solid #fff;
   margin-bottom: 6px!important;
@@ -2086,7 +2086,7 @@ h4.white{
 
 h6 {
   text-transform: lowercase!important;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 5.8vw!important;
   font-weight: 400;
   letter-spacing: -1px;
@@ -2127,7 +2127,7 @@ h6.white {
   font-weight: 400!important;
   line-height: 0.1!important;
   height: 28px;
-  font-family: MerriweatherRegular;
+  font-family: "MerriweatherRegular";
 }
 .btn > a{
   color: ##21759b;
@@ -2278,7 +2278,7 @@ h6.white {
 .tbk-calendar-month-selector,
 .tbk-calendar-year-selector{
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 6vw!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2341,9 +2341,9 @@ h6.white {
   color: #000000!important;
 }
 .tbk-schedule-date{
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 4vw!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2450,7 +2450,7 @@ h6.white {
 .fees_table > tbody > tr > td:nth-child(1) {
   padding-top: 9px;
   text-transform: lowercase;
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -2570,7 +2570,7 @@ h6.white {
 
 .text-slider-post {
   padding: 0 20% 0 20%;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
 }
 
 #text-slider {
@@ -2579,7 +2579,7 @@ h6.white {
 #text-slider .text-slideshow article span {
   text-transform: uppercase;
   text-align: right;
-  font-family: MerriweatherRegular;
+  font-family: "MerriweatherRegular";
   font-size: 1.2vw!important;
   color: #888!important;
   line-height: 5;
@@ -2723,7 +2723,7 @@ h6.white {
   z-index: 5;
 }
 .wat-doen-wij-button-field-container > .wat-doen-wij-link-text p {
-  font-family: MetaPlusNormal;
+  font-family: "MetaPlusNormal";
 }
 #wat-doen-wij h2 {
   margin-top: 5%;
@@ -2808,7 +2808,7 @@ h6.white {
   display: inline-block;
   padding-top: 2%;
   text-transform: uppercase;
-  font-family: MerriweatherRegular;
+  font-family: "MerriweatherRegular";
   width: 100%;
   margin: 0 auto;
 }
@@ -2850,7 +2850,7 @@ h6.white {
   min-width: 100%;
 }
 .long_tagline {
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   /* position: absolute; */
   color: #000000;
   z-index: 3;
@@ -3114,7 +3114,7 @@ h6.white {
   text-align: center;
   text-decoration: none;
   font-size: 1.3vw;
-  font-family: MetaPlusNormal;
+  font-family: "MetaPlusNormal";
   letter-spacing: 0.05em;
 }
 
@@ -3130,16 +3130,16 @@ h6.white {
 }
 
 .upper-footer .contact-info-container .contact-info tbody tr:nth-child(1) {
-  font-family:MerriweatherBold;
+  font-family:"MerriweatherBold";
   letter-spacing: 0.1em;
 }
 .upper-footer .contact-info-container .contact-info tbody tr:nth-child(2), .upper-footer .contact-info-container .contact-info tbody tr:nth-child(3) {
-  font-family:MetaPlusNormal!important;
+  font-family:"MetaPlusNormal"!important;
   letter-spacing: 0.1em;
 }
 
 .footer-link.merriweather {
-  font-family:MerriweatherBold;
+  font-family:"MerriweatherBold";
   margin-top: 0;
 }
 
@@ -3218,7 +3218,7 @@ h6.white {
   margin-left: 20%;
 }
 .contact-large-submit {
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   padding: 0 7px 0 7px;
 }
 .contact-large-submit_ {
@@ -3233,7 +3233,7 @@ h6.white {
   background: #1d70b7!important;
   border: 1px solid #777!important;
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 20px!important;
   font-stretch: condensed!important;
   font-weight: 400!important;
@@ -3286,7 +3286,7 @@ h6.white {
   /* padding: 0 6px 1px 6px; */
   color:    #666;
   font-size: 16px;
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    #666;
@@ -3320,7 +3320,7 @@ h6.white {
   padding: 0!important;
 }
 .contact-message > label > span > textarea{
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   text-decoration: none!important;
   font-weight: normal;
   width: 100%;
@@ -3353,7 +3353,7 @@ h6.white {
 .wysiwyg ul,
 .wysiwyg li {
   list-style: inherit!important;
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   color: #666!important;
   margin: 0 1%!important;
 }
@@ -3458,7 +3458,7 @@ a {
 }
 .rates-table td {
   color: #666666!important;
-  font-family: GillSans;
+  font-family: "MetaPlusNormal";/* GillSans; */
   font-size: 18px;
   /* border: 2px solid #555; */
   border-top: 2px solid #666666;
@@ -3604,7 +3604,7 @@ a {
 }
 .wonderplugin-gridgallery-item-description{
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -3617,7 +3617,7 @@ a {
 }
 .wonderplugin-gridgallery-item-title{
   text-transform: lowercase;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 37px!important;
   font-weight: 200;
   letter-spacing: -1px;
@@ -3787,7 +3787,7 @@ a {
   display: none!important;
 }
 .pcolor {
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-size: 4vw!important;
   line-height: 1.1!important;
   font-style: normal!important;
@@ -3796,7 +3796,7 @@ a {
   left: 5vw!important;
 }
 .aurl {
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   position: absolute;
   bottom: 1.5vw;
   left: 13.3vw;
@@ -4127,7 +4127,7 @@ a {
     color: #000;
   }
   .main-navigation li {
-    font-family: MerriweatherRegular;
+    font-family: "MerriweatherRegular";
     /* text-transform: lowercase!important; */
     font-weight: 200;
     font-size: 19px;
@@ -4269,7 +4269,7 @@ a {
 }
 
 .footer-contact-btn {
-  font-family: MerriweatherBold!important;
+  font-family: "MerriweatherBold"!important;
   font-size: 20px!important;
   font-stretch: condensed!important;
   font-weight: 400!important;
@@ -4303,7 +4303,7 @@ a {
   text-align: center;
   text-decoration: none;
   font-size: 1.3vw;
-  font-family: MetaPlusNormal;
+  font-family: "MetaPlusNormal";
   letter-spacing: 0.05em;
 }
 
@@ -4312,7 +4312,7 @@ a {
 }
 
 .kenmerken-tabel {
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   margin: 30px 0 0 0!important;
   color: #666;
   display: inline-block;
@@ -5222,7 +5222,7 @@ a {
   }
 
   .footer-link.merriweather {
-    font-family: MerriweatherBold;
+    font-family: "MerriweatherBold";
     display: inline-block;
     float: left!important;
     margin: 0 12%;
@@ -5844,7 +5844,7 @@ a {
   }
   .row.intro-details {
     font-size: 2em;
-    font-family: MetaPlusNormal;
+    font-family: "MetaPlusNormal";
   }
   .row.intro-details .intro-type div, .row.intro-details .intro-price div {
     font-size: inherit;
@@ -5878,7 +5878,7 @@ a {
   }
 
   .contact-large-submit{
-    font-family: MerriweatherRegular!important;
+    font-family: "MerriweatherRegular"!important;
     margin: 0 auto;
     color: #00000;
     height: 30px!important;
@@ -5987,7 +5987,7 @@ a {
     font-size: 32px;
     width: 100%;
     margin: 0 auto;
-    font-family: MerriweatherRegular;
+    font-family: "MerriweatherRegular";
   }
   .menu-primary_-container,
   .menu-primary__-container{
@@ -6189,7 +6189,7 @@ h4.green{
 }
 
 .contact-form-template #foldBtn{
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   /* margin-top:0!important; */
   text-transform:none;
   margin-bottom: 60px!important;
@@ -6288,7 +6288,7 @@ h4.green{
   color: #fff;
   font-size: 2.3vw;
   text-align: center;
-  font-family: MerriweatherRegular!important;
+  font-family: "MerriweatherRegular"!important;
   font-weight: normal!important;
 }
 .wat-doen-wij-header-container {
@@ -6427,7 +6427,7 @@ p {
   color: #666666;
   margin: 20px auto!important;
   text-align: justify;
-  font-family: MetaPlusNormal;
+  font-family: "MetaPlusNormal";
 }
 
 .btn.btn-green.anders {
@@ -6602,7 +6602,7 @@ li.current-menu-item a{
 
 .grijs {
   /* margin-top: 30px; */
-  font-family:MetaPlusNormal;
+  font-family:"MetaPlusNormal";
   color: #666666;
   margin-top: 20px;
 }
