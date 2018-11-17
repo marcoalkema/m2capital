@@ -125,7 +125,7 @@
   font-size: 20px!important;
   line-height: 1px;
   margin-bottom: 60px;
-  font-family: MerriweatherRegular;
+  font-family: "MerriweatherRegular";
   border:0!important;
 }
 
@@ -184,7 +184,7 @@
     background: #fff!important;
     color: #1d70b7!important;
     border-radius: 0px;
-    font-family: MerriweatherRegular;
+    font-family: "MerriweatherRegular";
     border-color: transparent!important;
  /*   font-size: 26px; */
  /*   padding: 3px 10px 5px 10px; */
@@ -315,7 +315,7 @@
 }
 
 .object-type {
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
   text-transform: uppercase;
   background: #1d70b7;
   color: #fff;
@@ -581,7 +581,7 @@
   padding: 5px 10px;
   width: fit-content;
   margin: 10px auto 40px auto;
-  font-family: MetaPlusNormal!important;
+  font-family: "MetaPlusNormal"!important;
 }
 
 #post-2134 .story_preview_container h4.underlineGreen::after,
@@ -605,20 +605,20 @@
 
 .upper-footer .contact-info tr:first-child td,
 .footer-link > p {
-  font-family: MerriweatherBold!important;
+  font-family: "MerriweatherBold"!important;
   font-weight: 900;
 }
 
 .footer-link > p {
     text-align: center;
-    font-family: MerriweatherRegular!important;
+    font-family: "MerriweatherRegular"!important;
     /* font-weight: normal; */
     letter-spacing: 1px;
 
 }
 
 .upper-footer .contact-info tr:first-child td {
-    font-family: MerriweatherRegular!important;
+    font-family: "MerriweatherRegular"!important;
     letter-spacing: 1px;
 }
 
