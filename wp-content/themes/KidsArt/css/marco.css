@@ -73,24 +73,10 @@
   margin: -4vw auto 0 auto;
 }
 
-#aan-verhuur,
-#beleggingsadvies,
-#her-ontwikkel,
-#asset-management {
-  /* padding-bottom: 40px; */
-}
-
-#aan-verhuur .h4_block,
-#beleggingsadvies .h4_block,
-#her-ontwikkel .h4_block,
-#asset-management .h4_block {
-  /* margin-top: 60px; */
-}
-
 #aan-verhuur p,
 #beleggingsadvies p,
 #her-ontwikkel p,
-#asset-management p {
+#asset-managementContainer p {
   width: 80%;
   /* margin: 20px auto 0px auto!important; */
   text-align: justify;
@@ -100,7 +86,7 @@
 #aan-verhuur .metaslider,
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
-#asset-management .metaslider {
+#asset-managementContainer .metaslider {
   /* margin: 20px 6% 0 20px!important; */
   margin-bottom: 40px!important;
   width: 88%!important;
@@ -109,7 +95,7 @@
 #aan-verhuur .metaslider .flex-control-nav,
 #beleggingsadvies .metaslider .flex-control-nav,
 #her-ontwikkel .metaslider .flex-control-nav,
-#asset-management .metaslider .flex-control-nav {
+#asset-managementContainer .metaslider .flex-control-nav {
   position: relative;
   bottom: -10px;
 }
@@ -117,21 +103,21 @@
 #aan-verhuur .metaslider .flex-control-paging li a.flex-active,
 #beleggingsadvies .metaslider .flex-control-paging li a.flex-active,
 #her-ontwikkel .metaslider .flex-control-paging li a.flex-active,
-#asset-management .metaslider .flex-control-paging li a.flex-active {
+#asset-managementContainer .metaslider .flex-control-paging li a.flex-active {
   background: #666;
 }
 
 #aan-verhuur .metaslider .flex-control-paging li a,
 #beleggingsadvies .metaslider .flex-control-paging li a,
 #her-ontwikkel .metaslider .flex-control-paging li a,
-#asset-management .metaslider .flex-control-paging li a {
+#asset-managementContainer .metaslider .flex-control-paging li a {
   border: 1px solid #666!important;
 }
 
 #aan-verhuur button,
 #beleggingsadvies button,
 #her-ontwikkel button,
-#asset-management button {
+#asset-managementContainer button {
   color: #fff;
   background: #999!important;
   height: 28px;
