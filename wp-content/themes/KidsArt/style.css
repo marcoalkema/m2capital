@@ -4086,7 +4086,7 @@ a {
 
   }
 }
-@media screen and (max-width: 929px) and (min-width: 550px) (orientation: portrait) {
+@media screen and (max-width: 929px) and (min-width: 550px) and (orientation: portrait) {
     #menu-primary_ {
       margin-top: 72px;
     }
@@ -4136,7 +4136,7 @@ a {
         padding-left: 1vw!important;
         padding-top: 0.59vw;
     }
-    HEADER
+    /* HEADER */
     .wpml-ls-menu-item .wpml-ls-flag {
         margin-top: 2vw;
     }
