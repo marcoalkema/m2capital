@@ -4090,6 +4090,9 @@ a {
     #menu-primary_ {
       margin-top: 72px;
     }
+        .current_page_item {
+    font-weight: 900!important;
+  }
     #page .aanbod-intro-container .network-col {
         margin: 3vw auto;
         min-height: initial;
@@ -4143,13 +4146,14 @@ a {
     #site-navigation .menu-primary_-container li.current-menu-item a::after {
         content: "";
         position: absolute;
-        left: 50%;
+        left: 51%;
         margin-left: -20%;
         bottom: 26px;
         margin-bottom: -13px;
         width: 38%;
         border-bottom: 2px solid #21759b;
     }
+
     .nav-menu.toggled-on > li {
         display: block;
         width: 100%;
