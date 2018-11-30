@@ -15,16 +15,14 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     'suppress_filters' => true
   );
 
-  for ($x = 0; $x <= 9999999999999; $x++) {
+  echo '<div class="row other_stories_container">';
+  for ($x = 0; $x <= count($args); $x++) {
     $IDx = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
     if (!empty($IDx) && ($IDx !== 25) && ($IDx !== 23)) {
       $foo = wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'];
       $cat = get_the_category($foo)[0]->name;
-      if ($x % 3 == 0) {
-        echo '<div class="row other_stories_container">';
-      }
       echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
-      echo '<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 story_preview hoverovereffect">';
+      echo '<div class="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview hoverovereffect">';
       echo '<div class="story_preview_container">';
       echo '<div class="story_preview_image">';
       echo '<img class="story_thumbnail" src="' . get_field('post-excerpt-img', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '"/>';
@@ -49,11 +47,9 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '</a>';
 
 
-      if ($x % 3 == 2) {
-        echo '</div>';
-      }
     }
   }
+  echo '</div>';
   echo '</div>';
 }
 ?>

@@ -12,32 +12,32 @@
 </div>
 
 <div class="aan-verhuur-text-block">
-    <?php
-    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
-      printf(get_field('aanverhuur-text1', $ID));
-    }
-    ?>
+  <?php
+  if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+    printf(get_field('aanverhuur-text1', $ID));
+  }
+  ?>
 
   <?php echo do_shortcode("[metaslider id=2107]"); ?>
 
   <div class="wysiwyg">
-      <?php
-      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
-          printf(get_field('aanverhuur-text2', $ID));
-      }
-      ?>
+    <?php
+    if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+      printf(get_field('aanverhuur-text2', $ID));
+    }
+    ?>
   </div>
 
   <a href="<?php printf(get_site_url()) ?>/aan-verhuur/">
-      <button class="btn btn-green btn-primary">
-          <?php
-          if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
-              printf(get_field('aanverhuur-button-text', $ID));
-          }
-          ?>
-      </button>
+    <button class="btn btn-green btn-primary">
+      <?php
+      if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 1;
+        printf(get_field('aanverhuur-button-text', $ID));
+      }
+      ?>
+    </button>
   </a>
 </div>

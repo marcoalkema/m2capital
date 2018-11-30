@@ -142,8 +142,6 @@ function twentytwelve_scripts_styles() {
   if ( is_singular() && comments_open() && get_option( 'thread_comments' ) )
     wp_enqueue_script( 'comment-reply' );
 
-
-  wp_enqueue_style( 'AramCapsITCStd', "/wp-content/themes/KidsArt/fonts/AramCapsITCStd.ttf");
   // Loads our main stylesheet.
   wp_enqueue_style( 'twentytwelve-style', get_stylesheet_uri() );
 
@@ -151,14 +149,7 @@ function twentytwelve_scripts_styles() {
   wp_enqueue_style( 'marco_css', get_template_directory_uri() . '/css/marco.css' );
 
   wp_enqueue_script( 'utils_js', get_template_directory_uri() . '/js/utils.js' );
-  wp_enqueue_script( 'ggogleMap_js', get_template_directory_uri() . '/js/google-map.js' );
   wp_enqueue_script( 'navigation_js', get_template_directory_uri() . '/js/navigation.js' );
-
-  $my_location = array(
-    'me' => get_field('mijn_lokatie', 760)
-  );
-  $contact_location = printf(get_field('contact_lokaties', 760));
-  wp_localize_script( 'ggogleMap_js', 'gmap_local', $my_location);
 
 
   // Loads the Internet Explorer specific stylesheet.
@@ -208,6 +199,114 @@ add_filter( 'mce_css', 'twentytwelve_mce_css' );
  * @param string $sep Optional separator.
  * @return string Filtered title.
  */
+
+function my_login_logo() { ?>
+  <style type="text/css">
+   @font-face {
+     font-family: MetaPlusNormal;
+     src: url(<?php echo get_stylesheet_directory_uri(); ?>/fonts/MetaPlusNormal-Roman.otf);
+     font-weight: 200;
+   }
+
+   #login {
+     margin-top: 40px!important;
+     color: #fff;
+     font-family: "MetaPlusNormal"!important;
+     font-size: 24px;
+     text-align: center;
+     padding-top: 0!important;
+   }
+
+   #loginform {
+     background: #4080bf!important;
+     margin-top: 20px!important;
+     box-shadow: none;
+   }
+   #login h1 {
+     position: relative!important;
+   }
+
+   #login h1:after {
+     content: "";
+     position: absolute;
+     left: 50%;
+     margin-left: -25.5%;
+     bottom: -64px;
+     margin-bottom: -5px;
+     width: 51%;
+     border-bottom: 4px solid #fff;
+   }
+
+   #login h1 a, .login h1 a {
+     background-image: none;
+     filter: brightness(0) invert(1);
+     height: 1px;
+     width: 100%;
+     background-size: 320px 65px;
+     background-repeat: no-repeat;
+     padding-bottom: 30px;
+   }
+   .login-action-login:before {
+     font-family: "MetaPlusNormal"!important;
+     display: block;
+     content: "your code please";
+     height: 300px;
+     width: 100%;
+     background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/login.jpg);
+     background-size: no-repeat;
+     font-size: 7vw;
+     text-align: center;
+     color: white;
+     line-height: 300px;
+   }
+   /* .login-action-login:before {
+      position: absolute;
+      top: 20vw;
+      left: 0;
+      right: 0;
+      display: block;
+      content: "Your code please";
+      height: 300px;
+      width: 100%;
+      } */
+   #login h1 a:after {
+     display: block;
+     height: 50px;
+     width: 100%;
+     content: "Inloggen bij M2Capital"
+   }
+   .login-action-login {
+     background: #4080bf!important;
+   }
+   .forgetmenot label,
+   .login-action-login p a {
+     font-family: "MetaPlusNormal"!important;
+     color: #fff!important;
+   }
+
+   #user_login,
+   #user_pass{
+     font-family: "MetaPlusNormal"!important;
+     font-size: 18px!important;
+     padding: 5px;
+   }
+
+   #wp-submit {
+     font-family: "MetaPlusNormal"!important;
+     color: #4080bf!important;
+     background: #fff!important;
+     text-shadow: none;
+   }
+  </style>
+  <?php }
+  add_action( 'login_enqueue_scripts', 'my_login_logo' );
+
+  function custom_login_message() {
+    $message = "Inloggen bij M2Capital";
+    return $message;
+  }
+  add_filter('login_message', 'custom_login_message');
+
 function twentytwelve_wp_title( $title, $sep ) {
   global $paged, $page;
 
@@ -764,21 +863,21 @@ function my_reverse_nav_menu($menu, $args) {
       }
 
       function custom_dashboard_help() {
-        echo '<h1>Welkom op jouw Stepping Forward Wordpress!</h1>';
-        echo '<br/>';
-        echo '<h2>Links in publicaties</h2>';
-        echo '<p>Om een link te maken voor in de Publicaties pagina zet je het volgende in de <b>omschrijving/description</b> van de afbeelding in de WonderPlugin Grid Gallery plugin:</p>';
-        echo htmlspecialchars('<a href="http://delinknaardewebsite.nl"\> Hier de omschrijving van de link </a>');
-        echo '<br/>';
-        echo '<br/>';
-        echo '<h2>Gallery & Publicaties</h2>';
-        echo '<p>Wanneer je afbeeldingen en video\'s toevoegd in de gallery en bij de publicaties is het belangrijk om ze een titel mee te geven. Deze wordt getoond als gebruikers op jouw site met hun muis over de afbeelding bewegen.</p>';
-        echo '<br/>';
-        echo '<h2>Story\'s</h2>';
-        echo '<p>Story\'s kun je aanmaken links in het menu onder "Posts". Het is belangrijk wanneer je een Story aanmaakt om te letten op de volgende dingen:</p>';
-        echo ' <ul>
-<li>-Een Story heeft twee afbeeldingen nodig: Een header afbeelding voor op de pagina zelf en een "Featured Image" voor in het overzicht. Deze laatste vind je tijdens het aanmaken van je Story aan de rechterkant.</li>
-<li>-Geef een story de categorie "story" mee. Anders verschijnt de Story niet in het overzicht.</li></ul>';
+        /* echo '<h1>Welkom op jouw Stepping Forward Wordpress!</h1>';
+         * echo '<br/>';
+         * echo '<h2>Links in publicaties</h2>';
+         * echo '<p>Om een link te maken voor in de Publicaties pagina zet je het volgende in de <b>omschrijving/description</b> van de afbeelding in de WonderPlugin Grid Gallery plugin:</p>';
+         * echo htmlspecialchars('<a href="http://delinknaardewebsite.nl"\> Hier de omschrijving van de link </a>');
+         * echo '<br/>';
+         * echo '<br/>';
+         * echo '<h2>Gallery & Publicaties</h2>';
+         * echo '<p>Wanneer je afbeeldingen en video\'s toevoegd in de gallery en bij de publicaties is het belangrijk om ze een titel mee te geven. Deze wordt getoond als gebruikers op jouw site met hun muis over de afbeelding bewegen.</p>';
+         * echo '<br/>';
+         * echo '<h2>Story\'s</h2>';
+         * echo '<p>Story\'s kun je aanmaken links in het menu onder "Posts". Het is belangrijk wanneer je een Story aanmaakt om te letten op de volgende dingen:</p>';
+         * echo ' <ul>
+           <li>-Een Story heeft twee afbeeldingen nodig: Een header afbeelding voor op de pagina zelf en een "Featured Image" voor in het overzicht. Deze laatste vind je tijdens het aanmaken van je Story aan de rechterkant.</li>
+           <li>-Geef een story de categorie "story" mee. Anders verschijnt de Story niet in het overzicht.</li></ul>';*/
       }
 
       ?>

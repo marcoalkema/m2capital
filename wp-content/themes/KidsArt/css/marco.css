@@ -68,28 +68,13 @@
   min-width: 0;
 }
 
-#her-ontwikkel .wysiwyg,
-#aan-verhuur .wysiwyg {
-  margin: -4vw auto 0 auto;
-}
-
 #aan-verhuur p,
 #beleggingsadvies p,
 #her-ontwikkel p,
 #asset-managementContainer p {
   width: 80%;
-  /* margin: 20px auto 0px auto!important; */
   text-align: justify;
   display: inline-block;
-}
-
-#aan-verhuur .metaslider,
-#beleggingsadvies .metaslider,
-#her-ontwikkel .metaslider,
-#asset-managementContainer .metaslider {
-  /* margin: 20px 6% 0 20px!important; */
-  margin-bottom: 40px!important;
-  width: 88%!important;
 }
 
 #aan-verhuur .metaslider .flex-control-nav,
@@ -112,21 +97,6 @@
 #her-ontwikkel .metaslider .flex-control-paging li a,
 #asset-managementContainer .metaslider .flex-control-paging li a {
   border: 1px solid #666!important;
-}
-
-#aan-verhuur button,
-#beleggingsadvies button,
-#her-ontwikkel button,
-#asset-managementContainer button {
-  color: #fff;
-  background: #999!important;
-  height: 28px;
-  padding: 15px 12px;
-  font-size: 20px!important;
-  line-height: 1px;
-  margin-bottom: 60px;
-  font-family: "MerriweatherRegular";
-  border:0!important;
 }
 
 .aan-verhuur-text-block,
@@ -320,14 +290,15 @@
   background: #1d70b7;
   color: #fff;
   padding: 3px 15px;
-  min-width: 80%;
-  margin: 0 auto;
+  width: fit-content;
+  margin: 10px auto 0 auto;
   font-size: 14px;
 }
 
 #post-2138 .story_preview_container {
   padding-top: 10px;
   background: #f2f2f2;
+  position: relative;
 }
 
 #post-2138 .story_preview_text_container h4 {
@@ -342,7 +313,10 @@
 }
 
 .aanverhuur-table-container {
-  padding: 0 10px!important;
+  padding: 0 20px!important;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
 }
 
 .aanverhuur-container .category-header {
@@ -665,7 +639,7 @@
 }
 
 
-#asset-management .container,
+#asset-managementContainer .container,
 #her-ontwikkel .container,
 #beleggingsadvies .container,
 #aan-verhuur .container {
@@ -754,7 +728,7 @@ span.herontwikkelMeerArrow {
 }
 
 .aanverhuuritems .story_preview_container {
-  min-height: 550px;
+  min-height: 580px;
 }
 
 .aanverhuuritems .info1,
@@ -879,6 +853,148 @@ span.herontwikkelMeerArrow {
   margin-top: 40px!important;
 }
 
-#her-ontwikkel h4.green.underlineGreen, #beleggingsadvies h4.green.underlineGreen, #aan-verhuur h4.green.underlineGreen, #asset-management h4.green.underlineGreen {
+#her-ontwikkel h4.green.underlineGreen, #beleggingsadvies h4.green.underlineGreen, #aan-verhuur h4.green.underlineGreen, #asset-managementContainer h4.green.underlineGreen {
 margin-top: 60px;
+}
+
+
+/* FILE MANAGER */
+
+.cuar-caption,
+.panel-heading,
+.leave-reply,
+.cuar-size {
+  display: none!important;
+}
+.cuar-actions {
+  display: block!important;
+  text-align: center!important;
+}
+.cuar-attachments table tr {
+  width: 20%!important;
+  margin: 20px 2.5%!important;
+  float: left!important;
+  overflow: hidden!important;
+  text-overflow: ellipsis!important;
+  white-space: nowrap!important;
+}
+.type-cuar_private_file h1{
+  color: #4080bf;
+  padding-left: 0!important;
+  position:relative!important;
+  margin: 20px auto!important;
+  text-transform: none!important;
+}
+.type-cuar_private_file h1::after{
+  content: ""!important;
+  position: absolute!important;
+  left: 50%!important;
+  margin-left: -10%!important;
+  bottom: -20px!important;
+  width: 20%!important;
+  border-bottom: 4px solid #4080bf!important;
+}
+
+.cuar-single-entry {
+  border: 0!important;
+  padding: 0!important;
+  width: 90%!important;
+  margin: 0 auto!important;
+}
+
+.cuar-single-entry p {
+  color: #666666!important;
+  margin: 20px auto!important;
+  text-align: justify!important;
+  font-family: "MetaPlusNormal"!important;
+  font-size: 19px!important;
+}
+
+.cuar-content-container {
+  border: 0!important;
+  padding: 0!important;
+}
+
+.cuar-attachments {
+  padding: 40px 40px!important;
+}
+
+.panel-body{
+  border: 0!important;
+}
+
+.cuar-attachments {
+  background: #4080bf!important;
+}
+
+.cuar-caption,
+.cuar-actions {
+  border: 0!important;
+  background: transparent!important;
+}
+
+.collection-thumbnail {
+  display: none!important;
+}
+
+.cuar-page-content,
+.collection.cuar_private_file {
+  background: #4080bf!important;
+}
+
+.cuar-js-page-content {
+  padding-left: 0!important;
+  padding-right: 0!important;
+}
+
+.cuar-css-wrapper .panel {
+  margin-bottom: 0!important;
+  padding-bottom: 0!important;
+}
+
+.panel.cuar-attachments {
+  padding-bottom: 60px!important;
+}
+
+#cuar-js-content-container {
+  margin-bottom: -25px!important;
+}
+
+.mn {
+  color: #fff!important;
+}
+
+.cuar-actions > a {
+  content: ""!important;
+}
+
+.cuar-actions {
+  padding-bottom: 20px!important;
+  border-bottom: 2px solid #fff!important;
+}
+
+.cuar-actions .btn-default {
+  color: white!important;
+  background: transparent!important;
+  border: 0!important;
+  font-family: "MetaPlusNormal"!important;
+}
+
+.#menu-wp-customer-area-menu {
+  border: 1px solid black;
+}
+
+.cuar_private_file-template-default #menu-wp-customer-area-menu {
+  margin-left: 0%;
+  margin-top: -150px;
+  margin-bottom: 130px;
+  border: 1px solid black;
+}
+
+.cuar_private_file-template-default .type-cuar_private_file .entry-title {
+  padding-top: 80px!important;
+}
+
+.cuar_private_file-template-default .cuar-single-entry {
+  margin-bottom: 20px!important;
 }

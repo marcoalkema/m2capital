@@ -634,6 +634,34 @@ a:hover {
   /* margin-bottom: 55px!important; */
 }
 
+.aanbod-intro-container .network-col {
+  padding: 15px 0 !important;
+  background-color: #d3d3d370;
+  margin: auto 13px;
+  float: right;
+  width: 22%;
+  min-height: 336px;
+}
+
+.network-header-container {
+  height: auto;
+  min-height: 84px;
+  color: #1d70b7;
+  display: flex;
+  margin-top: -6%;
+  margin-bottom: 9%;
+  align-items: center;
+}
+
+.network-header-container h4.underlineGreen:after {
+  bottom: 0;
+}
+
+.network-image-container {
+  height: 200px;
+  overflow: hidden;
+}
+
 /* Header */
 .site-header {
   /* padding: 24px 0; */
@@ -1757,9 +1785,11 @@ img#wpstats {
   position: relative;
   padding: 0!important;
 }
-#post-66 {
 
+.aanverhuuritems h4 {
+  line-height: 1.4!important;
 }
+
 #page-66 {
   background-color: #eee;
   padding: 0 24px;
@@ -2203,6 +2233,22 @@ h6.white {
   width: 70%;
   padding: 58px 0;
   margin: 0 auto;
+}
+
+#aan-verhuur button,
+#beleggingsadvies button,
+#her-ontwikkel button,
+#asset-managementContainer button {
+  color: #fff;
+  background: #999!important;
+  height: 28px;
+  padding: 15px 12px;
+  font-size: 20px!important;
+  line-height: 1px;
+  margin-bottom: 60px;
+  font-family: "MerriweatherRegular";
+  border:0!important;
+  max-width: 70%;
 }
 
 /* CALENDAR */
@@ -3338,7 +3384,6 @@ h6.white {
   margin: 0 auto;
   word-break: normal;
   word-wrap: break-word;
-  white-space: pre-line;
 }
 
 .wysiwyg h1 {
@@ -3699,7 +3744,7 @@ a {
 #aan-verhuur .metaslider,
 #beleggingsadvies .metaslider,
 #her-ontwikkel .metaslider,
-#asset-management .metaslider {
+#asset-managementContainer .metaslider {
   margin: 20px 6% 0 6%!important;
   width: 88%!important;
 }
@@ -4041,9 +4086,9 @@ a {
 
   }
 }
-@media screen and (max-width: 929px) and (min-width: 550px) (orientation: portrait), all {
+@media screen and (max-width: 929px) and (min-width: 550px) (orientation: portrait) {
     #menu-primary_ {
-        margin-top: 72px;
+      margin-top: 72px;
     }
     #page .aanbod-intro-container .network-col {
         margin: 3vw auto;
@@ -4091,7 +4136,7 @@ a {
         padding-left: 1vw!important;
         padding-top: 0.59vw;
     }
-    /* HEADER */
+    HEADER
     .wpml-ls-menu-item .wpml-ls-flag {
         margin-top: 2vw;
     }
@@ -4167,7 +4212,7 @@ a {
     }
 }
 
-@media screen and (max-width: 890px) and (orientation: portrait), all {
+@media screen and (max-width: 890px) and (orientation: portrait) {
     .menu-toggle {
         margin-top: 0%!important;
     }
@@ -4481,7 +4526,7 @@ a {
   padding-top: 0!important;
   margin: 0 0 0px 0!important;
   font-size: 25px!important;
-  line-height:inherit;
+  line-height: 1.4!important;;
 }
 .actueelDate {
   color: #999;
@@ -4520,7 +4565,7 @@ a {
   padding-top: 20px;
   padding-bottom: 20px;
   background: #eee;
-  min-height: 510px;
+  min-height: 600px;
   overflow: hidden;
 }
 
@@ -4625,6 +4670,14 @@ a {
 /* .wie-foto-mark { */
 /*   float: left; */
 /* } */
+
+#aan-verhuur .metaslider,
+#beleggingsadvies .metaslider,
+#her-ontwikkel .metaslider,
+#asset-managementContainer .metaslider {
+  margin-bottom: 40px!important;
+  width: 88%!important;
+}
 
 .wie-foto > h4 {
   padding-top: 1%!important;
@@ -4943,6 +4996,33 @@ a {
   .menu-primary__-container{
     padding-left: 6vw;
   }
+  .aanbod-intro-container .network-col {
+    margin: auto 13px 10px 13px;
+    float: right;
+    width: 45%;
+  }
+  .samenwerken h4 {
+    width: 80%;
+    margin: 60px auto 20px auto;
+  }
+  .wie-foto-mark, .wie-foto-michiel {
+    width: 350px;
+  }
+  .wat-doen-wij-col {
+    width: 45%!important;
+    min-height: 80vw!important;
+  }
+  .introduction-links-container .introduction-links-image {
+    margin-left: -25%;
+  }
+
+  .other_stories .other_stories_container a:nth-child(n+3),
+  .meerAanbodVerhuurContainer a:nth-child(n+3) {
+    display: none;
+  }
+  .contact-large-submit > input {
+    padding: 0.428571429rem 0.714285714rem!important;
+  }
 }
 @media screen and (min-device-width : 1200px) and (orientation : portrait) {
   .main-navigation li a {
@@ -4975,6 +5055,9 @@ a {
 }
 
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+  .introduction-links-container .introduction-links-image {
+    margin-left: -25%;
+  }
   .sixth-cell > img {
     height: 100%;
   }
@@ -5094,10 +5177,21 @@ a {
   #aan-verhuur .metaslider,
   #beleggingsadvies .metaslider,
   #her-ontwikkel .metaslider,
-  #asset-management .metaslider {
-    margin: 20px 0 0 0!important;
+  #asset-managementContainer .metaslider {
+    margin: 20px 0 60px 0!important;
     width: 100%!important;
   }
+
+  #aan-verhuur button,
+  #beleggingsadvies button,
+  #her-ontwikkel button,
+  #asset-managementContainer button {
+    height: auto;
+    line-height: 30px!important;
+    max-width: 70%;
+    white-space: normal;
+  }
+
   .home #overlay-container img {
     height: 115vw;
     width:100%!important;
@@ -5918,8 +6012,8 @@ a {
   .page-template-asset-management-page .page-title-div > #landing-overlay-title,
   .page-template-projecten .page-title-div > #landing-overlay-title,
   .page-template-wat-doen-wij-page .page-title-div > #landing-overlay-title {
-    margin-top: 40vw!important;
-    font-size: 32px!important;
+    margin-top: 35vw!important;
+    font-size: 30px!important;
   }
   #overlay-container.overlay {
     height:68vw;
@@ -6067,8 +6161,12 @@ a {
     margin: 0 auto;
   }
   .introduction-container h4.underlineGreen {
-          width: 120%;
+    width: 120%;
     margin-left: -7vw;
+  }
+  .introduction-links-container .introduction-links-image {
+    height: 300px!important;
+    margin-left: -25%;
   }
   .wat-doen-wij-info-text-container {
     width: 74%;
@@ -6441,7 +6539,7 @@ h4.green{
 }
 .wat-doen-wij-info-text-container {
   margin-bottom: 4vw;
-  max-height: 318px;
+  max-height: 340px;
 }
 .wat-doen-wij-info-text-container > p {
   color: #fff;
@@ -6472,33 +6570,7 @@ h4.green{
 #overlay-container .metaslider img {
   opacity: 0.5;
 }
-.aanbod-intro-container .network-col {
-  padding: 15px 0 !important;
-  background-color: #d3d3d370;
-  margin: auto 13px;
-  float: right;
-  width: 22%;
-  min-height: 336px;
-}
 
-.network-header-container {
-  height: auto;
-  min-height: 84px;
-  color: #1d70b7;
-  display: flex;
-  margin-top: -6%;
-  margin-bottom: 9%;
-  align-items: center;
-}
-
-.network-header-container h4.underlineGreen:after {
-  bottom: 0;
-}
-
-.network-image-container {
-  height: 200px;
-  overflow: hidden;
-}
 .actueel-intro {
   text-align: justify;
   width: 80%;

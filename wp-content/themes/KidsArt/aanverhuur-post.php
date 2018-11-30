@@ -17,11 +17,10 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
     'suppress_filters' => true
   );
 
-  for ($x = 0; $x <= 9999999999; $x++) {
+  echo '<div class="row other_stories_container aanverhuuritems">';
+
+  for ($x = 0; $x <= count($args); $x++) {
     if (!empty(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID'])) {
-      if ($x % 3 == 0) {
-        echo '<div class="row other_stories_container aanverhuuritems">';
-      }
       echo '<a href="' . get_permalink(wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']) . '">';
       echo '<div class="col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 story_preview hoverovereffect">';
       echo '<div class="story_preview_container">';
@@ -43,6 +42,7 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo get_field('samenvatting', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
       echo '</div>';
       echo '<br/>';
+      echo '</div>';
       echo '<div class="aanverhuur-table-container">';
       echo '<table class="aanverhuur-table-items">';
       echo '<tr class="info1">';
@@ -57,15 +57,11 @@ if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
       echo '</div>';
       echo '</div>';
       echo '</div>';
-      echo '</div>';
       echo '</a>';
 
-
-      if ($x % 3 == 2) {
-        echo '</div>';
-      }
     }
   }
+  echo '</div>';
   echo '</div>';
 }
 ?>

@@ -37,7 +37,7 @@
 
             if ($i % 4 == 0) {
                 echo '<div class="row">';
-                echo '<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 network-col hoverovereffect">';
+                echo '<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 network-col hoverovereffect">';
                 echo '<a href="' . get_site_url() . '/wat-doen-wij/' . $val['wat-doen-wij-links-link'] . '">';
                 echo '<div class="network-image-container">';
                 echo '<img class="network-image" src="' . $val['wat-doen-wij-links-foto'] . '"/>';
@@ -48,7 +48,7 @@
                 echo '</a>';
                 echo '</div>';
             } else {
-                echo '<div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 network-col hoverovereffect">';
+                echo '<div class="col-12 col-sm-12 col-md-6 col-lg-3 col-xl-3 network-col hoverovereffect">';
                 echo '<a href="' . get_site_url() . '/wat-doen-wij/' . $val['wat-doen-wij-links-link'] . '">';
                 echo '<div class="network-image-container">';
                 echo '<img class="network-image" src="' . $val['wat-doen-wij-links-foto'] . '"/>';

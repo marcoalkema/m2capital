@@ -57,11 +57,7 @@ get_header(); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <?php the_content(); ?>
       <?php endwhile; endif; ?>
-      <?php if( get_the_ID() == 613 || get_the_ID() == 628): get_template_part("workshops_trainingen", "part"); endif; ?>
-      <?php if( get_the_ID() == 632 || get_the_ID() == 1270): get_template_part("coaching", "part"); endif; ?>
-      <?php if( get_the_ID() == 634 || get_the_ID() == 1265): get_template_part("systeemisch_werken", "part"); endif; ?>
     </div>
-    <?php get_template_part("compact-contact", "page"); ?>
   </div>
 </article>
 

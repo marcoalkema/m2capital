@@ -27,7 +27,6 @@
     </staticContent>
     <title><?php wp_title( 'M2Capital', true, 'right' ); ?></title>
     <script src="<?php echo get_template_directory_uri() ?>/../../themes/KidsArt/js/html5.js" type="text/javascript"></script>
-    <link href="./wp-content/themes/KidsArt/fonts/AramCapsITCStd.ttf"/>
     <div style="color: white"><?php wp_head(); ?></div>
   </head>
 
@@ -35,7 +34,7 @@
     <div id="page" class="hfeed site">
       <header id="masthead" class="site-header" role="banner">
 
-        <nav id="site-navigation" class="main-navigation" role="navigation"><link rel="icon" href="http://www.wpbeginner.com/favicon.png" type="image/x-icon" />
+        <nav id="site-navigation" class="main-navigation" role="navigation">
 
           <h3 style="display: none;" class="menu-toggle"><?php _e( '', 'twentytwelve' ); ?>
             <button class="menu-toggle" type="submit" style="border: 0; background: transparent">

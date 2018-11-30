@@ -134,7 +134,7 @@ get_header(); ?>
                          $shouldDisplay = get_field('werkwijze-contact-on', $ID);
                          $display = ($shouldDisplay == true) ? 'block' : 'none';
                          printf($display);
-                         ?>">
+                         ?>" class="samenwerken">
 
       <div class="h4_block">
         <div class="h4_container">
