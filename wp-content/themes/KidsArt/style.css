@@ -4218,6 +4218,122 @@ a {
   }
   /* AAN EN VERHUUR PER OBJECT */
   .post-template-default .aanverhuur-container .category-header {
+/* ======= */
+/*     #menu-primary_ { */
+/*       margin-top: 72px; */
+/*     } */
+/*         .current_page_item { */
+/*     font-weight: 900!important; */
+/*   } */
+/*     #page .aanbod-intro-container .network-col { */
+/*         margin: 3vw auto; */
+/*         min-height: initial; */
+/*     } */
+/*     .network-header-container h4 { */
+/*         font-size: 1.3em!important; */
+/*     } */
+/*     #page .aanbod-intro-container .network-col:nth-child(1) { */
+/*         margin-right: 12vw; */
+/*         margin-left: 4vw; */
+/*         width: 240px; */
+/*     } */
+/*     #page .aanbod-intro-container .network-col:nth-child(2) { */
+/*         margin-left: 10vw; */
+/*         margin-right: 4vw; */
+/*         width: 240px; */
+/*     } */
+
+/*     #page .aanbod-intro-container .network-col:nth-child(3) { */
+/*         margin-right: 12vw; */
+/*         margin-left: 4vw; */
+/*         width: 240px; */
+/*     } */
+/*     #page .aanbod-intro-container .network-col:nth-child(4) { */
+/*         margin-left: 10vw; */
+/*         margin-right: 4vw; */
+/*         width: 240px; */
+/*     } */
+/*     /\* FOOTER *\/ */
+/*     #menu-secondary > li > a, #menu-secondary-engels > li > a { */
+/*         font-size: 2.3em; */
+/*     } */
+/*     .footer-link-container { */
+/*         width:50%; */
+/*     } */
+/*     #colophon .footer-link-container .menu-secondary-container > ul > li { */
+/*         padding:0; */
+/*     } */
+/*     #colophon .copyright-text { */
+/*         font-size: 2.3em; */
+/*         margin-left: 4vw; */
+/*     } */
+/*     #colophon .footer-link-container { */
+/*         padding-left: 1vw!important; */
+/*         padding-top: 0.59vw; */
+/*     } */
+/*     /\* HEADER *\/ */
+/*     .wpml-ls-menu-item .wpml-ls-flag { */
+/*         margin-top: 2vw; */
+/*     } */
+/*     #site-navigation .menu-primary_-container li.current-menu-item a::after { */
+/*         content: ""; */
+/*         position: absolute; */
+/*         left: 51%; */
+/*         margin-left: -20%; */
+/*         bottom: 26px; */
+/*         margin-bottom: -13px; */
+/*         width: 38%; */
+/*         border-bottom: 2px solid #21759b; */
+/*     } */
+
+/*     .nav-menu.toggled-on > li { */
+/*         display: block; */
+/*         width: 100%; */
+/*         border-bottom: 0px; */
+/*         padding: 8px 0 8px 0; */
+/*         margin-top: 0; */
+/*         background: #ffffff; */
+/*         /\* background: #4f4e4f; *\/ */
+/*     } */
+/*     /\* WIE ZIJN WIJ PAGE *\/ */
+/*     .wrapper .wie-foto-mark, .wrapper .wie-foto-michiel { */
+/*         height: 270px; */
+/*         width: 270px; */
+/*     } */
+/*     .wrapper #wie-zijn-wij-wie .wie-foto p { */
+/*         width:75%; */
+/*     } */
+/*     #wie-zijn-wij-wie .container .row { */
+/*         width: 94%; */
+/*         margin: 0 auto; */
+/*     } */
+/*     /\* WAT DOEN WIJ PAGE *\/ */
+/*     .row.wat-doen-wij-row { */
+/*         width:100%; */
+/*     } */
+/*     .wat-doen-wij-row .wat-doen-wij-col:nth-child(1) { */
+/*         margin-right: 8vw; */
+/*         margin-left: 10vw; */
+/*         width: 240px; */
+/*     } */
+/*     .wat-doen-wij-row .wat-doen-wij-col:nth-child(2) { */
+/*         margin-left: 10vw; */
+/*         margin-right: 5vw; */
+/*         width: 240px; */
+/*     } */
+/*     .wat-doen-wij-row .wat-doen-wij-col:nth-child(3) { */
+/*         margin-right: 8vw; */
+/*         margin-left: 10vw; */
+/*         width: 240px; */
+/*     } */
+/*     .wat-doen-wij-row .wat-doen-wij-col:nth-child(4) { */
+/*         margin-left: 10vw; */
+/*         margin-right: 5vw; */
+/*         width: 240px; */
+/*     } */
+/*     /\* PROJECTEN PAGE *\/ */
+/*     .page-template-projecten .category-header { */
+/* >>>>>>> c4fccef198da0108af3f74a9c69d1270853c794b */
     font-size: 1em;
   }
   .aanverhuur-container .aanverhuur-kenmerken {
