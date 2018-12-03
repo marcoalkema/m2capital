@@ -3,7 +3,7 @@
     <h4 class="green underlineGreen">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3196;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3252;
         printf(get_field('aanverhuur-title', $ID));
       }
       ?>
@@ -14,7 +14,7 @@
 <div class="aan-verhuur-text-block">
   <?php
   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3196;
+    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3252;
     printf(get_field('aanverhuur-text1', $ID));
   }
   ?>
@@ -24,7 +24,7 @@
   <div class="wysiwyg">
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3196;
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3252;
       printf(get_field('aanverhuur-text2', $ID));
     }
     ?>
@@ -34,7 +34,7 @@
     <button class="btn btn-green btn-primary">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3196;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 2097 : 3252;
         printf(get_field('aanverhuur-button-text', $ID));
       }
       ?>

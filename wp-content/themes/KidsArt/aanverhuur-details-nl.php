@@ -5,18 +5,18 @@ echo $cat_;
 $cat = get_field($cat_, get_the_ID());
 echo $cat;
 $args = array(
-    'numberposts' => 0,
-    'offset' => 0,
-    'category' => $cat,
-    'orderby' => 'post_date',
-    'order' => 'ASC',
-    'include' => '',
-    'exclude' => '',
-    'meta_key' => '',
-    'meta_value' =>'',
-    'post_type' => 'post',
-    'post_status' => 'draft, publish, future, pending, private',
-    'suppress_filters' => true
+  'numberposts' => 0,
+  'offset' => 0,
+  'category' => $cat,
+  'orderby' => 'post_date',
+  'order' => 'ASC',
+  'include' => '',
+  'exclude' => '',
+  'meta_key' => '',
+  'meta_value' =>'',
+  'post_type' => 'post',
+  'post_status' => 'draft, publish, future, pending, private',
+  'suppress_filters' => true
 );
 $more_details = get_field('meer_details', get_the_ID());
 
@@ -160,18 +160,18 @@ echo '</div>';
 echo '</div>';
 
 $args1 = array(
-    'numberposts' => 3,
-    'offset' => 0,
-    'category' => get_the_category()[0]->cat_ID,
-    'orderby' => 'post_date',
-    'order' => 'DESC',
-    'include' => '',
-    'exclude' => '',
-    'meta_key' => '',
-    'meta_value' =>'',
-    'post_type' => 'post',
-    'post_status' => 'draft, publish, future, pending, private',
-    'suppress_filters' => true
+  'numberposts' => 3,
+  'offset' => 0,
+  'category' => get_the_category()[0]->cat_ID,
+  'orderby' => 'post_date',
+  'order' => 'DESC',
+  'include' => '',
+  'exclude' => '',
+  'meta_key' => '',
+  'meta_value' =>'',
+  'post_type' => 'post',
+  'post_status' => 'draft, publish, future, pending, private',
+  'suppress_filters' => true
 );
 
 echo '<div class="other_aanverhuur_container">';
@@ -189,27 +189,27 @@ echo '</div>';
 
 echo '<div class="meerAanbodVerhuurContainer">';
 for ($x = 0; $x <= count(wp_get_recent_posts( $args1, ARRAY_A )).length - 1; $x++) {
-    echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
-    echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
-    echo '<div class="story_preview_container">';
-    echo '<div class="story_preview_image">';
-    echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
-    echo '</div>';
-    echo '<div class="story_preview_text">';
-    echo '<div class="story_preview_text_container">';
-    echo '<div class="h4_block">';
-    echo '<div class="h4_container">';
-    echo '<h4 class="green underlineGreen">';
-    echo wp_get_recent_posts( $args1, ARRAY_A )[$x]['post_title'];
-    echo '</h4>';
-    echo '<br/>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</a>';
+  echo '<a href="' . get_permalink(wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '">';
+  echo '<div class="col-6 col-sm-6 col-md-4 col-lg-4 col-xl-4 story_preview_story hoverovereffect">';
+  echo '<div class="story_preview_container">';
+  echo '<div class="story_preview_image">';
+  echo '<img class="story_thumbnail" src="' . get_field('afbeelding', wp_get_recent_posts( $args1, ARRAY_A )[$x]['ID']) . '"/>';
+  echo '</div>';
+  echo '<div class="story_preview_text">';
+  echo '<div class="story_preview_text_container">';
+  echo '<div class="h4_block">';
+  echo '<div class="h4_container">';
+  echo '<h4 class="green underlineGreen">';
+  echo wp_get_recent_posts( $args1, ARRAY_A )[$x]['post_title'];
+  echo '</h4>';
+  echo '<br/>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</div>';
+  echo '</a>';
 };
 echo '</div>';
 echo '<div class="meerAanbodVerhuur">';
