@@ -7,7 +7,7 @@
             <h4 class="green underlineGreen smalleUnderline">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 3169;
                 the_field('contact_header_text', $ID);
               };
               ?>
@@ -34,7 +34,7 @@
         <p>
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 3169;
             the_field('contact_text', $ID);
           };
           ?>

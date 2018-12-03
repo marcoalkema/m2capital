@@ -12,7 +12,7 @@ get_header(); ?>
         <div class="page-title-container">
             <img src="<?php
             if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 5 : 1559;
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 5 : 3121;
                 printf(get_field('header_overlay_image', $ID));
             }
             ?>" class="overlay-plaatje"/>
@@ -20,7 +20,7 @@ get_header(); ?>
             <h6 id="landing-overlay-title" class="white landing-	title">
                 <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 5 : 1559;
+                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 5 : 3121;
                     printf(get_field('header_tagline', $ID));
                 }
                 ?>

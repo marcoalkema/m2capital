@@ -81,7 +81,7 @@ get_header(); ?>
     <div class="actueel-intro-container-img">
       <img src="<?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
+                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 3074;
                   printf(get_field('visie-img', $ID));
                 }?>" class="visie-img light-blue-image-filter"/>
     </div>
@@ -91,7 +91,7 @@ get_header(); ?>
         <h4 class="green underlineGreen">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 3074;
             printf(get_field('visie-title', $ID));
           }
           ?>
@@ -101,7 +101,7 @@ get_header(); ?>
     <div>
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 1;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 613 : 3074;
         printf(get_field('visie-text', $ID));
       }
       ?>
@@ -114,7 +114,7 @@ get_header(); ?>
         <h4 class="green underlineGreen">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 3077;
             printf(get_field('werkwijze-title', $ID));
           }
           ?>
@@ -124,13 +124,13 @@ get_header(); ?>
     <div>
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 3077;
         printf(get_field('werkwijze-text', $ID));
       }
       ?>
     </div>
     <div style="display: <?php
-                         $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
+                         $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 3077;
                          $shouldDisplay = get_field('werkwijze-contact-on', $ID);
                          $display = ($shouldDisplay == true) ? 'block' : 'none';
                          printf($display);
@@ -141,7 +141,7 @@ get_header(); ?>
           <h4 class="green underlineGreen smalleUnderline">
             <?php
             if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
+              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 3077;
               printf(get_field('werkwijze-contact-header', $ID));
             }
             ?>
@@ -151,7 +151,7 @@ get_header(); ?>
         <div class="neem-contact-op grijs">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 1;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 634 : 3077;
             printf(get_field('werkwijze-contact-text', $ID));
           }
           ?>
@@ -166,7 +166,7 @@ get_header(); ?>
       <div class="actueel-intro-container-img">
         <img src="<?php
                   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+                    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 3082;
                     printf(get_field('over-ons-img', $ID));
                   }?>" class="over-ons-img light-blue-image-filter"/>
       </div>
@@ -175,7 +175,7 @@ get_header(); ?>
           <h4 class="green underlineGreen">
             <?php
             if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 3082;
               printf(get_field('over-ons-title', $ID));
             }
             ?>
@@ -185,14 +185,14 @@ get_header(); ?>
       <div class="wie-zijn-wij-wie-text-container">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 3082;
           printf(get_field('over-ons-text', $ID));
         }
         ?>
       </div>
 
       <?php
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 1;
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 632 : 3082;
       $arr = get_field('over-ons-profielen', $ID);
       $i = 0;
       $row = 1;
@@ -256,7 +256,7 @@ get_header(); ?>
           <h4 class="green underlineGreen">
             <?php
             if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+              $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 3086;
               printf(get_field('partners-title', $ID));
             }
             ?>
@@ -266,14 +266,14 @@ get_header(); ?>
       <div class="wie-zijn-wij-wie-text-container">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 3086;
           printf(get_field('partners-text', $ID));
         }
         ?>
       </div>
       <div class="partner-profiles">
         <?php
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 1;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 1675 : 3086;
         $arr = get_field('partners-profiles', $ID);
         $i = 0;
         $row = 5;

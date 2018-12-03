@@ -2,7 +2,7 @@
   <div class="actueel-intro-container-img">
         <img src="<?php
                   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
+                      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 3128;
                       printf(get_field('actueel-header-image', $ID)); }?>" class="headerImg" width="100%" height="500px"/>
   </div>
   <div class="actueel-intro">
@@ -11,7 +11,7 @@
         <h4 class="green underlineGreen">
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 3128;
             printf(get_field('actueel-title', $ID)); }?>
         </h4>
       </div>
@@ -19,7 +19,7 @@
     <div class="stories_text">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 3128;
         printf(get_field('actueel-text', $ID));
       }?>
     </div>
@@ -27,7 +27,7 @@
       <button class="btn btn-green btn-primary">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 1504;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 904 : 3128;
         printf(get_field('actueel-button-text', $ID));
       }?>
     </button>

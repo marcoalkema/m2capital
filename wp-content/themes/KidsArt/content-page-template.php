@@ -9,7 +9,7 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <div class="entry-content template-page" id="page-<?php the_ID(); ?>">
     <div class="page-header-image">
-      <img src="<?php the_field("main-header"); ?>" class="headerImg"/>
+      <img src="<?php the_field("main-header", the_ID(); ?>" class="headerImg"/>
       <div class="page-title-container">
         <div class="page-title-div aanbod-title-div">
           <div class="page-title-background"></div>

@@ -208,6 +208,12 @@ function my_login_logo() { ?>
      font-weight: 200;
    }
 
+   @font-face {
+     font-family: MerriweatherRegular;
+     src: url(<?php echo get_stylesheet_directory_uri(); ?>/fonts/Merriweather-Regular.otf);
+     font-weight: 200;
+   }
+
    #login {
      margin-top: 40px!important;
      color: #fff;
@@ -237,6 +243,10 @@ function my_login_logo() { ?>
      border-bottom: 4px solid #fff;
    }
 
+   .message {
+     display: none!important;
+   }
+
    #login h1 a, .login h1 a {
      background-image: none;
      filter: brightness(0) invert(1);
@@ -247,13 +257,16 @@ function my_login_logo() { ?>
      padding-bottom: 30px;
    }
    .login-action-login:before {
-     font-family: "MetaPlusNormal"!important;
+     font-family: "MerriweatherRegular"!important;
      display: block;
      content: "your code please";
      height: 300px;
      width: 100%;
      background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/images/login.jpg);
-     background-size: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
      font-size: 7vw;
      text-align: center;
      color: white;

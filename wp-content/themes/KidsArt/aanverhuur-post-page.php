@@ -172,7 +172,7 @@ $args1 = array(
     'suppress_filters' => true
 );
 
-echo '<div class="row other_aanverhuur_container">';
+echo '<div class="other_aanverhuur_container">';
 
 echo '<div class="other_stories">';
 echo '<div class="h4_block">';

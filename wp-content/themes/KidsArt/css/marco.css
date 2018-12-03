@@ -998,3 +998,22 @@ margin-top: 60px;
 .cuar_private_file-template-default .cuar-single-entry {
   margin-bottom: 20px!important;
 }
+
+body.customer-area-active .cuar-css-wrapper .collection .collection-content:not(.list) .cuar-title {
+  text-align: center;
+}
+
+body.customer-area-active .cuar-css-wrapper .collection .collection-content:not(.list) .cuar-title a {
+  color: #1d70b7!important;
+  font-family: "MerriweatherRegular"!important;
+  font-size: 20px!important;
+}
+
+body.customer-area-active .cuar-css-wrapper .br-a {
+  border: 0!important;
+  border-radius: 0!important;
+}
+
+body.customer-area-active #cuar-js-content-container .collection .collection-content:not(.list) .mix, body.customer-area-active #cuar-js-content-container .collection .collection-content:not(.list) .gap {
+  width: 23.5%!important;
+}
