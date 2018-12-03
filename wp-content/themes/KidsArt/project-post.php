@@ -1,10 +1,11 @@
 <?php
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+  $articles = (ICL_LANGUAGE_CODE == 'nl') ? '24, 27, 26' : '';
   $args = array(
     'numberposts' => 0,
     'offset' => 0,
     'orderby' => 'post_date',
-    'category' => '24, 27, 26',
+    'category' =>  $articles,
     'order' => 'ASC',
     'include' => '',
     'exclude' => '',

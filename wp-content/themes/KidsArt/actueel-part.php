@@ -1,7 +1,7 @@
 <div class="storiesWhite">
   <?php
   if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 23 : 1;
+    $ID = (ICL_LANGUAGE_CODE == 'nl') ? 23 : 37;
     $args = array(
       'numberposts' => 0,
       'offset' => 0,
@@ -46,7 +46,7 @@
         echo '<p class="actueel-post-excerpt">';
         echo get_field('post-excerpt', wp_get_recent_posts( $args, ARRAY_A )[$x]['ID']);
         echo '</p>';
-        echo '<button class="btn btn-green">Lees meer</button>';
+        echo '<button class="btn btn-green">' . ((ICL_LANGUAGE_CODE == 'nl') ? "lees meer" : "read more") . '</button>';
         echo '</div>';
         echo '</div>';
         echo '</div>';

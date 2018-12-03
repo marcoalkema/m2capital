@@ -9,8 +9,12 @@ get_header();  ?>
   <?php
   $cat = get_the_category()[0]->cat_ID;
   $category_id = get_cat_ID('Client');
-  if ($cat == 25) {
-    get_template_part("aanverhuur", "post-page");
+  if ($cat == 25 || $cat == 38) {
+    if (ICL_LANGUAGE_CODE == 'nl') {
+      get_template_part("aanverhuur", "details-nl");
+    } else {
+      get_template_part("aanverhuur", "details-en");
+    }
   } else if ($cat == 23 || $cat == 27 || $cat == 26 || $cat == 24) {
     get_template_part("actueel", "post");
   } else if ($category_id == 0) {

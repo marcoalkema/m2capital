@@ -1,7 +1,7 @@
 <?php
 $fields = get_field_objects();
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-  $cat = get_field('categorie', get_the_ID());
+  $cat = (ICL_LANGUAGE_CODE == 'nl') ? 25 : 38;
   $args = array(
     'numberposts' => 0,
     'offset' => 0,
