@@ -1,7 +1,7 @@
 <div class="actueel-intro-container-img">
 <img src="      <?php
                 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+                  $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 3187;
                   printf(get_field('asset-management-img', $ID));
                 }
                 ?>" class="headerImg"/>
@@ -11,7 +11,7 @@
     <h4 class="green underlineGreen">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+        $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 3187;
         printf(get_field('asset-management-title', $ID));
       }
       ?>
@@ -22,7 +22,7 @@
 <div class="asset-management-text-block">
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 3187;
       printf(get_field('asset-management-text1', $ID));
     }
     ?>
@@ -32,7 +32,7 @@
   <div class="wysiwyg">
     <?php
     if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 3187;
       printf(get_field('asset-management-text2', $ID));
     }
     ?>
@@ -41,7 +41,7 @@
       <button class="btn btn-green btn-primary">
       <?php
       if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 1;
+      $ID = (ICL_LANGUAGE_CODE == 'nl') ? 913 : 3187;
         printf(get_field('asset-management-button-text', $ID));
       }
       ?>

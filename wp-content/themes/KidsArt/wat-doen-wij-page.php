@@ -22,7 +22,10 @@ get_header(); ?>
                     <div class="h4_container">
                         <h4 class="green underlineGreen">
                             <?php
-                            printf(get_field('wat-doen-wij-title', $ID));
+                            if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 3183;
+                                printf(get_field('wat-doen-wij-title', $ID));
+                            }
                             ?>
                         </h4>
                     </div>
@@ -31,13 +34,16 @@ get_header(); ?>
 
             <div id="title_text-<?php the_ID(); ?>" class="title_text">
               <?php
+              if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 3183;
                 printf(get_field('wat-doen-wij-text', $ID));
+              }
               ?>
             </div>
 
             <div class="">
                 <?php
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 1;
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 17 : 3183;
                 $arr = get_field('activiteiten', $ID);
                 $i = 0;
                 $row = 1;
