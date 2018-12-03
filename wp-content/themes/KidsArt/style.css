@@ -3855,6 +3855,39 @@ a {
   padding: 5px;
   border-radius: 50%;
 }
+
+.wpml-ls-item .wpml-ls-flag {
+  opacity: 0;
+}
+
+.wpml-ls-current-language .wpml-ls-flag {
+  opacity: 1;
+}
+
+.menu-item-wpml-ls-primary_-en img {
+  margin-left: 15px;
+}
+
+.menu-item-wpml-ls-primary_-nl img {
+  margin-left: -15px;
+}
+
+.wpml-ls-native {
+  position: relative;
+  font-size: 12px!important;
+}
+
+.menu-item-wpml-ls-primary_-nl .wpml-ls-native:before {
+  content: '|';
+  position: absolute;
+  left: -10px;
+  bottom: -3px;
+}
+
+.wpml-ls-current-language > a > span:before {
+  font-weight: normal!important;
+}
+
 .owl-prev {
   top: 27%!important;
   left: 10px!important;
@@ -4059,6 +4092,7 @@ a {
   #header-logo{
     margin-left: 0px;
   }
+  .menu-primary__-container,
   .menu-primary_-container {
     display: none;
   }
@@ -4073,11 +4107,13 @@ a {
   .social_icons_primary {
     display: none;
   }
+  #menu-primary__,
   #menu-primary_ {
     margin-top: 65px;
     margin-right: -40px;
     width: 30vw;
   }
+  #menu-primary__ li,
   #menu-primary_ li {
     text-align: center;
   }
@@ -4090,8 +4126,12 @@ a {
   body {
     margin-bottom: -5px!important;
   }
+  #menu-primary__,
   #menu-primary_ {
     margin-top: 72px;
+  }
+  .menu-primary__-container {
+    display: none;
   }
   #page .aanbod-intro-container .network-col {
     margin: 3vw auto;
@@ -4150,9 +4190,11 @@ a {
     background: #fff;
     padding-bottom: 15px;
   }
+  #site-navigation .menu-primary__-container li.current-menu-item a,
   #site-navigation .menu-primary_-container li.current-menu-item a {
     font-weight: 900;
   }
+  #site-navigation .menu-primary__-container li.current-menu-item a::after,
   #site-navigation .menu-primary_-container li.current-menu-item a::after {
     content: "";
     position: absolute;
@@ -4176,6 +4218,47 @@ a {
   .wrapper .wie-foto-mark, .wrapper .wie-foto-michiel {
     height: 270px;
     width: 270px;
+  }
+
+  .menu-item-wpml-ls-primary_-en {
+    float: left!important;
+    margin-right: -0.1vw;
+  }
+
+  #menu-item-wpml-ls-primary_-en a {
+    margin-left: 30px
+  }
+
+  #menu-item-wpml-ls-primary_-nl a {
+    margin-right: 30px
+  }
+
+  .wpml-ls-item .wpml-ls-flag {
+    opacity: 1;
+  }
+
+  .menu-item-wpml-ls-primary_-nl {
+    float: right!important;
+    margin-right: 1.1px;
+  }
+
+  .wpml-ls-menu-item {
+    width: 49.6%!important;
+    min-width: 0!important;
+  }
+
+  .menu-item-wpml-ls-primary_-en img {
+    margin-left: 0;
+  }
+
+  .menu-item-wpml-ls-primary_-nl img {
+    margin-left: 0;
+  }
+
+  .menu-item-wpml-ls-primary_-nl .wpml-ls-native:before {
+    content: "";
+    left: 0;
+    bottom: 0;
   }
   .wrapper #wie-zijn-wij-wie .wie-foto p {
     width:75%;
@@ -4331,9 +4414,7 @@ a {
 /*         margin-right: 5vw; */
 /*         width: 240px; */
 /*     } */
-/*     /\* PROJECTEN PAGE *\/ */
-/*     .page-template-projecten .category-header { */
-/* >>>>>>> c4fccef198da0108af3f74a9c69d1270853c794b */
+    /* PROJECTEN PAGE */
     font-size: 1em;
   }
   .aanverhuur-container .aanverhuur-kenmerken {
@@ -4354,6 +4435,7 @@ a {
   .menu-toggle {
     display: none;
   }
+  .menu-primary__-container,
   .menu-primary_-container {
     display: inline-block;
   }
@@ -5082,6 +5164,7 @@ a {
     width: 40vw;
     margin-top: 80px;
   }
+  #menu-primary__ li,
   #menu-primary_ li {
     font-size: 24px;
   }
@@ -5198,6 +5281,7 @@ a {
   .main-navigation li a {
     font-size: 1.6em;
   }
+  .menu-primary__-container,
   .menu-primary_-container {
     margin-top: -20px;
     /* padding-left: 4.5vw; */
@@ -6223,15 +6307,15 @@ a {
   .btn.btn-green.big.bezichtigings-btn-btn h3 b{
     font-size: 8em;
   }
-  .wpml-ls-menu-item .wpml-ls-flag[title="EN"] {
-    display:none!important;
-  }
-  .wpml-ls-menu-item .wpml-ls-flag[title="NL"] {
-    margin-left: 43vw;
-  }
-  .wpml-ls-menu-item a .wpml-ls-flag+span {
-    margin-left: 7vw;
-  }
+  /* .wpml-ls-menu-item .wpml-ls-flag[title="EN"] { */
+  /*   display:none!important; */
+  /* } */
+  /* .wpml-ls-menu-item .wpml-ls-flag[title="NL"] { */
+  /*   margin-left: 43vw; */
+  /* } */
+  /* .wpml-ls-menu-item a .wpml-ls-flag+span { */
+  /*   margin-left: 7vw; */
+  /* } */
   #masthead #site-navigation li.current-menu-item a::after {
     /* display:none; */
   }
@@ -6347,8 +6431,8 @@ a {
     display: block;
   }
   .wpml-ls-menu-item{
-    margin-left: 0!important;
-    box-shadow: 0px 4px 23px rgba(0,0,0,0.1);
+    padding: 0!importan
+    box-shadow: 0px 4px 0px rgba(0,0,0,0.1);
   }
   #menu-primary_ a,
   #menu-primary__ a{
@@ -6372,6 +6456,70 @@ a {
   /*     content:""; */
   /*     position:absolute; */
   /*     height:100% */
+
+  .main-navigation li:nth-child(7),
+  .menu-item-wpml-ls-primary_-en {
+    float: left!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-bottom: 0!important;
+    position: relative;
+  }
+
+  #menu-item-wpml-ls-primary_-en:after {
+    content: "";
+    height: 19vw;
+    width: 2vw;
+    position: absolute;
+    right: -1vw;
+    bottom: 5px;
+    background: white;
+  }
+
+  /* #menu-item-wpml-ls-primary_-en a { */
+  /*   margin-right: -60px */
+  /* } */
+
+  /* #menu-item-wpml-ls-primary_-nl a { */
+  /*   margin-left: -60px */
+  /* } */
+
+  .wpml-ls-item .wpml-ls-flag {
+    opacity: 1;
+    margin-left: 70px;
+  }
+
+  .main-navigation li:nth-child(8),
+  .menu-item-wpml-ls-primary_-nl {
+    float: right!important;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    padding-bottom: 0!important;
+  }
+
+  .wpml-ls-menu-item {
+    width: 50%!important;
+    min-width: 0!important;
+  }
+  .menu-item-wpml-ls-primary_-en span {
+    margin-left: 25vw!important;
+  }
+  .menu-item-wpml-ls-primary_-en .wpml-ls-flag {
+    margin-left: 30vw!important;
+  }
+
+  .menu-item-wpml-ls-primary_-nl span {
+    margin-right: -17!important;
+  }
+  .menu-item-wpml-ls-primary_-nl .wpml-ls-flag {
+    margin-left: 10vw!important;
+  }
+
+  .menu-item-wpml-ls-primary_-nl .wpml-ls-native:before {
+    content: "";
+    left: 0;
+    bottom: 0;
+  }
 
   /* } */
   .menu-item-has-children > a{

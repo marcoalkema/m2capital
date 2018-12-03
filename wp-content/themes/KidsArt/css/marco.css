@@ -276,10 +276,12 @@
   margin-bottom: 50px;
 }
 
+#post-3249 .story_preview_text_container,
 #post-2138 .story_preview_text_container {
   position: relative;
 }
 
+#post-3249 .story_preview_text_container,
 #post-2138 .story_preview_text_container {
   padding: 10px;
 }
@@ -295,12 +297,14 @@
   font-size: 14px;
 }
 
+#post-3249 .story_preview_container
 #post-2138 .story_preview_container {
   padding-top: 10px;
   background: #f2f2f2;
   position: relative;
 }
 
+#post-3249 .story_preview_text_container h4,
 #post-2138 .story_preview_text_container h4 {
   margin-top: 0;
   margin-bottom: 0px!important;
@@ -308,8 +312,10 @@
   font-size: 26px!important;
 }
 
+#post-3249 .post-excerpt,
 #post-2138 .post-excerpt {
   padding: 0 10px;
+  margin-top: 30px;
 }
 
 .aanverhuur-table-container {
@@ -327,10 +333,12 @@
   margin-bottom: 0!important;
 }
 
+#post-3249 .story_preview_text_container .h4_container,
 #post-2138 .story_preview_text_container .h4_container {
   position: relative;
 }
 
+#post-3249 .h4_block
 #post-2138 .h4_block {
   margin-bottom: 30px;
 }
@@ -554,13 +562,14 @@
   background: #1d70b7;
   padding: 5px 10px;
   width: fit-content;
-  margin: 10px auto 40px auto;
+  margin: 10px auto 30px auto;
   font-family: "MetaPlusNormal"!important;
 }
 
 #post-2134 .story_preview_container h4.underlineGreen::after,
 #post-2136 .story_preview_container h4.underlineGreen::after,
 #post-2131 .story_preview_container h4.underlineGreen::after,
+#post-3227 .story_preview_container h4.underlineGreen::after,
 #post-2129 .story_preview_container h4.underlineGreen::after {
   bottom: -56px!important;
 }
@@ -729,6 +738,7 @@ span.herontwikkelMeerArrow {
 
 .aanverhuuritems .story_preview_container {
   min-height: 580px;
+  position: relative;
 }
 
 .aanverhuuritems .info1,
