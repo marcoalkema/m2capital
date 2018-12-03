@@ -11,7 +11,7 @@ get_header(); ?>
     <div class="page-header-image">
       <img src="              <?php
                               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 1;
+                                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 3370;
                                 printf(get_field('header_image', $ID));
                               }
                               ?>" class="headerImg"/>
@@ -26,7 +26,7 @@ get_header(); ?>
             <h4 class="green underlineGreen">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 1;
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 3370;
                 printf(get_field('main_title', $ID));
               }
               ?>
@@ -38,7 +38,7 @@ get_header(); ?>
       <div id="title_text-<?php the_ID(); ?>" class="title_text wysiwyg">
         <?php
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 1;
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 666 : 3370;
           printf(get_field('main_text', $ID));
         }
         ?>

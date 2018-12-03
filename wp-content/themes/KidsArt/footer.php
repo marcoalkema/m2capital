@@ -17,15 +17,21 @@
             </div>
             <div class="footer-link merriweather zaken-doen">
               <p>
-                Zaken doen?<br>
+                <?php
+                echo (ICL_LANGUAGE_CODE == 'nl') ? 'Zaken doen?' : 'Do business?';
+                ?><br>
               </p>
               <a href="mailto:<?php printf(get_field('mail_address', 5));?>">
-                <button class="footer-contact-btn">Neem contact</button>
+                <button class="footer-contact-btn">                <?php
+                                                                   echo (ICL_LANGUAGE_CODE == 'nl') ? 'Neem contact' : 'Contact us';
+                                                                   ?></button>
               </a>
             </div>
             <div class="footer-link merriweather">
               <p>
-                Volg ons op<br>
+                <?php
+                echo (ICL_LANGUAGE_CODE == 'nl') ? 'Volg ons op?' : 'Follow us';
+                ?><br>
               </p>
               <div class="linkedin-icon">
                 <a href="http://<?php the_field('linkedin_link', 5) ?>" target="_blank">

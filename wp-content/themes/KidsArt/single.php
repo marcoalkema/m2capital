@@ -15,7 +15,7 @@ get_header();  ?>
     } else {
       get_template_part("aanverhuur", "details-en");
     }
-  } else if ($cat == 23 || $cat == 27 || $cat == 26 || $cat == 24) {
+  } else if ($cat == 23 || $cat == 27 || $cat == 26 || $cat == 24 || $cat == 37 || $cat == 39 || $cat == 40 || $cat == 41) {
     get_template_part("actueel", "post");
   } else if ($category_id == 0) {
     get_template_part("client", "post");

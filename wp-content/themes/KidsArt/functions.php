@@ -709,7 +709,7 @@ add_shortcode('my_google_map', 'mkGoogleMap');
 
       function mkContactField () {
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 1356;
+          $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 3169;
           $contactArray = get_field('contact_address', $ID)['body'];
           $address1 = $contactArray[0][1]['c'];
           $address2 = $contactArray[1][1]['c'];

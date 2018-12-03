@@ -21,7 +21,7 @@ get_header(); ?>
             <h4 class="green underlineGreen">
               <?php
               if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 668 : 1;
+                $ID = (ICL_LANGUAGE_CODE == 'nl') ? 668 : 3368;
                 printf(get_field('main_title', $ID));
               }
               ?>
@@ -34,7 +34,7 @@ get_header(); ?>
         <p>
           <?php
           if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 668 : 1;
+            $ID = (ICL_LANGUAGE_CODE == 'nl') ? 668 : 3368;
             printf(get_field('main_text', $ID));
           }
           ?>

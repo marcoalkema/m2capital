@@ -261,9 +261,9 @@ img {
   font-family: MetaPlusNormal;
   letter-spacing: 0.09em;
 }
-.menu-secondary-engels-container{
-  margin-left: -100px;
-}
+/* .menu-secondary-engels-container{ */
+/*   margin-left: -100px; */
+/* } */
 
 /* Small headers */
 .archive-title,
@@ -6804,7 +6804,8 @@ p {
   margin-bottom:60px!important;
 }
 
-.footer-link-container .menu-secondary-container > ul > li {
+.footer-link-container .menu-secondary-container > ul > li,
+.footer-link-container .menu-secondary-engels-container > ul > li{
   padding: 0 1.2vw;
 
 }

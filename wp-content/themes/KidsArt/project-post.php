@@ -1,6 +1,6 @@
 <?php
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
-  $articles = (ICL_LANGUAGE_CODE == 'nl') ? '24, 27, 26' : '';
+  $articles = (ICL_LANGUAGE_CODE == 'nl') ? '24, 27, 26' : '39, 40, 41';
   $args = array(
     'numberposts' => 0,
     'offset' => 0,
