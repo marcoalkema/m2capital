@@ -75,15 +75,13 @@ function nl () {
     var navMenuItems = [];
     var navMenuItemsDividers = [];
 
-    if (document.getElementById('menu-primary_')) {
-      navMenuItems = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
-        return a.innerHTML != '|';
-      });
+    navMenuItems = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
+      return a.innerHTML != '|';
+    });
 
-      navMenuItemsDividers = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
-        return a.innerHTML == '|';
-      });
-    }
+    navMenuItemsDividers = Array.from(document.getElementById('menu-primary_').getElementsByTagName( 'a' )).filter(function(a) {
+      return a.innerHTML == '|';
+    });
 
     navMenuItems.forEach(function (item) {
       item.onclick = function(){

@@ -4168,6 +4168,7 @@ a {
   .footer-link-container {
     width:50%;
   }
+  #colophon .footer-link-container .menu-secondary-engels-container > ul > li,
   #colophon .footer-link-container .menu-secondary-container > ul > li {
     padding:0;
   }
@@ -5932,10 +5933,12 @@ a {
   #colophon p {
     font-size: 3.5em!important;
   }
+  #colophon .footer-link-container .menu-secondary-engels-container a,
   #colophon .footer-link-container .menu-secondary-container a {
     font-size: 3.5em!important;
   }
 
+  #colophon .footer-link-container .menu-secondary-container li,
   #colophon .footer-link-container .menu-secondary-container li {
     padding: 0!important;
     margin: 0!important;
