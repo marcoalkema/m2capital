@@ -1,6 +1,6 @@
 <?php
-$fields = get_field_objects();
 if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
+  $fields = get_field_objects();
   $cat = (ICL_LANGUAGE_CODE == 'nl') ? 25 : 38;
   $args = array(
     'numberposts' => 0,

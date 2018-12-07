@@ -111,10 +111,15 @@
   background: white;
 }
 
+#post-3183,
 #post-17 {
   background: #f2f2f2;
 }
 
+#post-3183 #asset-managementContainer,
+#post-3183 #asset-management__,
+#post-3183 #beleggingsadvies,
+#post-3183 .template-page-content,
 #post-17 #asset-managementContainer,
 #post-17 #asset-management__,
 #post-17 #beleggingsadvies,
@@ -172,6 +177,7 @@
 .interest-in-project p {
   text-align: center;
 }
+
 
 #post-2134 .story_preview,
 #post-2136 .story_preview,
@@ -570,10 +576,12 @@
 #post-2136 .story_preview_container h4.underlineGreen::after,
 #post-2131 .story_preview_container h4.underlineGreen::after,
 #post-3227 .story_preview_container h4.underlineGreen::after,
+#post-3237 .story_preview_container h4.underlineGreen::after,
 #post-2129 .story_preview_container h4.underlineGreen::after {
   bottom: -56px!important;
 }
 
+#post-3237 .actueel-post-excerpt,
 #post-2134 .actueel-post-excerpt,
 #post-2136 .actueel-post-excerpt,
 #post-2131 .actueel-post-excerpt,

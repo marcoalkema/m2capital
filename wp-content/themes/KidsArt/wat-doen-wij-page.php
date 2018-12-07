@@ -56,7 +56,7 @@ get_header(); ?>
                         echo '<img class="wat-doen-wij-image" src="' . $val['img'] . '"/>';
                         echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
                         echo $val['text'];
-                        echo '<button class="btn btn-green btn-primary">lees meer</button>';
+                      echo '<button class="btn btn-green btn-primary">' . ((ICL_LANGUAGE_CODE == 'nl') ? 'lees meer' : 'read more') . '</button>';
                         echo '</a>';
                         echo '</div>';
                     } else {
@@ -65,7 +65,7 @@ get_header(); ?>
                         echo '<img class="wat-doen-wij-image" src="' . $val['img'] . '"/>';
                         echo '<h4 class="green underlineGreen">' . $val['title'] . '</h4>';
                         echo $val['text'];
-                        echo '<button class="btn btn-green btn-primary">lees meer</button>';
+                      echo '<button class="btn btn-green btn-primary">' . ((ICL_LANGUAGE_CODE == 'nl') ? 'lees meer' : 'read more') . '</button>';
                         echo '</a>';
                         echo '</div>';
 

@@ -1,9 +1,7 @@
 <?php
 $fields = get_field_objects();
 $cat_ = (ICL_LANGUAGE_CODE == 'nl') ? 'categorie' : 'category';
-echo $cat_;
 $cat = get_field($cat_, get_the_ID());
-echo $cat;
 $args = array(
   'numberposts' => 0,
   'offset' => 0,

@@ -700,13 +700,6 @@ function posts_callback($atts=null, $content=null)
       }
       add_action('after_setup_theme', 'cuar_remove_select_library', 99);
 
-
-function mkGoogleMap () {
-  $contactMap = get_field('contact_map', 19);
-      echo '<iframe id="google-map" width="550" height="300" src="https://maps.google.it/maps?q='. $contactMap[address] .  '&output=embed" frameborder="0" style="border:2px solid black" allowfullscreen scrollwheel=false></iframe>';
-}
-add_shortcode('my_google_map', 'mkGoogleMap');
-
       function mkContactField () {
         if ( defined( 'ICL_LANGUAGE_CODE' ) ) {
           $ID = (ICL_LANGUAGE_CODE == 'nl') ? 19 : 3169;
